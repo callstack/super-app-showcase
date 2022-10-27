@@ -1,0 +1,18 @@
+{
+    "name": "super-app-template",
+    "version": "0.0.1",
+    "license": "MIT",
+    "private": true,
+    "workspaces": [
+        "packages/*"
+    ],
+    "scripts": {
+        "host": "yarn workspace host",
+        "booking": "yarn workspace booking",
+        "shopping": "yarn workspace shopping",
+        "news": "yarn workspace news",
+        "dashboard": "yarn workspace dashboard",
+        "bootstrap": "yarn workspaces foreach run bootstrap"
+    },
+    "packageManager": "yarn@3.2.1"
+}

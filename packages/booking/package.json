@@ -8,7 +8,8 @@
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
-    "start": "react-native webpack-start",
+    "start": "react-native webpack-start --port 9000",
+    "start:standalone": "STANDALONE=1 react-native webpack-start --port 8081",
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "bootstrap:pods": "cd ios && pod install",

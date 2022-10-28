@@ -4,7 +4,7 @@
 
 import {ScriptManager, Script, Federated} from '@callstack/repack/client';
 import {AppRegistry, Platform} from 'react-native';
-import App from './App';
+import App from './src/App';
 import {name as appName} from './app.json';
 
 const resolveURL = Federated.createURLResolver({

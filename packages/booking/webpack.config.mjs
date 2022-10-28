@@ -235,7 +235,7 @@ export default env => {
       new Repack.plugins.ModuleFederationPlugin({
         name: 'booking',
         exposes: {
-          './App': './App.tsx',
+          './App': './src/App',
         },
         shared: {
           react: {
@@ -248,6 +248,26 @@ export default env => {
             requiredVersion: '0.70.4',
             eager: STANDALONE,
           },
+          '@react-navigation/native': {
+            singleton: true,
+            requiredVersion: '6.0.13',
+          },
+          '@react-navigation/native-stack': {
+            singleton: true,
+            requiredVersion: '6.9.1',
+          },
+          '@react-navigation/bottom-tabs': {
+            singleton: true,
+            requiredVersion: '6.4.0',
+          },
+          // 'react-native-safe-area-context': {
+          //   singleton: true,
+          //   requiredVersion: '4.4.1',
+          // },
+          // 'react-native-screens': {
+          //   singleton: true,
+          //   requiredVersion: '3.18.2',
+          // },
         },
       }),
     ],

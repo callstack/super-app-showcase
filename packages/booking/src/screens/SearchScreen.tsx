@@ -1,17 +1,11 @@
 import React from 'react';
-import {Button, SafeAreaView, StyleSheet, Text, View} from 'react-native';
+import {SafeAreaView, StyleSheet, Text, View} from 'react-native';
 
-interface Props {
-  onBackPress: () => void;
-}
-
-const App = ({onBackPress}: Props) => {
+const SearchScreen = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={styles.header}>Booking</Text>
-      <View style={styles.contentContainer}>
-        <Button title="Back" onPress={onBackPress} />
-      </View>
+      <Text style={styles.header}>Search</Text>
+      <View style={styles.contentContainer} />
     </SafeAreaView>
   );
 };
@@ -32,4 +26,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default App;
+export default SearchScreen;

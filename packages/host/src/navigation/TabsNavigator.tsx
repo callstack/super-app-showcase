@@ -3,6 +3,7 @@ import {
   BottomTabHeaderProps,
   createBottomTabNavigator,
 } from '@react-navigation/bottom-tabs';
+import Icons from 'react-native-vector-icons/MaterialCommunityIcons';
 import HomeScreen from '../screens/HomeScreen';
 import ServicesScreen from '../screens/ServicesScreen';
 import AccountScreen from '../screens/AccountScreen';
@@ -30,9 +31,33 @@ const TabsNavigator = () => {
       screenOptions={{
         header: props => <NavBar {...props} />,
       }}>
-      <Tabs.Screen name="Home" component={HomeScreen} />
-      <Tabs.Screen name="Services" component={ServicesScreen} />
-      <Tabs.Screen name="Account" component={AccountScreen} />
+      <Tabs.Screen
+        name="Home"
+        component={HomeScreen}
+        options={{
+          tabBarIcon: ({color, size}) => (
+            <Icons name="home" color={color} size={size} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="Services"
+        component={ServicesScreen}
+        options={{
+          tabBarIcon: ({color, size}) => (
+            <Icons name="apps" color={color} size={size} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="Account"
+        component={AccountScreen}
+        options={{
+          tabBarIcon: ({color, size}) => (
+            <Icons name="account" color={color} size={size} />
+          ),
+        }}
+      />
     </Tabs.Navigator>
   );
 };

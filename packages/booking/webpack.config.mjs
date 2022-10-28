@@ -250,14 +250,17 @@ export default env => {
           },
           '@react-navigation/native': {
             singleton: true,
+            eager: STANDALONE,
             requiredVersion: '6.0.13',
           },
           '@react-navigation/native-stack': {
             singleton: true,
+            eager: STANDALONE,
             requiredVersion: '6.9.1',
           },
           '@react-navigation/bottom-tabs': {
             singleton: true,
+            eager: STANDALONE,
             requiredVersion: '6.4.0',
           },
           // 'react-native-safe-area-context': {

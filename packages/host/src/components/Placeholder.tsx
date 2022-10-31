@@ -3,10 +3,10 @@ import {SafeAreaView, StyleSheet, Text} from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import {MD3Colors} from 'react-native-paper';
 
-interface Props {
+type Props = {
   label: string;
   icon: string;
-}
+};
 
 const Placeholder: FC<Props> = ({label, icon}) => {
   return (

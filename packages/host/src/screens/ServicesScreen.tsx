@@ -7,7 +7,7 @@ import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {MainStackParamList} from '../navigation/MainNavigator';
 
 type ServiceScreenProps = CompositeScreenProps<
-  BottomTabScreenProps<TabsParamList, 'Services'>,
+  BottomTabScreenProps<TabsParamList, 'ServicesNavigator'>,
   NativeStackScreenProps<MainStackParamList>
 >;
 

@@ -236,6 +236,7 @@ export default env => {
         name: 'booking',
         exposes: {
           './App': './src/App',
+          './UpcomingScreen': './src/screens/UpcomingScreen',
         },
         shared: {
           react: {

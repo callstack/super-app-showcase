@@ -1,24 +1,12 @@
 import React from 'react';
-import {
-  createNativeStackNavigator,
-  NativeStackHeaderProps,
-} from '@react-navigation/native-stack';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import BookingScreen from '../screens/BookingScreen';
 import TabsNavigator from './TabsNavigator';
-import {Appbar} from 'react-native-paper';
+import NavBar from '../components/NavBar';
 
 export type MainStackParamList = {
   Tabs: undefined;
   Booking: undefined;
-};
-
-const NavBar = ({navigation, back}: NativeStackHeaderProps) => {
-  return (
-    <Appbar.Header>
-      {back ? <Appbar.BackAction onPress={navigation.goBack} /> : null}
-      <Appbar.Content title="" />
-    </Appbar.Header>
-  );
 };
 
 const Main = createNativeStackNavigator<MainStackParamList>();
@@ -36,7 +24,13 @@ const MainNavigator = () => {
         }}
         component={TabsNavigator}
       />
-      <Main.Screen name="Booking" component={BookingScreen} />
+      <Main.Screen
+        name="Booking"
+        component={BookingScreen}
+        options={{
+          title: '',
+        }}
+      />
     </Main.Navigator>
   );
 };

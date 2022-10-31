@@ -4,7 +4,7 @@ import {Avatar, Button, Card, Divider} from 'react-native-paper';
 import upcomingBookings from '../data/upcomingBookings.json';
 
 const renderItem = ({item}: any) => (
-  <Card elevation={0}>
+  <Card mode="contained">
     <Card.Title
       titleVariant="titleMedium"
       subtitleVariant="bodyMedium"
@@ -13,8 +13,12 @@ const renderItem = ({item}: any) => (
       left={props => <Avatar.Icon {...props} icon="calendar" />}
     />
     <Card.Actions>
-      <Button onPress={() => {}}>Cancel</Button>
-      <Button onPress={() => {}}>Reschedule</Button>
+      <Button mode="text" onPress={() => {}}>
+        Cancel
+      </Button>
+      <Button mode="contained" onPress={() => {}}>
+        Reschedule
+      </Button>
     </Card.Actions>
   </Card>
 );

@@ -1,0 +1,28 @@
+{
+    "data": [
+        {
+            "id": "1",
+            "title": "Booking",
+            "description": "Check your schedule",
+            "image": "https://picsum.photos/700"
+        },
+        {
+            "id": "2",
+            "title": "Shopping",
+            "description": "Explore new products",
+            "image": "https://picsum.photos/700"
+        },
+        {
+            "id": "3",
+            "title": "News and articles",
+            "description": "Read and inspire",
+            "image": "https://picsum.photos/700"
+        },
+        {
+            "id": "4",
+            "title": "Dashboard",
+            "description": "Manage your business",
+            "image": "https://picsum.photos/700"
+        }
+    ]
+}

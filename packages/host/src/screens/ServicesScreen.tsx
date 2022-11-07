@@ -1,29 +1,73 @@
-import React from 'react';
-import {Button, StyleSheet, View} from 'react-native';
+import React, {useCallback} from 'react';
+import {FlatList, ListRenderItemInfo, StyleSheet, View} from 'react-native';
 import {CompositeScreenProps} from '@react-navigation/native';
-import {TabsParamList} from '../navigation/TabsNavigator';
-import {BottomTabScreenProps} from '@react-navigation/bottom-tabs';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {MainStackParamList} from '../navigation/MainNavigator';
+import {Card, Paragraph, Title} from 'react-native-paper';
+import services from '../data/services.json';
+import {ServicesStackParamList} from '../navigation/ServicesNavigator';
 
 type ServiceScreenProps = CompositeScreenProps<
-  BottomTabScreenProps<TabsParamList, 'ServicesNavigator'>,
+  NativeStackScreenProps<ServicesStackParamList, 'Services'>,
   NativeStackScreenProps<MainStackParamList>
 >;
 
+type ServiceMenuItem = {
+  id: string;
+  title: string;
+  description: string;
+  image: string;
+};
+
 const ServicesScreen = ({navigation}: ServiceScreenProps) => {
+  const openBooking = useCallback(
+    () => navigation.navigate('Booking'),
+    [navigation],
+  );
+
+  const renderItem = useCallback(
+    ({item, index}: ListRenderItemInfo<ServiceMenuItem>) => {
+      const lastItem = index === services.data.length - 1;
+
+      return (
+        <View style={[styles.serviceItem, lastItem && styles.lastServiceItem]}>
+          <Card mode="contained" onPress={openBooking} style={styles.cardItem}>
+            <Card.Cover source={{uri: item.image}} />
+            <Card.Content>
+              <Title numberOfLines={1}>{item.title}</Title>
+              <Paragraph numberOfLines={1}>{item.description}</Paragraph>
+            </Card.Content>
+          </Card>
+        </View>
+      );
+    },
+    [openBooking],
+  );
+
   return (
-    <View style={styles.container}>
-      <Button title="Booking" onPress={() => navigation.navigate('Booking')} />
-    </View>
+    <FlatList
+      numColumns={2}
+      data={services.data}
+      renderItem={renderItem}
+      contentContainerStyle={styles.contentContainer}
+    />
   );
 };
 
 const styles = StyleSheet.create({
-  container: {
+  contentContainer: {
+    padding: 8,
+  },
+  serviceItem: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+    padding: 8,
+    maxWidth: '100%',
+  },
+  lastServiceItem: {
+    maxWidth: '50%',
+  },
+  cardItem: {
+    flex: 1,
   },
 });
 

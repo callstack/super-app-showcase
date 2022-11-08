@@ -1,5 +1,11 @@
 import React, {useCallback} from 'react';
-import {FlatList, ListRenderItemInfo, StyleSheet, View} from 'react-native';
+import {
+  Alert,
+  FlatList,
+  ListRenderItemInfo,
+  StyleSheet,
+  View,
+} from 'react-native';
 import {CompositeScreenProps} from '@react-navigation/native';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {MainStackParamList} from '../navigation/MainNavigator';
@@ -25,13 +31,29 @@ const ServicesScreen = ({navigation}: ServiceScreenProps) => {
     [navigation],
   );
 
+  const openNews = useCallback(() => navigation.navigate('News'), [navigation]);
+
   const renderItem = useCallback(
     ({item, index}: ListRenderItemInfo<ServiceMenuItem>) => {
       const lastItem = index === services.data.length - 1;
+      let onPress;
+
+      switch (item.id) {
+        case 'booking':
+          onPress = openBooking;
+          break;
+        case 'news':
+          onPress = openNews;
+          break;
+        default:
+          onPress = () => Alert.alert('Not implemented yet');
+
+          break;
+      }
 
       return (
         <View style={[styles.serviceItem, lastItem && styles.lastServiceItem]}>
-          <Card mode="contained" onPress={openBooking} style={styles.cardItem}>
+          <Card mode="contained" onPress={onPress} style={styles.cardItem}>
             <Card.Cover source={{uri: item.image}} />
             <Card.Content>
               <Title numberOfLines={1}>{item.title}</Title>
@@ -41,7 +63,7 @@ const ServicesScreen = ({navigation}: ServiceScreenProps) => {
         </View>
       );
     },
-    [openBooking],
+    [openBooking, openNews],
   );
 
   return (

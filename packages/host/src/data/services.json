@@ -1,25 +1,25 @@
 {
     "data": [
         {
-            "id": "1",
+            "id": "booking",
             "title": "Booking",
             "description": "Check your schedule",
             "image": "https://picsum.photos/700"
         },
         {
-            "id": "2",
+            "id": "shopping",
             "title": "Shopping",
             "description": "Explore new products",
             "image": "https://picsum.photos/700"
         },
         {
-            "id": "3",
+            "id": "news",
             "title": "News and articles",
             "description": "Read and inspire",
             "image": "https://picsum.photos/700"
         },
         {
-            "id": "4",
+            "id": "dashboard",
             "title": "Dashboard",
             "description": "Manage your business",
             "image": "https://picsum.photos/700"

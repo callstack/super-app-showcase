@@ -259,19 +259,11 @@ export default env => {
             eager: STANDALONE,
             requiredVersion: '6.9.1',
           },
-          '@react-navigation/bottom-tabs': {
+          '@react-navigation/material-bottom-tabs': {
             singleton: true,
             eager: STANDALONE,
-            requiredVersion: '6.4.0',
+            requiredVersion: '6.2.4',
           },
-          // 'react-native-safe-area-context': {
-          //   singleton: true,
-          //   requiredVersion: '4.4.1',
-          // },
-          // 'react-native-screens': {
-          //   singleton: true,
-          //   requiredVersion: '3.18.2',
-          // },
         },
       }),
     ],

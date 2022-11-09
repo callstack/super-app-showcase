@@ -3,10 +3,12 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import BookingScreen from '../screens/BookingScreen';
 import TabsNavigator from './TabsNavigator';
 import NavBar from '../components/NavBar';
+import NewsScreen from '../screens/NewsScreen';
 
 export type MainStackParamList = {
   Tabs: undefined;
   Booking: undefined;
+  News: undefined;
 };
 
 const Main = createNativeStackNavigator<MainStackParamList>();
@@ -27,6 +29,13 @@ const MainNavigator = () => {
       <Main.Screen
         name="Booking"
         component={BookingScreen}
+        options={{
+          title: '',
+        }}
+      />
+      <Main.Screen
+        name="News"
+        component={NewsScreen}
         options={{
           title: '',
         }}

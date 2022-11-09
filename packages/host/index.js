@@ -10,6 +10,7 @@ import {name as appName} from './app.json';
 const resolveURL = Federated.createURLResolver({
   containers: {
     booking: 'http://localhost:9000/[name][ext]',
+    news: `https://callstack-internal.github.io/news-mini-app-template/build/generated/${Platform.OS}/[name][ext]`,
   },
 });
 

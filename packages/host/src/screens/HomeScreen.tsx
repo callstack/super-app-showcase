@@ -1,7 +1,7 @@
 import React from 'react';
 import {FlatList, ScrollView, StyleSheet, View} from 'react-native';
 import {CompositeScreenProps} from '@react-navigation/native';
-import {BottomTabScreenProps} from '@react-navigation/bottom-tabs';
+import {MaterialBottomTabScreenProps} from '@react-navigation/material-bottom-tabs';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {
   Avatar,
@@ -21,7 +21,7 @@ import recentArticles from '../data/recentArticles.json';
 
 type Props = CompositeScreenProps<
   NativeStackScreenProps<HomeStackParamList>,
-  BottomTabScreenProps<TabsParamList, 'HomeNavigator'>
+  MaterialBottomTabScreenProps<TabsParamList, 'HomeNavigator'>
 >;
 
 const renderUpcoming = ({item}: any) => (

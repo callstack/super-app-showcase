@@ -15,7 +15,6 @@
     "bootstrap": "yarn && yarn bootstrap:pods"
   },
   "dependencies": {
-    "@react-navigation/bottom-tabs": "6.4.0",
     "@react-navigation/material-bottom-tabs": "^6.2.4",
     "@react-navigation/native": "6.0.13",
     "@react-navigation/native-stack": "6.9.1",

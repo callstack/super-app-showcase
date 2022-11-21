@@ -230,8 +230,19 @@ export default env => {
           assetsPath,
         },
       }),
+      /**
+       * This plugin is nessessary to make Module Federation work.
+       */
       new Repack.plugins.ModuleFederationPlugin({
+        /**
+         * The name of the module is used to identify the module in URLs resolver and imports.
+         */
         name: 'host',
+        /**
+         * Shared modules are shared in the share scope.
+         * React, React Native and React Navigation should be provided here because there should be only one instance of these modules.
+         * Their names are used to match requested modules in this compilation.
+         */
         shared: {
           react: {
             ...Repack.Federated.SHARED_REACT,
@@ -242,8 +253,19 @@ export default env => {
             requiredVersion: '0.70.4',
           },
           '@react-navigation/native': {
+            /**
+             * singleton means that only one version of the module is loaded.
+             */
             singleton: true,
+            /**
+             * eager means that the module is added into the initial bundle and will not be loaded later.
+             * All shared module in the host app should be eager. In remote containers it depends on build proposes.
+             * If bundle should work as a standalone application, then it should be eager.
+             */
             eager: true,
+            /**
+             * requiredVersion is used to match requested modules in bundle.
+             */
             requiredVersion: '6.0.13',
           },
           '@react-navigation/native-stack': {

@@ -2,6 +2,10 @@ import path from 'path';
 import TerserPlugin from 'terser-webpack-plugin';
 import * as Repack from '@callstack/repack';
 
+/**
+ * This env variable shows if bundle is standalone and eager should be enabled in Module federation Plugin config.
+ * Please see more detailed description in Module Federation Plugin config.
+ */
 const STANDALONE = Boolean(process.env.STANDALONE);
 
 /**
@@ -232,12 +236,26 @@ export default env => {
           assetsPath,
         },
       }),
+      /**
+       * This plugin is nessessary to make Module Federation work.
+       */
       new Repack.plugins.ModuleFederationPlugin({
+        /**
+         * The name of the module is used to identify the module in URLs resolver and imports.
+         */
         name: 'booking',
+        /**
+         * This is a list of modules that will be shared between remote containers.
+         */
         exposes: {
           './App': './src/App',
           './UpcomingScreen': './src/screens/UpcomingScreen',
         },
+        /**
+         * Shared modules are shared in the share scope.
+         * React, React Native and React Navigation should be provided here because there should be only one instance of these modules.
+         * Their names are used to match requested modules in this compilation.
+         */
         shared: {
           react: {
             ...Repack.Federated.SHARED_REACT,
@@ -250,8 +268,21 @@ export default env => {
             eager: STANDALONE,
           },
           '@react-navigation/native': {
+            /**
+             * singleton means that only one version of the module is loaded.
+             */
             singleton: true,
+            /**
+             * eager means that the module is added into the initial bundle and will not be loaded later.
+             * All shared module in the host app should be eager. In remote containers it depends on build proposes.
+             * If bundle should work as a standalone application, then it should be eager.
+             * Here is STANDALONE env variable shows if bundle is standalone and eager should be enabled.
+             */
             eager: STANDALONE,
+            /**
+             * requiredVersion is used to match requested modules in bundle.
+             * It's recommended to use the same version as in the host app.
+             */
             requiredVersion: '6.0.13',
           },
           '@react-navigation/native-stack': {

@@ -1,14 +1,8 @@
 import React from 'react';
-import {StyleSheet, View} from 'react-native';
+import ScreenPlaceholder from '../components/ScreenPlaceholder';
 
 const SearchScreen = () => {
-  return <View style={styles.container} />;
+  return <ScreenPlaceholder />;
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
 
 export default SearchScreen;

@@ -32,21 +32,21 @@ const MainNavigator = () => {
         name="Booking"
         component={BookingScreen}
         options={{
-          title: '',
+          title: 'Booking',
         }}
       />
       <Main.Screen
         name="Shopping"
         component={ShoppingScreen}
         options={{
-          title: '',
+          title: 'Shopping',
         }}
       />
       <Main.Screen
         name="News"
         component={NewsScreen}
         options={{
-          title: '',
+          title: 'News',
         }}
       />
     </Main.Navigator>

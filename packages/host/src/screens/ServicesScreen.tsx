@@ -33,6 +33,11 @@ const ServicesScreen = ({navigation}: ServiceScreenProps) => {
 
   const openNews = useCallback(() => navigation.navigate('News'), [navigation]);
 
+  const openShopping = useCallback(
+    () => navigation.navigate('Shopping'),
+    [navigation],
+  );
+
   const renderItem = useCallback(
     ({item, index}: ListRenderItemInfo<ServiceMenuItem>) => {
       const lastItem = index === services.data.length - 1;
@@ -44,6 +49,9 @@ const ServicesScreen = ({navigation}: ServiceScreenProps) => {
           break;
         case 'news':
           onPress = openNews;
+          break;
+        case 'shopping':
+          onPress = openShopping;
           break;
         default:
           onPress = () => Alert.alert('Not implemented yet');
@@ -63,7 +71,7 @@ const ServicesScreen = ({navigation}: ServiceScreenProps) => {
         </View>
       );
     },
-    [openBooking, openNews],
+    [openBooking, openNews, openShopping],
   );
 
   return (

@@ -4,10 +4,12 @@ import BookingScreen from '../screens/BookingScreen';
 import TabsNavigator from './TabsNavigator';
 import NavBar from '../components/NavBar';
 import NewsScreen from '../screens/NewsScreen';
+import ShoppingScreen from '../screens/ShoppingScreen';
 
 export type MainStackParamList = {
   Tabs: undefined;
   Booking: undefined;
+  Shopping: undefined;
   News: undefined;
 };
 
@@ -30,14 +32,21 @@ const MainNavigator = () => {
         name="Booking"
         component={BookingScreen}
         options={{
-          title: '',
+          title: 'Booking',
+        }}
+      />
+      <Main.Screen
+        name="Shopping"
+        component={ShoppingScreen}
+        options={{
+          title: 'Shopping',
         }}
       />
       <Main.Screen
         name="News"
         component={NewsScreen}
         options={{
-          title: '',
+          title: 'News',
         }}
       />
     </Main.Navigator>

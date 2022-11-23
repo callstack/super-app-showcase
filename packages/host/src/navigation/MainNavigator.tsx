@@ -5,12 +5,14 @@ import TabsNavigator from './TabsNavigator';
 import NavBar from '../components/NavBar';
 import NewsScreen from '../screens/NewsScreen';
 import ShoppingScreen from '../screens/ShoppingScreen';
+import DashboardScreen from '../screens/DashboardScreen';
 
 export type MainStackParamList = {
   Tabs: undefined;
   Booking: undefined;
   Shopping: undefined;
   News: undefined;
+  Dashboard: undefined;
 };
 
 const Main = createNativeStackNavigator<MainStackParamList>();
@@ -47,6 +49,13 @@ const MainNavigator = () => {
         component={NewsScreen}
         options={{
           title: 'News',
+        }}
+      />
+      <Main.Screen
+        name="Dashboard"
+        component={DashboardScreen}
+        options={{
+          title: 'Dashboard',
         }}
       />
     </Main.Navigator>

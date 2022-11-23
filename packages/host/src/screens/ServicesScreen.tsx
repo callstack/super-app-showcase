@@ -38,6 +38,11 @@ const ServicesScreen = ({navigation}: ServiceScreenProps) => {
     [navigation],
   );
 
+  const openDashboard = useCallback(
+    () => navigation.navigate('Dashboard'),
+    [navigation],
+  );
+
   const renderItem = useCallback(
     ({item, index}: ListRenderItemInfo<ServiceMenuItem>) => {
       const lastItem = index === services.data.length - 1;
@@ -49,6 +54,9 @@ const ServicesScreen = ({navigation}: ServiceScreenProps) => {
           break;
         case 'news':
           onPress = openNews;
+          break;
+        case 'dashboard':
+          onPress = openDashboard;
           break;
         case 'shopping':
           onPress = openShopping;
@@ -71,7 +79,7 @@ const ServicesScreen = ({navigation}: ServiceScreenProps) => {
         </View>
       );
     },
-    [openBooking, openNews, openShopping],
+    [openBooking, openDashboard, openNews, openShopping],
   );
 
   return (

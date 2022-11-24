@@ -9,15 +9,13 @@ export type HomeStackParamList = {
   Upcoming: undefined;
 };
 
-const STANDALONE = Boolean(process.env.STANDALONE);
-
 const Home = createNativeStackNavigator<HomeStackParamList>();
 
 const HomeNavigator = () => {
   return (
     <Home.Navigator
       screenOptions={{
-        header: props => (STANDALONE ? <NavBar {...props} /> : null),
+        header: props => <NavBar {...props} />,
       }}>
       <Home.Screen name="Home" component={HomeScreen} />
       <Home.Screen name="Upcoming" component={UpcomingScreen} />

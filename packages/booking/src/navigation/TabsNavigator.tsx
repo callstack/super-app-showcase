@@ -1,14 +1,14 @@
 import React from 'react';
 
-import HomeScreen from '../screens/HomeScreen';
-import CalendarScreen from '../screens/CalendarScreen';
-import AccountScreen from '../screens/AccountScreen';
 import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
+import HomeNavigator from './HomeNavigator';
+import CalendarNavigator from './CalendarNavigator';
+import AccountNavigator from './AccountNavigator';
 
 export type TabsParamList = {
-  Home: undefined;
-  Calendar: undefined;
-  Account: undefined;
+  HomeNavigator: undefined;
+  CalendarNavigator: undefined;
+  AccountNavigator: undefined;
 };
 
 const Tabs = createMaterialBottomTabNavigator<TabsParamList>();
@@ -17,23 +17,26 @@ const TabsNavigator = () => {
   return (
     <Tabs.Navigator>
       <Tabs.Screen
-        name="Home"
-        component={HomeScreen}
+        name="HomeNavigator"
+        component={HomeNavigator}
         options={{
+          title: 'Home',
           tabBarIcon: 'home',
         }}
       />
       <Tabs.Screen
-        name="Calendar"
-        component={CalendarScreen}
+        name="CalendarNavigator"
+        component={CalendarNavigator}
         options={{
+          title: 'Calendar',
           tabBarIcon: 'calendar',
         }}
       />
       <Tabs.Screen
-        name="Account"
-        component={AccountScreen}
+        name="AccountNavigator"
+        component={AccountNavigator}
         options={{
+          title: 'Account',
           tabBarIcon: 'account',
         }}
       />

@@ -46,26 +46,15 @@ const ServicesScreen = ({navigation}: ServiceScreenProps) => {
   const renderItem = useCallback(
     ({item, index}: ListRenderItemInfo<ServiceMenuItem>) => {
       const lastItem = index === services.data.length - 1;
-      let onPress;
+      const map = new Map([
+        ['booking', openBooking],
+        ['news', openNews],
+        ['shopping', openShopping],
+        ['dashboard', openDashboard],
+      ]);
 
-      switch (item.id) {
-        case 'booking':
-          onPress = openBooking;
-          break;
-        case 'news':
-          onPress = openNews;
-          break;
-        case 'dashboard':
-          onPress = openDashboard;
-          break;
-        case 'shopping':
-          onPress = openShopping;
-          break;
-        default:
-          onPress = () => Alert.alert('Not implemented yet');
-
-          break;
-      }
+      const onPress =
+        map.get(item.id) ?? (() => Alert.alert('Not implemented yet'));
 
       return (
         <View style={[styles.serviceItem, lastItem && styles.lastServiceItem]}>

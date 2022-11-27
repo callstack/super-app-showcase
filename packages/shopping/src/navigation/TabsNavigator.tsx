@@ -1,14 +1,13 @@
 import React from 'react';
-
-import HomeScreen from '../screens/HomeScreen';
-import SearchScreen from '../screens/SearchScreen';
-import AccountScreen from '../screens/AccountScreen';
 import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
+import AccountNavigator from './AccountNavigator';
+import HomeNavigator from './HomeNavigator';
+import SearchNavigator from './SearchNavigator';
 
 export type TabsParamList = {
-  Home: undefined;
-  Search: undefined;
-  Account: undefined;
+  HomeNavigator: undefined;
+  SearchNavigator: undefined;
+  AccountNavigator: undefined;
 };
 
 const Tabs = createMaterialBottomTabNavigator<TabsParamList>();
@@ -17,24 +16,27 @@ const TabsNavigator = () => {
   return (
     <Tabs.Navigator>
       <Tabs.Screen
-        name="Home"
-        component={HomeScreen}
+        name="HomeNavigator"
+        component={HomeNavigator}
         options={{
           tabBarIcon: 'home',
+          tabBarLabel: 'Home',
         }}
       />
       <Tabs.Screen
-        name="Search"
-        component={SearchScreen}
+        name="SearchNavigator"
+        component={SearchNavigator}
         options={{
           tabBarIcon: 'magnify',
+          tabBarLabel: 'Search',
         }}
       />
       <Tabs.Screen
-        name="Account"
-        component={AccountScreen}
+        name="AccountNavigator"
+        component={AccountNavigator}
         options={{
           tabBarIcon: 'account',
+          tabBarLabel: 'Account',
         }}
       />
     </Tabs.Navigator>

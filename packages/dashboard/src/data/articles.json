@@ -1,0 +1,28 @@
+{
+    "data": [
+        {
+            "id": "1",
+            "title": "Article 1",
+            "image": "https://picsum.photos/700",
+            "content": "Lorem ipsum dolor sit amet consectetur adipiscing elit in taciti suscipit gravida, felis congue ad tincidunt nec habitasse erat massa potenti purus, morbi ut iaculis eget sodales quis etiam condimentum nullam vulputate. Netus penatibus etiam ultrices neque nostra augue class tincidunt dapibus libero cum odio tempor habitant, eu praesent ligula lacinia egestas eros turpis donec luctus nullam aliquet nibh orci. Hendrerit euismod massa blandit sagittis aptent mi imperdiet dictumst dui curabitur, nascetur nunc potenti vestibulum diam luctus class purus felis, phasellus primis porta per quam penatibus fringilla magnis metus."
+        },
+        {
+            "id": "2",
+            "title": "Article 2",
+            "image": "https://picsum.photos/700",
+            "content": "Lorem ipsum dolor sit amet consectetur adipiscing elit in taciti suscipit gravida, felis congue ad tincidunt nec habitasse erat massa potenti purus, morbi ut iaculis eget sodales quis etiam condimentum nullam vulputate. Netus penatibus etiam ultrices neque nostra augue class tincidunt dapibus libero cum odio tempor habitant, eu praesent ligula lacinia egestas eros turpis donec luctus nullam aliquet nibh orci. Hendrerit euismod massa blandit sagittis aptent mi imperdiet dictumst dui curabitur, nascetur nunc potenti vestibulum diam luctus class purus felis, phasellus primis porta per quam penatibus fringilla magnis metus."
+        },
+        {
+            "id": "3",
+            "title": "Article 3",
+            "image": "https://picsum.photos/700",
+            "content": "Lorem ipsum dolor sit amet consectetur adipiscing elit in taciti suscipit gravida, felis congue ad tincidunt nec habitasse erat massa potenti purus, morbi ut iaculis eget sodales quis etiam condimentum nullam vulputate. Netus penatibus etiam ultrices neque nostra augue class tincidunt dapibus libero cum odio tempor habitant, eu praesent ligula lacinia egestas eros turpis donec luctus nullam aliquet nibh orci. Hendrerit euismod massa blandit sagittis aptent mi imperdiet dictumst dui curabitur, nascetur nunc potenti vestibulum diam luctus class purus felis, phasellus primis porta per quam penatibus fringilla magnis metus."
+        },
+        {
+            "id": "4",
+            "title": "Article 4",
+            "image": "https://picsum.photos/700",
+            "content": "Lorem ipsum dolor sit amet consectetur adipiscing elit in taciti suscipit gravida, felis congue ad tincidunt nec habitasse erat massa potenti purus, morbi ut iaculis eget sodales quis etiam condimentum nullam vulputate. Netus penatibus etiam ultrices neque nostra augue class tincidunt dapibus libero cum odio tempor habitant, eu praesent ligula lacinia egestas eros turpis donec luctus nullam aliquet nibh orci. Hendrerit euismod massa blandit sagittis aptent mi imperdiet dictumst dui curabitur, nascetur nunc potenti vestibulum diam luctus class purus felis, phasellus primis porta per quam penatibus fringilla magnis metus."
+        }
+    ]
+}

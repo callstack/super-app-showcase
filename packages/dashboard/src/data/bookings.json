@@ -1,0 +1,60 @@
+{
+    "data": [
+        {
+            "id": "1",
+            "title": "Haircut",
+            "provider": "John Doe",
+            "date": "01.01.2018",
+            "time": "10:00"
+        },
+        {
+            "id": "2",
+            "title": "Coloring",
+            "provider": "John Doe",
+            "date": "02.01.2018",
+            "time": "09:00"
+        },
+        {
+            "id": "3",
+            "title": "Beard trim",
+            "provider": "John Doe",
+            "date": "03.01.2018",
+            "time": "12:00"
+        },
+        {
+            "id": "4",
+            "title": "Beard shave",
+            "provider": "John Doe",
+            "date": "04.01.2018",
+            "time": "12:00"
+        },
+        {
+            "id": "5",
+            "title": "Haircut",
+            "provider": "John Doe",
+            "date": "05.01.2018",
+            "time": "12:00"
+        },
+        {
+            "id": "6",
+            "title": "Haircut",
+            "provider": "John Doe",
+            "date": "06.01.2018",
+            "time": "12:00"
+        },
+        {
+            "id": "7",
+            "title": "Nail polish",
+            "provider": "John Doe",
+            "date": "07.01.2018",
+            "time": "12:00"
+        },
+        {
+            "id": "8",
+            "title": "Head massage",
+            "provider": "John Doe",
+            "date": "08.01.2018",
+            "time": "12:00"
+        }
+    ]
+}

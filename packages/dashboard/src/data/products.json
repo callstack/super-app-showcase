@@ -1,0 +1,32 @@
+{
+    "data": [
+        {
+            "id": "1",
+            "price": "100",
+            "name": "Shampoo",
+            "description": "Shampoo for hair",
+            "image": "https://picsum.photos/700"
+        },
+        {
+            "id": "2",
+            "price": "200",
+            "name": "Conditioner",
+            "description": "Conditioner for hair and scalp",
+            "image": "https://picsum.photos/700"
+        },
+        {
+            "id": "3",
+            "price": "300",
+            "name": "Hair Oil",
+            "description": "Hair Oil for hair growth",
+            "image": "https://picsum.photos/700"
+        },
+        {
+            "id": "4",
+            "price": "400",
+            "name": "Hair Gel",
+            "description": "Hair Gel for hair styling",
+            "image": "https://picsum.photos/700"
+        }
+    ]
+}

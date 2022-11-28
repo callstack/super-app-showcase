@@ -248,7 +248,7 @@ export default env => {
          * This is a list of modules that will be shared between remote containers.
          */
         exposes: {
-          './App': './src/App',
+          './App': './src/navigation/MainNavigator',
           './UpcomingScreen': './src/screens/UpcomingScreen',
         },
         /**

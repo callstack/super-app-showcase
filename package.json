@@ -23,7 +23,10 @@
         "run:dashboard:ios": "yarn workspace dashboard run ios",
         "run:dashboard:android": "yarn workspace dashboard run android",
         "bootstrap": "yarn workspaces foreach run bootstrap",
-        "start": "concurrently -P 'yarn:start:*(!standalone) {1}'"
+        "start": "concurrently -P 'yarn:start:*(!standalone) {1}'",
+        "typecheck": "yarn workspaces foreach run typecheck",
+        "lint": "yarn workspaces foreach run lint",
+        "test": "yarn workspaces foreach run test"
     },
     "packageManager": "yarn@3.2.1",
     "devDependencies": {

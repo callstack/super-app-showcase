@@ -54,7 +54,7 @@ Start dev server for all applications:
 ```
 yarn start
 ```
-Or start dev server for a specific application:
+Or start dev server for a specific application (host | booking | shopping | news | dashboard):
 ```
 yarn start:<app-name>
 ```
@@ -62,9 +62,30 @@ Or start dev server for a specific application as a standalone app. It's useful 
 ```
 yarn start:standalone:<app-name>
 ```
-Run iOS or Android app:
+Run iOS or Android app (ios | android):
 ```
 yarn run:<app-name>:<platform>
+```
+
+### Test
+
+Run tests for all applications:
+```
+yarn test
+```
+
+### Lint
+
+Run linter for all applications:
+```
+yarn lint
+```
+
+### Type check
+
+Run type check for all applications:
+```
+yarn typecheck
 ```
 
 ## Troubleshooting

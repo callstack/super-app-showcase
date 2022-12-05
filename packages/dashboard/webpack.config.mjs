@@ -248,7 +248,7 @@ export default env => {
          * This is a list of modules that will be shared between remote containers.
          */
         exposes: {
-          './App': './src/App',
+          './App': './src/navigation/MainNavigator',
         },
         /**
          * Shared modules are shared in the share scope.

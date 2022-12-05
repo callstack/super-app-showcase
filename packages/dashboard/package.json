@@ -21,6 +21,7 @@
     "@react-navigation/native-stack": "^6.9.2",
     "react": "18.1.0",
     "react-native": "0.70.6",
+    "react-native-calendars": "^1.1291.1",
     "react-native-paper": "5.0.0-rc.10",
     "react-native-safe-area-context": "^4.4.1",
     "react-native-screens": "^3.18.2",

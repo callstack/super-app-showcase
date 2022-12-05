@@ -1,15 +1,16 @@
 import React from 'react';
 
-import HomeScreen from '../screens/HomeScreen';
-import CalendarScreen from '../screens/CalendarScreen';
-import AccountScreen from '../screens/AccountScreen';
 import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
+import HomeNavigator from './HomeNavigator';
+import CalendarNavigator from './CalendarNavigator';
+import StatisticsNavigator from './StatisticsNavigator';
+import AccountNavigator from './AccountNavigator';
 
 export type TabsParamList = {
-  Home: undefined;
-  Calendar: undefined;
-  Statistics: undefined;
-  Account: undefined;
+  HomeNavigator: undefined;
+  CalendarNavigator: undefined;
+  StatisticsNavigator: undefined;
+  AccountNavigator: undefined;
 };
 
 const Tabs = createMaterialBottomTabNavigator<TabsParamList>();
@@ -18,30 +19,34 @@ const TabsNavigator = () => {
   return (
     <Tabs.Navigator>
       <Tabs.Screen
-        name="Home"
-        component={HomeScreen}
+        name="HomeNavigator"
+        component={HomeNavigator}
         options={{
+          tabBarLabel: 'Home',
           tabBarIcon: 'home',
         }}
       />
       <Tabs.Screen
-        name="Calendar"
-        component={CalendarScreen}
+        name="CalendarNavigator"
+        component={CalendarNavigator}
         options={{
+          tabBarLabel: 'Calendar',
           tabBarIcon: 'calendar',
         }}
       />
       <Tabs.Screen
-        name="Statistics"
-        component={CalendarScreen}
+        name="StatisticsNavigator"
+        component={StatisticsNavigator}
         options={{
+          tabBarLabel: 'Statistics',
           tabBarIcon: 'chart-box',
         }}
       />
       <Tabs.Screen
-        name="Account"
-        component={AccountScreen}
+        name="AccountNavigator"
+        component={AccountNavigator}
         options={{
+          tabBarLabel: 'Account',
           tabBarIcon: 'account',
         }}
       />

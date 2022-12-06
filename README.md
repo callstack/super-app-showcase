@@ -24,11 +24,69 @@ This template is a monorepository with a few applications using micro-frondend a
 
 ## Structure
 
-TBD
+<img src="super-app-template-scheme.png" />
+
+The super app contains 4 applications:
+- `host` - the main application, which is a super app. It contains all the micro-frontends and provides a way to navigate between them.
+- `booking` - micro-frontend for booking service.
+  Booking exposes `UpcomingAppointments` screen and `MainNavigator`. `MainNavigator` is Booking application itself. `UpcomingAppointments` screen is a screen, which is used in the super app in its own navigation.
+- `shopping` - micro-frontend for shopping service.
+  Shopping exposes `MainNavigator`. `MainNavigator` is Shopping application itself.
+- `news` - micro-frontend for news service.
+  News exposes `MainNavigator`. `MainNavigator` is News application itself. News mini app stored in separate repository https://github.com/callstack-internal/news-mini-app-template to provide the example of using remote container outside of the monorepo.
+- `dashboard` - micro-frontend for dashboard service.
+  Dashboard exposes `MainNavigator`. `MainNavigator` is Dashboard application itself.
+
+Each of the mini apps could be deployed and run as a standalone application.
 
 ## How to use
 
-TBD
+### Setup
+
+Install dependencies for all applications:
+```
+yarn bootstrap
+```
+
+### Run
+
+Start dev server for all applications:
+```
+yarn start
+```
+Or start dev server for a specific application (host | booking | shopping | news | dashboard):
+```
+yarn start:<app-name>
+```
+Or start dev server for a specific application as a standalone app. It's useful for testing micro-frontend as a standalone application:
+```
+yarn start:standalone:<app-name>
+```
+Run iOS or Android app (ios | android):
+```
+yarn run:<app-name>:<platform>
+```
+
+### Test
+
+Run tests for all applications:
+```
+yarn test
+```
+
+### Lint
+
+Run linter for all applications:
+```
+yarn lint
+```
+
+### Type check
+
+Run type check for all applications:
+```
+yarn typecheck
+```
 
 ## Troubleshooting
 

@@ -294,6 +294,11 @@ export default env => {
             eager: STANDALONE,
             requiredVersion: '6.2.4',
           },
+          'react-native-paper': {
+            singleton: true,
+            eager: true,
+            requiredVersion: '5.0.0-rc.8',
+          },
         },
       }),
     ],

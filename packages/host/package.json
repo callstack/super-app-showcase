@@ -11,6 +11,7 @@
     "start": "react-native webpack-start",
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "typecheck": "tsc",
     "bootstrap:pods": "cd ios && pod install",
     "bootstrap": "yarn && yarn bootstrap:pods"
   },

@@ -7,12 +7,29 @@
         "packages/*"
     ],
     "scripts": {
-        "host": "yarn workspace host",
-        "booking": "yarn workspace booking",
-        "shopping": "yarn workspace shopping",
-        "news": "yarn workspace news",
-        "dashboard": "yarn workspace dashboard",
-        "bootstrap": "yarn workspaces foreach run bootstrap"
+        "start:host": "yarn workspace host run start",
+        "start:booking": "yarn workspace booking run start",
+        "start:shopping": "yarn workspace shopping run start",
+        "start:dashboard": "yarn workspace dashboard run start",
+        "start:standalone:booking": "yarn workspace booking run start:standalone",
+        "start:standalone:shopping": "yarn workspace shopping run start:standalone",
+        "start:standalone:dashboard": "yarn workspace dashboard run start:standalone",
+        "run:host:ios": "yarn workspace host run ios",
+        "run:host:android": "yarn workspace host run android",
+        "run:booking:ios": "yarn workspace booking run ios",
+        "run:booking:android": "yarn workspace booking run android",
+        "run:shopping:ios": "yarn workspace shopping run ios",
+        "run:shopping:android": "yarn workspace shopping run android",
+        "run:dashboard:ios": "yarn workspace dashboard run ios",
+        "run:dashboard:android": "yarn workspace dashboard run android",
+        "bootstrap": "yarn workspaces foreach run bootstrap",
+        "start": "concurrently -P 'yarn:start:*(!standalone) {1}'",
+        "typecheck": "yarn workspaces foreach run typecheck",
+        "lint": "yarn workspaces foreach run lint",
+        "test": "yarn workspaces foreach run test"
     },
-    "packageManager": "yarn@3.2.1"
+    "packageManager": "yarn@3.2.1",
+    "devDependencies": {
+        "concurrently": "^7.6.0"
+    }
 }

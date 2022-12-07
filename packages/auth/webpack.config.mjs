@@ -2,8 +2,6 @@ import path from 'path';
 import TerserPlugin from 'terser-webpack-plugin';
 import * as Repack from '@callstack/repack';
 
-const STANDALONE = Boolean(process.env.STANDALONE);
-
 /**
  * More documentation, installation, usage, motivation and differences with Metro is available at:
  * https://github.com/callstack/repack/blob/main/README.md
@@ -232,40 +230,42 @@ export default env => {
           assetsPath,
         },
       }),
+      /**
+       * This plugin is nessessary to make Module Federation work.
+       */
       new Repack.plugins.ModuleFederationPlugin({
-        name: 'shopping',
+        /**
+         * The name of the module is used to identify the module in URLs resolver and imports.
+         */
+        name: 'auth',
+        /**
+         * This is a list of modules that will be shared between remote containers.
+         */
         exposes: {
-          './App': './src/navigation/MainNavigator',
+          './AccountScreen': './src/screens/AccountScreen',
+          './SignInScreen': './src/screens/SignInScreen',
+          './AuthProvider': './src/providers/AuthProvider',
         },
+        /**
+         * Shared modules are shared in the share scope.
+         * React, React Native and React Navigation should be provided here because there should be only one instance of these modules.
+         * Their names are used to match requested modules in this compilation.
+         */
         shared: {
           react: {
             ...Repack.Federated.SHARED_REACT,
             requiredVersion: '18.1.0',
-            eager: STANDALONE,
           },
           'react-native': {
             ...Repack.Federated.SHARED_REACT_NATIVE,
-            requiredVersion: '0.70.4',
-            eager: STANDALONE,
+            requiredVersion: '0.70.6',
           },
-          '@react-navigation/native': {
+          'react-native-paper': {
             singleton: true,
-            eager: STANDALONE,
-            requiredVersion: '6.0.13',
-          },
-          '@react-navigation/native-stack': {
-            singleton: true,
-            eager: STANDALONE,
-            requiredVersion: '6.9.1',
-          },
-          '@react-navigation/material-bottom-tabs': {
-            singleton: true,
-            eager: STANDALONE,
-            requiredVersion: '6.2.4',
+            requiredVersion: '5.0.0-rc.8',
           },
           '@react-native-async-storage/async-storage': {
             singleton: true,
-            eager: true,
             requiredVersion: '1.17.11',
           },
         },

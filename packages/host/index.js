@@ -13,6 +13,7 @@ const resolveURL = Federated.createURLResolver({
     shopping: 'http://localhost:9001/[name][ext]',
     news: `https://raw.githubusercontent.com/callstack-internal/news-mini-app-template/main/build/generated/${Platform.OS}/[name][ext]`,
     dashboard: 'http://localhost:9002/[name][ext]',
+    auth: 'http://localhost:9003/[name][ext]',
   },
 });
 

@@ -376,6 +376,8 @@ PODS:
     - React-jsi (= 0.70.4)
     - React-logger (= 0.70.4)
     - React-perflogger (= 0.70.4)
+  - RNCAsyncStorage (1.17.11):
+    - React-Core
   - RNScreens (3.18.2):
     - React-Core
     - React-RCTImage
@@ -447,6 +449,7 @@ DEPENDENCIES:
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - React-runtimeexecutor (from `../node_modules/react-native/ReactCommon/runtimeexecutor`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
+  - "RNCAsyncStorage (from `../node_modules/@react-native-async-storage/async-storage`)"
   - RNScreens (from `../node_modules/react-native-screens`)
   - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
@@ -540,6 +543,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/runtimeexecutor"
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
+  RNCAsyncStorage:
+    :path: "../node_modules/@react-native-async-storage/async-storage"
   RNScreens:
     :path: "../node_modules/react-native-screens"
   RNVectorIcons:
@@ -596,6 +601,7 @@ SPEC CHECKSUMS:
   React-RCTVibration: 0e247407238d3bd6b29d922d7b5de0404359431b
   React-runtimeexecutor: 5407e26b5aaafa9b01a08e33653255f8247e7c31
   ReactCommon: abf3605a56f98b91671d0d1327addc4ffb87af77
+  RNCAsyncStorage: 8616bd5a58af409453ea4e1b246521bb76578d60
   RNScreens: 34cc502acf1b916c582c60003dc3089fa01dc66d
   RNVectorIcons: fcc2f6cb32f5735b586e66d14103a74ce6ad61f8
   SocketRocket: fccef3f9c5cedea1353a9ef6ada904fde10d6608

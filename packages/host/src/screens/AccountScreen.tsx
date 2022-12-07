@@ -1,14 +1,17 @@
+import {Federated} from '@callstack/repack/client';
 import React from 'react';
-import {StyleSheet, View} from 'react-native';
+import Placeholder from '../components/Placeholder';
+
+const Account = React.lazy(() =>
+  Federated.importModule('auth', './AccountScreen'),
+);
 
 const AccountScreen = () => {
-  return <View style={styles.container} />;
+  return (
+    <React.Suspense fallback={<Placeholder label="Account" icon="account" />}>
+      <Account />
+    </React.Suspense>
+  );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
 
 export default AccountScreen;

@@ -11,6 +11,7 @@
         "start:booking": "yarn workspace booking run start",
         "start:shopping": "yarn workspace shopping run start",
         "start:dashboard": "yarn workspace dashboard run start",
+        "start:auth": "yarn workspace auth run start",
         "start:standalone:booking": "yarn workspace booking run start:standalone",
         "start:standalone:shopping": "yarn workspace shopping run start:standalone",
         "start:standalone:dashboard": "yarn workspace dashboard run start:standalone",

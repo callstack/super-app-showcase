@@ -283,6 +283,11 @@ export default env => {
             eager: true,
             requiredVersion: '5.0.0-rc.8',
           },
+          '@react-native-async-storage/async-storage': {
+            singleton: true,
+            eager: true,
+            requiredVersion: '1.17.11',
+          },
         },
       }),
     ],

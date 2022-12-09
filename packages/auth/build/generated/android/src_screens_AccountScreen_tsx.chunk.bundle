@@ -1,0 +1,23 @@
+(self["webpackChunkauth"] = self["webpackChunkauth"] || []).push([["src_screens_AccountScreen_tsx"],{
+
+/***/ "./src/contexts/AuthContext.ts":
+/*!*************************************!*\
+  !*** ./src/contexts/AuthContext.ts ***!
+  \*************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+var _interopRequireDefault=__webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");Object.defineProperty(exports, "__esModule", ({value:true}));exports.useAuth=exports.AuthContext=void 0;var _react=_interopRequireDefault(__webpack_require__(/*! react */ "webpack/sharing/consume/default/react/react"));var AuthContext=_react.default.createContext({signIn:function signIn(){},signOut:function signOut(){},signUp:function signUp(){}});exports.AuthContext=AuthContext;var useAuth=function useAuth(){return _react.default.useContext(AuthContext);};exports.useAuth=useAuth;
+
+/***/ }),
+
+/***/ "./src/screens/AccountScreen.tsx":
+/*!***************************************!*\
+  !*** ./src/screens/AccountScreen.tsx ***!
+  \***************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+var _interopRequireDefault=__webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");Object.defineProperty(exports, "__esModule", ({value:true}));exports["default"]=void 0;var _react=_interopRequireDefault(__webpack_require__(/*! react */ "webpack/sharing/consume/default/react/react"));var _reactNative=__webpack_require__(/*! react-native */ "webpack/sharing/consume/default/react-native/react-native");var _reactNativePaper=__webpack_require__(/*! react-native-paper */ "webpack/sharing/consume/default/react-native-paper/react-native-paper");var _AuthContext=__webpack_require__(/*! ../contexts/AuthContext */ "./src/contexts/AuthContext.ts");var _jsxRuntime=__webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");var _this=this,_jsxFileName="/Users/andrewworld/Projects/Callstack/super-app-template/packages/auth/src/screens/AccountScreen.tsx";var AccountScreen=function AccountScreen(){var _useAuth=(0,_AuthContext.useAuth)(),signOut=_useAuth.signOut;return(0,_jsxRuntime.jsx)(_reactNative.View,{style:styles.container,children:(0,_jsxRuntime.jsx)(_reactNativePaper.Button,{mode:"contained",onPress:signOut,children:"Logout"})});};var styles=_reactNative.StyleSheet.create({container:{backgroundColor:'#fff',flex:1,justifyContent:'center',alignItems:'center'}});var _default=AccountScreen;exports["default"]=_default;
+
+/***/ })
+
+}]);//# sourceMappingURL=src_screens_AccountScreen_tsx.chunk.bundle.map?platform=android

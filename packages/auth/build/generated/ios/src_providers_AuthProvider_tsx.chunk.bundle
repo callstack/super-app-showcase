@@ -1,0 +1,33 @@
+(self["webpackChunkauth"] = self["webpackChunkauth"] || []).push([["src_providers_AuthProvider_tsx"],{
+
+/***/ "./src/contexts/AuthContext.ts":
+/*!*************************************!*\
+  !*** ./src/contexts/AuthContext.ts ***!
+  \*************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+var _interopRequireDefault=__webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");Object.defineProperty(exports, "__esModule", ({value:true}));exports.useAuth=exports.AuthContext=void 0;var _react=_interopRequireDefault(__webpack_require__(/*! react */ "webpack/sharing/consume/default/react/react"));var AuthContext=_react.default.createContext({signIn:function signIn(){},signOut:function signOut(){},signUp:function signUp(){}});exports.AuthContext=AuthContext;var useAuth=function useAuth(){return _react.default.useContext(AuthContext);};exports.useAuth=useAuth;
+
+/***/ }),
+
+/***/ "./src/providers/AuthProvider.tsx":
+/*!****************************************!*\
+  !*** ./src/providers/AuthProvider.tsx ***!
+  \****************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+var _interopRequireDefault=__webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");Object.defineProperty(exports, "__esModule", ({value:true}));exports["default"]=void 0;var _asyncToGenerator2=_interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ "./node_modules/@babel/runtime/helpers/asyncToGenerator.js"));var _slicedToArray2=_interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "./node_modules/@babel/runtime/helpers/slicedToArray.js"));var _react=_interopRequireDefault(__webpack_require__(/*! react */ "webpack/sharing/consume/default/react/react"));var _AuthService=_interopRequireDefault(__webpack_require__(/*! ../services/AuthService */ "./src/services/AuthService.ts"));var _AuthContext=__webpack_require__(/*! ../contexts/AuthContext */ "./src/contexts/AuthContext.ts");var _jsxRuntime=__webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");var _this=this,_jsxFileName="/Users/andrewworld/Projects/Callstack/super-app-template/packages/auth/src/providers/AuthProvider.tsx";var ActionTypes;(function(ActionTypes){ActionTypes["RESTORE_TOKEN"]="RESTORE_TOKEN";ActionTypes["SIGN_IN"]="SIGN_IN";ActionTypes["SIGN_OUT"]="SIGN_OUT";})(ActionTypes||(ActionTypes={}));var reducer=function reducer(prevState,action){switch(action.type){case ActionTypes.RESTORE_TOKEN:return Object.assign({},prevState,{isSignout:action.payload,isLoading:false});case ActionTypes.SIGN_IN:return Object.assign({},prevState,{isSignout:false});case ActionTypes.SIGN_OUT:return Object.assign({},prevState,{isSignout:true});default:return prevState;}};var AuthProvider=function AuthProvider(_ref){var children=_ref.children;var _React$useReducer=_react.default.useReducer(reducer,{isLoading:true,isSignout:true}),_React$useReducer2=(0,_slicedToArray2.default)(_React$useReducer,2),state=_React$useReducer2[0],dispatch=_React$useReducer2[1];var authContext=_react.default.useMemo(function(){return{signIn:function(){var _signIn=(0,_asyncToGenerator2.default)(function*(){try{yield _AuthService.default.shared.setCredentials('dummy-auth-token');}catch(e){}dispatch({type:ActionTypes.SIGN_IN});});function signIn(){return _signIn.apply(this,arguments);}return signIn;}(),signOut:function(){var _signOut=(0,_asyncToGenerator2.default)(function*(){try{yield _AuthService.default.shared.removeCredentials();}catch(e){}dispatch({type:ActionTypes.SIGN_OUT});});function signOut(){return _signOut.apply(this,arguments);}return signOut;}(),signUp:function(){var _signUp=(0,_asyncToGenerator2.default)(function*(){try{yield _AuthService.default.shared.setCredentials('dummy-auth-token');}catch(e){}dispatch({type:ActionTypes.SIGN_IN});});function signUp(){return _signUp.apply(this,arguments);}return signUp;}()};},[]);_react.default.useEffect(function(){var restoreToken=function(){var _ref2=(0,_asyncToGenerator2.default)(function*(){var userToken;try{userToken=yield _AuthService.default.shared.getCredentials();}catch(e){}dispatch({type:ActionTypes.RESTORE_TOKEN,payload:!userToken});});return function restoreToken(){return _ref2.apply(this,arguments);};}();restoreToken();},[]);return(0,_jsxRuntime.jsx)(_AuthContext.AuthContext.Provider,{value:authContext,children:children(state)});};var _default=AuthProvider;exports["default"]=_default;
+
+/***/ }),
+
+/***/ "./src/services/AuthService.ts":
+/*!*************************************!*\
+  !*** ./src/services/AuthService.ts ***!
+  \*************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+var _interopRequireDefault=__webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");Object.defineProperty(exports, "__esModule", ({value:true}));exports["default"]=void 0;var _classCallCheck2=_interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ "./node_modules/@babel/runtime/helpers/classCallCheck.js"));var _createClass2=_interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/createClass */ "./node_modules/@babel/runtime/helpers/createClass.js"));var _asyncStorage=_interopRequireDefault(__webpack_require__(/*! @react-native-async-storage/async-storage */ "webpack/sharing/consume/default/@react-native-async-storage/async-storage/@react-native-async-storage/async-storage"));var AuthService=function(){function AuthService(){(0,_classCallCheck2.default)(this,AuthService);this.TOKEN_KEY='token';}(0,_createClass2.default)(AuthService,[{key:"getCredentials",value:function getCredentials(){return _asyncStorage.default.getItem(this.TOKEN_KEY);}},{key:"setCredentials",value:function setCredentials(token){return _asyncStorage.default.setItem(this.TOKEN_KEY,token);}},{key:"removeCredentials",value:function removeCredentials(){return _asyncStorage.default.removeItem(this.TOKEN_KEY);}}]);return AuthService;}();AuthService.shared=new AuthService();var _default=AuthService;exports["default"]=_default;
+
+/***/ })
+
+}]);//# sourceMappingURL=src_providers_AuthProvider_tsx.chunk.bundle.map?platform=ios

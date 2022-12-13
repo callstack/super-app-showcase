@@ -36,6 +36,7 @@ The super app contains 4 applications:
   News exposes `MainNavigator`. `MainNavigator` is News application itself. News mini app stored in separate repository https://github.com/callstack-internal/news-mini-app-template to provide the example of using remote container outside of the monorepo.
 - `dashboard` - micro-frontend for dashboard service.
   Dashboard exposes `MainNavigator`. `MainNavigator` is Dashboard application itself.
+- `auth` - module that is used by other modules to provide authentication and authorization flow and UI.
 
 Each of the mini apps could be deployed and run as a standalone application.
 

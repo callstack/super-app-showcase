@@ -28,6 +28,7 @@ This template is a monorepository with a few applications using micro-frondend a
 
 The super app contains 4 applications:
 - `host` - the main application, which is a super app. It contains all the micro-frontends and provides a way to navigate between them.
+- `shell` - the blueprint of `host` application with shared dependencies. It could be shared across all the teams, since there no necessary secrets available in this version of `host` application.
 - `booking` - micro-frontend for booking service.
   Booking exposes `UpcomingAppointments` screen and `MainNavigator`. `MainNavigator` is Booking application itself. `UpcomingAppointments` screen is a screen, which is used in the super app in its own navigation.
 - `shopping` - micro-frontend for shopping service.
@@ -51,7 +52,7 @@ yarn bootstrap
 
 ### Run
 
-Start dev server for all applications:
+Start dev server for host and mini applications:
 ```
 yarn start
 ```
@@ -67,6 +68,8 @@ Run iOS or Android app (ios | android):
 ```
 yarn run:<app-name>:<platform>
 ```
+
+There is no ```start:shell``` script to avoid running shell and host app concurrently. It's not possible to run shell and host app concurrently, since they use the same port. If you want to run shell app, you should run ```yarn start:standalone:shell``` and then run each mini application bundler you want to use in shell application.
 
 ### Test
 

@@ -69,7 +69,7 @@ Run iOS or Android app (ios | android):
 yarn run:<app-name>:<platform>
 ```
 
-There is no ```start:shell``` script to avoid running shell and host app concurrently. It's not possible to run shell and host app concurrently, since they use the same port. If you want to run shell app, you should run ```yarn start:standalone:shell``` and then run each mini application bundler you want to use in shell application.
+There is no `start:shell` script to avoid running shell and host app concurrently. It's not possible to run shell and host app concurrently, since they use the same port. If you want to run shell app, you should run `yarn start:standalone:shell` and then run each mini application bundler you want to use in shell application.
 
 ### Test
 

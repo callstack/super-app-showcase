@@ -4,14 +4,14 @@ This is mini application for booking service. Booking exposes `UpcomingAppointme
 
 ## Setup
 
-Install dependencies for all applications in root directory in root directory:
+Install dependencies for all applications in root directory of this monorepo:
 ```
 yarn bootstrap
 ```
 
 ### Run
 
-Start dev server for all applications in root directory if you need to work as a part of host application. Booking application server will run on 9000 port:
+Start dev server for all applications in root directory of this monorepo if you need to work as a part of host application. Booking application server will run on 9000 port:
 ```
 yarn start
 ```

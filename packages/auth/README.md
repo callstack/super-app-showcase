@@ -18,14 +18,14 @@ Each of these options needs to be configured in News mini app. This could be don
 
 ## Setup
 
-Install dependencies for all applications in root directory in root directory:
+Install dependencies for all applications in root directory of this monorepo:
 ```
 yarn bootstrap
 ```
 
 ### Run
 
-Start dev server for all applications in root directory since Auth Module could not be run as a standalone app. Auth Module server will run on 9003 port:
+Start dev server for all applications in root directory of this monorepo since Auth Module could not be run as a standalone app. Auth Module server will run on 9003 port:
 ```
 yarn start
 ```

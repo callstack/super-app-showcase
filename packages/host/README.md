@@ -4,14 +4,14 @@ This is the main application, which is a super app. It contains all the micro-fr
 
 ## Setup
 
-Install dependencies for all applications in root directory in root directory:
+Install dependencies for all applications in root directory of this monorepo:
 ```
 yarn bootstrap
 ```
 
 ### Run
 
-Start dev server for all applications in root directory:
+Start dev server for all applications in root directory of this monorepo:
 ```
 yarn start
 ```

@@ -13,7 +13,7 @@ const SplashScreen = () => {
         name="cloud"
       />
       <Text style={styles.text}>
-        Host application is loading. Please wait...
+        Shell application is loading. Please wait...
       </Text>
       <ProgressBar
         style={styles.progress}

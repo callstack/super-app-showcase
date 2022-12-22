@@ -6,18 +6,22 @@ import {ScriptManager, Script, Federated} from '@callstack/repack/client';
 import {AppRegistry, Platform} from 'react-native';
 import App from './src/App';
 import {name as appName} from './app.json';
+import {version as appVersion} from './package.json';
 
-const resolveURL = Federated.createURLResolver({
-  containers: {
-    booking: 'http://localhost:9000/[name][ext]',
-    shopping: 'http://localhost:9001/[name][ext]',
-    news: `https://raw.githubusercontent.com/callstack-internal/news-mini-app-template/main/build/generated/${Platform.OS}/[name][ext]`,
-    dashboard: 'http://localhost:9002/[name][ext]',
-    auth: 'http://localhost:9003/[name][ext]',
-  },
-});
+const getContainersURL = (version, platform) => {
+  return `http://localhost:3000/${appName}?platform=${platform}&appVersion=${version}`;
+};
 
 ScriptManager.shared.addResolver(async (scriptId, caller) => {
+  const containersURL = getContainersURL(appVersion, Platform.OS);
+  const response = await fetch(containersURL);
+
+  const containers = await response.json();
+
+  const resolveURL = Federated.createURLResolver({
+    containers,
+  });
+
   let url;
   if (caller === 'main') {
     url = Script.getDevServerURL(scriptId);

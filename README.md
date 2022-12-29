@@ -15,50 +15,52 @@
 [![Sponsored by Callstack][callstack-badge]][callstack]
 
 ## The problem
-Sometimes small application could grow to super app, which means that it provides multiple services like payments, messaging, social network, booking, news, etc. And it's not easy to maintain it. It's hard to keep the codebase clean and to keep the app fast. The application grows in size and not all users want to keep a huge application just for a few sevices. So, we need to split the app into smaller parts and make it possible to install only the services that user needs. But somebody want all the services in one place. So super app still should be available as one application.
+Sometimes small app could grow to super app, which means that it provides multiple services like payments, messaging, social network, booking, news, etc. And it's not easy to maintain it. It's hard to keep the codebase clean and to keep the app fast. The app grows in size and not all users want to keep a huge app just for a few sevices. So, we need to split the app into smaller parts and make it possible to install only the services that user needs. But somebody want all the services in one place. So super app still should be available as one app.
 There are a few options to solve this problem:
 - Split the app into several smaller apps, keep super app as well and move reusabale parts into libraries. But even small changes in a library could lead to a lot of work to update all the apps and redeploy all of them.
-- Use a monorepository. It's a good option, but it's not always easy to set up and maintain monorepo. Also it is not so easy to divide work on the project between several team independently or provide a way for external developers to contribute only in one part of the repo or one certian application.
+- Use a monorepository. It's a good option, but it's not always easy to set up and maintain monorepo. Also it is not so easy to divide work on the project between several team independently or provide a way for external developers to contribute only in one part of the repo or one certian app.
 ## The solution
-This template is a monorepository with a few applications using micro-frondend architecture. It's easy to set up and maintain. These independent applications could be deployed as separate apps or as a part of super app. Developer could move these micro-frontends to separate repositories and deploy them as separate apps. That helps to divide work on the project between several team independently or provide a way for external developers to contribute only in one part of the repo or one certian application. The difference between classic monorepo and this template is runtime dependencies. This means no need to redeploy any of micro-frontends if you change something in the library. It's enough to update micro-frondtend and all the apps will use the latest version of the it.
+This template is a monorepository with a few apps using micro-frondend architecture. It's easy to set up and maintain. These independent apps could be deployed as separate apps or as a part of super app. Developer could move these micro-frontends to separate repositories and deploy them as separate apps. That helps to divide work on the project between several team independently or provide a way for external developers to contribute only in one part of the repo or one certian app. The difference between classic monorepo and this template is runtime dependencies. This means no need to redeploy any of micro-frontends if you change something in the library. It's enough to update micro-frondtend and all the apps will use the latest version of the it.
 
 ## Structure
 
 <img src="super-app-template-scheme.png" />
 
-The super app contains 4 applications:
-- `host` - the main application, which is a super app. It contains all the micro-frontends and provides a way to navigate between them.
+The super app contains 4 apps:
+- `host` - the main app, which is a super app. It contains all the micro-frontends and provides a way to navigate between them.
+- `shell` - the blueprint of `host` app with shared dependencies. It could be shared across all the teams, since there no necessary secrets available in this version of `host` app.
 - `booking` - micro-frontend for booking service.
-  Booking exposes `UpcomingAppointments` screen and `MainNavigator`. `MainNavigator` is Booking application itself. `UpcomingAppointments` screen is a screen, which is used in the super app in its own navigation.
+  Booking exposes `UpcomingAppointments` screen and `MainNavigator`. `MainNavigator` is Booking app itself. `UpcomingAppointments` screen is a screen, which is used in the super app in its own navigation.
 - `shopping` - micro-frontend for shopping service.
-  Shopping exposes `MainNavigator`. `MainNavigator` is Shopping application itself.
+  Shopping exposes `MainNavigator`. `MainNavigator` is Shopping app itself.
 - `news` - micro-frontend for news service.
-  News exposes `MainNavigator`. `MainNavigator` is News application itself. News mini app stored in separate repository https://github.com/callstack-internal/news-mini-app-template to provide the example of using remote container outside of the monorepo.
+  News exposes `MainNavigator`. `MainNavigator` is News app itself. News mini app stored in separate repository https://github.com/callstack-internal/news-mini-app-template to provide the example of using remote container outside of the monorepo.
 - `dashboard` - micro-frontend for dashboard service.
-  Dashboard exposes `MainNavigator`. `MainNavigator` is Dashboard application itself.
+  Dashboard exposes `MainNavigator`. `MainNavigator` is Dashboard app itself.
+- `auth` - module that is used by other modules to provide authentication and authorization flow and UI.
 
-Each of the mini apps could be deployed and run as a standalone application.
+Each of the mini apps could be deployed and run as a standalone app.
 
 ## How to use
 
 ### Setup
 
-Install dependencies for all applications:
+Install dependencies for all apps:
 ```
 yarn bootstrap
 ```
 
 ### Run
 
-Start dev server for all applications:
+Start dev server for host and mini apps:
 ```
 yarn start
 ```
-Or start dev server for a specific application (host | booking | shopping | news | dashboard):
+Or start dev server for a specific app (host | booking | shopping | news | dashboard):
 ```
 yarn start:<app-name>
 ```
-Or start dev server for a specific application as a standalone app. It's useful for testing micro-frontend as a standalone application:
+Or start dev server for a specific app as a standalone app. It's useful for testing micro-frontend as a standalone app:
 ```
 yarn start:standalone:<app-name>
 ```
@@ -67,23 +69,25 @@ Run iOS or Android app (ios | android):
 yarn run:<app-name>:<platform>
 ```
 
+There is no `start:shell` script to avoid running shell and host app concurrently. It's not possible to run shell and host app concurrently, since they use the same port. If you want to run shell app, you should run `yarn start:standalone:shell` and then run each mini app bundler you want to use in shell app.
+
 ### Test
 
-Run tests for all applications:
+Run tests for all apps:
 ```
 yarn test
 ```
 
 ### Lint
 
-Run linter for all applications:
+Run linter for all apps:
 ```
 yarn lint
 ```
 
 ### Type check
 
-Run type check for all applications:
+Run type check for all apps:
 ```
 yarn typecheck
 ```

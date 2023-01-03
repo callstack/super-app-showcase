@@ -1119,6 +1119,40 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@callstack/repack@file:../../../Repack/packages/repack::locator=host%40workspace%3Apackages%2Fhost":
+  version: 3.0.1
+  resolution: "@callstack/repack@file:../../../Repack/packages/repack#../../../Repack/packages/repack::hash=548a01&locator=host%40workspace%3Apackages%2Fhost"
+  dependencies:
+    "@callstack/repack-dev-server": ^1.0.0
+    "@pmmmwh/react-refresh-webpack-plugin": ^0.5.7
+    colorette: ^1.2.2
+    dedent: ^0.7.0
+    escape-string-regexp: ^4.0.0
+    events: ^3.3.0
+    execa: ^5.0.0
+    fs-extra: ^10.0.0
+    hash.js: ^1.1.7
+    hasha: ^5.2.2
+    image-size: ^0.9.3
+    loader-utils: ^2.0.0
+    lodash.throttle: ^4.1.1
+    memfs: ^3.4.4
+    mime-types: ^2.1.35
+    pretty-format: ^26.6.2
+    react-refresh: ^0.14.0
+    schema-utils: ^3.0.0
+    shallowequal: ^1.1.0
+    string.prototype.replaceall: ^1.0.6
+    tapable: ^2.1.1
+  peerDependencies:
+    "@react-native-community/cli": "*"
+    "@react-native-community/cli-types": "*"
+    react-native: ">=0.63"
+    webpack: 5.x
+  checksum: baacdb0af6ef710779df11cfa48cf55942ad02f88ecaa4ba1d0c96c06225f749311c3ee44e2472459097c90bdc4f83101644a769df8e0726539a2352347b8325
+  languageName: node
+  linkType: hard
+
 "@callstack/repack@npm:^3.0.0":
   version: 3.0.0
   resolution: "@callstack/repack@npm:3.0.0"
@@ -6283,7 +6317,7 @@ __metadata:
   dependencies:
     "@babel/core": ^7.12.9
     "@babel/runtime": ^7.12.5
-    "@callstack/repack": ^3.0.0
+    "@callstack/repack": ../../../Repack/packages/repack
     "@react-native-async-storage/async-storage": ^1.17.11
     "@react-native-community/eslint-config": ^2.0.0
     "@react-navigation/material-bottom-tabs": ^6.2.4

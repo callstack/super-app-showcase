@@ -12,7 +12,7 @@
         "start:shopping": "yarn workspace shopping run start",
         "start:dashboard": "yarn workspace dashboard run start",
         "start:auth": "yarn workspace auth run start",
-        "start:catalog": "yarn workspace catalog run start",
+        "start:catalog": "yarn workspace catalog-server run start",
         "start:standalone:shell": "yarn workspace shell run start",
         "start:standalone:booking": "yarn workspace booking run start:standalone",
         "start:standalone:shopping": "yarn workspace shopping run start:standalone",

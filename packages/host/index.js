@@ -15,9 +15,10 @@ ScriptManager.shared.addResolver(async (scriptId, caller) => {
     platform: Platform.OS,
     appName,
   });
-  const response = await fetch(containersURL);
 
-  const containers = await response.json();
+  const containersResponse = await fetch(containersURL);
+
+  const containers = await containersResponse.json();
 
   const resolveURL = Federated.createURLResolver({
     containers,
@@ -37,9 +38,8 @@ ScriptManager.shared.addResolver(async (scriptId, caller) => {
   return {
     url,
     cache: false, // For development
-    query: {
-      platform: Platform.OS,
-    },
+    query: {platform: Platform.OS},
+    verifyScriptSignature: 'strict',
   };
 });
 

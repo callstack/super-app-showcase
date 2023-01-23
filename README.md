@@ -82,6 +82,16 @@ Or start dev server for a specific app as a standalone app. It's useful for test
 yarn start:standalone:<app-name>
 ```
 
+Running the mini app as a standalone requires running the catalog server and auth module.
+
+```
+yarn start:catalog
+```
+
+```
+yarn start:auth
+```
+
 Run iOS or Android app (ios | android):
 
 ```

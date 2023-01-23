@@ -15,11 +15,15 @@
 [![Sponsored by Callstack][callstack-badge]][callstack]
 
 ## The problem
+
 Sometimes small app could grow to super app, which means that it provides multiple services like payments, messaging, social network, booking, news, etc. And it's not easy to maintain it. It's hard to keep the codebase clean and to keep the app fast. The app grows in size and not all users want to keep a huge app just for a few sevices. So, we need to split the app into smaller parts and make it possible to install only the services that user needs. But somebody want all the services in one place. So super app still should be available as one app.
 There are a few options to solve this problem:
+
 - Split the app into several smaller apps, keep super app as well and move reusabale parts into libraries. But even small changes in a library could lead to a lot of work to update all the apps and redeploy all of them.
 - Use a monorepository. It's a good option, but it's not always easy to set up and maintain monorepo. Also it is not so easy to divide work on the project between several team independently or provide a way for external developers to contribute only in one part of the repo or one certian app.
+
 ## The solution
+
 This template is a monorepository with a few apps using micro-frondend architecture. It's easy to set up and maintain. These independent apps could be deployed as separate apps or as a part of super app. Developer could move these micro-frontends to separate repositories and deploy them as separate apps. That helps to divide work on the project between several team independently or provide a way for external developers to contribute only in one part of the repo or one certian app. The difference between classic monorepo and this template is runtime dependencies. This means no need to redeploy any of micro-frontends if you change something in the library. It's enough to update micro-frondtend and all the apps will use the latest version of the it.
 
 ## Structure
@@ -27,6 +31,7 @@ This template is a monorepository with a few apps using micro-frondend architect
 <img src="super-app-template-scheme.png" />
 
 The super app contains 4 apps:
+
 - `host` - the main app, which is a super app. It contains all the micro-frontends and provides a way to navigate between them.
 - `shell` - the blueprint of `host` app with shared dependencies. It could be shared across all the teams, since there no necessary secrets available in this version of `host` app.
 - `booking` - micro-frontend for booking service.
@@ -46,6 +51,7 @@ Each of the mini apps could be deployed and run as a standalone app.
 ### Setup
 
 Install dependencies for all apps:
+
 ```
 yarn bootstrap
 ```
@@ -53,18 +59,41 @@ yarn bootstrap
 ### Run
 
 Start dev server for host and mini apps:
+
 ```
 yarn start
 ```
-Or start dev server for a specific app (host | booking | shopping | news | dashboard):
+
+Or start dev server for a specific app ([host](./packages/host/README.md) | [booking](./packages/booking/README.md) | [shopping](./packages/shopping/README.md) | [news](https://github.com/callstack/news-mini-app-template) | [dashboard](./packages/dashboard/README.md)):
+
 ```
 yarn start:<app-name>
 ```
+
 Or start dev server for a specific app as a standalone app. It's useful for testing micro-frontend as a standalone app:
+
 ```
 yarn start:standalone:<app-name>
 ```
+
+Running the mini app as a standalone requires running the [catalog-server](./packages/catalog-server/README.md) and [auth module](./packages/auth/README.md):
+
+```
+yarn start:catalog
+```
+
+```
+yarn start:auth
+```
+
+Or run commands concurrently:
+
+```
+yarn concurrently -P "yarn start:catalog" "yarn start:auth"
+```
+
 Run iOS or Android app (ios | android):
+
 ```
 yarn run:<app-name>:<platform>
 ```
@@ -74,6 +103,7 @@ There is no `start:shell` script to avoid running shell and host app concurrentl
 ### Test
 
 Run tests for all apps:
+
 ```
 yarn test
 ```
@@ -81,6 +111,7 @@ yarn test
 ### Lint
 
 Run linter for all apps:
+
 ```
 yarn lint
 ```
@@ -88,6 +119,7 @@ yarn lint
 ### Type check
 
 Run type check for all apps:
+
 ```
 yarn typecheck
 ```
@@ -95,6 +127,7 @@ yarn typecheck
 ## Troubleshooting
 
 TBD
+
 ## Documentation
 
 TBD

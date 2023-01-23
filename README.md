@@ -82,7 +82,7 @@ Or start dev server for a specific app as a standalone app. It's useful for test
 yarn start:standalone:<app-name>
 ```
 
-Running the mini app as a standalone requires running the catalog server and auth module.
+Running the mini app as a standalone requires running the [catalog-server](./packages/catalog-server/README.md) and [auth module](./packages/auth/README.md).
 
 ```
 yarn start:catalog

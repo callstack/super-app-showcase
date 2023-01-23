@@ -29,7 +29,7 @@
         "run:dashboard:android": "yarn workspace dashboard run android",
         "bundle:auth:ios": "yarn workspace auth run bundle:ios",
         "bundle:auth:android": "yarn workspace auth run bundle:android",
-        "bootstrap": "yarn workspaces foreach run bootstrap",
+        "bootstrap": "yarn && yarn workspaces foreach run bootstrap",
         "start": "concurrently -P 'yarn:start:*(!standalone) {1}'",
         "typecheck": "yarn workspaces foreach run typecheck",
         "lint": "yarn workspaces foreach run lint",

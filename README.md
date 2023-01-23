@@ -50,6 +50,12 @@ Each of the mini apps could be deployed and run as a standalone app.
 
 ### Setup
 
+Install dependencies for template:
+
+```
+yarn
+```
+
 Install dependencies for all apps:
 
 ```

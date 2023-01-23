@@ -64,7 +64,7 @@ Start dev server for host and mini apps:
 yarn start
 ```
 
-Or start dev server for a specific app (host | booking | shopping | news | dashboard):
+Or start dev server for a specific app ([host](./packages/host/README.md) | [booking](./packages/booking/README.md) | [shopping](./packages/shopping/README.md) | [news](https://github.com/callstack/news-mini-app-template) | [dashboard](./packages/dashboard/README.md)):
 
 ```
 yarn start:<app-name>

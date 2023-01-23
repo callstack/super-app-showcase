@@ -11,6 +11,7 @@ This is not a standalone module. It is a module that is used by other modules to
 All the UI component are tighly coupled with the `AuthProvider` and could not be used without it. So please use `AuthProvider` to wrap your app and use the UI components as needed.
 
 News mini app is stored in another repository https://github.com/callstack-internal/news-mini-app-template, so there are two ways to use Auth Module in News mini app:
+
 - Generate Auth Module bundle and deploy it to the remote server and use it from the remote server in News mini apps as a remote container
 - Run Auth Module server and use it from the localhost in News mini apps as a remote container
 
@@ -19,6 +20,7 @@ Each of these options needs to be configured in News mini app. This could be don
 ## Setup
 
 Install dependencies for all apps in root directory of this monorepo:
+
 ```
 yarn bootstrap
 ```
@@ -26,10 +28,13 @@ yarn bootstrap
 ### Run
 
 Start dev server for all apps in root directory of this monorepo since Auth Module could not be run as a standalone app. Auth Module server will run on 9003 port:
+
 ```
 yarn start
 ```
+
 Or start dev server for Auth Module only:
+
 ```
 yarn start:auth
 ```
@@ -37,6 +42,7 @@ yarn start:auth
 ### Generate bundle files
 
 Generate iOS or Android bundle files (ios | android):
+
 ```
 yarn build:auth:<platform>
 ```

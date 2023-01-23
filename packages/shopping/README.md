@@ -5,6 +5,7 @@ This is mini app for shopping service. Shopping exposes `MainNavigator`. `MainNa
 ## Setup
 
 Install dependencies for all apps in root directory of this monorepo:
+
 ```
 yarn bootstrap
 ```
@@ -12,14 +13,19 @@ yarn bootstrap
 ### Run
 
 Start dev server for all apps in root directory of this monorepo if you need to work as a part of host app. Shopping app server will run on 9001 port:
+
 ```
 yarn start
 ```
+
 Or start dev server for Shopping app as a standalone app:
+
 ```
 yarn start:standalone:shopping
 ```
+
 Run iOS or Android app (ios | android):
+
 ```
 yarn run:shopping:<platform>
 ```

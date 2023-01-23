@@ -5,6 +5,7 @@ This is the main app, which is a super app. It contains all the micro-frontends 
 ## Setup
 
 Install dependencies for all apps in root directory of this monorepo:
+
 ```
 yarn bootstrap
 ```
@@ -12,14 +13,19 @@ yarn bootstrap
 ### Run
 
 Start dev server for all apps in root directory of this monorepo:
+
 ```
 yarn start
 ```
+
 Or start dev server for Host app:
+
 ```
 yarn start:host
 ```
+
 Run iOS or Android app (ios | android):
+
 ```
 yarn run:host:<platform>
 ```

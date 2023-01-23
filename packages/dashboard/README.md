@@ -5,6 +5,7 @@ This is mini app for handling business management flow. Dashboard exposes `MainN
 ## Setup
 
 Install dependencies for all apps in root directory of this monorepo:
+
 ```
 yarn bootstrap
 ```
@@ -12,14 +13,19 @@ yarn bootstrap
 ### Run
 
 Start dev server for all apps in root directory of this monorepo if you need to work as a part of host app. Dashboard app server will run on 9002 port:
+
 ```
 yarn start
 ```
+
 Or start dev server for Dashboard app as a standalone app:
+
 ```
 yarn start:standalone:dashboard
 ```
+
 Run iOS or Android app (ios | android):
+
 ```
 yarn run:dashboard:<platform>
 ```

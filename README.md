@@ -138,13 +138,18 @@ Read the [contribution guidelines](/CONTRIBUTING.md) before contributing.
 
 ## Screenshots
 
-![Host Main Screen](images/host-main-screen.png) ![Mini Apps](images/host.gif) ![Booking Standalone App](images/booking.gif)
-
-<div style="display: flex; justify-content: space-between;">
-  <img src="images/host-main-screen.png" alt="host-main-screen" style="width: 48%;">
-  <img src="images/host.gif" alt="host" style="width: 48%;">
-  <img src="images/booking.gif" alt="booking" style="width: 48%;">
-</div>
+<table>
+  <tr>
+    <td>Host Main Screen</td>
+    <td>Mini Apps</td>
+    <td>Booking Standalone App</td>
+  </tr>
+  <tr>
+    <td><img src="images/host-main-screen.png" alt="host-main-screen" width="400"></td>
+    <td><img src="images/host.gif" alt="host" width="400"></td>
+    <td><img src="images/booking.gif" alt="booking" width="400"></td>
+  </tr>  
+</table>
 
 ## Made with ❤️ at Callstack
 

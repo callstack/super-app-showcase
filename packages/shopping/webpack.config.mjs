@@ -1,6 +1,7 @@
+import * as Repack from '@callstack/repack';
 import path from 'path';
 import TerserPlugin from 'terser-webpack-plugin';
-import * as Repack from '@callstack/repack';
+import {deps} from '../../shared/dependencies.mjs';
 
 const STANDALONE = Boolean(process.env.STANDALONE);
 
@@ -237,38 +238,7 @@ export default env => {
         exposes: {
           './App': './src/navigation/MainNavigator',
         },
-        shared: {
-          react: {
-            ...Repack.Federated.SHARED_REACT,
-            requiredVersion: '18.1.0',
-            eager: STANDALONE,
-          },
-          'react-native': {
-            ...Repack.Federated.SHARED_REACT_NATIVE,
-            requiredVersion: '0.70.4',
-            eager: STANDALONE,
-          },
-          '@react-navigation/native': {
-            singleton: true,
-            eager: STANDALONE,
-            requiredVersion: '6.0.13',
-          },
-          '@react-navigation/native-stack': {
-            singleton: true,
-            eager: STANDALONE,
-            requiredVersion: '6.9.1',
-          },
-          '@react-navigation/material-bottom-tabs': {
-            singleton: true,
-            eager: STANDALONE,
-            requiredVersion: '6.2.4',
-          },
-          '@react-native-async-storage/async-storage': {
-            singleton: true,
-            eager: true,
-            requiredVersion: '1.17.11',
-          },
-        },
+        shared: deps,
       }),
     ],
   };

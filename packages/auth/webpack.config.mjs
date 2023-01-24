@@ -1,6 +1,6 @@
+import * as Repack from '@callstack/repack';
 import path from 'path';
 import TerserPlugin from 'terser-webpack-plugin';
-import * as Repack from '@callstack/repack';
 
 /**
  * More documentation, installation, usage, motivation and differences with Metro is available at:
@@ -262,7 +262,7 @@ export default env => {
           },
           'react-native-paper': {
             singleton: true,
-            requiredVersion: '5.0.0-rc.8',
+            requiredVersion: '5.0.0-rc.10',
           },
           '@react-native-async-storage/async-storage': {
             singleton: true,

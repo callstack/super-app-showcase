@@ -1,6 +1,7 @@
 import * as Repack from '@callstack/repack';
 import path from 'path';
 import TerserPlugin from 'terser-webpack-plugin';
+import {deps} from '../../shared/dependencies.mjs';
 
 /**
  * This env variable shows if bundle is standalone and eager should be enabled in Module federation Plugin config.
@@ -256,56 +257,7 @@ export default env => {
          * React, React Native and React Navigation should be provided here because there should be only one instance of these modules.
          * Their names are used to match requested modules in this compilation.
          */
-        shared: {
-          react: {
-            ...Repack.Federated.SHARED_REACT,
-            requiredVersion: '18.1.0',
-            eager: STANDALONE,
-          },
-          'react-native': {
-            ...Repack.Federated.SHARED_REACT_NATIVE,
-            requiredVersion: '0.70.6',
-            eager: STANDALONE,
-          },
-          '@react-navigation/native': {
-            /**
-             * singleton means that only one version of the module is loaded.
-             */
-            singleton: true,
-            /**
-             * eager means that the module is added into the initial bundle and will not be loaded later.
-             * All shared module in the host app should be eager. In remote containers it depends on build proposes.
-             * If bundle should work as a standalone application, then it should be eager.
-             * Here is STANDALONE env variable shows if bundle is standalone and eager should be enabled.
-             */
-            eager: STANDALONE,
-            /**
-             * requiredVersion is used to match requested modules in bundle.
-             * It's recommended to use the same version as in the host app.
-             */
-            requiredVersion: '6.0.14',
-          },
-          '@react-navigation/native-stack': {
-            singleton: true,
-            eager: STANDALONE,
-            requiredVersion: '6.9.2',
-          },
-          '@react-navigation/material-bottom-tabs': {
-            singleton: true,
-            eager: STANDALONE,
-            requiredVersion: '6.2.5',
-          },
-          'react-native-paper': {
-            singleton: true,
-            eager: true,
-            requiredVersion: '5.0.0-rc.10',
-          },
-          '@react-native-async-storage/async-storage': {
-            singleton: true,
-            eager: true,
-            requiredVersion: '1.17.11',
-          },
-        },
+        shared: deps,
       }),
     ],
   };

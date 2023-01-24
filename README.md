@@ -26,6 +26,21 @@ There are a few options to solve this problem:
 
 This template is a monorepository with a few apps using micro-frondend architecture. It's easy to set up and maintain. These independent apps could be deployed as separate apps or as a part of super app. Developer could move these micro-frontends to separate repositories and deploy them as separate apps. That helps to divide work on the project between several team independently or provide a way for external developers to contribute only in one part of the repo or one certian app. The difference between classic monorepo and this template is runtime dependencies. This means no need to redeploy any of micro-frontends if you change something in the library. It's enough to update micro-frondtend and all the apps will use the latest version of the it.
 
+## The Super App
+
+<table>
+  <tr>
+    <td>Host App</td>
+    <td>Mini Apps Interaction</td>
+    <td>Booking Standalone App</td>
+  </tr>
+  <tr>
+    <td><img src="images/host-main-screen.png" alt="host-main-screen" width="200"></td>
+    <td><img src="images/host.gif" alt="host" width="200"></td>
+    <td><img src="images/booking.gif" alt="booking" width="200"></td>
+  </tr>  
+</table>
+
 ## Structure
 
 <img src="assets/super-app-template-scheme.png" />
@@ -135,21 +150,6 @@ TBD
 ## Contributing
 
 Read the [contribution guidelines](/CONTRIBUTING.md) before contributing.
-
-## Screenshots
-
-<table>
-  <tr>
-    <td>Host App</td>
-    <td>Mini Apps Interaction</td>
-    <td>Booking Standalone App</td>
-  </tr>
-  <tr>
-    <td><img src="images/host-main-screen.png" alt="host-main-screen" width="200"></td>
-    <td><img src="images/host.gif" alt="host" width="200"></td>
-    <td><img src="images/booking.gif" alt="booking" width="200"></td>
-  </tr>  
-</table>
 
 ## Made with ❤️ at Callstack
 

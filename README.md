@@ -28,7 +28,7 @@ This template is a monorepository with a few apps using micro-frondend architect
 
 ## Structure
 
-<img src="super-app-template-scheme.png" />
+<img src="assets/super-app-template-scheme.png" />
 
 The super app contains 4 apps:
 
@@ -135,6 +135,14 @@ TBD
 ## Contributing
 
 Read the [contribution guidelines](/CONTRIBUTING.md) before contributing.
+
+## Screenshots
+
+<div style="display: flex; justify-content: space-between;">
+  <img src="assets/host-main-screen.png" alt="host-main-screen" style="width: 48%;">
+  <img src="assets/host.gif" alt="host" style="width: 48%;">
+  <img src="assets/booking.gif" alt="booking" style="width: 48%;">
+</div>
 
 ## Made with ❤️ at Callstack
 

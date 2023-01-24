@@ -140,8 +140,8 @@ Read the [contribution guidelines](/CONTRIBUTING.md) before contributing.
 
 <table>
   <tr>
-    <td>Host Main Screen</td>
-    <td>Mini Apps</td>
+    <td>Host App</td>
+    <td>Mini Apps Interaction</td>
     <td>Booking Standalone App</td>
   </tr>
   <tr>

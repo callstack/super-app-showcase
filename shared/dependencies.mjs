@@ -2,38 +2,38 @@ const deps = {
   react: {
     singleton: true,
     eager: true,
-    requiredVersion: '18.1.0',
+    requiredVersion: "18.1.0",
   },
-  'react-native': {
+  "react-native": {
     singleton: true,
     eager: true,
-    requiredVersion: '0.70.4',
+    requiredVersion: "0.70.6",
   },
-  '@react-navigation/native': {
+  "@react-navigation/native": {
     singleton: true,
     eager: true,
-    requiredVersion: '6.0.13',
+    requiredVersion: "6.0.14",
   },
-  '@react-navigation/native-stack': {
+  "@react-navigation/native-stack": {
     singleton: true,
     eager: true,
-    requiredVersion: '6.9.1',
+    requiredVersion: "6.9.2",
   },
-  '@react-navigation/material-bottom-tabs': {
+  "@react-navigation/material-bottom-tabs": {
     singleton: true,
     eager: true,
-    requiredVersion: '6.2.4',
+    requiredVersion: "6.2.5",
   },
-  'react-native-paper': {
+  "react-native-paper": {
     singleton: true,
     eager: true,
-    requiredVersion: '5.0.0-rc.8',
+    requiredVersion: "5.0.0-rc.10",
   },
-  '@react-native-async-storage/async-storage': {
+  "@react-native-async-storage/async-storage": {
     singleton: true,
     eager: true,
-    requiredVersion: '1.17.11',
+    requiredVersion: "1.17.11",
   },
 };
 
-export {deps};
+export { deps };

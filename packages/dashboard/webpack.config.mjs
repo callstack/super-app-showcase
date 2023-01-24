@@ -1,6 +1,6 @@
+import * as Repack from '@callstack/repack';
 import path from 'path';
 import TerserPlugin from 'terser-webpack-plugin';
-import * as Repack from '@callstack/repack';
 
 /**
  * This env variable shows if bundle is standalone and eager should be enabled in Module federation Plugin config.
@@ -263,7 +263,7 @@ export default env => {
           },
           'react-native': {
             ...Repack.Federated.SHARED_REACT_NATIVE,
-            requiredVersion: '0.70.4',
+            requiredVersion: '0.70.6',
             eager: STANDALONE,
           },
           '@react-navigation/native': {
@@ -282,22 +282,22 @@ export default env => {
              * requiredVersion is used to match requested modules in bundle.
              * It's recommended to use the same version as in the host app.
              */
-            requiredVersion: '6.0.13',
+            requiredVersion: '6.0.14',
           },
           '@react-navigation/native-stack': {
             singleton: true,
             eager: STANDALONE,
-            requiredVersion: '6.9.1',
+            requiredVersion: '6.9.2',
           },
           '@react-navigation/material-bottom-tabs': {
             singleton: true,
             eager: STANDALONE,
-            requiredVersion: '6.2.4',
+            requiredVersion: '6.2.5',
           },
           'react-native-paper': {
             singleton: true,
             eager: true,
-            requiredVersion: '5.0.0-rc.8',
+            requiredVersion: '5.0.0-rc.10',
           },
           '@react-native-async-storage/async-storage': {
             singleton: true,

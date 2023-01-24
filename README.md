@@ -145,9 +145,9 @@ Read the [contribution guidelines](/CONTRIBUTING.md) before contributing.
     <td>Booking Standalone App</td>
   </tr>
   <tr>
-    <td><img src="images/host-main-screen.png" alt="host-main-screen" width="400"></td>
-    <td><img src="images/host.gif" alt="host" width="400"></td>
-    <td><img src="images/booking.gif" alt="booking" width="400"></td>
+    <td><img src="images/host-main-screen.png" alt="host-main-screen" width="200"></td>
+    <td><img src="images/host.gif" alt="host" width="200"></td>
+    <td><img src="images/booking.gif" alt="booking" width="200"></td>
   </tr>  
 </table>
 

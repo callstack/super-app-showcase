@@ -138,11 +138,7 @@ Read the [contribution guidelines](/CONTRIBUTING.md) before contributing.
 
 ## Screenshots
 
-<div style="display: flex; justify-content: space-between;">
-  <img src="assets/host-main-screen.png" alt="host-main-screen" style="width: 48%;">
-  <img src="assets/host.gif" alt="host" style="width: 48%;">
-  <img src="assets/booking.gif" alt="booking" style="width: 48%;">
-</div>
+![Host Main Screen](assets/host-main-screen.png) ![Mini Apps](assets/host.gif) ![Booking Standalone App](assets/booking.gif)
 
 ## Made with ❤️ at Callstack
 

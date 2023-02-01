@@ -13,7 +13,7 @@
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "typecheck": "tsc",
-    "bootstrap:pods": "cd ios && pod install",
+    "bootstrap:pods": "cd ios && bundle install && pod install",
     "bootstrap": "yarn && yarn bootstrap:pods"
   },
   "dependencies": {

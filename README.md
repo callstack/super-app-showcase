@@ -132,6 +132,11 @@ TBD
 
 TBD
 
+## Known Issues
+
+The "booking" and "shopping" mini-apps can't be run in standalone mode (i.e. without the host running). This is a deliberate decision of this repository to showcase the possibility and to reduce the amount of work to keep the mini-apps dependencies up-to-date. 
+The "dashboard" mini-app can be run as a standalone app (without the host). It's up to you to decide on what kind of developer experience your super app has.
+
 ## Contributing
 
 Read the [contribution guidelines](/CONTRIBUTING.md) before contributing.

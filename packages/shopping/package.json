@@ -6,15 +6,11 @@
     "hoistingLimits": "workspaces"
   },
   "scripts": {
-    "android": "react-native run-android --no-packager",
-    "ios": "react-native run-ios --no-packager",
     "start": "react-native webpack-start --port 9001",
-    "start:standalone": "STANDALONE=1 react-native webpack-start --port 8081",
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "typecheck": "tsc",
-    "bootstrap:pods": "cd ios && pod install",
-    "bootstrap": "yarn && yarn bootstrap:pods"
+    "bootstrap": "yarn"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "^1.17.11",

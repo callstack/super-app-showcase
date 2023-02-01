@@ -3,8 +3,6 @@ import path from 'path';
 import TerserPlugin from 'terser-webpack-plugin';
 import {deps} from '../../shared/dependencies.mjs';
 
-const STANDALONE = Boolean(process.env.STANDALONE);
-
 /**
  * More documentation, installation, usage, motivation and differences with Metro is available at:
  * https://github.com/callstack/repack/blob/main/README.md

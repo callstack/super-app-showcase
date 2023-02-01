@@ -17,15 +17,3 @@ Start dev server for all apps in root directory of this monorepo if you need to 
 ```
 yarn start
 ```
-
-Or start dev server for Shopping app as a standalone app:
-
-```
-yarn start:standalone:shopping
-```
-
-Run iOS or Android app (ios | android):
-
-```
-yarn run:shopping:<platform>
-```

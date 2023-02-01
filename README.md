@@ -134,7 +134,8 @@ TBD
 
 ## Known Issues
 
-Due to the large amount of work on the upgrading react-native to latest version, we decided to remove the native part from the mini-apps, so project can't be run in standalone mode. The dashboard project is a template that reflects the entire project where we left the original setup.
+The "booking" and "shopping" mini-apps can't be run in standalone mode (i.e. without the host running). This is a deliberate decision of this repository to showcase the possibility and to reduce the amount of work to keep the mini-apps dependencies up-to-date. 
+The "dashboard" mini-app can be run as a standalone app (without the host). It's up to you to decide on what kind of developer experience your super app has.
 
 ## Contributing
 

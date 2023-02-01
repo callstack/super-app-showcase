@@ -132,6 +132,10 @@ TBD
 
 TBD
 
+## Known Issues
+
+Due to the large amount of work on the upgrading react-native to latest version, we decided to remove the native part from the mini-apps, so project can't be run in standalone mode. The dashboard project is a template that reflects the entire project where we left the original setup.
+
 ## Contributing
 
 Read the [contribution guidelines](/CONTRIBUTING.md) before contributing.

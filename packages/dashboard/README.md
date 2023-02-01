@@ -17,15 +17,3 @@ Start dev server for all apps in root directory of this monorepo if you need to 
 ```
 yarn start
 ```
-
-Or start dev server for Dashboard app as a standalone app:
-
-```
-yarn start:standalone:dashboard
-```
-
-Run iOS or Android app (ios | android):
-
-```
-yarn run:dashboard:<platform>
-```

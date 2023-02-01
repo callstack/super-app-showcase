@@ -6,8 +6,6 @@
     "hoistingLimits": "workspaces"
   },
   "scripts": {
-    "android": "react-native run-android --no-packager",
-    "ios": "react-native run-ios --no-packager",
     "start": "react-native webpack-start --port 9001",
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",

@@ -1,13 +1,7 @@
 import * as Repack from '@callstack/repack';
 import path from 'path';
 import TerserPlugin from 'terser-webpack-plugin';
-import {deps} from '../../shared/dependencies.mjs';
-
-/**
- * This env variable shows if bundle is standalone and eager should be enabled in Module federation Plugin config.
- * Please see more detailed description in Module Federation Plugin config.
- */
-const STANDALONE = Boolean(process.env.STANDALONE);
+import { deps } from '../../shared/dependencies.mjs';
 
 /**
  * More documentation, installation, usage, motivation and differences with Metro is available at:

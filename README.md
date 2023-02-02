@@ -43,7 +43,7 @@ This template is a monorepository with a few apps using micro-frondend architect
 
 ## Structure
 
-<img src="assets/super-app-template-scheme.png" />
+<img src="images/super-app-template-scheme.png" />
 
 The super app contains 4 apps:
 

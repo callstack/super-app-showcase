@@ -15,12 +15,12 @@ const deps = {
      * requiredVersion is used to match requested modules in bundle.
      * It's recommended to use the same version as in the host app.
      */
-    requiredVersion: "18.1.0",
+    requiredVersion: "18.2.0",
   },
   "react-native": {
     singleton: true,
     eager: true,
-    requiredVersion: "0.70.6",
+    requiredVersion: "0.71.2",
   },
   "@react-navigation/native": {
     singleton: true,

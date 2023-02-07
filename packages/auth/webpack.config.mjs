@@ -254,11 +254,11 @@ export default env => {
         shared: {
           react: {
             ...Repack.Federated.SHARED_REACT,
-            requiredVersion: '18.1.0',
+            requiredVersion: '18.2.0',
           },
           'react-native': {
             ...Repack.Federated.SHARED_REACT_NATIVE,
-            requiredVersion: '0.70.6',
+            requiredVersion: '0.71.2',
           },
           'react-native-paper': {
             singleton: true,

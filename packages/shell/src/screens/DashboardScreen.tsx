@@ -1,5 +1,6 @@
 import {Federated} from '@callstack/repack/client';
 import React from 'react';
+import ErrorBoundary from '../components/ErrorBoundary';
 import Placeholder from '../components/Placeholder';
 
 const Dashboard = React.lazy(() =>
@@ -8,10 +9,12 @@ const Dashboard = React.lazy(() =>
 
 const DashboardScreen = () => {
   return (
-    <React.Suspense
-      fallback={<Placeholder label="Dashboard" icon="view-dashboard" />}>
-      <Dashboard />
-    </React.Suspense>
+    <ErrorBoundary name="DashboardScreen">
+      <React.Suspense
+        fallback={<Placeholder label="Dashboard" icon="view-dashboard" />}>
+        <Dashboard />
+      </React.Suspense>
+    </ErrorBoundary>
   );
 };
 

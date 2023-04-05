@@ -113,6 +113,12 @@ Run iOS or Android app (ios | android):
 yarn run:<app-name>:<platform>
 ```
 
+For Android, make sure to reverse adb ports:
+
+```
+yarn adbreverse
+```
+
 There is no `start:shell` script to avoid running shell and host app concurrently. It's not possible to run shell and host app concurrently, since they use the same port. If you want to run shell app, you should run `yarn start:standalone:shell` and then run each mini app bundler you want to use in shell app.
 
 ### Test
@@ -149,7 +155,7 @@ TBD
 
 ## Known Issues
 
-The "booking" and "shopping" mini-apps can't be run in standalone mode (i.e. without the host running). This is a deliberate decision of this repository to showcase the possibility and to reduce the amount of work to keep the mini-apps dependencies up-to-date. 
+The "booking" and "shopping" mini-apps can't be run in standalone mode (i.e. without the host running). This is a deliberate decision of this repository to showcase the possibility and to reduce the amount of work to keep the mini-apps dependencies up-to-date.
 The "dashboard" mini-app can be run as a standalone app (without the host). It's up to you to decide on what kind of developer experience your super app has.
 
 Repack v3 HMR breaks React Native inspector/devtools in RN 0.70 version. A bypass added three patches for the dashboard, shell, and host. [link](https://github.com/callstack/repack/issues/251).

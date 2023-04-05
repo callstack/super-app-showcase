@@ -37,7 +37,7 @@ const renderProduct = ({item}: any) => (
 const renderSliderItem = () => {
   return (
     <Image
-      source={{uri: 'https://picsum.photos/700'}}
+      source={{uri: 'https://picsum.photos/600'}}
       style={styles.sliderItem}
     />
   );

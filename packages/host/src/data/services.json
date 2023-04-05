@@ -4,25 +4,25 @@
             "id": "booking",
             "title": "Booking",
             "description": "Check your schedule",
-            "image": "https://picsum.photos/700"
+            "image": "https://picsum.photos/650"
         },
         {
             "id": "shopping",
             "title": "Shopping",
             "description": "Explore new products",
-            "image": "https://picsum.photos/700"
+            "image": "https://picsum.photos/651"
         },
         {
             "id": "news",
             "title": "News and articles",
             "description": "Read and inspire",
-            "image": "https://picsum.photos/700"
+            "image": "https://picsum.photos/652"
         },
         {
             "id": "dashboard",
             "title": "Dashboard",
             "description": "Manage your business",
-            "image": "https://picsum.photos/700"
+            "image": "https://picsum.photos/653"
         }
     ]
 }

@@ -27,7 +27,8 @@
     "start": "concurrently -P 'yarn:start:*(!standalone) {1}'",
     "typecheck": "yarn workspaces foreach run typecheck",
     "lint": "yarn workspaces foreach run lint",
-    "test": "yarn workspaces foreach run test"
+    "test": "yarn workspaces foreach run test",
+    "adbreverse": "adb reverse tcp:3000 tcp:3000 &&  adb reverse tcp:9000 tcp:9000 &&  adb reverse tcp:9001 tcp:9001 &&  adb reverse tcp:9002 tcp:9002 &&  adb reverse tcp:9003 tcp:9003"
   },
   "packageManager": "yarn@3.2.1",
   "devDependencies": {

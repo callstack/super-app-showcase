@@ -1889,22 +1889,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@callstack/repack-debugger-app@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "@callstack/repack-debugger-app@npm:1.0.0"
-  checksum: 2274b4a912d4ba9bc624328f95edd2e25fed34595879c6186656834fff06c95256d34bf08f486d3a76cee7b89b4ca36780f77974850b324fa95d164644ecb10c
+"@callstack/repack-debugger-app@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "@callstack/repack-debugger-app@npm:1.0.2"
+  checksum: 8d017b4695de0717c62d3ce0d4ca7d58a87c8e00609e89531b096907d374c5a7cb89da7e2be462a2df85b1ff61a365223418a4ad3967acbc7d4bb95df1b4dab2
   languageName: node
   linkType: hard
 
-"@callstack/repack-dev-server@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "@callstack/repack-dev-server@npm:1.0.0"
+"@callstack/repack-dev-server@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "@callstack/repack-dev-server@npm:1.0.1"
   dependencies:
     "@babel/code-frame": ^7.16.7
-    "@callstack/repack-debugger-app": ^1.0.0
+    "@callstack/repack-debugger-app": ^1.0.2
     "@fastify/sensible": ^4.1.0
     "@fastify/static": ^5.0.2
-    fastify: ^3.29.0
+    fastify: ^3.29.5
     fastify-favicon: ^3.2.0
     fastify-plugin: ^3.0.1
     metro-inspector-proxy: ^0.71.0
@@ -1913,15 +1913,15 @@ __metadata:
     pretty-format: ^28.1.0
     source-map: ^0.7.3
     ws: ^8.7.0
-  checksum: ce2d6d7467d0c51174995b4b762e61bd3d430a11aabb08ed7fc585173eed9d6d4ca51bd85c14798a7cfb0db6385f8d2a070c8ca3df70a52809733e95f804bc13
+  checksum: 02145208d9af531111bcad1cc43d30445bc32635c54e446592d4c6268a35629876dbbe54cf9166b0910de5bb76ca10fb295dc37e40687cd326368f9201edfb73
   languageName: node
   linkType: hard
 
-"@callstack/repack@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@callstack/repack@npm:3.0.0"
+"@callstack/repack@npm:^3.1.1":
+  version: 3.1.1
+  resolution: "@callstack/repack@npm:3.1.1"
   dependencies:
-    "@callstack/repack-dev-server": ^1.0.0
+    "@callstack/repack-dev-server": ^1.0.1
     "@pmmmwh/react-refresh-webpack-plugin": ^0.5.7
     colorette: ^1.2.2
     dedent: ^0.7.0
@@ -1947,7 +1947,7 @@ __metadata:
     "@react-native-community/cli-types": "*"
     react-native: ">=0.63"
     webpack: 5.x
-  checksum: 091eddb87b1d037e48796419985f4ce8ddb80c3def492e3729f31f5544f8d1362d79d9f930af31e33bf0009a7cae4522a58a37db98bd8b37b7ec73a558c371f1
+  checksum: f1594d4a23254d07b012e1862c1b3d58f4796edceb2792ff3971f392467d1d4dcb9e6db0a3b1bd995126992783feaaa283cd63ec082e76a2b455e092bcdffecd
   languageName: node
   linkType: hard
 
@@ -4043,7 +4043,7 @@ __metadata:
     "@babel/core": ^7.20.0
     "@babel/preset-env": ^7.20.0
     "@babel/runtime": ^7.20.0
-    "@callstack/repack": ^3.0.0
+    "@callstack/repack": ^3.1.1
     "@react-native-async-storage/async-storage": ^1.17.11
     "@react-native-community/eslint-config": ^3.2.0
     "@tsconfig/react-native": ^2.0.2
@@ -4339,7 +4339,7 @@ __metadata:
     "@babel/core": ^7.20.0
     "@babel/preset-env": ^7.20.0
     "@babel/runtime": ^7.20.0
-    "@callstack/repack": ^3.0.0
+    "@callstack/repack": ^3.1.1
     "@react-native-async-storage/async-storage": ^1.17.11
     "@react-native-community/eslint-config": ^3.2.0
     "@react-navigation/material-bottom-tabs": ^6.2.5
@@ -5076,7 +5076,7 @@ __metadata:
     "@babel/core": ^7.20.0
     "@babel/preset-env": ^7.20.0
     "@babel/runtime": ^7.20.0
-    "@callstack/repack": ^3.0.0
+    "@callstack/repack": ^3.1.1
     "@react-native-async-storage/async-storage": ^1.17.11
     "@react-native-community/eslint-config": ^3.2.0
     "@react-navigation/material-bottom-tabs": ^6.2.5
@@ -6051,6 +6051,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"fast-content-type-parse@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "fast-content-type-parse@npm:1.0.0"
+  checksum: 9e9187be17bea18a2ee715c5737b983181cbe84f286a291db0595e421e04b578da10ca10845639be08664a4db6a793f7709822935cf38cfdf9ecba38d84ead9e
+  languageName: node
+  linkType: hard
+
 "fast-decode-uri-component@npm:^1.0.1":
   version: 1.0.1
   resolution: "fast-decode-uri-component@npm:1.0.1"
@@ -6141,14 +6148,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fastify@npm:^3.29.0":
-  version: 3.29.3
-  resolution: "fastify@npm:3.29.3"
+"fastify@npm:^3.29.5":
+  version: 3.29.5
+  resolution: "fastify@npm:3.29.5"
   dependencies:
     "@fastify/ajv-compiler": ^1.0.0
     "@fastify/error": ^2.0.0
     abstract-logging: ^2.0.0
     avvio: ^7.1.2
+    fast-content-type-parse: ^1.0.0
     fast-json-stringify: ^2.5.2
     find-my-way: ^4.5.0
     flatstr: ^1.0.12
@@ -6160,7 +6168,7 @@ __metadata:
     secure-json-parse: ^2.0.0
     semver: ^7.3.2
     tiny-lru: ^8.0.1
-  checksum: a3edd89ff5dd0efae43989f18a6ab2270b9b8fc11c6fc7cca6e8cfe3647dc4b0bb5b20104fe2c8468efbaad57af03113e4c592fafae8c619b8edc9a9e1ae98f4
+  checksum: 6f97e67c25c509c584529aad2ffe0d4bf8943a860f09d847bf34a4736586cf73f5748bde154e0199c022b97ff76aba35c3094006e62b07100ab10c63205541e3
   languageName: node
   linkType: hard
 
@@ -6879,7 +6887,7 @@ __metadata:
     "@babel/core": ^7.20.0
     "@babel/preset-env": ^7.20.0
     "@babel/runtime": ^7.20.0
-    "@callstack/repack": ^3.0.0
+    "@callstack/repack": ^3.1.1
     "@react-native-async-storage/async-storage": ^1.17.11
     "@react-native-community/eslint-config": ^3.2.0
     "@react-navigation/material-bottom-tabs": ^6.2.5
@@ -11158,7 +11166,7 @@ __metadata:
     "@babel/core": ^7.20.0
     "@babel/preset-env": ^7.20.0
     "@babel/runtime": ^7.20.0
-    "@callstack/repack": ^3.0.0
+    "@callstack/repack": ^3.1.1
     "@react-native-async-storage/async-storage": ^1.17.11
     "@react-native-community/eslint-config": ^3.2.0
     "@react-navigation/material-bottom-tabs": ^6.2.5
@@ -11196,7 +11204,7 @@ __metadata:
     "@babel/core": ^7.20.0
     "@babel/preset-env": ^7.20.0
     "@babel/runtime": ^7.20.0
-    "@callstack/repack": ^3.0.0
+    "@callstack/repack": ^3.1.1
     "@react-native-async-storage/async-storage": ^1.17.11
     "@react-native-community/eslint-config": ^3.2.0
     "@react-navigation/material-bottom-tabs": ^6.2.5

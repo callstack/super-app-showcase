@@ -1,26 +1,38 @@
 import React from 'react';
-import {StyleSheet, View} from 'react-native';
+import {ScrollView, StyleSheet, View} from 'react-native';
 import {Button} from 'react-native-paper';
 import {useAuth} from '../contexts/AuthContext';
+import {EmailForm} from './EmailForm';
 
 const AccountScreen = () => {
   const {signOut} = useAuth();
 
   return (
-    <View style={styles.container}>
-      <Button mode="contained" onPress={signOut}>
-        Logout
-      </Button>
-    </View>
+    <ScrollView
+      style={styles.container}
+      contentContainerStyle={styles.contentContainer}>
+      <EmailForm />
+      <View style={styles.logoutButtonContainer}>
+        <Button buttonColor="red" mode="contained" onPress={signOut}>
+          Logout
+        </Button>
+      </View>
+    </ScrollView>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
     backgroundColor: '#fff',
+  },
+  contentContainer: {
+    flexGrow: 1,
+  },
+  logoutButtonContainer: {
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: 'flex-end',
     alignItems: 'center',
+    paddingVertical: 8,
   },
 });
 

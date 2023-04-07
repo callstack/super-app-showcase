@@ -1,0 +1,7 @@
+compatibility_date = "2022-04-18"
+name="sat-worker"
+main = "worker.js"
+
+[[r2_buckets]]
+binding = "MY_BUCKET"
+bucket_name = "super-app-temp"

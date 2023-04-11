@@ -98,7 +98,7 @@ android {
 
     namespace "com.shell"
     defaultConfig {
-        applicationId "com.shell"
+        applicationId "com.callstack.superappshowcase.shell"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

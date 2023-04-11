@@ -65,11 +65,11 @@ export const EmailForm = () => {
 
   return (
     <View style={{padding: 16}}>
-      <Text variant="headlineSmall">Learn More About Super Apps</Text>
+      <Text variant="headlineSmall">Training</Text>
       <Text style={{paddingVertical: 8}}>
-        We'd like to know your feedback and how we can further improve the DX of
-        Super Apps powered by Re.Pack. If you enjoy this, please subscribe to
-        learn more about super apps.
+        Sign up for a super app development training. We’re in the process of
+        preparing a super app development course. Be the first to know when our
+        training goes live and receive the first lesson for free.
       </Text>
       <TextInput
         mode="outlined"

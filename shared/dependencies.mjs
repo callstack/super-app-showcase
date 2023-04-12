@@ -20,7 +20,7 @@ const deps = {
   "react-native": {
     singleton: true,
     eager: true,
-    requiredVersion: "0.71.2",
+    requiredVersion: "0.71.6",
   },
   "@react-navigation/native": {
     singleton: true,

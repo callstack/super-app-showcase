@@ -6,7 +6,7 @@
             "title": "Haircut",
             "place": "Barbershop",
             "address": "123 Main St",
-            "image": "https://picsum.photos/700"
+            "image": "https://picsum.photos/700?a"
         },
         {
             "id": "2",
@@ -14,7 +14,7 @@
             "title": "Nails",
             "place": "Beauty salon",
             "address": "456 Main St",
-            "image": "https://picsum.photos/701"
+            "image": "https://picsum.photos/700?a"
         },
         {
             "id": "3",
@@ -22,7 +22,7 @@
             "title": "Hair coloring",
             "place": "Beauty salon",
             "address": "789 Main St",
-            "image": "https://picsum.photos/702"
+            "image": "https://picsum.photos/700?a"
         },
         {
             "id": "4",
@@ -30,7 +30,7 @@
             "title": "Haircut",
             "place": "Barbershop",
             "address": "123 Main St",
-            "image": "https://picsum.photos/703"
+            "image": "https://picsum.photos/700?a"
         }
     ]
 }

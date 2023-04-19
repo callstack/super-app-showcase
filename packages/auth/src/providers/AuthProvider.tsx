@@ -47,8 +47,8 @@ const AuthProvider = ({
   children: (data: State) => React.ReactNode;
 }) => {
   const [state, dispatch] = React.useReducer(reducer, {
-    isLoading: true,
-    isSignout: true,
+    isLoading: false,
+    isSignout: false,
   });
 
   const authContext = React.useMemo(

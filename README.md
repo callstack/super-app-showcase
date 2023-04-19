@@ -1,9 +1,6 @@
-<p align="center">
-  <img alt="Super App Showcase" src="docs/assets/images/logo.svg?sanitize=true" height="100">
-</p>
-<p align="center">
-  Monorepository template to showcase Super App development possibilities with React Native and Re.Pack.
-</p>
+# Super App Showcase
+
+Monorepository template to showcase Super App development possibilities with React Native and Re.Pack.
 
 ---
 

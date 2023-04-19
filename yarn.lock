@@ -11723,9 +11723,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"super-app-template@workspace:.":
+"super-app-showcase@workspace:.":
   version: 0.0.0-use.local
-  resolution: "super-app-template@workspace:."
+  resolution: "super-app-showcase@workspace:."
   dependencies:
     concurrently: ^7.6.0
     patch-package: ^6.5.1

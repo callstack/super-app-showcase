@@ -1,6 +1,6 @@
 # Super App Showcase
 
-Monorepository template to showcase Super App development possibilities with React Native and Re.Pack.
+Monorepository showcase to showcase Super App development possibilities with React Native and Re.Pack.
 
 ---
 
@@ -21,7 +21,7 @@ There are a few options to solve this problem:
 
 ## The solution
 
-This template is a monorepository with a few apps using micro-frondend architecture. It's easy to set up and maintain. These independent apps could be deployed as separate apps or as a part of super app. Developer could move these micro-frontends to separate repositories and deploy them as separate apps. That helps to divide work on the project between several team independently or provide a way for external developers to contribute only in one part of the repo or one certian app. The difference between classic monorepo and this template is runtime dependencies. This means no need to redeploy any of micro-frontends if you change something in the library. It's enough to update micro-frondtend and all the apps will use the latest version of the it.
+This showcase is a monorepository with a few apps using micro-frondend architecture. It's easy to set up and maintain. These independent apps could be deployed as separate apps or as a part of super app. Developer could move these micro-frontends to separate repositories and deploy them as separate apps. That helps to divide work on the project between several team independently or provide a way for external developers to contribute only in one part of the repo or one certian app. The difference between classic monorepo and this showcase is runtime dependencies. This means no need to redeploy any of micro-frontends if you change something in the library. It's enough to update micro-frondtend and all the apps will use the latest version of the it.
 
 ## The Super App
 
@@ -40,7 +40,7 @@ This template is a monorepository with a few apps using micro-frondend architect
 
 ## Structure
 
-<img src="images/super-app-template-scheme.png" />
+<img src="images/super-app-showcase-scheme.png" />
 
 The super app contains 4 apps:
 
@@ -51,7 +51,7 @@ The super app contains 4 apps:
 - `shopping` - micro-frontend for shopping service.
   Shopping exposes `MainNavigator`. `MainNavigator` is Shopping app itself.
 - `news` - micro-frontend for news service.
-  News exposes `MainNavigator`. `MainNavigator` is News app itself. News mini app stored in separate repository https://github.com/callstack-internal/news-mini-app-template to provide the example of using remote container outside of the monorepo.
+  News exposes `MainNavigator`. `MainNavigator` is News app itself. News mini app stored in separate repository https://github.com/callstack/news-mini-app-showcase to provide the example of using remote container outside of the monorepo.
 - `dashboard` - micro-frontend for dashboard service.
   Dashboard exposes `MainNavigator`. `MainNavigator` is Dashboard app itself.
 - `auth` - module that is used by other modules to provide authentication and authorization flow and UI.
@@ -76,7 +76,7 @@ Start dev server for host and mini apps:
 yarn start
 ```
 
-Or start dev server for a specific app ([host](./packages/host/README.md) | [booking](./packages/booking/README.md) | [shopping](./packages/shopping/README.md) | [news](https://github.com/callstack/news-mini-app-template) | [dashboard](./packages/dashboard/README.md)):
+Or start dev server for a specific app ([host](./packages/host/README.md) | [booking](./packages/booking/README.md) | [shopping](./packages/shopping/README.md) | [news](https://github.com/callstack/news-mini-app-showcase) | [dashboard](./packages/dashboard/README.md)):
 
 ```
 yarn start:<app-name>
@@ -163,20 +163,20 @@ Read the [contribution guidelines](/CONTRIBUTING.md) before contributing.
 
 ## Made with ❤️ at Callstack
 
-Super App Template is an open source project and will always remain free to use. If you think it's cool, please star it 🌟. [Callstack][callstack-readme-with-love] is a group of React and React Native geeks, contact us at [hello@callstack.com](mailto:hello@callstack.com) if you need any help with these or just want to say hi!
+Super App showcase is an open source project and will always remain free to use. If you think it's cool, please star it 🌟. [Callstack][callstack-readme-with-love] is a group of React and React Native geeks, contact us at [hello@callstack.com](mailto:hello@callstack.com) if you need any help with these or just want to say hi!
 
 <!-- badges -->
 
-[build-badge]: https://img.shields.io/circleci/project/github/callstack/super-app-template/master.svg?style=flat-square
-[build]: https://circleci.com/gh/callstack/super-app-template
-[version-badge]: https://img.shields.io/npm/v/super-app-template.svg?style=flat-square
-[package]: https://www.npmjs.com/package/super-app-template
-[license-badge]: https://img.shields.io/npm/l/super-app-template.svg?style=flat-square
+[build-badge]: https://img.shields.io/circleci/project/github/callstack/super-app-showcase/master.svg?style=flat-square
+[build]: https://circleci.com/gh/callstack/super-app-showcase
+[version-badge]: https://img.shields.io/npm/v/super-app-showcase.svg?style=flat-square
+[package]: https://www.npmjs.com/package/super-app-showcase
+[license-badge]: https://img.shields.io/npm/l/super-app-showcase.svg?style=flat-square
 [license]: https://opensource.org/licenses/MIT
 [prs-welcome-badge]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square
 [prs-welcome]: http://makeapullrequest.com
 [chat-badge]: https://img.shields.io/discord/426714625279524876.svg?style=flat-square&colorB=758ED3
 [chat]: https://discord.gg/zwR2Cdh
 [callstack-badge]: https://callstack.com/images/callstack-badge.svg
-[callstack]: https://callstack.com/open-source/?utm_source=github.com&utm_medium=referral&utm_campaign=super-app-template&utm_term=readme-badge
-[callstack-readme-with-love]: https://callstack.com/?utm_source=github.com&utm_medium=referral&utm_campaign=super-app-template&utm_term=readme-with-love
+[callstack]: https://callstack.com/open-source/?utm_source=github.com&utm_medium=referral&utm_campaign=super-app-showcase&utm_term=readme-badge
+[callstack-readme-with-love]: https://callstack.com/?utm_source=github.com&utm_medium=referral&utm_campaign=super-app-showcase&utm_term=readme-with-love

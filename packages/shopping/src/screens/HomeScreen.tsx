@@ -4,6 +4,7 @@ import {
   Dimensions,
   FlatList,
   Image,
+  ListRenderItem,
   ScrollView,
   StyleSheet,
   View,
@@ -20,9 +21,9 @@ import products from '../data/products.json';
 
 const showNotImplementedAlert = () => Alert.alert('Not implemented yet');
 
-const renderProduct = ({item}: any) => (
+const renderProduct: ListRenderItem<any> = ({item, index}) => (
   <Card mode="contained" style={styles.cardWidth}>
-    <Card.Cover source={{uri: item.image}} />
+    <Card.Cover source={{uri: `${item.image}?${index}`}} />
     <Card.Content>
       <Title>{`${item.name} • $${item.price}`}</Title>
       <Paragraph numberOfLines={1}>{item.description}</Paragraph>

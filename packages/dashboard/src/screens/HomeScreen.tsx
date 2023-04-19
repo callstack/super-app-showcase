@@ -1,5 +1,5 @@
 import React from 'react';
-import {Alert, FlatList, ScrollView, StyleSheet, View} from 'react-native';
+import {Alert, FlatList, ListRenderItem, ScrollView, StyleSheet, View} from 'react-native';
 import {
   Avatar,
   Card,
@@ -36,9 +36,9 @@ const renderUpcoming = ({item}: any) => (
   </Card>
 );
 
-const renderProduct = ({item}: any) => (
+const renderProduct: ListRenderItem<any> = ({item, index}) => (
   <Card mode="contained" style={styles.cardWidth}>
-    <Card.Cover source={{uri: item.image}} />
+    <Card.Cover source={{uri: `${item.image}?${index}`}} />
     <Card.Content>
       <Title>{`${item.name} • $${item.price}`}</Title>
       <Paragraph numberOfLines={1}>{item.description}</Paragraph>
@@ -50,9 +50,9 @@ const renderProduct = ({item}: any) => (
   </Card>
 );
 
-const renderArticle = ({item}: any) => (
+const renderArticle: ListRenderItem<any> = ({item, index}) => (
   <Card mode="contained" style={styles.cardWidth}>
-    <Card.Cover source={{uri: item.image}} />
+    <Card.Cover source={{uri: `${item.image}?${index}`}} />
     <Card.Content>
       <Title>{item.title}</Title>
       <Paragraph numberOfLines={3}>{item.content}</Paragraph>

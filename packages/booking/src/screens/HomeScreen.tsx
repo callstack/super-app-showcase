@@ -1,5 +1,5 @@
 import React from 'react';
-import {Alert, FlatList, ScrollView, StyleSheet, View} from 'react-native';
+import {Alert, FlatList, ListRenderItem, ScrollView, StyleSheet, View} from 'react-native';
 import {CompositeScreenProps} from '@react-navigation/native';
 import {MaterialBottomTabScreenProps} from '@react-navigation/material-bottom-tabs';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
@@ -35,9 +35,9 @@ const renderAppointment = ({item}: any) => (
   </Card>
 );
 
-const renderService = ({item}: any) => (
+const renderService: ListRenderItem<any> = ({item, index}) => (
   <Card mode="contained">
-    <Card.Cover source={{uri: item.image}} />
+    <Card.Cover source={{uri: `${item.image}?${index}`}} />
     <Card.Title
       titleVariant="titleMedium"
       subtitleVariant="bodyMedium"

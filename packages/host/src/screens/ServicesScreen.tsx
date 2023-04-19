@@ -59,7 +59,7 @@ const ServicesScreen = ({navigation}: ServiceScreenProps) => {
       return (
         <View style={[styles.serviceItem, lastItem && styles.lastServiceItem]}>
           <Card mode="contained" onPress={onPress} style={styles.cardItem}>
-            <Card.Cover source={{uri: item.image}} />
+            <Card.Cover source={{uri: `${item.image}?${index}`}} />
             <Card.Content>
               <Title numberOfLines={1}>{item.title}</Title>
               <Paragraph numberOfLines={1}>{item.description}</Paragraph>

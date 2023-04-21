@@ -2,6 +2,8 @@
 
 Monorepository showcase to showcase Super App development possibilities with React Native and Re.Pack.
 
+Learn more about Super Apps here: https://www.callstack.com/super-app-development.
+
 ---
 
 [![Build Status][build-badge]][build]

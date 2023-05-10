@@ -67,7 +67,13 @@ Each of the mini apps could be deployed and run as a standalone app.
 Install dependencies for all apps:
 
 ```
-yarn bootstrap
+yarn
+```
+
+[Optional] Install pods where applicable
+
+```
+yarn pods
 ```
 
 ### Run

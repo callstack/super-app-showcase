@@ -1,19 +1,18 @@
 {
-    "name": "catalog-server",
-    "version": "0.0.1",
-    "description": "Catalog Server",
-    "main": "index.js",
-    "private": true,
-    "installConfig": {
-        "hoistingLimits": "workspaces"
-    },
-    "scripts": {
-        "start": "node index.js",
-        "bootstrap": "yarn"
-    },
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "express": "^4.18.2"
-    }
+  "name": "catalog-server",
+  "version": "0.0.1",
+  "description": "Catalog Server",
+  "main": "index.js",
+  "private": true,
+  "installConfig": {
+    "hoistingLimits": "workspaces"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }

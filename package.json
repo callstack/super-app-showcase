@@ -23,7 +23,7 @@
     "run:dashboard:android": "yarn workspace dashboard run android",
     "bundle:auth:ios": "yarn workspace auth run bundle:ios",
     "bundle:auth:android": "yarn workspace auth run bundle:android",
-    "bootstrap": "yarn && yarn workspaces foreach run bootstrap",
+    "pods": "yarn workspaces foreach run pods",
     "start": "concurrently -P 'yarn:start:*(!standalone) {1}'",
     "typecheck": "yarn workspaces foreach run typecheck",
     "lint": "yarn workspaces foreach run lint",

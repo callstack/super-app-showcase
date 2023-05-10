@@ -7,7 +7,13 @@ This is the blueprint of Host application with shared dependencies. It could be 
 Install dependencies for all applications in root directory in root directory:
 
 ```
-yarn bootstrap
+yarn
+```
+
+Install pods:
+
+```
+yarn pods
 ```
 
 ### Run

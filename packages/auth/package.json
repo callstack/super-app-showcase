@@ -9,7 +9,6 @@
     "start": "react-native webpack-start --port 9003",
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "bootstrap": "yarn",
     "bundle:ios": "react-native webpack-bundle --platform ios --entry-file index.js --dev false",
     "bundle:android": "react-native webpack-bundle --platform android --entry-file index.js --dev false"
   },

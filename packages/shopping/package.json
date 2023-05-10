@@ -9,8 +9,7 @@
     "start": "react-native webpack-start --port 9001",
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "typecheck": "tsc",
-    "bootstrap": "yarn"
+    "typecheck": "tsc"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "^1.17.11",

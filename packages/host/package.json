@@ -12,10 +12,9 @@
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "typecheck": "tsc",
-    "bootstrap:pods": "cd ios && pod install",
-    "bootstrap": "yarn && yarn bootstrap:pods",
     "bundle:ios": "react-native webpack-bundle --platform ios --entry-file index.js --dev false",
-    "bundle:android": "react-native webpack-bundle --platform android --entry-file index.js --dev false"
+    "bundle:android": "react-native webpack-bundle --platform android --entry-file index.js --dev false",
+    "pods": "(cd ios && bundle install & bundle exec pod install)"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "^1.17.11",

@@ -7,7 +7,7 @@ This is mini app for booking service. Booking exposes `UpcomingAppointments` scr
 Install dependencies for all apps in root directory of this monorepo:
 
 ```
-yarn bootstrap
+yarn
 ```
 
 ### Run

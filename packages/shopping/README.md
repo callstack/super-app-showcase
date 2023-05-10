@@ -7,7 +7,7 @@ This is mini app for shopping service. Shopping exposes `MainNavigator`. `MainNa
 Install dependencies for all apps in root directory of this monorepo:
 
 ```
-yarn bootstrap
+yarn
 ```
 
 ### Run

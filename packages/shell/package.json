@@ -6,7 +6,6 @@
     "hoistingLimits": "workspaces"
   },
   "scripts": {
-    "postinstall": "patch-package",
     "android": "react-native run-android --no-packager",
     "ios": "react-native run-ios --no-packager",
     "start": "react-native webpack-start",

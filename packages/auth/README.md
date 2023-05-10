@@ -22,7 +22,7 @@ Each of these options needs to be configured in News mini app. This could be don
 Install dependencies for all apps in root directory of this monorepo:
 
 ```
-yarn bootstrap
+yarn
 ```
 
 ### Run

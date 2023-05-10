@@ -21,7 +21,7 @@ Since ScriptLocatorResolver is an async function, we could fetch URLs there and 
 Install dependencies for all apps in root directory of this monorepo:
 
 ```
-yarn bootstrap
+yarn
 ```
 
 ### Run

@@ -7,7 +7,13 @@ This is mini app for handling business management flow. Dashboard exposes `MainN
 Install dependencies for all apps in root directory of this monorepo:
 
 ```
-yarn bootstrap
+yarn
+```
+
+Install pods:
+
+```
+yarn pods
 ```
 
 ### Run

@@ -7,7 +7,13 @@ This is the main app, which is a super app. It contains all the micro-frontends 
 Install dependencies for all apps in root directory of this monorepo:
 
 ```
-yarn bootstrap
+yarn
+```
+
+Install pods:
+
+```
+yarn pods
 ```
 
 ### Run

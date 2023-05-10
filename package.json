@@ -32,7 +32,6 @@
   },
   "packageManager": "yarn@3.2.1",
   "devDependencies": {
-    "concurrently": "^7.6.0",
-    "patch-package": "^6.5.1"
+    "concurrently": "^7.6.0"
   }
 }

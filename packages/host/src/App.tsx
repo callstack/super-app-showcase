@@ -1,4 +1,5 @@
 import React from 'react';
+import RNBootSplash from "react-native-bootsplash";
 import {Federated} from '@callstack/repack/client';
 import {NavigationContainer} from '@react-navigation/native';
 import MainNavigator from './navigation/MainNavigator';
@@ -31,7 +32,7 @@ const App = () => {
             }
 
             return (
-              <NavigationContainer>
+              <NavigationContainer onReady={() => RNBootSplash.hide({ fade: true, duration: 500 })}>
                 <MainNavigator />
               </NavigationContainer>
             );

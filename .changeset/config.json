@@ -5,7 +5,7 @@
   "fixed": [],
   "linked": [],
   "access": "restricted",
-  "baseBranch": "catalog-prod",
+  "baseBranch": "main",
   "updateInternalDependencies": "patch",
   "ignore": []
 }

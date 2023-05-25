@@ -2,6 +2,11 @@
   "name": "auth",
   "version": "0.0.1",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/callstack/super-app-showcase.git",
+    "directory": "packages/auth"
+  },
   "installConfig": {
     "hoistingLimits": "workspaces"
   },

@@ -1,51 +1,81 @@
 #!/usr/bin/env node
 
+const path = require("path");
 const { spawn } = require("child_process");
 
-const gitTag = process.argv[2];
-const gitTagPattern = /^([\w-]+)-(\w+)@([\d.]+)$/;
+function verifyGitTagFormat(gitTag) {
+  const gitTagPattern = /^([\w-]+)-(\w+)@([\d.]+)$/;
+  const match = gitTag.match(gitTagPattern);
 
-const match = gitTag.match(gitTagPattern);
+  if (!match) {
+    console.error(
+      "Invalid git tag format. Expected format: <packageName>-<platform>@<version>"
+    );
+    process.exit(1);
+  }
 
-if (!match) {
-  console.error(
-    "Invalid git tag format. Expected format: <packageName>-<platform>@<version>"
-  );
+  return {
+    packageName: match[1],
+    platform: match[2],
+    version: match[3],
+  };
+}
+
+function getScriptName(targetPlatform) {
+  if (targetPlatform === "android") {
+    return "bundle:android";
+  }
+  if (targetPlatform === "ios") {
+    return "bundle:ios";
+  }
+
+  console.error(`Unsupported platform: ${targetPlatform}`);
   process.exit(1);
 }
 
-const packageName = match[1];
-const platform = match[2];
-const version = match[3];
+function runShellCommands(commands) {
+  const command = commands.shift();
+  const child = spawn(command.cmd, command.args);
 
-console.log(`Package Name: ${packageName}`);
-console.log(`Platform: ${platform}`);
-console.log(`Version: ${version}`);
+  child.stdout.on("data", (data) => {
+    console.log(String(data));
+  });
 
-let scriptName;
-if (platform === "android") {
-  scriptName = "bundle:android";
-} else if (platform === "ios") {
-  scriptName = "bundle:ios";
+  child.stderr.on("data", (data) => {
+    console.error(String(data));
+  });
+
+  child.on("close", (code) => {
+    if (code !== 0) {
+      process.exit(1);
+    }
+
+    if (commands.length > 0) {
+      runShellCommands(commands);
+    }
+  });
 }
 
-if (!scriptName) {
-  console.error(
-    "Invalid platform. Supported platforms are 'android' and 'ios'."
+function buildMiniApp(gitTag) {
+  const { packageName, platform } = verifyGitTagFormat(gitTag);
+
+  const scriptName = getScriptName(platform);
+
+  const buildPath = path.join(
+    "packages",
+    packageName,
+    "build",
+    "outputs",
+    platform,
+    "remotes"
   );
-  process.exit(1);
+
+  const commands = [
+    { cmd: "yarn", args: ["workspace", packageName, "run", scriptName] },
+    { cmd: "mv", args: [buildPath, "build"] },
+  ];
+
+  runShellCommands(commands);
 }
 
-const child = spawn("yarn", ["workspace", packageName, "run", scriptName]);
-
-child.stdout.on("data", (data) => {
-  console.log(`stdout: ${data}`);
-});
-
-child.stderr.on("data", (data) => {
-  console.error(`stderr: ${data}`);
-});
-
-child.on("close", (code) => {
-  console.log(`Bundle script exited with code ${code}`);
-});
+buildMiniApp(process.argv[2]);

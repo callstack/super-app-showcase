@@ -3,7 +3,14 @@ name: Build and Deploy
 on:
   push:
     tags:
-      - "*"
+      - auth-android@*.*.*
+      - auth-ios@*.*.*
+      - booking-android@*.*.*
+      - booking-ios@*.*.*
+      - dashboard-android@*.*.*
+      - dashboard-ios@*.*.*
+      - shopping-android@*.*.*
+      - shopping-ios@*.*.*
 
 jobs:
   build-and-deploy:

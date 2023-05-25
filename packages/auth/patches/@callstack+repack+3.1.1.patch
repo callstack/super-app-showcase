@@ -1,0 +1,14 @@
+diff --git a/node_modules/@callstack/repack/dist/webpack/plugins/utils/AssetsCopyProcessor.js b/node_modules/@callstack/repack/dist/webpack/plugins/utils/AssetsCopyProcessor.js
+index 30fa943..fea85f5 100644
+--- a/node_modules/@callstack/repack/dist/webpack/plugins/utils/AssetsCopyProcessor.js
++++ b/node_modules/@callstack/repack/dist/webpack/plugins/utils/AssetsCopyProcessor.js
+@@ -42,6 +42,9 @@ class AssetsCopyProcessor {
+     const sourcemapOutputDir = sourcemapOutput ? _path.default.dirname(sourcemapOutput) : bundleOutputDir; // Chunk bundle e.g: `index.bundle`, `src_App_js.chunk.bundle`
+ 
+     const [chunkFile] = [...chunk.files];
++
++    if (!chunkFile) return;
++    
+     const relatedSourceMap = (_compilation$assetsIn = compilation.assetsInfo.get(chunkFile)) === null || _compilation$assetsIn === void 0 ? void 0 : (_compilation$assetsIn2 = _compilation$assetsIn.related) === null || _compilation$assetsIn2 === void 0 ? void 0 : _compilation$assetsIn2.sourceMap; // Source map for the chunk e.g: `index.bundle.map`, `src_App_js.chunk.bundle.map`
+ 
+     const sourceMapFile = Array.isArray(relatedSourceMap) ? relatedSourceMap[0] : relatedSourceMap; // Target file path where to save the bundle.

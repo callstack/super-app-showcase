@@ -1,5 +1,10 @@
-const getContainersURL = ({appName, version, platform}) => {
-    return `http://localhost:3000/${appName}?platform=${platform}&appVersion=${version}`;
+const getContainersURL = ({
+  hostname = 'http://localhost:3000',
+  appName,
+  version,
+  platform,
+}) => {
+  return `${hostname}/${appName}?platform=${platform}&appVersion=${version}`;
 };
 
 export default getContainersURL;

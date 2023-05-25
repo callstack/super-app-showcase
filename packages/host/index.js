@@ -9,8 +9,11 @@ import getContainersURL from '../catalog-server/utils/getContainersURL';
 import {name as appName} from './app.json';
 import {version as appVersion} from './package.json';
 
+import {CATALOG_SERVER_URL} from '@env';
+
 ScriptManager.shared.addResolver(async (scriptId, caller) => {
   const containersURL = getContainersURL({
+    hostname: CATALOG_SERVER_URL,
     version: appVersion,
     platform: Platform.OS,
     appName,
@@ -25,7 +28,7 @@ ScriptManager.shared.addResolver(async (scriptId, caller) => {
   });
 
   let url;
-  if (caller === 'main') {
+  if (__DEV__ && caller === 'main') {
     url = Script.getDevServerURL(scriptId);
   } else {
     url = resolveURL(scriptId, caller);
@@ -37,8 +40,10 @@ ScriptManager.shared.addResolver(async (scriptId, caller) => {
 
   return {
     url,
-    cache: false, // For development
-    query: {platform: Platform.OS},
+    cache: !__DEV__,
+    query: {
+      platform: Platform.OS,
+    },
     verifyScriptSignature: 'strict',
   };
 });

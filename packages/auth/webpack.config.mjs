@@ -1,6 +1,7 @@
 import * as Repack from '@callstack/repack';
 import path from 'path';
 import TerserPlugin from 'terser-webpack-plugin';
+import Package from './package.json' assert {type: 'json'};
 
 /**
  * More documentation, installation, usage, motivation and differences with Metro is available at:
@@ -198,6 +199,7 @@ export default env => {
             options: {
               platform,
               devServerEnabled: Boolean(devServer),
+              inline: true,
               /**
                * Defines which assets are scalable - which assets can have
                * scale suffixes: `@1x`, `@2x` and so on.
@@ -229,6 +231,21 @@ export default env => {
           sourceMapFilename,
           assetsPath,
         },
+        extraChunks: [
+          {
+            include: /.*/,
+            type: 'remote',
+            outputPath: path.join(
+              dirname,
+              '..',
+              '..',
+              'build',
+              Package.name,
+              platform,
+              Package.version.replace(/\./g, '_'),
+            ),
+          },
+        ],
       }),
       /**
        * This plugin is nessessary to make Module Federation work.

@@ -9,7 +9,10 @@
     "start": "react-native webpack-start --port 9001",
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "bundle": "yarn bundle:ios && yarn bundle:android",
+    "bundle:ios": "react-native webpack-bundle --platform ios --entry-file index.js --dev false",
+    "bundle:android": "react-native webpack-bundle --platform android --entry-file index.js --dev false"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "^1.17.11",
@@ -45,6 +48,13 @@
     "terser-webpack-plugin": "^5.3.6",
     "typescript": "4.8.4",
     "webpack": "^5.74.0"
+  },
+  "federatedModule": "shopping",
+  "federatedDependencies": {
+    "auth": {
+      "type": "internal",
+      "url": "https://github.com/remote/placeholder"
+    }
   },
   "jest": {
     "preset": "react-native",

@@ -1,7 +1,7 @@
 import * as Repack from '@callstack/repack';
 import path from 'path';
 import TerserPlugin from 'terser-webpack-plugin';
-import { deps } from '../../shared/dependencies.mjs';
+import {deps} from '../../shared/dependencies.mjs';
 
 /**
  * More documentation, installation, usage, motivation and differences with Metro is available at:
@@ -252,6 +252,10 @@ export default env => {
          * Their names are used to match requested modules in this compilation.
          */
         shared: deps,
+      }),
+      new Repack.plugins.CodeSigningPlugin({
+        privateKeyPath: path.join('..', '..', './code-signing.pem'),
+        outputPath: path.join('build', 'outputs', platform, 'remotes'),
       }),
     ],
   };

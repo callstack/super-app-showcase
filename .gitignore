@@ -11,3 +11,7 @@ node_modules
 /*.tgz
 
 build/
+
+# Code Signing
+code-signing.pem
+code-signing.pem.pub

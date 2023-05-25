@@ -2,7 +2,6 @@ import * as Repack from '@callstack/repack';
 import path from 'path';
 import TerserPlugin from 'terser-webpack-plugin';
 import {deps} from '../../shared/dependencies.mjs';
-import Package from './package.json' assert {type: 'json'};
 
 /**
  * This env variable shows if bundle is standalone and eager should be enabled in Module federation Plugin config.
@@ -238,21 +237,6 @@ export default env => {
           sourceMapFilename,
           assetsPath,
         },
-        extraChunks: [
-          {
-            include: /.*/,
-            type: 'remote',
-            outputPath: path.join(
-              dirname,
-              '..',
-              '..',
-              'build',
-              Package.name,
-              platform,
-              Package.version.replace(/\./g, '_'),
-            ),
-          },
-        ],
       }),
       /**
        * This plugin is nessessary to make Module Federation work.
@@ -276,7 +260,7 @@ export default env => {
         shared: deps,
       }),
       new Repack.plugins.CodeSigningPlugin({
-        privateKeyPath: path.join('..', '..', './code-signing.pem'),
+        privateKeyPath: path.join('..', '..', 'code-signing.pem'),
         outputPath: path.join('build', 'outputs', platform, 'remotes'),
       }),
     ],

@@ -1,5 +1,21 @@
 #!/usr/bin/env node
 
+/**
+ * Node.js script for automating the process of building a mini app in a CI environment based on git tags.
+ *
+ * This script performs the following actions:
+ * - Extracts the git tag from the command-line argument passed when running the script.
+ * - Parses and validates the git tag format. The expected format is <packageName>-<platform>@<version>.
+ * - Based on the parsed git tag, it identifies the package name, the target platform.
+ * - Determines the appropriate build command for the specified platform.
+ * - Executes a series of shell commands to run the build for specific platform
+ *   and move the output to the 'build' directory in the root of the monorepo.
+ *
+ * The resulting build output can be used to release the built mini app.
+ *
+ * Note: This script assumes the presence of a valid git tag as an argument when running the script.
+ */
+
 const path = require("path");
 const { spawn } = require("child_process");
 

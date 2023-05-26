@@ -1,3 +1,22 @@
+#!/usr/bin/env node
+
+/**
+ * Node.js script for processing a 'compatibility-matrix.json' file to generate application version specific JSON files.
+ *
+ * This script performs the following actions:
+ * - Reads the 'compatibility-matrix.json' file which contains the versioning and source information for a set of applications.
+ * - Parses the data from the file into a JavaScript object.
+ * - For each application, it processes its version and source data to generate URLs for iOS and Android application bundles.
+ * - The generated URLs are then organized into a JSON object, separated by platform and application version.
+ * - This JSON object is then written to a file named '[appName].prod.json' in the 'data' directory.
+ *
+ * The resulting JSON files can be used to provide version specific download links for each mini-app on iOS and Android platforms.
+ *
+ * Note: The script assumes the presence of a 'compatibility-matrix.json' file in the project directory and that the file has a specific structure.
+ * The 'sources' and 'versions' objects are expected within each app in the matrix, with the versions containing app versions and the sources containing source information.
+ * It also assumes that the applications have releases hosted at specific URL patterns.
+ */
+
 const fs = require('fs');
 const path = require('path');
 

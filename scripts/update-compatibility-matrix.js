@@ -1,3 +1,39 @@
+#!/usr/bin/env node
+
+/**
+ * Node.js script for managing and updating the compatibility matrix of federated dependencies in a project.
+ *
+ * This script performs the following actions:
+ * - Discovers all the packages with federated dependencies within the project.
+ * - Reads an existing compatibility matrix or initializes a new one if it doesn't exist.
+ * - Goes through all the relevant packages in the monorepo, and for each of them:
+ *   - Determines whether package will be included in the compatibility matrix.
+ *   - Goes through all the federated dependencies of the app, and checks their versions.
+ *   - Updates the compatibility matrix based on the rules of semantic versioning (semver).
+ * - Writes the updated compatibility matrix back to the file.
+ *
+ * The compatibility matrix is a JSON object where the keys are the app names
+ * and the values are objects containing information about the apps's federated
+ * dependencies and their versions.
+ *
+ * The update of the compatibility matrix adheres to the following guidelines:
+ * - For app's that experience a major version bump, their dependencies are
+ *   deemed compatible and updated in the matrix only if these dependencies also
+ *   get a major version bump.
+ * - If a app's version is incremented by a minor or patch update, or remains unchanged,
+ *   the dependencies are updated in the matrix provided they have not undergone a major version bump.
+ *
+ * The resulting compatibility matrix can be used to understand which versions of federated dependencies
+ * are compatible with which versions of the app.
+ *
+ * Note: This script assumes the project uses semantic versioning for package versions and that the
+ *       structure of the project follows certain rules, such as the presence of a 'package.json'
+ *       in every package directory and a 'compatibility-matrix.json' at the root.
+ *
+ * Note: This is a rather naive implementation of the compatibility matrix update logic. It is meant
+ *       to be used as a proof of concept rather than something you would want to use in production.
+ */
+
 const fs = require("fs");
 const path = require("path");
 const semver = require("semver");
@@ -35,6 +71,7 @@ function getCompatibilityMatrix(packages) {
 
 function initCompatibilityMatrix(packages) {
   const matrix = {};
+
   for (const packageName in packages) {
     const packageData = packages[packageName];
     if (!packageData.federatedDependencies) {

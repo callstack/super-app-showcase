@@ -1,25 +1,53 @@
 {
+  "booking": {
+    "sources": [
+      {
+        "name": "auth",
+        "type": "internal",
+        "url": "https://github.com/callstack/super-app-showcase"
+      }
+    ],
+    "versions": {
+      "0.0.1": {
+        "auth": "0.0.1"
+      }
+    }
+  },
+  "dashboard": {
+    "sources": [
+      {
+        "name": "auth",
+        "type": "internal",
+        "url": "https://github.com/callstack/super-app-showcase"
+      }
+    ],
+    "versions": {
+      "0.0.1": {
+        "auth": "0.0.1"
+      }
+    }
+  },
   "host": {
     "sources": [
       {
         "name": "auth",
         "type": "internal",
-        "url": "https://github.com/jbroma/super-app-template"
+        "url": "https://github.com/callstack/super-app-showcase"
       },
       {
         "name": "booking",
         "type": "internal",
-        "url": "https://github.com/jbroma/super-app-template"
+        "url": "https://github.com/callstack/super-app-showcase"
       },
       {
         "name": "dashboard",
         "type": "internal",
-        "url": "https://github.com/jbroma/super-app-template"
+        "url": "https://github.com/callstack/super-app-showcase"
       },
       {
         "name": "shopping",
         "type": "internal",
-        "url": "https://github.com/jbroma/super-app-template"
+        "url": "https://github.com/callstack/super-app-showcase"
       },
       {
         "name": "news",
@@ -42,22 +70,22 @@
       {
         "name": "auth",
         "type": "internal",
-        "url": "https://github.com/jbroma/super-app-template"
+        "url": "https://github.com/callstack/super-app-showcase"
       },
       {
         "name": "booking",
         "type": "internal",
-        "url": "https://github.com/jbroma/super-app-template"
+        "url": "https://github.com/callstack/super-app-showcase"
       },
       {
         "name": "dashboard",
         "type": "internal",
-        "url": "https://github.com/jbroma/super-app-template"
+        "url": "https://github.com/callstack/super-app-showcase"
       },
       {
         "name": "shopping",
         "type": "internal",
-        "url": "https://github.com/jbroma/super-app-template"
+        "url": "https://github.com/callstack/super-app-showcase"
       },
       {
         "name": "news",
@@ -75,40 +103,12 @@
       }
     }
   },
-  "booking": {
-    "sources": [
-      {
-        "name": "auth",
-        "type": "internal",
-        "url": "https://github.com/jbroma/super-app-template"
-      }
-    ],
-    "versions": {
-      "0.0.1": {
-        "auth": "0.0.1"
-      }
-    }
-  },
-  "dashboard": {
-    "sources": [
-      {
-        "name": "auth",
-        "type": "internal",
-        "url": "https://github.com/jbroma/super-app-template"
-      }
-    ],
-    "versions": {
-      "0.0.1": {
-        "auth": "0.0.1"
-      }
-    }
-  },
   "shopping": {
     "sources": [
       {
         "name": "auth",
         "type": "internal",
-        "url": "https://github.com/jbroma/super-app-template"
+        "url": "https://github.com/callstack/super-app-showcase"
       }
     ],
     "versions": {

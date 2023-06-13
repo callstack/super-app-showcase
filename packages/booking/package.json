@@ -51,12 +51,13 @@
     "webpack": "^5.74.0"
   },
   "federatedModule": "booking",
-  "federatedDependencies": {
-    "auth": {
+  "federatedDependencies": [
+    {
+      "name": "auth",
       "type": "internal",
-      "url": "https://github.com/remote/placeholder"
+      "url": "https://github.com/callstack/super-app-showcase"
     }
-  },
+  ],
   "jest": {
     "preset": "react-native",
     "moduleFileExtensions": [

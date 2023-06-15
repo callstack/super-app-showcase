@@ -111,7 +111,7 @@ function discoverPackagesWithFederatedDependencies() {
       packages[packageData.name] = {
         path: packageJsonFile,
         version: packageData.version,
-        federatedDependencies: packageData?.federatedDependencies,
+        federatedDependencies: packageData.federatedDependencies,
       };
     }
   }
@@ -157,9 +157,13 @@ function updateCompatibilityMatrix() {
         newDependencyVersion
       );
 
+      // get matrix entry for the app or initialize new one
+      matrix[app] = matrix[app] || { sources: [], versions: {} };
+
       // always use the most up-to-date sources of the federatedDependencies
       matrix[app].sources = packageData.federatedDependencies;
-      matrix[app] = matrix[app] || { versions: {} };
+
+      // get version data for the app from the matrix or initialize new one
       matrix[app].versions[newVersion] = matrix[app].versions[newVersion] || {};
 
       // case 1: app gets a major bump

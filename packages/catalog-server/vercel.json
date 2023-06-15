@@ -1,0 +1,14 @@
+{
+  "installCommand": "yarn",
+  "buildCommand": "yarn node scripts/build.js && mkdir -p public && touch public/index.html",
+  "outputDirectory": "public",
+  "rewrites": [
+    {
+      "source": "/(host|booking|shopping|dashboard)",
+      "destination": "api/index.js"
+    }
+  ],
+  "github": {
+    "enabled": false
+  }
+}

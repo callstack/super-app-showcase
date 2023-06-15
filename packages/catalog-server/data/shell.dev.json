@@ -1,0 +1,20 @@
+{
+  "ios": {
+    "0.0.1": {
+      "booking": "http://localhost:9000/[name][ext]",
+      "shopping": "http://localhost:9001/[name][ext]",
+      "news": "https://github.com/callstack/news-mini-app-showcase/releases/download/news-ios@0.0.1/[name][ext]",
+      "dashboard": "http://localhost:9002/[name][ext]",
+      "auth": "http://localhost:9003/[name][ext]"
+    }
+  },
+  "android": {
+    "0.0.1": {
+      "booking": "http://localhost:9000/[name][ext]",
+      "shopping": "http://localhost:9001/[name][ext]",
+      "news": "https://github.com/callstack/news-mini-app-showcase/releases/download/news-android@0.0.1/[name][ext]",
+      "dashboard": "http://localhost:9002/[name][ext]",
+      "auth": "http://localhost:9003/[name][ext]"
+    }
+  }
+}

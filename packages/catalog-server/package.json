@@ -2,17 +2,18 @@
   "name": "catalog-server",
   "version": "0.0.1",
   "description": "Catalog Server",
-  "main": "index.js",
+  "main": "api/index.js",
   "private": true,
   "installConfig": {
     "hoistingLimits": "workspaces"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node api/index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.0.3",
     "express": "^4.18.2"
   }
 }

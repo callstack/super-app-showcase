@@ -51,6 +51,33 @@
     "typescript": "4.8.4",
     "webpack": "^5.74.0"
   },
+  "federatedDependencies": [
+    {
+      "name": "auth",
+      "type": "internal",
+      "url": "https://github.com/callstack/super-app-showcase"
+    },
+    {
+      "name": "booking",
+      "type": "internal",
+      "url": "https://github.com/callstack/super-app-showcase"
+    },
+    {
+      "name": "dashboard",
+      "type": "internal",
+      "url": "https://github.com/callstack/super-app-showcase"
+    },
+    {
+      "name": "shopping",
+      "type": "internal",
+      "url": "https://github.com/callstack/super-app-showcase"
+    },
+    {
+      "name": "news",
+      "type": "external",
+      "url": "https://github.com/callstack/news-mini-app-showcase"
+    }
+  ],
   "jest": {
     "preset": "react-native",
     "moduleFileExtensions": [

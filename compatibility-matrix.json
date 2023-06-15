@@ -1,0 +1,120 @@
+{
+  "booking": {
+    "sources": [
+      {
+        "name": "auth",
+        "type": "internal",
+        "url": "https://github.com/callstack/super-app-showcase"
+      }
+    ],
+    "versions": {
+      "0.0.1": {
+        "auth": "0.0.1"
+      }
+    }
+  },
+  "dashboard": {
+    "sources": [
+      {
+        "name": "auth",
+        "type": "internal",
+        "url": "https://github.com/callstack/super-app-showcase"
+      }
+    ],
+    "versions": {
+      "0.0.1": {
+        "auth": "0.0.1"
+      }
+    }
+  },
+  "host": {
+    "sources": [
+      {
+        "name": "auth",
+        "type": "internal",
+        "url": "https://github.com/callstack/super-app-showcase"
+      },
+      {
+        "name": "booking",
+        "type": "internal",
+        "url": "https://github.com/callstack/super-app-showcase"
+      },
+      {
+        "name": "dashboard",
+        "type": "internal",
+        "url": "https://github.com/callstack/super-app-showcase"
+      },
+      {
+        "name": "shopping",
+        "type": "internal",
+        "url": "https://github.com/callstack/super-app-showcase"
+      },
+      {
+        "name": "news",
+        "type": "external",
+        "url": "https://github.com/callstack/news-mini-app-showcase"
+      }
+    ],
+    "versions": {
+      "0.0.1": {
+        "auth": "0.0.1",
+        "booking": "0.0.1",
+        "dashboard": "0.0.1",
+        "shopping": "0.0.1",
+        "news": "0.0.1"
+      }
+    }
+  },
+  "shell": {
+    "sources": [
+      {
+        "name": "auth",
+        "type": "internal",
+        "url": "https://github.com/callstack/super-app-showcase"
+      },
+      {
+        "name": "booking",
+        "type": "internal",
+        "url": "https://github.com/callstack/super-app-showcase"
+      },
+      {
+        "name": "dashboard",
+        "type": "internal",
+        "url": "https://github.com/callstack/super-app-showcase"
+      },
+      {
+        "name": "shopping",
+        "type": "internal",
+        "url": "https://github.com/callstack/super-app-showcase"
+      },
+      {
+        "name": "news",
+        "type": "external",
+        "url": "https://github.com/callstack/news-mini-app-showcase"
+      }
+    ],
+    "versions": {
+      "0.0.1": {
+        "auth": "0.0.1",
+        "booking": "0.0.1",
+        "dashboard": "0.0.1",
+        "shopping": "0.0.1",
+        "news": "0.0.1"
+      }
+    }
+  },
+  "shopping": {
+    "sources": [
+      {
+        "name": "auth",
+        "type": "internal",
+        "url": "https://github.com/callstack/super-app-showcase"
+      }
+    ],
+    "versions": {
+      "0.0.1": {
+        "auth": "0.0.1"
+      }
+    }
+  }
+}

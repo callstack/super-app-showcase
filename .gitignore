@@ -12,6 +12,9 @@ node_modules
 
 build/
 
+.vscode/
+
 # Code Signing
 code-signing.pem
 code-signing.pem.pub
+

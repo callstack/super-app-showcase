@@ -198,6 +198,7 @@ export default env => {
             options: {
               platform,
               devServerEnabled: Boolean(devServer),
+              inline: true,
               /**
                * Defines which assets are scalable - which assets can have
                * scale suffixes: `@1x`, `@2x` and so on.
@@ -271,7 +272,7 @@ export default env => {
         },
       }),
       new Repack.plugins.CodeSigningPlugin({
-        privateKeyPath: path.join('..', '..', './code-signing.pem'),
+        privateKeyPath: path.join('..', '..', 'code-signing.pem'),
         outputPath: path.join('build', 'outputs', platform, 'remotes'),
       }),
     ],

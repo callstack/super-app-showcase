@@ -1,4 +1,9 @@
 {
   "name": "host",
-  "displayName": "host"
+  "displayName": "Super App Showcase",
+  "extra": {
+    "eas": {
+      "projectId": "7e238228-0ac4-4cac-92e5-66b19e8f3bff"
+    }
+  }
 }

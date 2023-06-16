@@ -93,9 +93,9 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace "com.host"
+    namespace "com.callstack.superappshowcase.host"
     defaultConfig {
-        applicationId "com.host"
+        applicationId "com.callstack.superappshowcase.host"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

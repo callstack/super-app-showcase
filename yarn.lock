@@ -4516,6 +4516,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"babel-plugin-transform-inline-environment-variables@npm:^0.4.4":
+  version: 0.4.4
+  resolution: "babel-plugin-transform-inline-environment-variables@npm:0.4.4"
+  checksum: fa361287411301237fd8ce332aff4f8e8ccb8db30e87a2ddc7224c8bf7cd792eda47aca24dc2e09e70bce4c027bc8cbe22f4999056be37a25d2472945df21ef5
+  languageName: node
+  linkType: hard
+
 "babel-preset-current-node-syntax@npm:^1.0.0":
   version: 1.0.1
   resolution: "babel-preset-current-node-syntax@npm:1.0.1"
@@ -7476,13 +7483,13 @@ __metadata:
     "@typescript-eslint/parser": ^5.37.0
     babel-jest: ^29.2.1
     babel-loader: ^9.1.0
+    babel-plugin-transform-inline-environment-variables: ^0.4.4
     eslint: ^8.19.0
     jest: ^29.2.1
     metro-react-native-babel-preset: 0.73.9
     react: 18.2.0
     react-native: 0.71.8
     react-native-bootsplash: ^4.7.1
-    react-native-dotenv: ^3.4.8
     react-native-paper: 5.0.0-rc.10
     react-native-safe-area-context: ^4.4.1
     react-native-screens: ^3.18.2
@@ -11161,17 +11168,6 @@ __metadata:
     jscodeshift: ^0.13.1
     nullthrows: ^1.1.1
   checksum: d3a40b557d4b3a0d51664070eb8388b0dde247a0518025ff5a815d3573c98ff16f616df8236e827ee16625f685169931db5c966dd144d860ad5aed437b65b28c
-  languageName: node
-  linkType: hard
-
-"react-native-dotenv@npm:^3.4.8":
-  version: 3.4.8
-  resolution: "react-native-dotenv@npm:3.4.8"
-  dependencies:
-    dotenv: ^16.0.3
-  peerDependencies:
-    "@babel/runtime": ^7.20.6
-  checksum: 8443cec44862d3e110f236b1120d8a1f829cb4545a85c8462e6c01935aa216f50b05eb659661db29939d4d293ce7de6212bf877963e3b37f6c900629f6546d67
   languageName: node
   linkType: hard
 

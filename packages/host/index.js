@@ -9,11 +9,9 @@ import getContainersURL from '../catalog-server/utils/getContainersURL';
 import {name as appName} from './app.json';
 import {version as appVersion} from './package.json';
 
-import {CATALOG_SERVER_URL} from '@env';
-
 ScriptManager.shared.addResolver(async (scriptId, caller) => {
   const containersURL = getContainersURL({
-    hostname: CATALOG_SERVER_URL,
+    hostname: process.env.SAS_CATALOG_SERVER_URL,
     version: appVersion,
     platform: Platform.OS,
     appName,

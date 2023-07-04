@@ -1,7 +1,9 @@
 name: Deploy catalog-server
 
 on:
-  workflow_dispatch:
+  push:
+    tags:
+      - catalog-server@*.*.*
 
 jobs:
   build-and-deploy:

@@ -37,6 +37,23 @@
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string></string>
+	<key>RepackPublicKey</key>
+	<string>
+-----BEGIN PUBLIC KEY-----
+MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAvR2JseYMjDTie9MYo/Tw
+4xGQKSBKJ15GcrwcP+eX96WWCkbTH+Oa7oUwuM2l6KyTBZsuWiTbajldnUslyfLu
+uLmAfOjmgVMgWqihRIkvBIzxG2G/wrUGMLOrXWn01enqHORami0N9O7/WayC3UO1
+KwN7c+Rmhkk7pwxQUDcsLofkPAjCAbo5SRDv04y0jjvjyXnufepVamSBcVdclEui
+d6nrDR9vWMhvNrSW6op4/NaJM0tMqvyzwNM5p081GkqSrkS59vPkkwaFOEf2/Awg
+yNsK+Efo4WDPEcZjay6S/wwhD1vw/29w/Or5KXfusIHsJu1iMC7xi5sYb9Z+pUZH
+zLqv9xPF0Q040NBOSgY1dpuPm1WE3/Yd1zG1vfWFCQJ606+DVFjVODj/uTlKldxY
++vTvrfL5mZohGiYMvO4h4DLXKDlsuI0MAbCYEO9wvm/vGEP3HTpb/O85VarT4CU/
+wsPsZn01/gGJmqS+2v/0428SHra0r1JOXhgOrJDn/SpWkfhcYPti61gq9qKmjylq
+549qj7P7TNS0hdk8gaItciTkN6oNdvLUi3xHWjFauq2nvGq7DrNGis9agb91h6qp
+cY5Xs2ruzayYogugDiaALCPvJpQFCj83AIbWft26fl7VCphxPKaFpeDHseVi6tMi
+1+opwSqunAaqo5rsLlHIw0MCAwEAAQ==
+-----END PUBLIC KEY-----
+	</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>AntDesign.ttf</string>
@@ -62,30 +79,17 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>UIRequiresFullScreen</key>
+	<true/>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
-	<key>RepackPublicKey</key>
-	<string>
------BEGIN PUBLIC KEY-----
-MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAvR2JseYMjDTie9MYo/Tw
-4xGQKSBKJ15GcrwcP+eX96WWCkbTH+Oa7oUwuM2l6KyTBZsuWiTbajldnUslyfLu
-uLmAfOjmgVMgWqihRIkvBIzxG2G/wrUGMLOrXWn01enqHORami0N9O7/WayC3UO1
-KwN7c+Rmhkk7pwxQUDcsLofkPAjCAbo5SRDv04y0jjvjyXnufepVamSBcVdclEui
-d6nrDR9vWMhvNrSW6op4/NaJM0tMqvyzwNM5p081GkqSrkS59vPkkwaFOEf2/Awg
-yNsK+Efo4WDPEcZjay6S/wwhD1vw/29w/Or5KXfusIHsJu1iMC7xi5sYb9Z+pUZH
-zLqv9xPF0Q040NBOSgY1dpuPm1WE3/Yd1zG1vfWFCQJ606+DVFjVODj/uTlKldxY
-+vTvrfL5mZohGiYMvO4h4DLXKDlsuI0MAbCYEO9wvm/vGEP3HTpb/O85VarT4CU/
-wsPsZn01/gGJmqS+2v/0428SHra0r1JOXhgOrJDn/SpWkfhcYPti61gq9qKmjylq
-549qj7P7TNS0hdk8gaItciTkN6oNdvLUi3xHWjFauq2nvGq7DrNGis9agb91h6qp
-cY5Xs2ruzayYogugDiaALCPvJpQFCj83AIbWft26fl7VCphxPKaFpeDHseVi6tMi
-1+opwSqunAaqo5rsLlHIw0MCAwEAAQ==
------END PUBLIC KEY-----
-	</string>
 </dict>
 </plist>

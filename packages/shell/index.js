@@ -11,13 +11,15 @@ import {version as appVersion} from './package.json';
 
 ScriptManager.shared.addResolver(async (scriptId, caller) => {
   const containersURL = getContainersURL({
+    hostname: process.env.SAS_CATALOG_SERVER_URL,
     version: appVersion,
     platform: Platform.OS,
     appName: 'host', // for testing purposes
   });
-  const response = await fetch(containersURL);
 
-  const containers = await response.json();
+  const containersResponse = await fetch(containersURL);
+
+  const containers = await containersResponse.json();
 
   const resolveURL = Federated.createURLResolver({
     containers,
@@ -36,10 +38,11 @@ ScriptManager.shared.addResolver(async (scriptId, caller) => {
 
   return {
     url,
-    cache: false, // For development
+    cache: false,
     query: {
       platform: Platform.OS,
     },
+    verifyScriptSignature: 'off',
   };
 });
 

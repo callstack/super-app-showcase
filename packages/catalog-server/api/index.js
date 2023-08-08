@@ -5,7 +5,6 @@ const env = process.env.VERCEL ? '.prod' : '.dev';
 const suffix = env + '.json';
 
 const host = require('../data/host' + suffix);
-const shell = require('../data/host' + suffix);
 const booking = require('../data/booking' + suffix);
 const shopping = require('../data/shopping' + suffix);
 const dashboard = require('../data/dashboard' + suffix);
@@ -19,24 +18,21 @@ app.get('/host', (req, res) => {
 
   res.send(host[platform][appVersion]);
 });
-app.get('/shell', (req, res) => {
-  const platform = req.query.platform;
-  const appVersion = req.query.appVersion;
 
-  res.send(shell[platform][appVersion]);
-});
 app.get('/booking', (req, res) => {
   const platform = req.query.platform;
   const appVersion = req.query.appVersion;
 
   res.send(booking[platform][appVersion]);
 });
+
 app.get('/shopping', (req, res) => {
   const platform = req.query.platform;
   const appVersion = req.query.appVersion;
 
   res.send(shopping[platform][appVersion]);
 });
+
 app.get('/dashboard', (req, res) => {
   const platform = req.query.platform;
   const appVersion = req.query.appVersion;

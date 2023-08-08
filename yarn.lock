@@ -1926,11 +1926,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@callstack/repack@npm:^3.2.0":
-  version: 3.2.0
-  resolution: "@callstack/repack@npm:3.2.0"
+"@callstack/repack@npm:~3.4.0":
+  version: 3.4.0
+  resolution: "@callstack/repack@npm:3.4.0"
   dependencies:
     "@callstack/repack-dev-server": ^1.0.1
+    "@discoveryjs/json-ext": ^0.5.7
     "@pmmmwh/react-refresh-webpack-plugin": ^0.5.7
     colorette: ^1.2.2
     dedent: ^0.7.0
@@ -1957,7 +1958,7 @@ __metadata:
     "@react-native-community/cli-types": "*"
     react-native: ">=0.63"
     webpack: 5.x
-  checksum: 39d3586555dc3213726991cb53a10927f7e50ce50fc22dd58df8d692eb676625f17e37b7a178e20516dfa61393e280219c6bf95e5a8f868d820bc7198e4ebd05
+  checksum: 1b7a4c166f69845041e80b7353e21fdc2d4bad5717f3dcd27abab6310211d7b0d4d8bf2acf74e7d6aea28a0bc12c02fa324178a9703d7608887d47e60dddde4b
   languageName: node
   linkType: hard
 
@@ -2194,6 +2195,13 @@ __metadata:
     human-id: ^1.0.2
     prettier: ^2.7.1
   checksum: 40ad8069f9adc565b78a5f25992e31b41a12e551d94c29e1b4def49ce98871a1e358feda6536be8b363a6dba18b1226a22ecfc60fdd7bc1e74bfcf46b07f91be
+  languageName: node
+  linkType: hard
+
+"@discoveryjs/json-ext@npm:^0.5.7":
+  version: 0.5.7
+  resolution: "@discoveryjs/json-ext@npm:0.5.7"
+  checksum: 2176d301cc258ea5c2324402997cf8134ebb212469c0d397591636cea8d3c02f2b3cf9fd58dcb748c7a0dade77ebdc1b10284fa63e608c033a1db52fddc69918
   languageName: node
   linkType: hard
 
@@ -4365,7 +4373,7 @@ __metadata:
     "@babel/core": ^7.20.0
     "@babel/preset-env": ^7.20.0
     "@babel/runtime": ^7.20.0
-    "@callstack/repack": ^3.2.0
+    "@callstack/repack": ~3.4.0
     "@react-native-async-storage/async-storage": ^1.17.11
     "@react-native-community/eslint-config": ^3.2.0
     "@tsconfig/react-native": ^2.0.2
@@ -4677,7 +4685,7 @@ __metadata:
     "@babel/core": ^7.20.0
     "@babel/preset-env": ^7.20.0
     "@babel/runtime": ^7.20.0
-    "@callstack/repack": ^3.2.0
+    "@callstack/repack": ~3.4.0
     "@react-native-async-storage/async-storage": ^1.17.11
     "@react-native-community/eslint-config": ^3.2.0
     "@react-navigation/material-bottom-tabs": ^6.2.5
@@ -5517,7 +5525,7 @@ __metadata:
     "@babel/core": ^7.20.0
     "@babel/preset-env": ^7.20.0
     "@babel/runtime": ^7.20.0
-    "@callstack/repack": ^3.2.0
+    "@callstack/repack": ~3.4.0
     "@react-native-async-storage/async-storage": ^1.17.11
     "@react-native-community/eslint-config": ^3.2.0
     "@react-navigation/material-bottom-tabs": ^6.2.5
@@ -7468,7 +7476,7 @@ __metadata:
     "@babel/core": ^7.20.0
     "@babel/preset-env": ^7.20.0
     "@babel/runtime": ^7.20.0
-    "@callstack/repack": ^3.2.0
+    "@callstack/repack": ~3.4.0
     "@react-native-async-storage/async-storage": ^1.17.11
     "@react-native-community/eslint-config": ^3.2.0
     "@react-navigation/material-bottom-tabs": ^6.2.5
@@ -12154,7 +12162,7 @@ __metadata:
     "@babel/core": ^7.20.0
     "@babel/preset-env": ^7.20.0
     "@babel/runtime": ^7.20.0
-    "@callstack/repack": ^3.2.0
+    "@callstack/repack": ~3.4.0
     "@react-native-async-storage/async-storage": ^1.17.11
     "@react-native-community/eslint-config": ^3.2.0
     "@react-navigation/material-bottom-tabs": ^6.2.5
@@ -12192,7 +12200,7 @@ __metadata:
     "@babel/core": ^7.20.0
     "@babel/preset-env": ^7.20.0
     "@babel/runtime": ^7.20.0
-    "@callstack/repack": ^3.2.0
+    "@callstack/repack": ~3.4.0
     "@react-native-async-storage/async-storage": ^1.17.11
     "@react-native-community/eslint-config": ^3.2.0
     "@react-navigation/material-bottom-tabs": ^6.2.5

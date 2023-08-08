@@ -58,8 +58,27 @@ For the catalog-server deployment to be successful, ensure that the mini-apps ar
 
 ## 3. Deploying Apps to the Stores
 
-Please note, as of now the process for releasing the host app to the stores is not yet implemented. This section will be updated as soon as the implementation is done.
+This project uses Expo EAS for building production and submitting production version of the Host app.
+The configuration is located inside `packages/host/eas.json`.
 
-**TODO**: Implement and document the process of deploying apps to the stores.
+Production ENV variables and secrets are already preconfigured on the `expo.dev` site
+
+In order to create a production build of the app you can run:
+
+```sh
+eas build --platform ios
+# or
+eas build --platform android
+```
+
+To submit to the stores please use one of the following:
+
+```sh
+eas submit --platform ios
+# or
+eas submit --platform android
+```
+
+and choose the build you want to submit.
 
 ---

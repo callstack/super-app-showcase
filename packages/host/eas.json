@@ -1,0 +1,35 @@
+{
+  "cli": {
+    "version": ">= 3.13.3",
+    "promptToConfigurePushNotifications": false
+  },
+  "build": {
+    "production": {
+      "node": "18.16.0"
+    },
+    "preview": {
+      "extends": "production",
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      },
+      "ios": {
+        "simulator": true
+      }
+    },
+    "development": {
+      "extends": "preview",
+      "distribution": "internal",
+      "android": {
+        "gradleCommand": ":app:assembleDebug",
+        "withoutCredentials": true
+      },
+      "ios": {
+        "buildConfiguration": "Debug"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}

@@ -1,4 +1,4 @@
-package com.host;
+package com.callstack.superappshowcase.host;
 
 import android.app.Application;
 import com.facebook.react.PackageList;

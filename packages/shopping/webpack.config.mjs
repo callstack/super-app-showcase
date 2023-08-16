@@ -109,7 +109,7 @@ export default env => {
       clean: true,
       path: path.join(dirname, 'build/generated', platform),
       filename: 'index.bundle',
-      chunkFilename: '[name].chunk.bundle',
+      chunkFilename: '[name].shopping.chunk.bundle',
       publicPath: Repack.getPublicPath({platform, devServer}),
     },
     /**
@@ -240,7 +240,7 @@ export default env => {
         shared: deps,
       }),
       new Repack.plugins.CodeSigningPlugin({
-        enabled: mode === 'production',
+        enabled: false,
         privateKeyPath: path.join('..', '..', 'code-signing.pem'),
         outputPath: path.join('build', 'outputs', platform, 'remotes'),
       }),

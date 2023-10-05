@@ -3,7 +3,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const scriptPackagePath = path.resolve(__dirname, "package.json");
+const scriptPackagePath = path.resolve(__dirname, "..", "package.json");
 const scriptPackageJson = require(scriptPackagePath);
 
 // Assuming the script is being run from the project root

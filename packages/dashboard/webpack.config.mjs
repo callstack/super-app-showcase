@@ -1,8 +1,7 @@
 import * as Repack from '@callstack/repack';
 import path from 'path';
 import TerserPlugin from 'terser-webpack-plugin';
-import {deps} from '../../shared/dependencies.mjs';
-
+import sdk from 'super-app-showcase-sdk';
 /**
  * This env variable shows if bundle is standalone and eager should be enabled in Module federation Plugin config.
  * Please see more detailed description in Module Federation Plugin config.
@@ -67,6 +66,7 @@ export default env => {
    */
   process.env.BABEL_ENV = mode;
 
+  console.log(sdk.getSharedDependencies(STANDALONE));
   return {
     mode,
     /**
@@ -94,15 +94,25 @@ export default env => {
        * in their `package.json` might not work correctly.
        */
       ...Repack.getResolveOptions(platform),
-
+      /**
+       * Add SDK node_modules to the list of directories to search for modules
+       * because by default nested node_modules are not being searched.
+       */
+      modules: [
+        path.resolve(
+          dirname,
+          'node_modules/super-app-showcase-sdk/node_modules',
+        ),
+        path.resolve(dirname, 'node_modules'),
+      ],
       /**
        * Uncomment this to ensure all `react-native*` imports will resolve to the same React Native
        * dependency. You might need it when using workspaces/monorepos or unconventional project
        * structure. For simple/typical project you won't need it.
        */
-      // alias: {
-      //   'react-native': reactNativePath,
-      // },
+      alias: {
+        'react-native': reactNativePath,
+      },
     },
     /**
      * Configures output.
@@ -257,7 +267,7 @@ export default env => {
          * React, React Native and React Navigation should be provided here because there should be only one instance of these modules.
          * Their names are used to match requested modules in this compilation.
          */
-        shared: deps,
+        shared: sdk.getSharedDependencies(STANDALONE),
       }),
       new Repack.plugins.CodeSigningPlugin({
         enabled: mode === 'production',

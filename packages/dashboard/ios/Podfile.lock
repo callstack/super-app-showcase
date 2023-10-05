@@ -486,7 +486,7 @@ DEPENDENCIES:
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
   - React-logger (from `../node_modules/react-native/ReactCommon/logger`)
-  - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
+  - react-native-safe-area-context (from `../../sdk/node_modules/react-native-safe-area-context`)
   - React-perflogger (from `../node_modules/react-native/ReactCommon/reactperflogger`)
   - React-RCTActionSheet (from `../node_modules/react-native/Libraries/ActionSheetIOS`)
   - React-RCTAnimation (from `../node_modules/react-native/Libraries/NativeAnimation`)
@@ -500,9 +500,9 @@ DEPENDENCIES:
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - React-runtimeexecutor (from `../node_modules/react-native/ReactCommon/runtimeexecutor`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
-  - "RNCAsyncStorage (from `../node_modules/@react-native-async-storage/async-storage`)"
-  - RNScreens (from `../node_modules/react-native-screens`)
-  - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
+  - "RNCAsyncStorage (from `../../sdk/node_modules/@react-native-async-storage/async-storage`)"
+  - RNScreens (from `../../sdk/node_modules/react-native-screens`)
+  - RNVectorIcons (from `../../sdk/node_modules/react-native-vector-icons`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -569,7 +569,7 @@ EXTERNAL SOURCES:
   React-logger:
     :path: "../node_modules/react-native/ReactCommon/logger"
   react-native-safe-area-context:
-    :path: "../node_modules/react-native-safe-area-context"
+    :path: "../../sdk/node_modules/react-native-safe-area-context"
   React-perflogger:
     :path: "../node_modules/react-native/ReactCommon/reactperflogger"
   React-RCTActionSheet:
@@ -597,11 +597,11 @@ EXTERNAL SOURCES:
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
   RNCAsyncStorage:
-    :path: "../node_modules/@react-native-async-storage/async-storage"
+    :path: "../../sdk/node_modules/@react-native-async-storage/async-storage"
   RNScreens:
-    :path: "../node_modules/react-native-screens"
+    :path: "../../sdk/node_modules/react-native-screens"
   RNVectorIcons:
-    :path: "../node_modules/react-native-vector-icons"
+    :path: "../../sdk/node_modules/react-native-vector-icons"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 

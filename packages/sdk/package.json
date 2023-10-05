@@ -1,0 +1,26 @@
+{
+  "name": "super-app-showcase-sdk",
+  "version": "0.0.1",
+  "description": "Dependency management for the Super App Showcase",
+  "license": "MIT",
+  "private": true,
+  "installConfig": {
+    "hoistingLimits": "workspaces"
+  },
+  "bin": {
+    "update": "./update-peer-dependencies.js"
+  },
+  "files": [
+    "dependencies.js"
+  ],
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "^1.17.11",
+    "@react-navigation/material-bottom-tabs": "^6.2.5",
+    "@react-navigation/native": "^6.0.14",
+    "@react-navigation/native-stack": "^6.9.2",
+    "react-native-paper": "5.0.0-rc.10",
+    "react-native-safe-area-context": "^4.4.1",
+    "react-native-screens": "^3.18.2",
+    "react-native-vector-icons": "^9.2.0"
+  }
+}

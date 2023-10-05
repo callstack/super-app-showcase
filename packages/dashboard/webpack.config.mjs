@@ -66,7 +66,6 @@ export default env => {
    */
   process.env.BABEL_ENV = mode;
 
-  console.log(sdk.getSharedDependencies(STANDALONE));
   return {
     mode,
     /**

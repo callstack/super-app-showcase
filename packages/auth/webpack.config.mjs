@@ -1,7 +1,7 @@
 import * as Repack from '@callstack/repack';
 import path from 'path';
 import TerserPlugin from 'terser-webpack-plugin';
-
+import sdk from 'super-app-showcase-sdk';
 /**
  * More documentation, installation, usage, motivation and differences with Metro is available at:
  * https://github.com/callstack/repack/blob/main/README.md
@@ -87,7 +87,17 @@ export default env => {
        * in their `package.json` might not work correctly.
        */
       ...Repack.getResolveOptions(platform),
-
+      /**
+       * Add SDK node_modules to the list of directories to search for modules
+       * because by default nested node_modules are not being searched.
+       */
+      modules: [
+        path.resolve(
+          dirname,
+          'node_modules/super-app-showcase-sdk/node_modules',
+        ),
+        path.resolve(dirname, 'node_modules'),
+      ],
       /**
        * Uncomment this to ensure all `react-native*` imports will resolve to the same React Native
        * dependency. You might need it when using workspaces/monorepos or unconventional project
@@ -252,24 +262,7 @@ export default env => {
          * React, React Native and React Navigation should be provided here because there should be only one instance of these modules.
          * Their names are used to match requested modules in this compilation.
          */
-        shared: {
-          react: {
-            ...Repack.Federated.SHARED_REACT,
-            requiredVersion: '18.2.0',
-          },
-          'react-native': {
-            ...Repack.Federated.SHARED_REACT_NATIVE,
-            requiredVersion: '0.71.8',
-          },
-          'react-native-paper': {
-            singleton: true,
-            requiredVersion: '5.0.0-rc.10',
-          },
-          '@react-native-async-storage/async-storage': {
-            singleton: true,
-            requiredVersion: '1.17.11',
-          },
-        },
+        shared: sdk.getSharedDependencies(false),
       }),
       new Repack.plugins.CodeSigningPlugin({
         enabled: mode === 'production',

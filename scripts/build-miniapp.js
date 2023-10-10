@@ -87,7 +87,7 @@ function buildMiniApp(gitTag) {
   );
 
   const commands = [
-    { cmd: "yarn", args: ["workspace", packageName, "run", scriptName] },
+    { cmd: "pnpm", args: ["--filter", packageName, scriptName] },
     { cmd: "mv", args: [buildPath, "build"] },
   ];
 

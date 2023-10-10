@@ -2,15 +2,12 @@
   "name": "shopping",
   "version": "0.0.1",
   "private": true,
-  "installConfig": {
-    "hoistingLimits": "workspaces"
-  },
   "scripts": {
     "start": "react-native webpack-start --port 9001",
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "typecheck": "tsc",
-    "bundle": "yarn bundle:ios && yarn bundle:android",
+    "bundle": "pnpm bundle:ios && pnpm bundle:android",
     "bundle:ios": "react-native webpack-bundle --platform ios --entry-file index.js --dev false",
     "bundle:android": "react-native webpack-bundle --platform android --entry-file index.js --dev false"
   },

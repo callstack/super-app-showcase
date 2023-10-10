@@ -21,7 +21,7 @@ Since ScriptLocatorResolver is an async function, we could fetch URLs there and 
 Install dependencies for all apps in root directory of this monorepo:
 
 ```
-yarn
+pnpm install
 ```
 
 ### Run
@@ -29,11 +29,11 @@ yarn
 Start dev server for all apps in root directory of this monorepo:
 
 ```
-yarn start
+pnpm start
 ```
 
 Or start catalog server only:
 
 ```
-yarn start:catalog
+pnpm start:catalog
 ```

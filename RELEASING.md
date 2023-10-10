@@ -17,7 +17,7 @@ Mini-apps are released by creating and bumping its version via changeset. Please
 1. **Run Changeset Version Command**: Execute the following command to create a changeset:
 
 ```bash
-yarn changeset version
+pnpm changeset version
 ```
 
 This assumes that the repository is correctly set up with node_modules installed and there are already some changesets ready to be used for the next version.
@@ -25,7 +25,7 @@ This assumes that the repository is correctly set up with node_modules installed
 2. **Update Compatibility Matrix**: Run the script to update the compatibility matrix. This matrix keeps information on compatibility between mini-apps and the host/shell app. Here's the command to execute:
 
 ```bash
-yarn node scripts/update-compatibility-matrix.js
+pnpm node scripts/update-compatibility-matrix.js
 ```
 
 This script goes through all the packages in the monorepo and determines their compatibility based on semantic versioning rules. It's vital to have an accurate compatibility matrix because it dictates which versions of federated dependencies are compatible with which versions of the app. It is assumed that the project uses semantic versioning for package versions.

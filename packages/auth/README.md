@@ -22,7 +22,7 @@ Each of these options needs to be configured in News mini app. This could be don
 Install dependencies for all apps in root directory of this monorepo:
 
 ```
-yarn
+pnpm install
 ```
 
 ### Run
@@ -30,13 +30,13 @@ yarn
 Start dev server for all apps in root directory of this monorepo since Auth Module could not be run as a standalone app. Auth Module server will run on 9003 port:
 
 ```
-yarn start
+pnpm start
 ```
 
 Or start dev server for Auth Module only:
 
 ```
-yarn start:auth
+pnpm start:auth
 ```
 
 ### Generate bundle files
@@ -44,5 +44,5 @@ yarn start:auth
 Generate iOS or Android bundle files (ios | android):
 
 ```
-yarn build:auth:<platform>
+pnpm build:auth:<platform>
 ```

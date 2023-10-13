@@ -13,7 +13,7 @@ const StatisticsNavigator = () => {
   return (
     <Statistics.Navigator
       screenOptions={{
-        header: props => <NavBar {...props} />,
+        header: NavBar,
       }}>
       <Statistics.Screen name="Statistics" component={StatisticsScreen} />
     </Statistics.Navigator>

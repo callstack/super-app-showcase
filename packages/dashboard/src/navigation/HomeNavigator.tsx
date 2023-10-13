@@ -14,8 +14,8 @@ const HomeNavigator = () => {
   return (
     <Home.Navigator
       screenOptions={{
-        header: props => <NavBar {...props} />,
-        title: "Dashboard"
+        header: NavBar,
+        title: 'Dashboard',
       }}>
       <Home.Screen name="Home" component={HomeScreen} />
     </Home.Navigator>

@@ -25,9 +25,9 @@
     "bundle:auth:android": "pnpm --filter auth bundle:android",
     "pods": "pnpm --filter * pods",
     "start": "concurrently --raw -P 'pnpm:start:*(!standalone) {1}'",
-    "typecheck": "pnpm --filter * typecheck",
-    "lint": "pnpm --filter * lint",
-    "test": "pnpm --filter * test",
+    "typecheck": "pnpm -r typecheck",
+    "lint": "pnpm -r lint",
+    "test": "pnpm -r test",
     "adbreverse": "adb reverse tcp:3000 tcp:3000 && adb reverse tcp:8081 tcp:8081 && adb reverse tcp:9000 tcp:9000 && adb reverse tcp:9001 tcp:9001 && adb reverse tcp:9002 tcp:9002 && adb reverse tcp:9003 tcp:9003"
   },
   "devDependencies": {

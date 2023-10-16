@@ -13,7 +13,7 @@ const SearchNavigator = () => {
   return (
     <Search.Navigator
       screenOptions={{
-        header: props => <NavBar {...props} />,
+        header: NavBar,
       }}>
       <Search.Screen name="Search" component={SearchScreen} />
     </Search.Navigator>

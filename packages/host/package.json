@@ -76,16 +76,5 @@
       "type": "external",
       "url": "https://github.com/callstack/news-mini-app-showcase"
     }
-  ],
-  "jest": {
-    "preset": "react-native",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "jsx",
-      "json",
-      "node"
-    ]
-  }
+  ]
 }

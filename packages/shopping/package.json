@@ -53,16 +53,5 @@
       "type": "internal",
       "url": "https://github.com/callstack/super-app-showcase"
     }
-  ],
-  "jest": {
-    "preset": "react-native",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "jsx",
-      "json",
-      "node"
-    ]
-  }
+  ]
 }

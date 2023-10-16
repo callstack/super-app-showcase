@@ -12,5 +12,11 @@ module.exports = {
         'no-undef': 'off',
       },
     },
+    {
+      files: ['jest.setup.js'],
+      env: {
+        jest: true,
+      },
+    },
   ],
 };

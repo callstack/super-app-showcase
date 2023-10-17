@@ -19,8 +19,8 @@ importers:
   packages/auth:
     dependencies:
       '@react-native-async-storage/async-storage':
-        specifier: ^1.17.11
-        version: 1.19.3(react-native@0.71.8)
+        specifier: 1.17.11
+        version: 1.17.11(react-native@0.71.8)
       react:
         specifier: 18.2.0
         version: 18.2.0
@@ -31,7 +31,7 @@ importers:
         specifier: 5.0.0-rc.10
         version: 5.0.0-rc.10(react-native-vector-icons@9.2.0)(react-native@0.71.8)(react@18.2.0)
       react-native-vector-icons:
-        specifier: ^9.2.0
+        specifier: 9.2.0
         version: 9.2.0
     devDependencies:
       '@babel/core':
@@ -101,17 +101,17 @@ importers:
   packages/booking:
     dependencies:
       '@react-native-async-storage/async-storage':
-        specifier: ^1.17.11
-        version: 1.19.3(react-native@0.71.8)
+        specifier: 1.17.11
+        version: 1.17.11(react-native@0.71.8)
       '@react-navigation/material-bottom-tabs':
-        specifier: ^6.2.5
-        version: 6.2.17(@react-navigation/native@6.1.8)(react-native-paper@5.0.0-rc.10)(react-native-safe-area-context@4.4.1)(react-native-vector-icons@9.2.0)(react-native@0.71.8)(react@18.2.0)
+        specifier: 6.2.5
+        version: 6.2.5(@react-navigation/native@6.0.14)(react-native-paper@5.0.0-rc.10)(react-native-safe-area-context@4.4.1)(react-native-vector-icons@9.2.0)(react-native@0.71.8)(react@18.2.0)
       '@react-navigation/native':
-        specifier: ^6.0.14
-        version: 6.1.8(react-native@0.71.8)(react@18.2.0)
+        specifier: 6.0.14
+        version: 6.0.14(react-native@0.71.8)(react@18.2.0)
       '@react-navigation/native-stack':
-        specifier: ^6.9.2
-        version: 6.9.14(@react-navigation/native@6.1.8)(react-native-safe-area-context@4.4.1)(react-native-screens@3.25.0)(react-native@0.71.8)(react@18.2.0)
+        specifier: 6.9.2
+        version: 6.9.2(@react-navigation/native@6.0.14)(react-native-safe-area-context@4.4.1)(react-native-screens@3.18.2)(react-native@0.71.8)(react@18.2.0)
       react:
         specifier: 18.2.0
         version: 18.2.0
@@ -119,8 +119,8 @@ importers:
         specifier: 0.71.8
         version: 0.71.8(@babel/core@7.23.0)(@babel/preset-env@7.22.20)(react@18.2.0)
       react-native-calendars:
-        specifier: ^1.1291.1
-        version: 1.1301.0(react-native@0.71.8)(react@18.2.0)
+        specifier: 1.1291.1
+        version: 1.1291.1(react-native@0.71.8)(react@18.2.0)
       react-native-paper:
         specifier: 5.0.0-rc.10
         version: 5.0.0-rc.10(react-native-vector-icons@9.2.0)(react-native@0.71.8)(react@18.2.0)
@@ -128,10 +128,10 @@ importers:
         specifier: 4.4.1
         version: 4.4.1(react-native@0.71.8)(react@18.2.0)
       react-native-screens:
-        specifier: ^3.18.2
-        version: 3.25.0(react-native@0.71.8)(react@18.2.0)
+        specifier: 3.18.2
+        version: 3.18.2(react-native@0.71.8)(react@18.2.0)
       react-native-vector-icons:
-        specifier: ^9.2.0
+        specifier: 9.2.0
         version: 9.2.0
     devDependencies:
       '@babel/core':
@@ -213,20 +213,20 @@ importers:
   packages/dashboard:
     dependencies:
       '@react-native-async-storage/async-storage':
-        specifier: ^1.17.11
-        version: 1.19.3(react-native@0.71.8)
+        specifier: 1.17.11
+        version: 1.17.11(react-native@0.71.8)
       '@react-navigation/material-bottom-tabs':
-        specifier: ^6.2.5
-        version: 6.2.17(@react-navigation/native@6.1.8)(react-native-paper@5.0.0-rc.10)(react-native-safe-area-context@4.4.1)(react-native-vector-icons@9.2.0)(react-native@0.71.8)(react@18.2.0)
+        specifier: 6.2.5
+        version: 6.2.5(@react-navigation/native@6.0.14)(react-native-paper@5.0.0-rc.10)(react-native-safe-area-context@4.4.1)(react-native-vector-icons@9.2.0)(react-native@0.71.8)(react@18.2.0)
       '@react-navigation/native':
-        specifier: ^6.0.14
-        version: 6.1.8(react-native@0.71.8)(react@18.2.0)
+        specifier: 6.0.14
+        version: 6.0.14(react-native@0.71.8)(react@18.2.0)
       '@react-navigation/native-stack':
-        specifier: ^6.9.2
-        version: 6.9.14(@react-navigation/native@6.1.8)(react-native-safe-area-context@4.4.1)(react-native-screens@3.25.0)(react-native@0.71.8)(react@18.2.0)
+        specifier: 6.9.2
+        version: 6.9.2(@react-navigation/native@6.0.14)(react-native-safe-area-context@4.4.1)(react-native-screens@3.18.2)(react-native@0.71.8)(react@18.2.0)
       '@types/react-native-vector-icons':
-        specifier: ^6.4.12
-        version: 6.4.15
+        specifier: 6.4.12
+        version: 6.4.12
       react:
         specifier: 18.2.0
         version: 18.2.0
@@ -234,19 +234,19 @@ importers:
         specifier: 0.71.8
         version: 0.71.8(@babel/core@7.23.0)(@babel/preset-env@7.22.20)(react@18.2.0)
       react-native-calendars:
-        specifier: ^1.1291.1
-        version: 1.1301.0(react-native@0.71.8)(react@18.2.0)
+        specifier: 1.1291.1
+        version: 1.1291.1(react-native@0.71.8)(react@18.2.0)
       react-native-paper:
         specifier: 5.0.0-rc.10
         version: 5.0.0-rc.10(react-native-vector-icons@9.2.0)(react-native@0.71.8)(react@18.2.0)
       react-native-safe-area-context:
-        specifier: ^4.4.1
+        specifier: 4.4.1
         version: 4.4.1(react-native@0.71.8)(react@18.2.0)
       react-native-screens:
-        specifier: ^3.18.2
-        version: 3.25.0(react-native@0.71.8)(react@18.2.0)
+        specifier: 3.18.2
+        version: 3.18.2(react-native@0.71.8)(react@18.2.0)
       react-native-vector-icons:
-        specifier: ^9.2.0
+        specifier: 9.2.0
         version: 9.2.0
     devDependencies:
       '@babel/core':
@@ -316,17 +316,17 @@ importers:
   packages/host:
     dependencies:
       '@react-native-async-storage/async-storage':
-        specifier: ^1.17.11
-        version: 1.19.3(react-native@0.71.8)
+        specifier: 1.17.11
+        version: 1.17.11(react-native@0.71.8)
       '@react-navigation/material-bottom-tabs':
-        specifier: ^6.2.5
-        version: 6.2.17(@react-navigation/native@6.1.8)(react-native-paper@5.0.0-rc.10)(react-native-safe-area-context@4.4.1)(react-native-vector-icons@9.2.0)(react-native@0.71.8)(react@18.2.0)
+        specifier: 6.2.5
+        version: 6.2.5(@react-navigation/native@6.0.14)(react-native-paper@5.0.0-rc.10)(react-native-safe-area-context@4.4.1)(react-native-vector-icons@9.2.0)(react-native@0.71.8)(react@18.2.0)
       '@react-navigation/native':
-        specifier: ^6.0.14
-        version: 6.1.8(react-native@0.71.8)(react@18.2.0)
+        specifier: 6.0.14
+        version: 6.0.14(react-native@0.71.8)(react@18.2.0)
       '@react-navigation/native-stack':
-        specifier: ^6.9.2
-        version: 6.9.14(@react-navigation/native@6.1.8)(react-native-safe-area-context@4.4.1)(react-native-screens@3.25.0)(react-native@0.71.8)(react@18.2.0)
+        specifier: 6.9.2
+        version: 6.9.2(@react-navigation/native@6.0.14)(react-native-safe-area-context@4.4.1)(react-native-screens@3.18.2)(react-native@0.71.8)(react@18.2.0)
       react:
         specifier: 18.2.0
         version: 18.2.0
@@ -334,19 +334,19 @@ importers:
         specifier: 0.71.8
         version: 0.71.8(@babel/core@7.23.0)(@babel/preset-env@7.22.20)(react@18.2.0)
       react-native-bootsplash:
-        specifier: ^4.7.1
-        version: 4.7.5(react-native@0.71.8)
+        specifier: 4.7.1
+        version: 4.7.1(react-native@0.71.8)
       react-native-paper:
         specifier: 5.0.0-rc.10
         version: 5.0.0-rc.10(react-native-vector-icons@9.2.0)(react-native@0.71.8)(react@18.2.0)
       react-native-safe-area-context:
-        specifier: ^4.4.1
+        specifier: 4.4.1
         version: 4.4.1(react-native@0.71.8)(react@18.2.0)
       react-native-screens:
-        specifier: ^3.18.2
-        version: 3.25.0(react-native@0.71.8)(react@18.2.0)
+        specifier: 3.18.2
+        version: 3.18.2(react-native@0.71.8)(react@18.2.0)
       react-native-vector-icons:
-        specifier: ^9.2.0
+        specifier: 9.2.0
         version: 9.2.0
     devDependencies:
       '@babel/core':
@@ -422,17 +422,17 @@ importers:
   packages/shell:
     dependencies:
       '@react-native-async-storage/async-storage':
-        specifier: ^1.17.11
-        version: 1.19.3(react-native@0.71.8)
+        specifier: 1.17.11
+        version: 1.17.11(react-native@0.71.8)
       '@react-navigation/material-bottom-tabs':
-        specifier: ^6.2.5
-        version: 6.2.17(@react-navigation/native@6.1.8)(react-native-paper@5.0.0-rc.10)(react-native-safe-area-context@4.4.1)(react-native-vector-icons@9.2.0)(react-native@0.71.8)(react@18.2.0)
+        specifier: 6.2.5
+        version: 6.2.5(@react-navigation/native@6.0.14)(react-native-paper@5.0.0-rc.10)(react-native-safe-area-context@4.4.1)(react-native-vector-icons@9.2.0)(react-native@0.71.8)(react@18.2.0)
       '@react-navigation/native':
-        specifier: ^6.0.14
-        version: 6.1.8(react-native@0.71.8)(react@18.2.0)
+        specifier: 6.0.14
+        version: 6.0.14(react-native@0.71.8)(react@18.2.0)
       '@react-navigation/native-stack':
-        specifier: ^6.9.2
-        version: 6.9.14(@react-navigation/native@6.1.8)(react-native-safe-area-context@4.4.1)(react-native-screens@3.25.0)(react-native@0.71.8)(react@18.2.0)
+        specifier: 6.9.2
+        version: 6.9.2(@react-navigation/native@6.0.14)(react-native-safe-area-context@4.4.1)(react-native-screens@3.18.2)(react-native@0.71.8)(react@18.2.0)
       react:
         specifier: 18.2.0
         version: 18.2.0
@@ -440,19 +440,19 @@ importers:
         specifier: 0.71.8
         version: 0.71.8(@babel/core@7.23.0)(@babel/preset-env@7.22.20)(react@18.2.0)
       react-native-bootsplash:
-        specifier: ^4.7.1
-        version: 4.7.5(react-native@0.71.8)
+        specifier: 4.7.1
+        version: 4.7.1(react-native@0.71.8)
       react-native-paper:
         specifier: 5.0.0-rc.10
         version: 5.0.0-rc.10(react-native-vector-icons@9.2.0)(react-native@0.71.8)(react@18.2.0)
       react-native-safe-area-context:
-        specifier: ^4.4.1
+        specifier: 4.4.1
         version: 4.4.1(react-native@0.71.8)(react@18.2.0)
       react-native-screens:
-        specifier: ^3.18.2
-        version: 3.25.0(react-native@0.71.8)(react@18.2.0)
+        specifier: 3.18.2
+        version: 3.18.2(react-native@0.71.8)(react@18.2.0)
       react-native-vector-icons:
-        specifier: ^9.2.0
+        specifier: 9.2.0
         version: 9.2.0
     devDependencies:
       '@babel/core':
@@ -528,20 +528,20 @@ importers:
   packages/shopping:
     dependencies:
       '@react-native-async-storage/async-storage':
-        specifier: ^1.17.11
-        version: 1.19.3(react-native@0.71.8)
+        specifier: 1.17.11
+        version: 1.17.11(react-native@0.71.8)
       '@react-navigation/material-bottom-tabs':
-        specifier: ^6.2.5
-        version: 6.2.17(@react-navigation/native@6.1.8)(react-native-paper@5.0.0-rc.10)(react-native-safe-area-context@4.4.1)(react-native-vector-icons@9.2.0)(react-native@0.71.8)(react@18.2.0)
+        specifier: 6.2.5
+        version: 6.2.5(@react-navigation/native@6.0.14)(react-native-paper@5.0.0-rc.10)(react-native-safe-area-context@4.4.1)(react-native-vector-icons@9.2.0)(react-native@0.71.8)(react@18.2.0)
       '@react-navigation/native':
-        specifier: ^6.0.14
-        version: 6.1.8(react-native@0.71.8)(react@18.2.0)
+        specifier: 6.0.14
+        version: 6.0.14(react-native@0.71.8)(react@18.2.0)
       '@react-navigation/native-stack':
-        specifier: ^6.9.2
-        version: 6.9.14(@react-navigation/native@6.1.8)(react-native-safe-area-context@4.4.1)(react-native-screens@3.25.0)(react-native@0.71.8)(react@18.2.0)
+        specifier: 6.9.2
+        version: 6.9.2(@react-navigation/native@6.0.14)(react-native-safe-area-context@4.4.1)(react-native-screens@3.18.2)(react-native@0.71.8)(react@18.2.0)
       '@types/react-native-vector-icons':
-        specifier: ^6.4.12
-        version: 6.4.15
+        specifier: 6.4.12
+        version: 6.4.12
       react:
         specifier: 18.2.0
         version: 18.2.0
@@ -552,13 +552,13 @@ importers:
         specifier: 5.0.0-rc.10
         version: 5.0.0-rc.10(react-native-vector-icons@9.2.0)(react-native@0.71.8)(react@18.2.0)
       react-native-safe-area-context:
-        specifier: ^4.4.1
+        specifier: 4.4.1
         version: 4.4.1(react-native@0.71.8)(react@18.2.0)
       react-native-screens:
-        specifier: ^3.18.2
-        version: 3.25.0(react-native@0.71.8)(react@18.2.0)
+        specifier: 3.18.2
+        version: 3.18.2(react-native@0.71.8)(react@18.2.0)
       react-native-vector-icons:
-        specifier: ^9.2.0
+        specifier: 9.2.0
         version: 9.2.0
     devDependencies:
       '@babel/core':
@@ -2708,10 +2708,10 @@ packages:
       webpack: 5.88.2
     dev: true
 
-  /@react-native-async-storage/async-storage@1.19.3(react-native@0.71.8):
-    resolution: {integrity: sha512-CwGfoHCWdPOTPS+2fW6YRE1fFBpT9++ahLEroX5hkgwyoQ+TkmjOaUxixdEIoVua9Pz5EF2pGOIJzqOTMWfBlA==}
+  /@react-native-async-storage/async-storage@1.17.11(react-native@0.71.8):
+    resolution: {integrity: sha512-bzs45n5HNcDq6mxXnSsOHysZWn1SbbebNxldBXCQs8dSvF8Aor9KCdpm+TpnnGweK3R6diqsT8lFhX77VX0NFw==}
     peerDependencies:
-      react-native: ^0.0.0-0 || 0.60 - 0.72 || 1000.0.0
+      react-native: ^0.0.0-0 || 0.60 - 0.71 || 1000.0.0
     dependencies:
       merge-options: 3.0.4
       react-native: 0.71.8(@babel/core@7.23.0)(@babel/preset-env@7.22.20)(react@18.2.0)
@@ -3145,7 +3145,7 @@ packages:
       use-latest-callback: 0.1.6(react@18.2.0)
     dev: false
 
-  /@react-navigation/elements@1.3.19(@react-navigation/native@6.1.8)(react-native-safe-area-context@4.4.1)(react-native@0.71.8)(react@18.2.0):
+  /@react-navigation/elements@1.3.19(@react-navigation/native@6.0.14)(react-native-safe-area-context@4.4.1)(react-native@0.71.8)(react@18.2.0):
     resolution: {integrity: sha512-7hLvSYKPuDS070pza5gd43WDX7QgfuEmuTWNbCJhKdWlLudYmq3qzxGCBwCfO2dEI6+p8tla5wruaWiGKAbTYw==}
     peerDependencies:
       '@react-navigation/native': ^6.0.0
@@ -3153,14 +3153,14 @@ packages:
       react-native: '*'
       react-native-safe-area-context: '>= 3.0.0'
     dependencies:
-      '@react-navigation/native': 6.1.8(react-native@0.71.8)(react@18.2.0)
+      '@react-navigation/native': 6.0.14(react-native@0.71.8)(react@18.2.0)
       react: 18.2.0
       react-native: 0.71.8(@babel/core@7.23.0)(@babel/preset-env@7.22.20)(react@18.2.0)
       react-native-safe-area-context: 4.4.1(react-native@0.71.8)(react@18.2.0)
     dev: false
 
-  /@react-navigation/material-bottom-tabs@6.2.17(@react-navigation/native@6.1.8)(react-native-paper@5.0.0-rc.10)(react-native-safe-area-context@4.4.1)(react-native-vector-icons@9.2.0)(react-native@0.71.8)(react@18.2.0):
-    resolution: {integrity: sha512-Y3ULwLlViArC+XQeqU3jzUQp965Qrv0caQlJ8MeEw/6NLENazJ5f1mTFjWFpvVWthQL56rXv3Vo7DU+kRN/DzQ==}
+  /@react-navigation/material-bottom-tabs@6.2.5(@react-navigation/native@6.0.14)(react-native-paper@5.0.0-rc.10)(react-native-safe-area-context@4.4.1)(react-native-vector-icons@9.2.0)(react-native@0.71.8)(react@18.2.0):
+    resolution: {integrity: sha512-3uZ95zHd0H9vH6hsKdu+wr+OgjhluxE88hMgiGsUJ5kWoQ+KTJanbE45hSlhBYCPVMDN3wK3Fmb5TlxhvmHr8w==}
     peerDependencies:
       '@react-navigation/native': ^6.0.0
       react: '*'
@@ -3169,8 +3169,8 @@ packages:
       react-native-safe-area-context: '>= 3.0.0'
       react-native-vector-icons: '>= 6.0.0'
     dependencies:
-      '@react-navigation/elements': 1.3.19(@react-navigation/native@6.1.8)(react-native-safe-area-context@4.4.1)(react-native@0.71.8)(react@18.2.0)
-      '@react-navigation/native': 6.1.8(react-native@0.71.8)(react@18.2.0)
+      '@react-navigation/elements': 1.3.19(@react-navigation/native@6.0.14)(react-native-safe-area-context@4.4.1)(react-native@0.71.8)(react@18.2.0)
+      '@react-navigation/native': 6.0.14(react-native@0.71.8)(react@18.2.0)
       react: 18.2.0
       react-native: 0.71.8(@babel/core@7.23.0)(@babel/preset-env@7.22.20)(react@18.2.0)
       react-native-paper: 5.0.0-rc.10(react-native-vector-icons@9.2.0)(react-native@0.71.8)(react@18.2.0)
@@ -3178,8 +3178,8 @@ packages:
       react-native-vector-icons: 9.2.0
     dev: false
 
-  /@react-navigation/native-stack@6.9.14(@react-navigation/native@6.1.8)(react-native-safe-area-context@4.4.1)(react-native-screens@3.25.0)(react-native@0.71.8)(react@18.2.0):
-    resolution: {integrity: sha512-7RiZkvMFN6f0kmANc63B/0m9ttQ2JpDIPWQwPU93FP698s19KTOyu7uxgl7Oi3bvsqHFO5JfiR7B+4h8lh9dxw==}
+  /@react-navigation/native-stack@6.9.2(@react-navigation/native@6.0.14)(react-native-safe-area-context@4.4.1)(react-native-screens@3.18.2)(react-native@0.71.8)(react@18.2.0):
+    resolution: {integrity: sha512-W5CYX+mYVyOYUgWoN15O34Pv/JieX2/pU09yh+kacxPHPEm4gYTQM/OIHACOov5T2WyiNSU6iIHjfzQ6e7M9zw==}
     peerDependencies:
       '@react-navigation/native': ^6.0.0
       react: '*'
@@ -3187,17 +3187,17 @@ packages:
       react-native-safe-area-context: '>= 3.0.0'
       react-native-screens: '>= 3.0.0'
     dependencies:
-      '@react-navigation/elements': 1.3.19(@react-navigation/native@6.1.8)(react-native-safe-area-context@4.4.1)(react-native@0.71.8)(react@18.2.0)
-      '@react-navigation/native': 6.1.8(react-native@0.71.8)(react@18.2.0)
+      '@react-navigation/elements': 1.3.19(@react-navigation/native@6.0.14)(react-native-safe-area-context@4.4.1)(react-native@0.71.8)(react@18.2.0)
+      '@react-navigation/native': 6.0.14(react-native@0.71.8)(react@18.2.0)
       react: 18.2.0
       react-native: 0.71.8(@babel/core@7.23.0)(@babel/preset-env@7.22.20)(react@18.2.0)
       react-native-safe-area-context: 4.4.1(react-native@0.71.8)(react@18.2.0)
-      react-native-screens: 3.25.0(react-native@0.71.8)(react@18.2.0)
+      react-native-screens: 3.18.2(react-native@0.71.8)(react@18.2.0)
       warn-once: 0.1.1
     dev: false
 
-  /@react-navigation/native@6.1.8(react-native@0.71.8)(react@18.2.0):
-    resolution: {integrity: sha512-0alti852nV+8oCVm9H80G6kZvrHoy51+rXBvVCRUs2rNDDozC/xPZs8tyeCJkqdw3cpxZDK8ndXF22uWq28+0Q==}
+  /@react-navigation/native@6.0.14(react-native@0.71.8)(react@18.2.0):
+    resolution: {integrity: sha512-Z95bJrRkZerBJq6Qc/xjA/kibPpB+UvPeMWS1CBhRF8FaX1483UdHqPqSbW879tPwjP2R4XfoA4dtoEHswrOjA==}
     peerDependencies:
       react: '*'
       react-native: '*'
@@ -3351,11 +3351,19 @@ packages:
   /@types/prop-types@15.7.8:
     resolution: {integrity: sha512-kMpQpfZKSCBqltAJwskgePRaYRFukDkm1oItcAbC3gNELR20XIBcN9VRgg4+m8DKsTfkWeA4m4Imp4DDuWy7FQ==}
 
+  /@types/react-native-vector-icons@6.4.12:
+    resolution: {integrity: sha512-gSXtv3NMOsRwSXJ/gvGebm7CNjHbkeFKCse9h/Pvi+x2yjCLOkJR1FBfec06DhaFJpsK7Y8WRQpwOS0eLqx5Rg==}
+    dependencies:
+      '@types/react': 18.2.27
+      '@types/react-native': 0.70.15
+    dev: false
+
   /@types/react-native-vector-icons@6.4.15:
     resolution: {integrity: sha512-gmyVIANMFQXzpzejg4uMpYZ6KffrItkeb2F9LgcLnZz8RVrtbF8I3wbkRafHJoDJ2U0p8QiRui+BghD11ae8Gg==}
     dependencies:
       '@types/react': 18.2.27
       '@types/react-native': 0.70.15
+    dev: true
 
   /@types/react-native@0.70.15:
     resolution: {integrity: sha512-wHrMQd65odOFbejFSDF7riocwLGEjkoJCF3GhH2a1vKqWbCExH361AZa/1GMG8gijAP86hkjF9gHZFHepEXaZA==}
@@ -4621,6 +4629,11 @@ packages:
     requiresBuild: true
     dev: true
 
+  /core-js@1.2.7:
+    resolution: {integrity: sha512-ZiPp9pZlgxpWRu0M+YWbm6+aQ84XEfH1JRXvfOc/fILWI0VKhLC2LX13X1NYq4fULzLMq7Hfh43CSo2/aIaUPA==}
+    deprecated: core-js@<3.23.3 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Some versions have web compatibility issues. Please, upgrade your dependencies to the actual version of core-js.
+    dev: false
+
   /core-util-is@1.0.3:
     resolution: {integrity: sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ==}
 
@@ -4921,6 +4934,12 @@ packages:
     resolution: {integrity: sha512-GSK7qphNR4iPcejfAlZxKDoz3xMhnspwImK+Af5WhePS9jUpK/Oh7rUdyENWu+9rgDflOCTmAojBsgsvM8neAQ==}
     engines: {node: '>=10.13.0'}
     dev: true
+
+  /encoding@0.1.13:
+    resolution: {integrity: sha512-ETBauow1T35Y/WZMkio9jiM0Z5xjHHmJ4XmjZOq1l/dXz3lr2sRn87nJy20RupqSh1F2m3HHPSp8ShIPQJrJ3A==}
+    dependencies:
+      iconv-lite: 0.6.3
+    dev: false
 
   /end-of-stream@1.4.4:
     resolution: {integrity: sha512-+uw1inIHVPQoaVuHzRyXd21icM+cnt4CzD5rW+NC1wjOUSTOs+Te7FOv7AhN7vS9x/oIyhLP5PR1H+phQAHu5Q==}
@@ -5529,6 +5548,18 @@ packages:
     dependencies:
       bser: 2.1.1
 
+  /fbjs@0.8.18:
+    resolution: {integrity: sha512-EQaWFK+fEPSoibjNy8IxUtaFOMXcWsY0JaVrQoZR9zC8N2Ygf9iDITPWjUTVIax95b6I742JFLqASHfsag/vKA==}
+    dependencies:
+      core-js: 1.2.7
+      isomorphic-fetch: 2.2.1
+      loose-envify: 1.4.0
+      object-assign: 4.1.1
+      promise: 7.3.1
+      setimmediate: 1.0.5
+      ua-parser-js: 0.7.36
+    dev: false
+
   /file-entry-cache@6.0.1:
     resolution: {integrity: sha512-7Gps/XWymbLk2QLYK4NzpMOrYjMhdIxXuIvy2QBsLE6ljuodKvdkWs/cpyJJ3CVIVpH0Oi1Hvg1ovbMzLdFBBg==}
     engines: {node: ^10.12.0 || >=12.0.0}
@@ -5986,6 +6017,13 @@ packages:
       safer-buffer: 2.1.2
     dev: false
 
+  /iconv-lite@0.6.3:
+    resolution: {integrity: sha512-4fCk79wshMdzMp2rH06qWrJE4iolqLhCUH+OiuIgU++RB0+94NlDL81atO7GX55uUKueo0txHNtvEyI6D7WdMw==}
+    engines: {node: '>=0.10.0'}
+    dependencies:
+      safer-buffer: 2.1.2
+    dev: false
+
   /ieee754@1.2.1:
     resolution: {integrity: sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==}
 
@@ -6013,6 +6051,10 @@ packages:
     dependencies:
       queue: 6.0.2
     dev: true
+
+  /immutable@4.3.4:
+    resolution: {integrity: sha512-fsXeu4J4i6WNWSikpI88v/PcVflZz+6kMhUfIwc5SY+poQRPnaf5V7qds6SUyUN3cVxEzuCab7QIoLOQ+DQ1wA==}
+    dev: false
 
   /import-fresh@2.0.0:
     resolution: {integrity: sha512-eZ5H8rcgYazHbKC3PG4ClHNykCSxtAhxSSEM+2mb+7evD2CKF5V7c0dNum7AdpDh0ZdICwZY9sRSn8f+KH96sg==}
@@ -6322,6 +6364,13 @@ packages:
   /isobject@3.0.1:
     resolution: {integrity: sha512-WhB9zCku7EGTj/HQQRz5aUQEUeoQZH2bWcltRErOpymJ4boYE6wL9Tbr23krRPSZ+C5zqNSrSw+Cc7sZZ4b7vg==}
     engines: {node: '>=0.10.0'}
+
+  /isomorphic-fetch@2.2.1:
+    resolution: {integrity: sha512-9c4TNAKYXM5PRyVcwUZrF3W09nQ+sO7+jydgs4ZGW9dhsLG2VOlISJABombdQqQRXCwuYG3sYV/puGf5rp0qmA==}
+    dependencies:
+      node-fetch: 1.7.3
+      whatwg-fetch: 3.6.19
+    dev: false
 
   /istanbul-lib-coverage@3.2.0:
     resolution: {integrity: sha512-eOeJ5BHCmHYvQK7xt9GkdHuzuCGS1Y6g9Gvnx3Ym33fz/HpLRYxiS0wHNr+m/MBC8B647Xt608vCDEvhl9c6Mw==}
@@ -8112,6 +8161,13 @@ packages:
     dependencies:
       minimatch: 3.1.2
 
+  /node-fetch@1.7.3:
+    resolution: {integrity: sha512-NhZ4CsKx7cYm2vSrBAr2PvFOe6sWDf0UYLRqA6svUYg7+/TSfVAu49jYC4BvQ4Sms9SZgdqGBgroqfDhJdTyKQ==}
+    dependencies:
+      encoding: 0.1.13
+      is-stream: 1.1.0
+    dev: false
+
   /node-fetch@2.7.0:
     resolution: {integrity: sha512-c4FRfUm/dbcWZ7U+1Wq0AwCyFL+3nt2bEw05wfxSz+DWpWsitgmSgYmy2dQdWyKC1694ELPqMs/YzUSNozLt8A==}
     engines: {node: 4.x || >=6.0.0}
@@ -8572,6 +8628,12 @@ packages:
     resolution: {integrity: sha512-du4wfLyj4yCZq1VupnVSZmRsPJsNuxoDQFdCFHLaYiEbFBD7QE0a+I4D7hOxrVnh78QE/YipFAj9lXHiXocV+Q==}
     dev: true
 
+  /promise@7.3.1:
+    resolution: {integrity: sha512-nolQXZ/4L+bP/UGlkfaIujX9BKxGwmQ9OT4mOt5yvy8iK1h3wqTEJCijzGANTCCl9nWjY41juyAn2K3Q1hLLTg==}
+    dependencies:
+      asap: 2.0.6
+    dev: false
+
   /promise@8.3.0:
     resolution: {integrity: sha512-rZPNPKTOYVNEEKFaq1HqTgOwZD+4/YHS5ukLzQCypkj+OkYx7iv0mA91lJlpPPZ8vMau3IIGj5Qlwrx+8iiSmg==}
     dependencies:
@@ -8583,6 +8645,12 @@ packages:
     dependencies:
       kleur: 3.0.3
       sisteransi: 1.0.5
+
+  /prop-types@15.5.8:
+    resolution: {integrity: sha512-QiDx7s0lWoAVxmEmOYnn3rIZGduup2PZgj3rta5O5y0NfPKu3ApWi+GdMfTto7PmO/5+p4yamSLMZkj0jaTL4A==}
+    dependencies:
+      fbjs: 0.8.18
+    dev: false
 
   /prop-types@15.8.1:
     resolution: {integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==}
@@ -8713,8 +8781,8 @@ packages:
   /react-is@18.2.0:
     resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
 
-  /react-native-bootsplash@4.7.5(react-native@0.71.8):
-    resolution: {integrity: sha512-b49pfOg/4CKpoPlWR03l1pYZLi+zq1QMs7uX/pxpgEcUKHQzA29OFLa47OmzNCXjB7/jWbogjFnSVQbN08iKqw==}
+  /react-native-bootsplash@4.7.1(react-native@0.71.8):
+    resolution: {integrity: sha512-3CIVz3//Bg71XYt5YM7cws1LNj+qzdQhvSz9eAMKBkveXQCpF1q/MatYFEpyCocmhmJc+N2Q6xMIpYSxTvtbWg==}
     peerDependencies:
       react-native: '>=0.65.0'
     dependencies:
@@ -8724,15 +8792,16 @@ packages:
       sharp: 0.32.6
     dev: false
 
-  /react-native-calendars@1.1301.0(react-native@0.71.8)(react@18.2.0):
-    resolution: {integrity: sha512-KfDntslK2qKoVl99Hm9bKZuFrdQTru1Ss2t12bCwKuhrKRh5Ho1wgXBAY5SE9sxxWy8mbydmOcLnmxl7BeYWXw==}
+  /react-native-calendars@1.1291.1(react-native@0.71.8)(react@18.2.0):
+    resolution: {integrity: sha512-L2MK2t3kbnDg2RoU12UAoQyNrUpDYdj2MyIfg13YrwVb8BuI/gc0q/VpEinY3iz5ETHiFsTLkCsAFwSj7xbZWw==}
     dependencies:
       hoist-non-react-statics: 3.3.2
+      immutable: 4.3.4
       lodash: 4.17.21
       memoize-one: 5.2.1
       prop-types: 15.8.1
       react-native-swipe-gestures: 1.0.5
-      recyclerlistview: 4.2.0(react-native@0.71.8)(react@18.2.0)
+      recyclerlistview: 3.0.5(react-native@0.71.8)(react@18.2.0)
       xdate: 0.8.2
     optionalDependencies:
       moment: 2.29.4
@@ -8788,8 +8857,8 @@ packages:
       react-native: 0.71.8(@babel/core@7.23.0)(@babel/preset-env@7.22.20)(react@18.2.0)
     dev: false
 
-  /react-native-screens@3.25.0(react-native@0.71.8)(react@18.2.0):
-    resolution: {integrity: sha512-TSC2Ad0hh763I8QT6XxMsPXAagQ+RawDSdFtKRvIz9fCYr96AjRwwaqmYivbqlDywOgcRBkIVynkFtp0ThmlYw==}
+  /react-native-screens@3.18.2(react-native@0.71.8)(react@18.2.0):
+    resolution: {integrity: sha512-ANUEuvMUlsYJ1QKukEhzhfrvOUO9BVH9Nzg+6eWxpn3cfD/O83yPBOF8Mx6x5H/2+sMy+VS5x/chWOOo/U7QJw==}
     peerDependencies:
       react: '*'
       react-native: '*'
@@ -8957,14 +9026,14 @@ packages:
       source-map: 0.6.1
       tslib: 2.6.2
 
-  /recyclerlistview@4.2.0(react-native@0.71.8)(react@18.2.0):
-    resolution: {integrity: sha512-uuBCi0c+ggqHKwrzPX4Z/mJOzsBbjZEAwGGmlwpD/sD7raXixdAbdJ6BTcAmuWG50Cg4ru9p12M94Njwhr/27A==}
+  /recyclerlistview@3.0.5(react-native@0.71.8)(react@18.2.0):
+    resolution: {integrity: sha512-JVHz13u520faEsbVqFrJOMuJjc4mJlOXODe5QdqAJHdl5/IpyYeo83uiHrpzxyLb8QtJ0889JMlDik+Z1Ed0QQ==}
     peerDependencies:
       react: '>= 15.2.1'
       react-native: '>= 0.30.0'
     dependencies:
       lodash.debounce: 4.0.8
-      prop-types: 15.8.1
+      prop-types: 15.5.8
       react: 18.2.0
       react-native: 0.71.8(@babel/core@7.23.0)(@babel/preset-env@7.22.20)(react@18.2.0)
       ts-object-utils: 0.0.5
@@ -9291,6 +9360,10 @@ packages:
       define-data-property: 1.1.0
       functions-have-names: 1.2.3
       has-property-descriptors: 1.0.0
+
+  /setimmediate@1.0.5:
+    resolution: {integrity: sha512-MATJdZp8sLqDl/68LfQmbP8zKPLQNV6BIZoIgrscFDQ+RsvK/BxeDQOgyxKKoh0y/8h3BqVFnCqQ/gd+reiIXA==}
+    dev: false
 
   /setprototypeof@1.2.0:
     resolution: {integrity: sha512-E5LDX7Wrp85Kil5bhZv46j8jOeboKq5JMmYM3gVGdGH8xFpPWXUMsNrlODCrkoxMEeNi/XZIwuRvY4XNwYMJpw==}
@@ -9970,6 +10043,10 @@ packages:
     engines: {node: '>=4.2.0'}
     hasBin: true
     dev: true
+
+  /ua-parser-js@0.7.36:
+    resolution: {integrity: sha512-CPPLoCts2p7D8VbybttE3P2ylv0OBZEAy7a12DsulIEcAiMtWJy+PBgMXgWDI80D5UwqE8oQPHYnk13tm38M2Q==}
+    dev: false
 
   /uglify-es@3.3.9:
     resolution: {integrity: sha512-r+MU0rfv4L/0eeW3xZrd16t4NZfK8Ld4SWVglYBb7ez5uXFWHuVRs6xCTrf1yirs9a4j4Y27nn7SRfO6v67XsQ==}

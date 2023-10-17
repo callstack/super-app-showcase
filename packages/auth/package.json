@@ -11,11 +11,11 @@
     "bundle:android": "react-native webpack-bundle --platform android --entry-file index.js --dev false"
   },
   "dependencies": {
-    "@react-native-async-storage/async-storage": "^1.17.11",
+    "@react-native-async-storage/async-storage": "1.17.11",
     "react": "18.2.0",
     "react-native": "0.71.8",
     "react-native-paper": "5.0.0-rc.10",
-    "react-native-vector-icons": "^9.2.0"
+    "react-native-vector-icons": "9.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",

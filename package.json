@@ -21,7 +21,7 @@
     "run:dashboard:android": "pnpm --filter dashboard android",
     "bundle:auth:ios": "pnpm --filter auth bundle:ios",
     "bundle:auth:android": "pnpm --filter auth bundle:android",
-    "pods": "pnpm --filter * pods",
+    "pods": "pnpm -r pods",
     "start": "concurrently --raw -P 'pnpm:start:*(!standalone) {1}'",
     "typecheck": "pnpm -r typecheck",
     "lint": "pnpm -r lint",

@@ -4,9 +4,6 @@
   "license": "MIT",
   "private": true,
   "packageManager": "pnpm@8.9.2",
-  "workspaces": [
-    "packages/*"
-  ],
   "scripts": {
     "start:host": "pnpm --filter host start",
     "start:booking": "pnpm --filter booking start",

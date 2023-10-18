@@ -62,6 +62,8 @@ Each of the mini apps could be deployed and run as a standalone app.
 
 ## How to use
 
+This project now uses `pnpm` instead of `yarn`. Learn how to install `pnpm` [here](https://pnpm.io/installation)
+
 ### Setup
 
 Install dependencies for all apps:

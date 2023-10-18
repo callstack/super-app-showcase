@@ -7,7 +7,7 @@ This is mini app for shopping service. Shopping exposes `MainNavigator`. `MainNa
 Install dependencies for all apps in root directory of this monorepo:
 
 ```
-yarn
+pnpm install
 ```
 
 ### Run
@@ -15,5 +15,5 @@ yarn
 Start dev server for all apps in root directory of this monorepo if you need to work as a part of host app. Shopping app server will run on 9001 port:
 
 ```
-yarn start
+pnpm start
 ```

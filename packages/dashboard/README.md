@@ -7,13 +7,13 @@ This is mini app for handling business management flow. Dashboard exposes `MainN
 Install dependencies for all apps in root directory of this monorepo:
 
 ```
-yarn
+pnpm install
 ```
 
 Install pods:
 
 ```
-yarn pods
+pnpm pods
 ```
 
 ### Run
@@ -21,5 +21,5 @@ yarn pods
 Start dev server for all apps in root directory of this monorepo if you need to work as a part of host app. Dashboard app server will run on 9002 port:
 
 ```
-yarn start
+pnpm start
 ```

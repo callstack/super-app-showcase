@@ -62,18 +62,20 @@ Each of the mini apps could be deployed and run as a standalone app.
 
 ## How to use
 
+We use `pnpm` to manage dependencies. Learn how to install `pnpm` [here](https://pnpm.io/installation)
+
 ### Setup
 
 Install dependencies for all apps:
 
 ```
-yarn
+pnpm install
 ```
 
 [Optional] Install pods where applicable
 
 ```
-yarn pods
+pnpm pods
 ```
 
 ### Run
@@ -81,57 +83,57 @@ yarn pods
 Start dev server for host and mini apps:
 
 ```
-yarn start
+pnpm start
 ```
 
 Or start dev server for a specific app ([host](./packages/host/README.md) | [booking](./packages/booking/README.md) | [shopping](./packages/shopping/README.md) | [news](https://github.com/callstack/news-mini-app-showcase) | [dashboard](./packages/dashboard/README.md)):
 
 ```
-yarn start:<app-name>
+pnpm start:<app-name>
 ```
 
 Or start dev server for a specific app as a standalone app. It's useful for testing micro-frontend as a standalone app:
 
 ```
-yarn start:standalone:<app-name>
+pnpm start:standalone:<app-name>
 ```
 
 Running the mini app as a standalone requires running the [catalog-server](./packages/catalog-server/README.md) and [auth module](./packages/auth/README.md):
 
 ```
-yarn start:catalog
+pnpm start:catalog
 ```
 
 ```
-yarn start:auth
+pnpm start:auth
 ```
 
 Or run commands concurrently:
 
 ```
-yarn concurrently -P "yarn start:catalog" "yarn start:auth"
+pnpm concurrently -P "pnpm start:catalog" "pnpm start:auth"
 ```
 
 Run iOS or Android app (ios | android):
 
 ```
-yarn run:<app-name>:<platform>
+pnpm run:<app-name>:<platform>
 ```
 
 For Android, make sure to reverse adb ports:
 
 ```
-yarn adbreverse
+pnpm adbreverse
 ```
 
-There is no `start:shell` script to avoid running shell and host app concurrently. It's not possible to run shell and host app concurrently, since they use the same port. If you want to run shell app, you should run `yarn start:standalone:shell` and then run each mini app bundler you want to use in shell app.
+There is no `start:shell` script to avoid running shell and host app concurrently. It's not possible to run shell and host app concurrently, since they use the same port. If you want to run shell app, you should run `pnpm start:standalone:shell` and then run each mini app bundler you want to use in shell app.
 
 ### Test
 
 Run tests for all apps:
 
 ```
-yarn test
+pnpm test
 ```
 
 ### Lint
@@ -139,7 +141,7 @@ yarn test
 Run linter for all apps:
 
 ```
-yarn lint
+pnpm lint
 ```
 
 ### Type check
@@ -147,7 +149,7 @@ yarn lint
 Run type check for all apps:
 
 ```
-yarn typecheck
+pnpm typecheck
 ```
 
 ## Troubleshooting

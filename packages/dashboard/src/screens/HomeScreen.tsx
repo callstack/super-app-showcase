@@ -1,5 +1,12 @@
 import React from 'react';
-import {Alert, FlatList, ListRenderItem, ScrollView, StyleSheet, View} from 'react-native';
+import {
+  Alert,
+  FlatList,
+  ListRenderItem,
+  ScrollView,
+  StyleSheet,
+  View,
+} from 'react-native';
 import {
   Avatar,
   Card,

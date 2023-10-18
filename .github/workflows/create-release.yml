@@ -27,10 +27,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: yarn
+          cache: pnpm
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: pnpm install --frozen-lockfile
 
       - name: Create code-signing.pem
         env:
@@ -38,7 +38,7 @@ jobs:
         run: echo "$CODE_SIGNING_KEY" > code-signing.pem
 
       - name: Build
-        run: yarn node scripts/build-miniapp.js ${{ github.ref_name }}
+        run: pnpm node scripts/build-miniapp.js ${{ github.ref_name }}
 
       - name: Delete code-signing.pem
         run: rm code-signing.pem

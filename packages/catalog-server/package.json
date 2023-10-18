@@ -4,9 +4,6 @@
   "description": "Catalog Server",
   "main": "api/index.js",
   "private": true,
-  "installConfig": {
-    "hoistingLimits": "workspaces"
-  },
   "scripts": {
     "start": "node api/index.js"
   },

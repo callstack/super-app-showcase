@@ -8,7 +8,9 @@ const SignInScreen = () => {
 
   return (
     <View style={styles.container}>
-      <Text variant="headlineMedium" style={styles.welcomeHeadline}>Welcome!</Text>
+      <Text variant="headlineMedium" style={styles.welcomeHeadline}>
+        Welcome!
+      </Text>
       <Text style={styles.welcomeText} variant="bodyLarge">
         This is a dummy login screen. Just press the button and have a look
         around this super app 🚀

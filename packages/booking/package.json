@@ -2,37 +2,34 @@
   "name": "booking",
   "version": "0.0.1",
   "private": true,
-  "installConfig": {
-    "hoistingLimits": "workspaces"
-  },
   "scripts": {
     "start": "react-native webpack-start --port 9000",
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "typecheck": "tsc",
-    "bundle": "yarn bundle:ios && yarn bundle:android",
+    "bundle": "pnpm bundle:ios && pnpm bundle:android",
     "bundle:ios": "react-native webpack-bundle --platform ios --entry-file index.js --dev false",
     "bundle:android": "react-native webpack-bundle --platform android --entry-file index.js --dev false"
   },
   "dependencies": {
-    "@react-native-async-storage/async-storage": "^1.17.11",
-    "@react-navigation/material-bottom-tabs": "^6.2.5",
-    "@react-navigation/native": "^6.0.14",
-    "@react-navigation/native-stack": "^6.9.2",
+    "@react-native-async-storage/async-storage": "1.17.11",
+    "@react-navigation/material-bottom-tabs": "6.2.5",
+    "@react-navigation/native": "6.0.14",
+    "@react-navigation/native-stack": "6.9.2",
     "react": "18.2.0",
     "react-native": "0.71.8",
-    "react-native-calendars": "^1.1291.1",
+    "react-native-calendars": "1.1291.1",
     "react-native-paper": "5.0.0-rc.10",
     "react-native-safe-area-context": "4.4.1",
-    "react-native-screens": "^3.18.2",
-    "react-native-vector-icons": "^9.2.0"
+    "react-native-screens": "3.18.2",
+    "react-native-vector-icons": "9.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
     "@babel/preset-env": "^7.20.0",
     "@babel/runtime": "^7.20.0",
     "@callstack/repack": "~3.4.0",
-    "@react-native-community/eslint-config": "^3.2.0",
+    "@react-native/eslint-config": "^0.74.0",
     "@tsconfig/react-native": "^2.0.2",
     "@types/jest": "^29.2.1",
     "@types/react": "^18.0.24",
@@ -44,6 +41,7 @@
     "babel-loader": "^9.1.0",
     "eslint": "^8.19.0",
     "jest": "^29.2.1",
+    "prettier": "^2.8.8",
     "metro-react-native-babel-preset": "0.73.9",
     "react-test-renderer": "18.2.0",
     "terser-webpack-plugin": "^5.3.6",
@@ -57,16 +55,5 @@
       "type": "internal",
       "url": "https://github.com/callstack/super-app-showcase"
     }
-  ],
-  "jest": {
-    "preset": "react-native",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "jsx",
-      "json",
-      "node"
-    ]
-  }
+  ]
 }

@@ -13,7 +13,7 @@ const CalendarNavigator = () => {
   return (
     <Calendar.Navigator
       screenOptions={{
-        header: props => <NavBar {...props} />,
+        header: NavBar,
       }}>
       <Calendar.Screen name="Calendar" component={CalendarScreen} />
     </Calendar.Navigator>

@@ -7,13 +7,13 @@ This is the main app, which is a super app. It contains all the micro-frontends 
 Install dependencies for all apps in root directory of this monorepo:
 
 ```
-yarn
+pnpm install
 ```
 
 Install pods:
 
 ```
-yarn pods
+pnpm pods
 ```
 
 ### Run
@@ -21,17 +21,17 @@ yarn pods
 Start dev server for all apps in root directory of this monorepo:
 
 ```
-yarn start
+pnpm start
 ```
 
 Or start dev server for Host app:
 
 ```
-yarn start:host
+pnpm start:host
 ```
 
 Run iOS or Android app (ios | android):
 
 ```
-yarn run:host:<platform>
+pnpm run:host:<platform>
 ```

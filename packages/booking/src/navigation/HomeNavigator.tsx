@@ -15,8 +15,8 @@ const HomeNavigator = () => {
   return (
     <Home.Navigator
       screenOptions={{
-        header: props => <NavBar {...props} />,
-        title: "Booking"
+        header: NavBar,
+        title: 'Booking',
       }}>
       <Home.Screen name="Home" component={HomeScreen} />
       <Home.Screen name="Upcoming" component={UpcomingScreen} />

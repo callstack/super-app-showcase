@@ -7,7 +7,7 @@ This is mini app for booking service. Booking exposes `UpcomingAppointments` scr
 Install dependencies for all apps in root directory of this monorepo:
 
 ```
-yarn
+pnpm install
 ```
 
 ### Run
@@ -15,17 +15,17 @@ yarn
 Start dev server for all apps in root directory of this monorepo if you need to work as a part of host app. Booking app server will run on 9000 port:
 
 ```
-yarn start
+pnpm start
 ```
 
 Or start dev server for Booking app as a standalone app:
 
 ```
-yarn start:standalone:booking
+pnpm start:standalone:booking
 ```
 
 Run iOS or Android app (ios | android):
 
 ```
-yarn run:booking:<platform>
+pnpm run:booking:<platform>
 ```

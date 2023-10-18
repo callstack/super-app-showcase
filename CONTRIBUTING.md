@@ -31,9 +31,9 @@ We follow the [conventional commits specification](https://www.conventionalcommi
 
 We type our code with Flow or TypeScript, use ESLint with Prettier for linting and formatting the code, and Jest for testing. Our pre-commit hooks verify that the linter and tests pass when commiting. You can also run the following commands manually:
 
-- `yarn typecheck`: run type checks.
-- `yarn lint`: lint files with eslint and prettier.
-- `yarn test`: run unit tests with jest.
+- `pnpm typecheck`: run type checks.
+- `pnpm lint`: lint files with eslint and prettier.
+- `pnpm test`: run unit tests with jest.
 
 ### Sending a pull request
 

@@ -13,7 +13,7 @@ const ServicesNavigator = () => {
   return (
     <Home.Navigator
       screenOptions={{
-        header: props => <NavBar {...props} />,
+        header: NavBar,
       }}>
       <Home.Screen name="Services" component={ServicesScreen} />
     </Home.Navigator>

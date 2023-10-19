@@ -174,7 +174,7 @@ dependencies {
     }
 }
 
-apply from: file("../../../../shared/resolveNodePackage.gradle")
+apply from: file"../../node_modules/super-app-showcase-sdk/android/resolveNodePackage.gradle"
 
 def reactNativeRoot = resolveNodePackage('react-native', rootDir)
 def cliPlatformAndroidPath = resolveNodePackage('@react-native-community/cli-platform-android', reactNativeRoot)

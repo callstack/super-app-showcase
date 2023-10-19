@@ -1,4 +1,4 @@
-apply from: "../../../shared/resolveNodePackage.gradle"
+apply from: "../node_modules/super-app-showcase-sdk/android/resolveNodePackage.gradle"
 
 rootProject.name = 'shell'
 

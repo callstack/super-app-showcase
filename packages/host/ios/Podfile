@@ -1,4 +1,4 @@
-require_relative '../../../shared/react_native_setup.rb'
+require_relative '../node_modules/super-app-showcase-sdk/ios/react_native_setup.rb'
 
 platform :ios, min_ios_version_supported
 prepare_react_native_project!

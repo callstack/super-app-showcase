@@ -1,7 +1,7 @@
 import * as Repack from '@callstack/repack';
 import path from 'path';
 import TerserPlugin from 'terser-webpack-plugin';
-import sdk from 'super-app-showcase-sdk';
+import getSharedDependencies from 'super-app-showcase-sdk/lib/shared-deps';
 /**
  * This env variable shows if bundle is standalone and eager should be enabled in Module federation Plugin config.
  * Please see more detailed description in Module Federation Plugin config.
@@ -266,7 +266,7 @@ export default env => {
          * React, React Native and React Navigation should be provided here because there should be only one instance of these modules.
          * Their names are used to match requested modules in this compilation.
          */
-        shared: sdk.getSharedDependencies(STANDALONE),
+        shared: getSharedDependencies({eager: STANDALONE}),
       }),
       new Repack.plugins.CodeSigningPlugin({
         enabled: mode === 'production',

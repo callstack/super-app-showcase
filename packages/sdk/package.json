@@ -4,12 +4,9 @@
   "description": "Dependency management for the Super App Showcase",
   "license": "MIT",
   "private": true,
-  "main": "index.js",
   "files": [
-    "lib/rnx-preset.js",
-    "lib/shared-dependencies.js"
-  ],
-  "devDependencies": {
-    "@rnx-kit/align-deps": "^2.2.5"
-  }
+    "android",
+    "ios",
+    "lib"
+  ]
 }

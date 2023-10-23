@@ -1,0 +1,42 @@
+{
+  "react": {
+    "name": "react",
+    "version": "18.2.0"
+  },
+  "react-native": {
+    "name": "react-native",
+    "version": "0.71.8"
+  },
+  "@react-native-async-storage/async-storage": {
+    "name": "@react-native-async-storage/async-storage",
+    "version": "1.17.11"
+  },
+  "@react-navigation/material-bottom-tabs": {
+    "name": "@react-navigation/material-bottom-tabs",
+    "version": "6.2.5"
+  },
+  "@react-navigation/native": {
+    "name": "@react-navigation/native",
+    "version": "6.0.14"
+  },
+  "@react-navigation/native-stack": {
+    "name": "@react-navigation/native-stack",
+    "version": "6.9.2"
+  },
+  "react-native-paper": {
+    "name": "react-native-paper",
+    "version": "5.0.0-rc.10"
+  },
+  "react-native-safe-area-context": {
+    "name": "react-native-safe-area-context",
+    "version": "4.4.1"
+  },
+  "react-native-screens": {
+    "name": "react-native-screens",
+    "version": "3.18.2"
+  },
+  "react-native-vector-icons": {
+    "name": "react-native-vector-icons",
+    "version": "9.2.0"
+  }
+}

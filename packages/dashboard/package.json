@@ -28,7 +28,7 @@
     "react-native-safe-area-context": "4.4.1",
     "react-native-screens": "3.18.2",
     "react-native-vector-icons": "9.2.0",
-    "super-app-showcase-sdk": "workspace:^"
+    "super-app-showcase-sdk": "0.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
@@ -36,6 +36,7 @@
     "@babel/runtime": "^7.20.0",
     "@callstack/repack": "~3.4.0",
     "@react-native/eslint-config": "^0.74.0",
+    "@rnx-kit/align-deps": "^2.2.5",
     "@tsconfig/react-native": "^2.0.2",
     "@types/jest": "^29.2.1",
     "@types/react": "^18.0.24",
@@ -61,5 +62,19 @@
       "type": "internal",
       "url": "https://github.com/callstack/super-app-showcase"
     }
-  ]
+  ],
+  "rnx-kit": {
+    "kitType": "app",
+    "alignDeps": {
+      "presets": [
+        "./node_modules/super-app-showcase-sdk/lib/rnx-preset"
+      ],
+      "requirements": [
+        "super-app-showcase-sdk@0.0.1"
+      ],
+      "capabilities": [
+        "super-app"
+      ]
+    }
+  }
 }

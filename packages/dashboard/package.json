@@ -22,7 +22,6 @@
     "@react-navigation/material-bottom-tabs": "6.2.5",
     "@react-navigation/native": "6.0.14",
     "@react-navigation/native-stack": "6.9.2",
-    "@types/react-native-vector-icons": "6.4.12",
     "react": "18.2.0",
     "react-native": "0.71.8",
     "react-native-calendars": "1.1291.1",

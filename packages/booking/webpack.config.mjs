@@ -1,7 +1,7 @@
 import * as Repack from '@callstack/repack';
 import path from 'path';
 import TerserPlugin from 'terser-webpack-plugin';
-import sdk from 'super-app-showcase-sdk';
+import getSharedDependencies from 'super-app-showcase-sdk/lib/shared-deps';
 
 /**
  * More documentation, installation, usage, motivation and differences with Metro is available at:
@@ -262,7 +262,7 @@ export default env => {
          * React, React Native and React Navigation should be provided here because there should be only one instance of these modules.
          * Their names are used to match requested modules in this compilation.
          */
-        shared: sdk.getSharedDependencies(false),
+        shared: getSharedDependencies({eager: false}),
       }),
       new Repack.plugins.CodeSigningPlugin({
         enabled: mode === 'production',

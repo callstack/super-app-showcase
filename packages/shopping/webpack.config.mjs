@@ -1,7 +1,7 @@
 import * as Repack from '@callstack/repack';
 import path from 'path';
 import TerserPlugin from 'terser-webpack-plugin';
-import sdk from 'super-app-showcase-sdk';
+import getSharedDependencies from 'super-app-showcase-sdk/lib/shared-deps';
 /**
  * More documentation, installation, usage, motivation and differences with Metro is available at:
  * https://github.com/callstack/repack/blob/main/README.md
@@ -246,7 +246,7 @@ export default env => {
         exposes: {
           './App': './src/navigation/MainNavigator',
         },
-        shared: sdk.getSharedDependencies(false),
+        shared: getSharedDependencies({eager: false}),
       }),
       new Repack.plugins.CodeSigningPlugin({
         enabled: mode === 'production',

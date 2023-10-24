@@ -1,12 +1,17 @@
 {
   "name": "super-app-showcase-sdk",
   "version": "0.0.1",
-  "description": "Dependency management & utils for Super App Showcase",
+  "description": "Dependency management & utils for the Super App Showcase",
   "license": "MIT",
-  "private": true,
+  "homepage": "https://github.com/callstack/super-app-showcase",
+  "repository": "github:callstack/super-app-showcase",
   "files": [
     "android",
     "ios",
     "lib"
-  ]
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  }
 }

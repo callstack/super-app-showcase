@@ -89,7 +89,7 @@ importers:
         specifier: 18.2.0
         version: 18.2.0(react@18.2.0)
       super-app-showcase-sdk:
-        specifier: 0.0.1
+        specifier: 0.0.2
         version: link:../sdk
       terser-webpack-plugin:
         specifier: ^5.3.6
@@ -195,7 +195,7 @@ importers:
         specifier: 18.2.0
         version: 18.2.0(react@18.2.0)
       super-app-showcase-sdk:
-        specifier: 0.0.1
+        specifier: 0.0.2
         version: link:../sdk
       terser-webpack-plugin:
         specifier: ^5.3.6
@@ -310,7 +310,7 @@ importers:
         specifier: 18.2.0
         version: 18.2.0(react@18.2.0)
       super-app-showcase-sdk:
-        specifier: 0.0.1
+        specifier: 0.0.2
         version: link:../sdk
       terser-webpack-plugin:
         specifier: ^5.3.6
@@ -419,7 +419,7 @@ importers:
         specifier: 18.2.0
         version: 18.2.0(react@18.2.0)
       super-app-showcase-sdk:
-        specifier: 0.0.1
+        specifier: 0.0.2
         version: link:../sdk
       terser-webpack-plugin:
         specifier: ^5.3.6
@@ -530,7 +530,7 @@ importers:
         specifier: 18.2.0
         version: 18.2.0(react@18.2.0)
       super-app-showcase-sdk:
-        specifier: 0.0.1
+        specifier: 0.0.2
         version: link:../sdk
       terser-webpack-plugin:
         specifier: ^5.3.6
@@ -633,7 +633,7 @@ importers:
         specifier: 18.2.0
         version: 18.2.0(react@18.2.0)
       super-app-showcase-sdk:
-        specifier: 0.0.1
+        specifier: 0.0.2
         version: link:../sdk
       terser-webpack-plugin:
         specifier: ^5.3.6

@@ -1,0 +1,112 @@
+{
+  "@babel/core": {
+    "name": "@babel/core",
+    "version": "^7.20.0",
+    "devOnly": true
+  },
+  "@babel/preset-env": {
+    "name": "@babel/preset-env",
+    "version": "^7.20.0",
+    "devOnly": true
+  },
+  "@babel/runtime": {
+    "name": "@babel/runtime",
+    "version": "^7.20.0",
+    "devOnly": true
+  },
+  "@callstack/repack": {
+    "name": "@callstack/repack",
+    "version": "~3.4.0",
+    "devOnly": true
+  },
+  "@react-native/eslint-config": {
+    "name": "@react-native/eslint-config",
+    "version": "^0.74.0",
+    "devOnly": true
+  },
+  "@tsconfig/react-native": {
+    "name": "@tsconfig/react-native",
+    "version": "^2.0.2",
+    "devOnly": true
+  },
+  "@types/jest": {
+    "name": "@types/jest",
+    "version": "^29.2.1",
+    "devOnly": true
+  },
+  "@types/react": {
+    "name": "@types/react",
+    "version": "^18.0.24",
+    "devOnly": true
+  },
+  "@types/react-native-vector-icons": {
+    "name": "@types/react-native-vector-icons",
+    "version": "^6.4.12",
+    "devOnly": true
+  },
+  "@types/react-test-renderer": {
+    "name": "@types/react-test-renderer",
+    "version": "^18.0.0",
+    "devOnly": true
+  },
+  "@typescript-eslint/eslint-plugin": {
+    "name": "@typescript-eslint/eslint-plugin",
+    "version": "^5.37.0",
+    "devOnly": true
+  },
+  "@typescript-eslint/parser": {
+    "name": "@typescript-eslint/parser",
+    "version": "^5.37.0",
+    "devOnly": true
+  },
+  "babel-jest": {
+    "name": "babel-jest",
+    "version": "^29.2.1",
+    "devOnly": true
+  },
+  "babel-loader": {
+    "name": "babel-loader",
+    "version": "^9.1.0",
+    "devOnly": true
+  },
+  "eslint": {
+    "name": "eslint",
+    "version": "^8.19.0",
+    "devOnly": true
+  },
+  "jest": {
+    "name": "jest",
+    "version": "^29.2.1",
+    "devOnly": true
+  },
+  "metro-react-native-babel-preset": {
+    "name": "metro-react-native-babel-preset",
+    "version": "^0.73.9",
+    "devOnly": true
+  },
+  "prettier": {
+    "name": "prettier",
+    "version": "^2.8.8",
+    "devOnly": true
+  },
+  "react-test-renderer": {
+    "name": "react-test-renderer",
+    "version": "^18.2.0",
+    "devOnly": true
+  },
+  "terser-webpack-plugin": {
+    "name": "terser-webpack-plugin",
+    "version": "^5.3.6",
+    "devOnly": true
+  },
+  "typescript": {
+    "name": "typescript",
+    "version": "^4.8.4",
+    "devOnly": true
+  },
+  "webpack": {
+    "name": "webpack",
+    "version": "^5.75.0",
+    "devOnly": true
+  }
+}

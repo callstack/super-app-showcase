@@ -1,8 +1,7 @@
 import * as Repack from '@callstack/repack';
 import path from 'path';
 import TerserPlugin from 'terser-webpack-plugin';
-import {deps} from '../../shared/dependencies.mjs';
-
+import {getSharedDependencies} from 'super-app-showcase-sdk';
 /**
  * More documentation, installation, usage, motivation and differences with Metro is available at:
  * https://github.com/callstack/repack/blob/main/README.md
@@ -88,15 +87,14 @@ export default env => {
        * in their `package.json` might not work correctly.
        */
       ...Repack.getResolveOptions(platform),
-
       /**
        * Uncomment this to ensure all `react-native*` imports will resolve to the same React Native
        * dependency. You might need it when using workspaces/monorepos or unconventional project
        * structure. For simple/typical project you won't need it.
        */
-      // alias: {
-      //   'react-native': reactNativePath,
-      // },
+      alias: {
+        'react-native': reactNativePath,
+      },
     },
     /**
      * Configures output.
@@ -237,7 +235,7 @@ export default env => {
         exposes: {
           './App': './src/navigation/MainNavigator',
         },
-        shared: deps,
+        shared: getSharedDependencies({eager: false}),
       }),
       new Repack.plugins.CodeSigningPlugin({
         enabled: mode === 'production',

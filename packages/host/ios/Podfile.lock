@@ -424,11 +424,11 @@ PODS:
     - React-jsi (= 0.71.8)
     - React-logger (= 0.71.8)
     - React-perflogger (= 0.71.8)
-  - RNBootSplash (4.7.5):
+  - RNBootSplash (4.7.1):
     - React-Core
-  - RNCAsyncStorage (1.19.3):
+  - RNCAsyncStorage (1.17.11):
     - React-Core
-  - RNScreens (3.25.0):
+  - RNScreens (3.18.2):
     - React-Core
     - React-RCTImage
   - RNVectorIcons (9.2.0):
@@ -660,15 +660,15 @@ SPEC CHECKSUMS:
   React-RCTVibration: 43ffd976a25f6057a7cf95ea3648ba4e00287f89
   React-runtimeexecutor: 7c51ae9d4b3e9608a2366e39ccaa606aa551b9ed
   ReactCommon: 85c98ab0a509e70bf5ee5d9715cf68dbf495b84c
-  RNBootSplash: 85f6b879c080e958afdb4c62ee04497b05fd7552
-  RNCAsyncStorage: c913ede1fa163a71cea118ed4670bbaaa4b511bb
-  RNScreens: 85d3880b52d34db7b8eeebe2f1a0e807c05e69fa
+  RNBootSplash: 3f3f7f82efe2addbfe7ddeda20877ff4d579cd81
+  RNCAsyncStorage: 8616bd5a58af409453ea4e1b246521bb76578d60
+  RNScreens: 34cc502acf1b916c582c60003dc3089fa01dc66d
   RNVectorIcons: fcc2f6cb32f5735b586e66d14103a74ce6ad61f8
   SocketRocket: fccef3f9c5cedea1353a9ef6ada904fde10d6608
   SwiftyRSA: 8c6dd1ea7db1b8dc4fb517a202f88bb1354bc2c6
   Yoga: 065f0b74dba4832d6e328238de46eb72c5de9556
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: 7bebd55c55941dfee56f73c1bf0d91f8992097a8
+PODFILE CHECKSUM: f9b3c5f7f0c78d0444c00ff24bdcd564f427cfe6
 
 COCOAPODS: 1.11.3

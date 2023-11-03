@@ -49,6 +49,10 @@ react {
     // hermesFlags = ["-O", "-output-source-map"]
 }
 
+project.ext.vectoricons = [
+    iconFontsDir: "../../node_modules/react-native-vector-icons/Fonts",
+]
+
 apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
 
 /**
@@ -176,7 +180,9 @@ dependencies {
     }
 }
 
-apply from: file("../../../../shared/resolveNodePackage.gradle")
+// [super-app-showcase change]
+// resolve react-native & CLI dynamically
+apply from: "../../node_modules/super-app-showcase-sdk/android/resolveNodePackage.gradle"
 
 def reactNativeRoot = resolveNodePackage('react-native', rootDir)
 def cliPlatformAndroidPath = resolveNodePackage('@react-native-community/cli-platform-android', reactNativeRoot)

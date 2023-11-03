@@ -49,6 +49,9 @@ importers:
       '@react-native/eslint-config':
         specifier: ^0.74.0
         version: 0.74.0(eslint@8.51.0)(jest@29.7.0)(prettier@2.8.8)(typescript@4.8.4)
+      '@rnx-kit/align-deps':
+        specifier: ^2.2.5
+        version: 2.2.5
       '@tsconfig/react-native':
         specifier: ^2.0.2
         version: 2.0.3
@@ -152,6 +155,9 @@ importers:
       '@react-native/eslint-config':
         specifier: ^0.74.0
         version: 0.74.0(eslint@8.51.0)(jest@29.7.0)(prettier@2.8.8)(typescript@4.8.4)
+      '@rnx-kit/align-deps':
+        specifier: ^2.2.5
+        version: 2.2.5
       '@tsconfig/react-native':
         specifier: ^2.0.2
         version: 2.0.3
@@ -267,6 +273,9 @@ importers:
       '@react-native/eslint-config':
         specifier: ^0.74.0
         version: 0.74.0(eslint@8.51.0)(jest@29.7.0)(prettier@2.8.8)(typescript@4.8.4)
+      '@rnx-kit/align-deps':
+        specifier: ^2.2.5
+        version: 2.2.5
       '@tsconfig/react-native':
         specifier: ^2.0.2
         version: 2.0.3
@@ -373,6 +382,9 @@ importers:
       '@react-native/eslint-config':
         specifier: ^0.74.0
         version: 0.74.0(eslint@8.51.0)(jest@29.7.0)(prettier@2.8.8)(typescript@4.8.4)
+      '@rnx-kit/align-deps':
+        specifier: ^2.2.5
+        version: 2.2.5
       '@tsconfig/react-native':
         specifier: ^2.0.2
         version: 2.0.3
@@ -484,6 +496,9 @@ importers:
       '@react-native/eslint-config':
         specifier: ^0.74.0
         version: 0.74.0(eslint@8.51.0)(jest@29.7.0)(prettier@2.8.8)(typescript@4.8.4)
+      '@rnx-kit/align-deps':
+        specifier: ^2.2.5
+        version: 2.2.5
       '@tsconfig/react-native':
         specifier: ^2.0.2
         version: 2.0.3
@@ -590,6 +605,9 @@ importers:
       '@react-native/eslint-config':
         specifier: ^0.74.0
         version: 0.74.0(eslint@8.51.0)(jest@29.7.0)(prettier@2.8.8)(typescript@4.8.4)
+      '@rnx-kit/align-deps':
+        specifier: ^2.2.5
+        version: 2.2.5
       '@tsconfig/react-native':
         specifier: ^2.0.2
         version: 2.0.3
@@ -3235,6 +3253,12 @@ packages:
     dependencies:
       nanoid: 3.3.6
     dev: false
+
+  /@rnx-kit/align-deps@2.2.5:
+    resolution: {integrity: sha512-MsTd75B8oHAUYWkrvcpXXA76jTrR9SNX/0fJ7VT4V/TS9icnIjznhu0JBeJ6zJAdzGCVQOP8n14xgaI/4RS1Zg==}
+    engines: {node: '>=12.13'}
+    hasBin: true
+    dev: true
 
   /@sideway/address@4.1.4:
     resolution: {integrity: sha512-7vwq+rOHVWjyXxVlR76Agnvhy8I9rpzjosTESvmhNeXOXdZZB15Fl+TI9x1SiHZH5Jv2wTGduSxFDIaq0m3DUw==}

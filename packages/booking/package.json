@@ -9,7 +9,9 @@
     "typecheck": "tsc",
     "bundle": "pnpm bundle:ios && pnpm bundle:android",
     "bundle:ios": "react-native webpack-bundle --platform ios --entry-file index.js --dev false",
-    "bundle:android": "react-native webpack-bundle --platform android --entry-file index.js --dev false"
+    "bundle:android": "react-native webpack-bundle --platform android --entry-file index.js --dev false",
+    "align-deps": "rnx-align-deps --write",
+    "check-deps": "rnx-align-deps"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "1.17.11",
@@ -30,6 +32,7 @@
     "@babel/runtime": "^7.20.0",
     "@callstack/repack": "~3.4.0",
     "@react-native/eslint-config": "^0.74.0",
+    "@rnx-kit/align-deps": "^2.2.5",
     "@tsconfig/react-native": "^2.0.2",
     "@types/jest": "^29.2.1",
     "@types/react": "^18.0.24",
@@ -41,13 +44,13 @@
     "babel-loader": "^9.1.0",
     "eslint": "^8.19.0",
     "jest": "^29.2.1",
+    "metro-react-native-babel-preset": "^0.73.9",
     "prettier": "^2.8.8",
-    "metro-react-native-babel-preset": "0.73.9",
-    "react-test-renderer": "18.2.0",
+    "react-test-renderer": "^18.2.0",
     "super-app-showcase-sdk": "0.0.2",
     "terser-webpack-plugin": "^5.3.6",
-    "typescript": "4.8.4",
-    "webpack": "^5.74.0"
+    "typescript": "^4.8.4",
+    "webpack": "^5.75.0"
   },
   "federatedModule": "booking",
   "federatedDependencies": [
@@ -56,5 +59,19 @@
       "type": "internal",
       "url": "https://github.com/callstack/super-app-showcase"
     }
-  ]
+  ],
+  "rnx-kit": {
+    "kitType": "app",
+    "alignDeps": {
+      "presets": [
+        "./node_modules/super-app-showcase-sdk/preset"
+      ],
+      "requirements": [
+        "super-app-showcase-sdk@0.0.2"
+      ],
+      "capabilities": [
+        "super-app"
+      ]
+    }
+  }
 }

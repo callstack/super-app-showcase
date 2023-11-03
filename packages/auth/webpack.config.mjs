@@ -1,7 +1,7 @@
 import * as Repack from '@callstack/repack';
 import path from 'path';
 import TerserPlugin from 'terser-webpack-plugin';
-import getSharedDependencies from 'super-app-showcase-sdk/lib/shared-deps.js';
+import {getSharedDependencies} from 'super-app-showcase-sdk';
 /**
  * More documentation, installation, usage, motivation and differences with Metro is available at:
  * https://github.com/callstack/repack/blob/main/README.md

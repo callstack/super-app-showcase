@@ -86,7 +86,7 @@
     "kitType": "app",
     "alignDeps": {
       "presets": [
-        "./node_modules/super-app-showcase-sdk/lib/rnx-preset"
+        "./node_modules/super-app-showcase-sdk/preset"
       ],
       "requirements": [
         "super-app-showcase-sdk@0.0.1"

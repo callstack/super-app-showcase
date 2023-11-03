@@ -5,6 +5,7 @@
   "license": "MIT",
   "homepage": "https://github.com/callstack/super-app-showcase",
   "repository": "github:callstack/super-app-showcase",
+  "main": "index.js",
   "files": [
     "android",
     "ios",

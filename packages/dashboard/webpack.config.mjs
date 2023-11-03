@@ -1,7 +1,7 @@
 import * as Repack from '@callstack/repack';
 import path from 'path';
 import TerserPlugin from 'terser-webpack-plugin';
-import getSharedDependencies from 'super-app-showcase-sdk/lib/shared-deps.js';
+import {getSharedDependencies} from 'super-app-showcase-sdk';
 /**
  * This env variable shows if bundle is standalone and eager should be enabled in Module federation Plugin config.
  * Please see more detailed description in Module Federation Plugin config.

@@ -50,10 +50,10 @@ react {
 }
 
 project.ext.vectoricons = [
-    iconFontsDir: "../../node_modules/super-app-showcase-sdk/node_modules/react-native-vector-icons/Fonts",
+    iconFontsDir: "../../node_modules/react-native-vector-icons/Fonts",
 ]
 
-apply from: "../../node_modules/super-app-showcase-sdk/node_modules/react-native-vector-icons/fonts.gradle"
+apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
 
 /**
  * Set this to true to create four separate APKs instead of one,
@@ -180,7 +180,9 @@ dependencies {
     }
 }
 
-apply from: file"../../node_modules/super-app-showcase-sdk/android/resolveNodePackage.gradle"
+// [super-app-showcase change]
+// resolve react-native & CLI dynamically
+apply from: "../../node_modules/super-app-showcase-sdk/android/resolveNodePackage.gradle"
 
 def reactNativeRoot = resolveNodePackage('react-native', rootDir)
 def cliPlatformAndroidPath = resolveNodePackage('@react-native-community/cli-platform-android', reactNativeRoot)

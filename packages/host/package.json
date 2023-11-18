@@ -12,6 +12,7 @@
     "bundle:ios": "react-native webpack-bundle --platform ios --entry-file index.js --dev false",
     "bundle:android": "react-native webpack-bundle --platform android --entry-file index.js --dev false",
     "pods": "(cd ios && bundle install && bundle exec pod install)",
+    "pods:update": "(cd ios && bundle exec pod update)",
     "align-deps": "rnx-align-deps --write",
     "check-deps": "rnx-align-deps"
   },

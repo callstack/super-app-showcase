@@ -78,6 +78,12 @@ pnpm install
 pnpm pods
 ```
 
+Pods might sometimes be outdated, and they might fail to install, in that case you can update them by running:
+
+```
+pnpm pods:update
+```
+
 ### Run
 
 Start dev server for host and mini apps:

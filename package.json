@@ -22,6 +22,7 @@
     "bundle:auth:ios": "pnpm --filter auth bundle:ios",
     "bundle:auth:android": "pnpm --filter auth bundle:android",
     "pods": "pnpm -r pods",
+    "pods:update": "pnpm -r pods:update",
     "start": "concurrently --raw -P 'pnpm:start:*(!standalone) {1}'",
     "typecheck": "pnpm -r typecheck",
     "lint": "pnpm -r lint",

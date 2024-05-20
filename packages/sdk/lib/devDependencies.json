@@ -81,7 +81,7 @@
   },
   "metro-react-native-babel-preset": {
     "name": "metro-react-native-babel-preset",
-    "version": "^0.73.9",
+    "version": "^0.73.10",
     "devOnly": true
   },
   "prettier": {

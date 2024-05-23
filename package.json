@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "license": "MIT",
   "private": true,
-  "packageManager": "pnpm@8.9.2",
+  "packageManager": "pnpm@9.1.1",
   "scripts": {
     "start:host": "pnpm --filter host start",
     "start:booking": "pnpm --filter booking start",
@@ -35,6 +35,7 @@
     "concurrently": "^7.6.0"
   },
   "dependencies": {
-    "@changesets/cli": "^2.26.2"
+    "@changesets/cli": "^2.26.2",
+    "semver": "^7.6.2"
   }
 }

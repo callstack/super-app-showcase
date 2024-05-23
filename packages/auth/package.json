@@ -1,6 +1,6 @@
 {
   "name": "auth",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "private": true,
   "scripts": {
     "start": "react-native webpack-start --port 9003",

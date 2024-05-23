@@ -13,3 +13,4 @@ build/
 code-signing.pem
 code-signing.pem.pub
 
+**.DS_Store

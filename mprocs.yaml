@@ -14,3 +14,6 @@ procs:
   Shopping:
     shell: pnpm start:shopping
     stop: SIGKILL
+  Catalog Server:
+    shell: pnpm start:catalog
+    stop: SIGKILL

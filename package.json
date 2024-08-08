@@ -4,6 +4,10 @@
   "license": "MIT",
   "private": true,
   "packageManager": "pnpm@9.7.0",
+  "engines": {
+    "node": ">=18"
+  },
+  "engineStrict": true,
   "scripts": {
     "start:host": "pnpm --filter host start",
     "start:booking": "pnpm --filter booking start",

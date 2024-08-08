@@ -27,16 +27,13 @@
     "bundle:auth:android": "pnpm --filter auth bundle:android",
     "pods": "pnpm -r pods",
     "pods:update": "pnpm -r pods:update",
-    "start": "concurrently --raw -P 'pnpm:start:*(!standalone) {1}'",
+    "start": "pnpm run --stream -r \"/^start(?!:standalone)$/\"",
     "typecheck": "pnpm -r typecheck",
     "lint": "pnpm -r lint",
     "test": "pnpm -r test",
     "adbreverse": "adb reverse tcp:3000 tcp:3000 && adb reverse tcp:8081 tcp:8081 && adb reverse tcp:9000 tcp:9000 && adb reverse tcp:9001 tcp:9001 && adb reverse tcp:9002 tcp:9002 && adb reverse tcp:9003 tcp:9003",
     "align-deps": "pnpm -r align-deps",
     "check-deps": "pnpm -r check-deps"
-  },
-  "devDependencies": {
-    "concurrently": "^7.6.0"
   },
   "dependencies": {
     "@changesets/cli": "^2.26.2"

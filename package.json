@@ -13,21 +13,16 @@
     "start:booking": "pnpm --filter booking start",
     "start:shopping": "pnpm --filter shopping start",
     "start:dashboard": "pnpm --filter dashboard start",
+    "start:standalone:dashboard": "pnpm --filter dashboard start:standalone",
     "start:auth": "pnpm --filter auth start",
     "start:catalog": "pnpm --filter catalog-server start",
-    "start:standalone:shell": "pnpm --filter shell start",
-    "start:standalone:dashboard": "pnpm --filter dashboard start:standalone",
     "run:host:ios": "pnpm --filter host ios",
     "run:host:android": "pnpm --filter host android",
-    "run:shell:ios": "pnpm --filter shell ios",
-    "run:shell:android": "pnpm --filter shell android",
     "run:dashboard:ios": "pnpm --filter dashboard ios",
     "run:dashboard:android": "pnpm --filter dashboard android",
-    "bundle:auth:ios": "pnpm --filter auth bundle:ios",
-    "bundle:auth:android": "pnpm --filter auth bundle:android",
     "pods": "pnpm -r pods",
     "pods:update": "pnpm -r pods:update",
-    "start": "pnpm run --stream -r \"/^start(?!:standalone)$/\"",
+    "start": "mprocs",
     "typecheck": "pnpm -r typecheck",
     "lint": "pnpm -r lint",
     "test": "pnpm -r test",
@@ -36,6 +31,7 @@
     "check-deps": "pnpm -r check-deps"
   },
   "dependencies": {
-    "@changesets/cli": "^2.26.2"
+    "@changesets/cli": "^2.26.2",
+    "mprocs": "^0.7.1"
   }
 }

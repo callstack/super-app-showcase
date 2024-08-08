@@ -1,0 +1,16 @@
+procs:
+  Host:
+    shell: pnpm start:host
+    stop: SIGKILL
+  Auth:
+    shell: pnpm start:auth
+    stop: SIGKILL
+  Booking:
+    shell: pnpm start:booking
+    stop: SIGKILL
+  Dashboard:
+    shell: pnpm start:dashboard
+    stop: SIGKILL
+  Shopping:
+    shell: pnpm start:shopping
+    stop: SIGKILL

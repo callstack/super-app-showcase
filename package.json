@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "license": "MIT",
   "private": true,
-  "packageManager": "pnpm@8.9.2",
+  "packageManager": "pnpm@9.7.0",
   "scripts": {
     "start:host": "pnpm --filter host start",
     "start:booking": "pnpm --filter booking start",

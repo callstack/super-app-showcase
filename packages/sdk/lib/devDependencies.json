@@ -16,7 +16,7 @@
   },
   "@callstack/repack": {
     "name": "@callstack/repack",
-    "version": "4.1.1",
+    "version": "4.2.0",
     "devOnly": true
   },
   "@react-native/eslint-config": {

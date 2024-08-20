@@ -33,7 +33,7 @@
     "@babel/core": "^7.20.0",
     "@babel/preset-env": "^7.20.0",
     "@babel/runtime": "^7.20.0",
-    "@callstack/repack": "4.1.1",
+    "@callstack/repack": "4.2.0",
     "@react-native/eslint-config": "^0.74.0",
     "@rnx-kit/align-deps": "^2.5.1",
     "@tsconfig/react-native": "^2.0.2",

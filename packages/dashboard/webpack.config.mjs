@@ -115,6 +115,7 @@ export default env => {
       filename: 'index.bundle',
       chunkFilename: '[name].chunk.bundle',
       publicPath: Repack.getPublicPath({platform, devServer}),
+      uniqueName: 'sas-dashboard',
     },
     /**
      * Configures optimization of the built bundle.

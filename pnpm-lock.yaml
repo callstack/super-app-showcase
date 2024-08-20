@@ -58,8 +58,8 @@ importers:
         specifier: ^7.20.0
         version: 7.23.1
       '@callstack/repack':
-        specifier: 4.1.1
-        version: 4.1.1(@react-native-community/cli-types@10.0.0)(@react-native-community/cli@10.2.7(@babel/core@7.23.0)(encoding@0.1.13))(encoding@0.1.13)(react-native@0.71.19(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(encoding@0.1.13)(react@18.2.0))(type-fest@0.21.3)(webpack@5.93.0)
+        specifier: 4.2.0
+        version: 4.2.0(@react-native-community/cli-types@10.0.0)(@react-native-community/cli@10.2.7(@babel/core@7.23.0)(encoding@0.1.13))(encoding@0.1.13)(react-native@0.71.19(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(encoding@0.1.13)(react@18.2.0))(type-fest@0.21.3)(webpack@5.93.0)
       '@react-native/eslint-config':
         specifier: ^0.74.0
         version: 0.74.0(eslint@8.51.0)(jest@29.7.0(@types/node@20.8.4))(prettier@2.8.8)(typescript@4.8.4)
@@ -167,8 +167,8 @@ importers:
         specifier: ^7.20.0
         version: 7.23.1
       '@callstack/repack':
-        specifier: 4.1.1
-        version: 4.1.1(@react-native-community/cli-types@10.0.0)(@react-native-community/cli@10.2.7(@babel/core@7.23.0)(encoding@0.1.13))(encoding@0.1.13)(react-native@0.71.19(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(encoding@0.1.13)(react@18.2.0))(type-fest@0.21.3)(webpack@5.93.0)
+        specifier: 4.2.0
+        version: 4.2.0(@react-native-community/cli-types@10.0.0)(@react-native-community/cli@10.2.7(@babel/core@7.23.0)(encoding@0.1.13))(encoding@0.1.13)(react-native@0.71.19(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(encoding@0.1.13)(react@18.2.0))(type-fest@0.21.3)(webpack@5.93.0)
       '@react-native/eslint-config':
         specifier: ^0.74.0
         version: 0.74.0(eslint@8.51.0)(jest@29.7.0(@types/node@20.8.4))(prettier@2.8.8)(typescript@4.8.4)
@@ -285,8 +285,8 @@ importers:
         specifier: ^7.20.0
         version: 7.23.1
       '@callstack/repack':
-        specifier: 4.1.1
-        version: 4.1.1(@react-native-community/cli-types@10.0.0)(@react-native-community/cli@10.2.7(@babel/core@7.23.0)(encoding@0.1.13))(encoding@0.1.13)(react-native@0.71.19(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(encoding@0.1.13)(react@18.2.0))(type-fest@0.21.3)(webpack@5.93.0)
+        specifier: 4.2.0
+        version: 4.2.0(@react-native-community/cli-types@10.0.0)(@react-native-community/cli@10.2.7(@babel/core@7.23.0)(encoding@0.1.13))(encoding@0.1.13)(react-native@0.71.19(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(encoding@0.1.13)(react@18.2.0))(type-fest@0.21.3)(webpack@5.93.0)
       '@react-native/eslint-config':
         specifier: ^0.74.0
         version: 0.74.0(eslint@8.51.0)(jest@29.7.0(@types/node@20.8.4))(prettier@2.8.8)(typescript@4.8.4)
@@ -394,8 +394,8 @@ importers:
         specifier: ^7.20.0
         version: 7.23.1
       '@callstack/repack':
-        specifier: 4.1.1
-        version: 4.1.1(@react-native-community/cli-types@10.0.0)(@react-native-community/cli@10.2.7(@babel/core@7.23.0)(encoding@0.1.13))(encoding@0.1.13)(react-native@0.71.19(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(encoding@0.1.13)(react@18.2.0))(type-fest@0.21.3)(webpack@5.93.0)
+        specifier: 4.2.0
+        version: 4.2.0(@react-native-community/cli-types@10.0.0)(@react-native-community/cli@10.2.7(@babel/core@7.23.0)(encoding@0.1.13))(encoding@0.1.13)(react-native@0.71.19(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(encoding@0.1.13)(react@18.2.0))(type-fest@0.21.3)(webpack@5.93.0)
       '@react-native/eslint-config':
         specifier: ^0.74.0
         version: 0.74.0(eslint@8.51.0)(jest@29.7.0(@types/node@20.8.4))(prettier@2.8.8)(typescript@4.8.4)
@@ -505,8 +505,8 @@ importers:
         specifier: ^7.20.0
         version: 7.23.1
       '@callstack/repack':
-        specifier: 4.1.1
-        version: 4.1.1(@react-native-community/cli-types@10.0.0)(@react-native-community/cli@10.2.7(@babel/core@7.23.0)(encoding@0.1.13))(encoding@0.1.13)(react-native@0.71.19(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(encoding@0.1.13)(react@18.2.0))(type-fest@0.21.3)(webpack@5.93.0)
+        specifier: 4.2.0
+        version: 4.2.0(@react-native-community/cli-types@10.0.0)(@react-native-community/cli@10.2.7(@babel/core@7.23.0)(encoding@0.1.13))(encoding@0.1.13)(react-native@0.71.19(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(encoding@0.1.13)(react@18.2.0))(type-fest@0.21.3)(webpack@5.93.0)
       '@react-native/eslint-config':
         specifier: ^0.74.0
         version: 0.74.0(eslint@8.51.0)(jest@29.7.0(@types/node@20.8.4))(prettier@2.8.8)(typescript@4.8.4)
@@ -1294,8 +1294,8 @@ packages:
     peerDependencies:
       react: '>=16.3.0'
 
-  '@callstack/repack-dev-server@4.1.1':
-    resolution: {integrity: sha512-ihtvJhzpKdFTvFWhENhQNsAEmqeXBJVTmiWr7wXG9T/SifshtdGMPzxo9gZCZL1HNQQ3sCy9HRzCZL+4uTytuw==}
+  '@callstack/repack-dev-server@4.2.0':
+    resolution: {integrity: sha512-7pV6v0gLZZGgsfQbdIzNefocnBGOw0VnyUW3USiwGgB8fF0PLzmlw/UzXImKbH58G/bdEEowIUYnjcoYDaQLTQ==}
     engines: {node: '>=18'}
     peerDependencies:
       '@react-native-community/cli-debugger-ui': '>=11.3.1'
@@ -1306,8 +1306,8 @@ packages:
       '@react-native-community/cli-server-api':
         optional: true
 
-  '@callstack/repack@4.1.1':
-    resolution: {integrity: sha512-revqAF/zSc6/Y86n9w9/xkkxZhp5PB/KiuR80tcuWiOYapmphcytGrE2PctjDM0fXsGKF8Pfs2cekfWd5P/xvA==}
+  '@callstack/repack@4.2.0':
+    resolution: {integrity: sha512-Kjt5+p6H7yVwGPEWyhebyqZdR6vvDSJKnmvXqs0eN85nRPRcjV+646O7ScAq+7YDwPIacyhKmZbuY9gMt2GLgA==}
     engines: {node: '>=18'}
     peerDependencies:
       '@react-native-community/cli': '*'
@@ -6308,7 +6308,7 @@ snapshots:
       hoist-non-react-statics: 3.3.2
       react: 18.2.0
 
-  '@callstack/repack-dev-server@4.1.1(encoding@0.1.13)':
+  '@callstack/repack-dev-server@4.2.0(encoding@0.1.13)':
     dependencies:
       '@babel/code-frame': 7.22.13
       '@fastify/middie': 8.3.1
@@ -6327,9 +6327,9 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@callstack/repack@4.1.1(@react-native-community/cli-types@10.0.0)(@react-native-community/cli@10.2.7(@babel/core@7.23.0)(encoding@0.1.13))(encoding@0.1.13)(react-native@0.71.19(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(encoding@0.1.13)(react@18.2.0))(type-fest@0.21.3)(webpack@5.93.0)':
+  '@callstack/repack@4.2.0(@react-native-community/cli-types@10.0.0)(@react-native-community/cli@10.2.7(@babel/core@7.23.0)(encoding@0.1.13))(encoding@0.1.13)(react-native@0.71.19(@babel/core@7.23.0)(@babel/preset-env@7.22.20(@babel/core@7.23.0))(encoding@0.1.13)(react@18.2.0))(type-fest@0.21.3)(webpack@5.93.0)':
     dependencies:
-      '@callstack/repack-dev-server': 4.1.1(encoding@0.1.13)
+      '@callstack/repack-dev-server': 4.2.0(encoding@0.1.13)
       '@discoveryjs/json-ext': 0.5.7
       '@pmmmwh/react-refresh-webpack-plugin': 0.5.15(react-refresh@0.14.0)(type-fest@0.21.3)(webpack@5.93.0)
       '@react-native-community/cli': 10.2.7(@babel/core@7.23.0)(encoding@0.1.13)

@@ -9,27 +9,27 @@
   },
   "@react-native-async-storage/async-storage": {
     "name": "@react-native-async-storage/async-storage",
-    "version": "1.17.11"
+    "version": "2.0.0"
   },
   "@react-navigation/material-bottom-tabs": {
     "name": "@react-navigation/material-bottom-tabs",
-    "version": "6.2.5"
+    "version": "6.2.29"
   },
   "@react-navigation/native": {
     "name": "@react-navigation/native",
-    "version": "6.0.14"
+    "version": "6.1.18"
   },
   "@react-navigation/native-stack": {
     "name": "@react-navigation/native-stack",
-    "version": "6.9.2"
+    "version": "6.11.0"
   },
   "react-native-paper": {
     "name": "react-native-paper",
-    "version": "5.0.0-rc.10"
+    "version": "5.12.5"
   },
   "react-native-safe-area-context": {
     "name": "react-native-safe-area-context",
-    "version": "4.4.1"
+    "version": "4.12.0"
   },
   "react-native-screens": {
     "name": "react-native-screens",
@@ -37,6 +37,6 @@
   },
   "react-native-vector-icons": {
     "name": "react-native-vector-icons",
-    "version": "9.2.0"
+    "version": "10.2.0"
   }
 }

@@ -1,42 +1,47 @@
 {
   "@babel/core": {
     "name": "@babel/core",
-    "version": "^7.20.0",
+    "version": "^7.25.2",
     "devOnly": true
   },
   "@babel/preset-env": {
     "name": "@babel/preset-env",
-    "version": "^7.20.0",
+    "version": "^7.25.3",
     "devOnly": true
   },
   "@babel/runtime": {
     "name": "@babel/runtime",
-    "version": "^7.20.0",
+    "version": "^7.25.0",
     "devOnly": true
   },
   "@callstack/repack": {
     "name": "@callstack/repack",
-    "version": "4.2.0",
+    "version": "5.0.0-rc.0",
+    "devOnly": true
+  },
+  "@react-native/babel-preset": {
+    "name": "@react-native/babel-preset",
+    "version": "0.76.1",
     "devOnly": true
   },
   "@react-native/eslint-config": {
     "name": "@react-native/eslint-config",
-    "version": "^0.74.0",
+    "version": "0.76.1",
     "devOnly": true
   },
-  "@tsconfig/react-native": {
-    "name": "@tsconfig/react-native",
-    "version": "^2.0.2",
+  "@react-native/typescript-config": {
+    "name": "@react-native/typescript-config",
+    "version": "0.76.1",
     "devOnly": true
   },
   "@types/jest": {
     "name": "@types/jest",
-    "version": "^29.2.1",
+    "version": "^29.5.14",
     "devOnly": true
   },
   "@types/react": {
     "name": "@types/react",
-    "version": "^18.0.24",
+    "version": "^18.2.6",
     "devOnly": true
   },
   "@types/react-native-vector-icons": {
@@ -46,27 +51,27 @@
   },
   "@types/react-test-renderer": {
     "name": "@types/react-test-renderer",
-    "version": "^18.0.0",
+    "version": "^18.3.0",
     "devOnly": true
   },
   "@typescript-eslint/eslint-plugin": {
     "name": "@typescript-eslint/eslint-plugin",
-    "version": "^5.37.0",
+    "version": "^8.12.2",
     "devOnly": true
   },
   "@typescript-eslint/parser": {
     "name": "@typescript-eslint/parser",
-    "version": "^5.37.0",
+    "version": "^8.12.2",
     "devOnly": true
   },
   "babel-jest": {
     "name": "babel-jest",
-    "version": "^29.2.1",
+    "version": "^29.6.3",
     "devOnly": true
   },
   "babel-loader": {
     "name": "babel-loader",
-    "version": "^9.1.0",
+    "version": "^9.2.1",
     "devOnly": true
   },
   "eslint": {
@@ -76,12 +81,7 @@
   },
   "jest": {
     "name": "jest",
-    "version": "^29.2.1",
-    "devOnly": true
-  },
-  "metro-react-native-babel-preset": {
-    "name": "metro-react-native-babel-preset",
-    "version": "^0.73.10",
+    "version": "^29.6.3",
     "devOnly": true
   },
   "prettier": {
@@ -91,22 +91,22 @@
   },
   "react-test-renderer": {
     "name": "react-test-renderer",
-    "version": "^18.2.0",
+    "version": "^18.3.1",
     "devOnly": true
   },
   "terser-webpack-plugin": {
     "name": "terser-webpack-plugin",
-    "version": "^5.3.6",
+    "version": "^5.3.10",
     "devOnly": true
   },
   "typescript": {
     "name": "typescript",
-    "version": "^4.8.4",
+    "version": "^5.6.3",
     "devOnly": true
   },
   "webpack": {
     "name": "webpack",
-    "version": "^5.93.0",
+    "version": "^5.95.0",
     "devOnly": true
   }
 }

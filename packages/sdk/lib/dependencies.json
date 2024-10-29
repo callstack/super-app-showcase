@@ -1,11 +1,11 @@
 {
   "react": {
     "name": "react",
-    "version": "18.2.0"
+    "version": "18.3.1"
   },
   "react-native": {
     "name": "react-native",
-    "version": "0.71.19"
+    "version": "0.76.1"
   },
   "@react-native-async-storage/async-storage": {
     "name": "@react-native-async-storage/async-storage",
@@ -33,7 +33,7 @@
   },
   "react-native-screens": {
     "name": "react-native-screens",
-    "version": "3.18.2"
+    "version": "3.35.0"
   },
   "react-native-vector-icons": {
     "name": "react-native-vector-icons",

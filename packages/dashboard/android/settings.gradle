@@ -5,10 +5,11 @@ rootProject.name = 'dashboard'
 // [super-app-showcase change]
 // resolve react-native-gradle-plugin & CLI dynamically
 def reactNativePath = resolveNodePackage('react-native', rootDir)
-def cliPlatformAndroidPath = resolveNodePackage('@react-native-community/cli-platform-android', reactNativePath)
-def gradlePluginPath = resolveNodePackage("react-native-gradle-plugin", reactNativePath)
+def gradlePluginPath = resolveNodePackage("@react-native/gradle-plugin", reactNativePath)
 
-apply from: new File(cliPlatformAndroidPath, "native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+pluginManagement { includeBuild(gradlePluginPath) }
+plugins { id("com.facebook.react.settings") }
+extensions.configure(com.facebook.react.ReactSettingsExtension){ ex -> ex.autolinkLibrariesFromCommand() }
 
 include ':app'
 includeBuild(gradlePluginPath)

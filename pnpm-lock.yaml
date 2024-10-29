@@ -4,6 +4,14 @@ settings:
   autoInstallPeers: false
   excludeLinksFromLockfile: false
 
+overrides:
+  '@react-native/dev-middleware': 0.76.1
+
+patchedDependencies:
+  '@react-native/community-cli-plugin':
+    hash: gdpi5rwh3blcwxgyspzwxjdb6a
+    path: patches/@react-native__community-cli-plugin.patch
+
 importers:
 
   .:
@@ -59,7 +67,7 @@ importers:
         version: 7.26.0
       '@callstack/repack':
         specifier: 5.0.0-rc.0
-        version: 5.0.0-rc.0(@react-native-community/cli-debugger-ui@15.0.0)(@react-native-community/cli-server-api@15.0.0)(@react-native-community/cli-types@15.0.0)(@react-native-community/cli@15.0.0(typescript@5.6.3))(@rspack/plugin-react-refresh@1.0.0(react-refresh@0.14.0))(encoding@0.1.13)(react-native@0.76.1(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.0)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(webpack@5.95.0)
+        version: 5.0.0-rc.0(@react-native-community/cli-debugger-ui@15.0.0)(@react-native-community/cli-server-api@15.0.0)(@react-native-community/cli-types@15.0.0)(@react-native-community/cli@15.0.0(typescript@5.6.3))(@rspack/plugin-react-refresh@1.0.0(react-refresh@0.14.0))(react-native@0.76.1(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.0)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(webpack@5.95.0)
       '@react-native-community/cli':
         specifier: ^15.0.0
         version: 15.0.0(typescript@5.6.3)
@@ -174,7 +182,7 @@ importers:
         version: 7.26.0
       '@callstack/repack':
         specifier: 5.0.0-rc.0
-        version: 5.0.0-rc.0(@react-native-community/cli-debugger-ui@15.0.0)(@react-native-community/cli-server-api@15.0.0)(@react-native-community/cli-types@15.0.0)(@react-native-community/cli@15.0.0(typescript@5.6.3))(@rspack/plugin-react-refresh@1.0.0(react-refresh@0.14.0))(encoding@0.1.13)(react-native@0.76.1(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.0)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(webpack@5.95.0)
+        version: 5.0.0-rc.0(@react-native-community/cli-debugger-ui@15.0.0)(@react-native-community/cli-server-api@15.0.0)(@react-native-community/cli-types@15.0.0)(@react-native-community/cli@15.0.0(typescript@5.6.3))(@rspack/plugin-react-refresh@1.0.0(react-refresh@0.14.0))(react-native@0.76.1(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.0)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(webpack@5.95.0)
       '@react-native-community/cli':
         specifier: ^15.0.0
         version: 15.0.0(typescript@5.6.3)
@@ -298,7 +306,7 @@ importers:
         version: 7.26.0
       '@callstack/repack':
         specifier: 5.0.0-rc.0
-        version: 5.0.0-rc.0(@react-native-community/cli-debugger-ui@15.0.0)(@react-native-community/cli-server-api@15.0.0)(@react-native-community/cli-types@15.0.0)(@react-native-community/cli@15.0.0(typescript@5.6.3))(@rspack/plugin-react-refresh@1.0.0(react-refresh@0.14.0))(encoding@0.1.13)(react-native@0.76.1(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.0)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(webpack@5.95.0)
+        version: 5.0.0-rc.0(@react-native-community/cli-debugger-ui@15.0.0)(@react-native-community/cli-server-api@15.0.0)(@react-native-community/cli-types@15.0.0)(@react-native-community/cli@15.0.0(typescript@5.6.3))(@rspack/plugin-react-refresh@1.0.0(react-refresh@0.14.0))(react-native@0.76.1(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.0)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(webpack@5.95.0)
       '@react-native-community/cli':
         specifier: ^15.0.0
         version: 15.0.0(typescript@5.6.3)
@@ -413,7 +421,7 @@ importers:
         version: 7.26.0
       '@callstack/repack':
         specifier: 5.0.0-rc.0
-        version: 5.0.0-rc.0(@react-native-community/cli-debugger-ui@15.0.0)(@react-native-community/cli-server-api@15.0.0)(@react-native-community/cli-types@15.0.0)(@react-native-community/cli@15.0.0(typescript@5.6.3))(@rspack/plugin-react-refresh@1.0.0(react-refresh@0.14.0))(encoding@0.1.13)(react-native@0.76.1(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.0)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(webpack@5.95.0)
+        version: 5.0.0-rc.0(@react-native-community/cli-debugger-ui@15.0.0)(@react-native-community/cli-server-api@15.0.0)(@react-native-community/cli-types@15.0.0)(@react-native-community/cli@15.0.0(typescript@5.6.3))(@rspack/plugin-react-refresh@1.0.0(react-refresh@0.14.0))(react-native@0.76.1(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.0)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(webpack@5.95.0)
       '@react-native-community/cli':
         specifier: ^15.0.0
         version: 15.0.0(typescript@5.6.3)
@@ -530,7 +538,7 @@ importers:
         version: 7.26.0
       '@callstack/repack':
         specifier: 5.0.0-rc.0
-        version: 5.0.0-rc.0(@react-native-community/cli-debugger-ui@15.0.0)(@react-native-community/cli-server-api@15.0.0)(@react-native-community/cli-types@15.0.0)(@react-native-community/cli@15.0.0(typescript@5.6.3))(@rspack/plugin-react-refresh@1.0.0(react-refresh@0.14.0))(encoding@0.1.13)(react-native@0.76.1(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.0)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(webpack@5.95.0)
+        version: 5.0.0-rc.0(@react-native-community/cli-debugger-ui@15.0.0)(@react-native-community/cli-server-api@15.0.0)(@react-native-community/cli-types@15.0.0)(@react-native-community/cli@15.0.0(typescript@5.6.3))(@rspack/plugin-react-refresh@1.0.0(react-refresh@0.14.0))(react-native@0.76.1(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.0)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(webpack@5.95.0)
       '@react-native-community/cli':
         specifier: ^15.0.0
         version: 15.0.0(typescript@5.6.3)
@@ -1828,16 +1836,8 @@ packages:
       '@react-native-community/cli-server-api':
         optional: true
 
-  '@react-native/debugger-frontend@0.73.3':
-    resolution: {integrity: sha512-RgEKnWuoo54dh7gQhV7kvzKhXZEhpF9LlMdZolyhGxHsBqZ2gXdibfDlfcARFFifPIiaZ3lXuOVVa4ei+uPgTw==}
-    engines: {node: '>=18'}
-
   '@react-native/debugger-frontend@0.76.1':
     resolution: {integrity: sha512-0gExx7GR8o2ctGfjIZ9+x54iFbg0eP6+kMYzRA6AcgmFAmMGLADMmjtObCN0CqGeZyWtdVVqcv5mAwRwmMlNWA==}
-    engines: {node: '>=18'}
-
-  '@react-native/dev-middleware@0.73.8':
-    resolution: {integrity: sha512-oph4NamCIxkMfUL/fYtSsE+JbGOnrlawfQ0kKtDQ5xbOjPKotKoXqrs1eGwozNKv7FfQ393stk1by9a6DyASSg==}
     engines: {node: '>=18'}
 
   '@react-native/dev-middleware@0.76.1':
@@ -2610,9 +2610,6 @@ packages:
 
   chromium-edge-launcher@0.2.0:
     resolution: {integrity: sha512-JfJjUnq25y9yg4FABRRVPmBGWPZZi+AQXT4mxupb67766/0UlhG8PAZCz6xzEMXTbW3CsSoE8PcCWA49n35mKg==}
-
-  chromium-edge-launcher@1.0.0:
-    resolution: {integrity: sha512-pgtgjNKZ7i5U++1g1PWv75umkHvhVTDOQIZ+sjeUX9483S7Y6MUvO0lrd7ShGlQlFHMN4SwKTCq/X8hWrbv2KA==}
 
   ci-info@2.0.0:
     resolution: {integrity: sha512-5tK7EtrZ0N+OLFMthtqOj4fI2Jeb88C4CAZPu25LDVUgXJ0A3Js4PMGqrn0JU1W0Mh1/Z8wZzYPxqUrXeBboCQ==}
@@ -5341,10 +5338,6 @@ packages:
   tar-stream@3.1.6:
     resolution: {integrity: sha512-B/UyjYwPpMBv+PaFSWAmtYjwdrlEaZQEhMIBFNC5oEG8lpiW8XjcSdmEaClj28ArfKScKHs2nshz3k2le6crsg==}
 
-  temp-dir@2.0.0:
-    resolution: {integrity: sha512-aoBAniQmmwtcKp/7BzsH8Cxzv8OL736p7v1ihGb5e9DJ9kTwGWHrQrVB5+lfVDzfGrdRzXch+ig7LHaY1JTOrg==}
-    engines: {node: '>=8'}
-
   temp@0.8.4:
     resolution: {integrity: sha512-s0ZZzd0BzYv5tLSptZooSjK8oj6C+c19p7Vqta9+6NPOf7r+fxq0cJe6/oN4LTC79sy5NY8ucOJNgwsKCSbfqg==}
     engines: {node: '>=6.0.0'}
@@ -6848,12 +6841,12 @@ snapshots:
       hoist-non-react-statics: 3.3.2
       react: 18.3.1
 
-  '@callstack/repack-dev-server@5.0.0-rc.0(@react-native-community/cli-debugger-ui@15.0.0)(@react-native-community/cli-server-api@15.0.0)(encoding@0.1.13)':
+  '@callstack/repack-dev-server@5.0.0-rc.0(@react-native-community/cli-debugger-ui@15.0.0)(@react-native-community/cli-server-api@15.0.0)':
     dependencies:
       '@babel/code-frame': 7.22.13
       '@fastify/middie': 8.3.1
       '@fastify/sensible': 5.6.0
-      '@react-native/dev-middleware': 0.73.8(encoding@0.1.13)
+      '@react-native/dev-middleware': 0.76.1
       fastify: 4.28.1
       fastify-favicon: 4.3.0
       fastify-plugin: 4.5.1
@@ -6866,13 +6859,12 @@ snapshots:
       '@react-native-community/cli-server-api': 15.0.0
     transitivePeerDependencies:
       - bufferutil
-      - encoding
       - supports-color
       - utf-8-validate
 
-  '@callstack/repack@5.0.0-rc.0(@react-native-community/cli-debugger-ui@15.0.0)(@react-native-community/cli-server-api@15.0.0)(@react-native-community/cli-types@15.0.0)(@react-native-community/cli@15.0.0(typescript@5.6.3))(@rspack/plugin-react-refresh@1.0.0(react-refresh@0.14.0))(encoding@0.1.13)(react-native@0.76.1(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.0)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(webpack@5.95.0)':
+  '@callstack/repack@5.0.0-rc.0(@react-native-community/cli-debugger-ui@15.0.0)(@react-native-community/cli-server-api@15.0.0)(@react-native-community/cli-types@15.0.0)(@react-native-community/cli@15.0.0(typescript@5.6.3))(@rspack/plugin-react-refresh@1.0.0(react-refresh@0.14.0))(react-native@0.76.1(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.0)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(webpack@5.95.0)':
     dependencies:
-      '@callstack/repack-dev-server': 5.0.0-rc.0(@react-native-community/cli-debugger-ui@15.0.0)(@react-native-community/cli-server-api@15.0.0)(encoding@0.1.13)
+      '@callstack/repack-dev-server': 5.0.0-rc.0(@react-native-community/cli-debugger-ui@15.0.0)(@react-native-community/cli-server-api@15.0.0)
       '@discoveryjs/json-ext': 0.5.7
       '@react-native-community/cli': 15.0.0(typescript@5.6.3)
       '@react-native-community/cli-types': 15.0.0
@@ -6898,7 +6890,6 @@ snapshots:
       - '@react-native-community/cli-debugger-ui'
       - '@react-native-community/cli-server-api'
       - bufferutil
-      - encoding
       - supports-color
       - utf-8-validate
 
@@ -7639,7 +7630,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@react-native/community-cli-plugin@0.76.1(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.0)(encoding@0.1.13)':
+  '@react-native/community-cli-plugin@0.76.1(patch_hash=gdpi5rwh3blcwxgyspzwxjdb6a)(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.0)(encoding@0.1.13)':
     dependencies:
       '@react-native/dev-middleware': 0.76.1
       '@react-native/metro-babel-transformer': 0.76.1(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))
@@ -7661,28 +7652,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@react-native/debugger-frontend@0.73.3': {}
-
   '@react-native/debugger-frontend@0.76.1': {}
-
-  '@react-native/dev-middleware@0.73.8(encoding@0.1.13)':
-    dependencies:
-      '@isaacs/ttlcache': 1.4.1
-      '@react-native/debugger-frontend': 0.73.3
-      chrome-launcher: 0.15.2
-      chromium-edge-launcher: 1.0.0
-      connect: 3.7.0
-      debug: 2.6.9
-      node-fetch: 2.7.0(encoding@0.1.13)
-      open: 7.4.2
-      serve-static: 1.15.0
-      temp-dir: 2.0.0
-      ws: 6.2.3
-    transitivePeerDependencies:
-      - bufferutil
-      - encoding
-      - supports-color
-      - utf-8-validate
 
   '@react-native/dev-middleware@0.76.1':
     dependencies:
@@ -8642,17 +8612,6 @@ snapshots:
   chrome-trace-event@1.0.3: {}
 
   chromium-edge-launcher@0.2.0:
-    dependencies:
-      '@types/node': 20.8.4
-      escape-string-regexp: 4.0.0
-      is-wsl: 2.2.0
-      lighthouse-logger: 1.4.2
-      mkdirp: 1.0.4
-      rimraf: 3.0.2
-    transitivePeerDependencies:
-      - supports-color
-
-  chromium-edge-launcher@1.0.0:
     dependencies:
       '@types/node': 20.8.4
       escape-string-regexp: 4.0.0
@@ -11301,7 +11260,7 @@ snapshots:
       '@jest/create-cache-key-function': 29.7.0
       '@react-native/assets-registry': 0.76.1
       '@react-native/codegen': 0.76.1(@babel/preset-env@7.26.0(@babel/core@7.26.0))
-      '@react-native/community-cli-plugin': 0.76.1(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.0)(encoding@0.1.13)
+      '@react-native/community-cli-plugin': 0.76.1(patch_hash=gdpi5rwh3blcwxgyspzwxjdb6a)(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.0)(encoding@0.1.13)
       '@react-native/gradle-plugin': 0.76.1
       '@react-native/js-polyfills': 0.76.1
       '@react-native/normalize-colors': 0.76.1
@@ -11930,8 +11889,6 @@ snapshots:
       b4a: 1.6.4
       fast-fifo: 1.3.2
       streamx: 2.15.1
-
-  temp-dir@2.0.0: {}
 
   temp@0.8.4:
     dependencies:

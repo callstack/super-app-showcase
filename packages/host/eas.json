@@ -5,7 +5,7 @@
   },
   "build": {
     "production": {
-      "node": "18.16.0"
+      "node": "22.11.0"
     },
     "preview": {
       "extends": "production",

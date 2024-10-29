@@ -16,6 +16,7 @@
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		AA323DC42A177FFA00649DEB /* BootSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA323DC32A177FFA00649DEB /* BootSplash.storyboard */; };
 		F15D35B3BD79A756A6BC999C /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 44584288A9D6AE8077FA8786 /* PrivacyInfo.xcprivacy */; };
+		6B4DEFED7FA14BEF9B4F9B0F /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82112A4E50CE4B28B598DC7C /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		89C6BE57DB24E9ADA2F236DE /* Pods-host-hostTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-host-hostTests.release.xcconfig"; path = "Target Support Files/Pods-host-hostTests/Pods-host-hostTests.release.xcconfig"; sourceTree = "<group>"; };
 		AA323DC32A177FFA00649DEB /* BootSplash.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = BootSplash.storyboard; path = host/BootSplash.storyboard; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		82112A4E50CE4B28B598DC7C /* Colors.xcassets */ = {isa = PBXFileReference; name = "Colors.xcassets"; path = "host/Colors.xcassets"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = folder.assetcatalog; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				AA323DC32A177FFA00649DEB /* BootSplash.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 				44584288A9D6AE8077FA8786 /* PrivacyInfo.xcprivacy */,
+				82112A4E50CE4B28B598DC7C /* Colors.xcassets */,
 			);
 			name = host;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				F15D35B3BD79A756A6BC999C /* PrivacyInfo.xcprivacy in Resources */,
+				6B4DEFED7FA14BEF9B4F9B0F /* Colors.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

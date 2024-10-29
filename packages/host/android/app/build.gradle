@@ -124,7 +124,6 @@ android {
 dependencies {
     // The version of react-native is set by the React Native Gradle Plugin
     implementation("com.facebook.react:react-android")
-    implementation("androidx.core:core-splashscreen:1.0.0")
     
     if (hermesEnabled.toBoolean()) {
         implementation("com.facebook.react:hermes-android")

@@ -3,6 +3,7 @@ import path from 'node:path';
 import * as Repack from '@callstack/repack';
 import {getSharedDependencies} from 'super-app-showcase-sdk';
 import TerserPlugin from 'terser-webpack-plugin';
+import webpack from 'webpack';
 
 const dirname = Repack.getDirname(import.meta.url);
 const {resolve} = createRequire(import.meta.url);
@@ -212,6 +213,10 @@ export default env => {
          * Their names are used to match requested modules in this compilation.
          */
         shared: getSharedDependencies({eager: true}),
+      }),
+      // silence missing @react-native-masked-view optionally required by @react-navigation/elements
+      new webpack.IgnorePlugin({
+        resourceRegExp: /^@react-native-masked-view/,
       }),
     ],
   };

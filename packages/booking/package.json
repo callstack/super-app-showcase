@@ -36,6 +36,7 @@
     "@react-native/eslint-config": "0.76.1",
     "@react-native/typescript-config": "0.76.1",
     "@rnx-kit/align-deps": "^2.5.1",
+    "@rspack/plugin-react-refresh": "^1.0.0",
     "@types/jest": "^29.5.14",
     "@types/react": "^18.2.6",
     "@types/react-native-vector-icons": "^6.4.12",

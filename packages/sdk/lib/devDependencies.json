@@ -39,6 +39,11 @@
     "version": "^15.0.0",
     "devOnly": true
   },
+  "@rspack/plugin-react-refresh": {
+    "name": "@rspack/plugin-react-refresh",
+    "version": "^1.0.0",
+    "devOnly": true
+  },
   "@types/jest": {
     "name": "@types/jest",
     "version": "^29.5.14",

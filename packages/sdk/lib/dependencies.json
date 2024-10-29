@@ -11,10 +11,6 @@
     "name": "@react-native-async-storage/async-storage",
     "version": "2.0.0"
   },
-  "@react-navigation/material-bottom-tabs": {
-    "name": "@react-navigation/material-bottom-tabs",
-    "version": "6.2.29"
-  },
   "@react-navigation/native": {
     "name": "@react-navigation/native",
     "version": "6.1.18"

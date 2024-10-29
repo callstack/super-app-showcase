@@ -1,32 +1,37 @@
+import {createRequire} from 'node:module';
+import path from 'node:path';
 import * as Repack from '@callstack/repack';
-import path from 'path';
-import TerserPlugin from 'terser-webpack-plugin';
 import {getSharedDependencies} from 'super-app-showcase-sdk';
+import TerserPlugin from 'terser-webpack-plugin';
+
 /**
  * This env variable shows if bundle is standalone and eager should be enabled in Module federation Plugin config.
  * Please see more detailed description in Module Federation Plugin config.
  */
 const STANDALONE = Boolean(process.env.STANDALONE);
 
+const dirname = Repack.getDirname(import.meta.url);
+const {resolve} = createRequire(import.meta.url);
+
 /**
  * More documentation, installation, usage, motivation and differences with Metro is available at:
  * https://github.com/callstack/repack/blob/main/README.md
  *
  * The API documentation for the functions and plugins used in this file is available at:
- * https://re-pack.netlify.app/
+ * https://re-pack.dev
  */
 
 /**
  * Webpack configuration.
  * You can also export a static object or a function returning a Promise.
  *
- * @param env Environment options passed from either Webpack CLI or React Native CLI
+ * @param env Environment options passed from either Webpack CLI or React Native Community CLI
  *            when running with `react-native start/bundle`.
  */
 export default env => {
   const {
     mode = 'development',
-    context = Repack.getDirname(import.meta.url),
+    context = dirname,
     entry = './index.js',
     platform = process.env.PLATFORM,
     minimize = mode === 'production',
@@ -34,27 +39,12 @@ export default env => {
     bundleFilename = undefined,
     sourceMapFilename = undefined,
     assetsPath = undefined,
-    reactNativePath = new URL('./node_modules/react-native', import.meta.url)
-      .pathname,
+    reactNativePath = resolve('react-native'),
   } = env;
-  const dirname = Repack.getDirname(import.meta.url);
 
   if (!platform) {
     throw new Error('Missing platform');
   }
-
-  /**
-   * Using Module Federation might require disabling hmr.
-   * Uncomment below to set `devServer.hmr` to `false`.
-   *
-   * Keep in mind that `devServer` object is not available
-   * when running `webpack-bundle` command. Be sure
-   * to check its value to avoid accessing undefined value,
-   * otherwise an error might occur.
-   */
-  // if (devServer) {
-  //   devServer.hmr = false;
-  // }
 
   /**
    * Depending on your Babel configuration you might want to keep it.
@@ -74,17 +64,7 @@ export default env => {
      */
     devtool: false,
     context,
-    /**
-     * `getInitializationEntries` will return necessary entries with setup and initialization code.
-     * If you don't want to use Hot Module Replacement, set `hmr` option to `false`. By default,
-     * HMR will be enabled in development mode.
-     */
-    entry: [
-      ...Repack.getInitializationEntries(reactNativePath, {
-        hmr: devServer && devServer.hmr,
-      }),
-      entry,
-    ],
+    entry,
     resolve: {
       /**
        * `getResolveOptions` returns additional resolution configuration for React Native.
@@ -93,14 +73,15 @@ export default env => {
        * in their `package.json` might not work correctly.
        */
       ...Repack.getResolveOptions(platform),
+
       /**
        * Uncomment this to ensure all `react-native*` imports will resolve to the same React Native
        * dependency. You might need it when using workspaces/monorepos or unconventional project
        * structure. For simple/typical project you won't need it.
        */
-      alias: {
-        'react-native': reactNativePath,
-      },
+      // alias: {
+      //   'react-native': reactNativePath,
+      // },
     },
     /**
      * Configures output.
@@ -111,6 +92,7 @@ export default env => {
      */
     output: {
       clean: true,
+      hashFunction: 'xxhash64',
       path: path.join(dirname, 'build/generated', platform),
       filename: 'index.bundle',
       chunkFilename: '[name].chunk.bundle',
@@ -121,7 +103,7 @@ export default env => {
      * Configures optimization of the built bundle.
      */
     optimization: {
-      /** Enables minification based on values passed from React Native CLI or from fallback. */
+      /** Enables minification based on values passed from React Native Community CLI or from fallback. */
       minimize,
       /** Configure minimizer to process the bundle. */
       minimizer: [
@@ -153,17 +135,17 @@ export default env => {
        */
       rules: [
         {
-          test: /\.[jt]sx?$/,
+          test: /\.[cm]?[jt]sx?$/,
           include: [
-            /node_modules(.*[/\\])+react/,
+            /node_modules(.*[/\\])+react-native/,
             /node_modules(.*[/\\])+@react-native/,
             /node_modules(.*[/\\])+@react-navigation/,
             /node_modules(.*[/\\])+@react-native-community/,
-            /node_modules(.*[/\\])+@expo/,
+            /node_modules(.*[/\\])+expo/,
             /node_modules(.*[/\\])+pretty-format/,
             /node_modules(.*[/\\])+metro/,
             /node_modules(.*[/\\])+abort-controller/,
-            /node_modules(.*[/\\])+@callstack\/repack/,
+            /node_modules(.*[/\\])+@callstack[/\\]repack/,
           ],
           use: 'babel-loader',
         },
@@ -176,22 +158,13 @@ export default env => {
         {
           test: /\.[jt]sx?$/,
           exclude: /node_modules/,
-          use: {
-            loader: 'babel-loader',
-            options: {
-              /** Add React Refresh transform only when HMR is enabled. */
-              plugins:
-                devServer && devServer.hmr
-                  ? ['module:react-refresh/babel']
-                  : undefined,
-            },
-          },
+          use: 'babel-loader',
         },
         /**
          * This loader handles all static assets (images, video, audio and others), so that you can
          * use (reference) them inside your application.
          *
-         * If you wan to handle specific asset type manually, filter out the extension
+         * If you want to handle specific asset type manually, filter out the extension
          * from `ASSET_EXTENSIONS`, for example:
          * ```
          * Repack.ASSET_EXTENSIONS.filter((ext) => ext !== 'svg')
@@ -205,12 +178,6 @@ export default env => {
               platform,
               devServerEnabled: Boolean(devServer),
               inline: true,
-              /**
-               * Defines which assets are scalable - which assets can have
-               * scale suffixes: `@1x`, `@2x` and so on.
-               * By default all images are scalable.
-               */
-              scalableAssetExtensions: Repack.SCALABLE_ASSETS,
             },
           },
         },

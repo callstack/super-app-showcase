@@ -34,6 +34,11 @@
     "version": "0.76.1",
     "devOnly": true
   },
+  "@react-native-community/cli": {
+    "name": "@react-native-community/cli",
+    "version": "^15.0.0",
+    "devOnly": true
+  },
   "@types/jest": {
     "name": "@types/jest",
     "version": "^29.5.14",

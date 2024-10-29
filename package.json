@@ -39,7 +39,8 @@
       "@react-native/dev-middleware": "0.76.1"
     },
     "patchedDependencies": {
-      "@react-native/community-cli-plugin": "patches/@react-native__community-cli-plugin.patch"
+      "@react-native/community-cli-plugin": "patches/@react-native__community-cli-plugin.patch",
+      "react-native-paper": "patches/react-native-paper.patch"
     }
   }
 }

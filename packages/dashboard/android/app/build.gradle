@@ -2,6 +2,13 @@ apply plugin: "com.android.application"
 apply plugin: "org.jetbrains.kotlin.android"
 apply plugin: "com.facebook.react"
 
+// [super-app-showcase change]
+// pnpm compliant way to resolve node modules path
+apply from: "../../node_modules/super-app-showcase-sdk/android/resolveNodePackage.gradle"
+    
+def reactNativePath = resolveNodePackage('react-native', rootDir)
+def codegenPath = resolveNodePackage('@react-native/codegen', reactNativePath)
+
 /**
  * This is the configuration block to customize your React Native Android app.
  * By default you don't need to apply any configuration, just uncomment the lines you need.
@@ -13,7 +20,7 @@ react {
     //   The folder where the react-native NPM package is. Default is ../../node_modules/react-native
     // reactNativeDir = file("../../node_modules/react-native")
     //   The folder where the react-native Codegen package is. Default is ../../node_modules/react-native-codegen
-    // codegenDir = file("../../node_modules/@react-native/codegen")
+    codegenDir = codegenPath
     //   The cli.js file which is the React Native CLI entrypoint. Default is ../../node_modules/react-native/cli.js
     // cliFile = file("../../node_modules/react-native/cli.js")
     /* Variants */
@@ -77,9 +84,8 @@ def jscFlavor = 'org.webkit:android-jsc:+'
 
 android {
     ndkVersion rootProject.ext.ndkVersion
-
     buildToolsVersion rootProject.ext.buildToolsVersion
-    compileSdkVersion rootProject.ext.compileSdkVersion
+    compileSdk rootProject.ext.compileSdkVersion
 
     namespace "com.dashboard"
     defaultConfig {

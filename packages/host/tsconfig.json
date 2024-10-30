@@ -3,7 +3,7 @@
     "target": "esnext",
     "lib": ["es2017"],
     "jsx": "react-native",
-    "module": "commonjs",
+    "module": "es2020",
     "moduleResolution": "node",
     "types": ["react-native", "jest"],
     "resolveJsonModule": true,

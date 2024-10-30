@@ -3,12 +3,12 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "react-native webpack-start --port 9003",
+    "start": "react-native start --port 9003",
     "test": "jest --passWithNoTests",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "bundle": "pnpm bundle:ios && pnpm bundle:android",
-    "bundle:ios": "react-native webpack-bundle --platform ios --entry-file index.js --dev false",
-    "bundle:android": "react-native webpack-bundle --platform android --entry-file index.js --dev false",
+    "bundle:ios": "react-native bundle --platform ios --entry-file index.js --dev false",
+    "bundle:android": "react-native bundle --platform android --entry-file index.js --dev false",
     "align-deps": "rnx-align-deps --write",
     "check-deps": "rnx-align-deps"
   },

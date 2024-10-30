@@ -1,11 +1,8 @@
-import {Federated} from '@callstack/repack/client';
 import React from 'react';
 import ErrorBoundary from '../components/ErrorBoundary';
 import Placeholder from '../components/Placeholder';
 
-const Account = React.lazy(() =>
-  Federated.importModule('auth', './AccountScreen'),
-);
+const Account = React.lazy(() => import('auth/AccountScreen'));
 
 const AccountScreen = () => {
   return (

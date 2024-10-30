@@ -34,5 +34,9 @@
   "react-native-vector-icons": {
     "name": "react-native-vector-icons",
     "version": "10.2.0"
+  },
+  "@module-federation/enhanced": {
+    "name": "@module-federation/enhanced",
+    "version": "0.6.14"
   }
 }

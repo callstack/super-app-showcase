@@ -209,7 +209,7 @@ export default env => {
       /**
        * This plugin is nessessary to make Module Federation work.
        */
-      new Repack.plugins.ModuleFederationPlugin({
+      new Repack.plugins.ModuleFederationPluginV1({
         /**
          * The name of the module is used to identify the module in URLs resolver and imports.
          */

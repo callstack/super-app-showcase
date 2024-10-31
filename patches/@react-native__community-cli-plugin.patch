@@ -1,0 +1,210 @@
+diff --git a/dist/commands/start/OpenDebuggerKeyboardHandler.js b/dist/commands/start/OpenDebuggerKeyboardHandler.js
+index 913cd04888330f82589f568fa887fc2a06a52185..8e30c92d04b1d41a9754390e941b51005e828d66 100644
+--- a/dist/commands/start/OpenDebuggerKeyboardHandler.js
++++ b/dist/commands/start/OpenDebuggerKeyboardHandler.js
+@@ -1,11 +1,10 @@
+-"use strict";
++'use strict';
+ 
+-Object.defineProperty(exports, "__esModule", {
++Object.defineProperty(exports, '__esModule', {
+   value: true,
+ });
+ exports.default = void 0;
+-var _chalk = _interopRequireDefault(require("chalk"));
+-var _nodeFetch = _interopRequireDefault(require("node-fetch"));
++var _chalk = _interopRequireDefault(require('chalk'));
+ function _interopRequireDefault(e) {
+   return e && e.__esModule ? e : { default: e };
+ }
+@@ -21,19 +20,19 @@ class OpenDebuggerKeyboardHandler {
+     this.#targetsShownForSelection = null;
+     this.#clearTerminalMenu();
+     try {
+-      await (0, _nodeFetch.default)(
++      await fetch(
+         new URL(
+-          "/open-debugger?target=" + encodeURIComponent(target.id),
++          '/open-debugger?target=' + encodeURIComponent(target.id),
+           this.#devServerUrl
+         ).href,
+         {
+-          method: "POST",
++          method: 'POST',
+         }
+       );
+     } catch (e) {
+       this.#log(
+-        "error",
+-        "Failed to open debugger for %s on %s debug targets: %s",
++        'error',
++        'Failed to open debugger for %s on %s debug targets: %s',
+         target.description,
+         target.deviceName,
+         e.message
+@@ -42,24 +41,21 @@ class OpenDebuggerKeyboardHandler {
+     }
+   }
+   async handleOpenDebugger() {
+-    this.#setTerminalMenu("Fetching available debugging targets...");
++    this.#setTerminalMenu('Fetching available debugging targets...');
+     this.#targetsShownForSelection = null;
+     try {
+-      const res = await (0, _nodeFetch.default)(
+-        this.#devServerUrl + "/json/list",
+-        {
+-          method: "POST",
+-        }
+-      );
++      const res = await fetch(this.#devServerUrl + '/json/list', {
++        method: 'POST',
++      });
+       if (res.status !== 200) {
+         throw new Error(`Unexpected status code: ${res.status}`);
+       }
+       const targets = await res.json();
+       if (!Array.isArray(targets)) {
+-        throw new Error("Expected array.");
++        throw new Error('Expected array.');
+       }
+       if (targets.length === 0) {
+-        this.#log("warn", "No connected targets");
++        this.#log('warn', 'No connected targets');
+         this.#clearTerminalMenu();
+       } else if (targets.length === 1) {
+         const target = targets[0];
+@@ -68,8 +64,8 @@ class OpenDebuggerKeyboardHandler {
+         this.#targetsShownForSelection = targets;
+         if (targets.length > 9) {
+           this.#log(
+-            "warn",
+-            "10 or more debug targets available, showing the first 9."
++            'warn',
++            '10 or more debug targets available, showing the first 9.'
+           );
+         }
+         this.#setTerminalMenu(
+@@ -81,16 +77,16 @@ class OpenDebuggerKeyboardHandler {
+                   ` ${i + 1} `
+                 )} - "${description}" on "${deviceName}"`
+             )
+-            .join("\n  ")}`
++            .join('\n  ')}`
+         );
+       }
+     } catch (e) {
+-      this.#log("error", `Failed to fetch debug targets: ${e.message}`);
++      this.#log('error', `Failed to fetch debug targets: ${e.message}`);
+       this.#clearTerminalMenu();
+     }
+   }
+   maybeHandleTargetSelection(keyName) {
+-    if (keyName >= "1" && keyName <= "9") {
++    if (keyName >= '1' && keyName <= '9') {
+       const targetIndex = Number(keyName) - 1;
+       if (
+         this.#targetsShownForSelection != null &&
+@@ -109,20 +105,20 @@ class OpenDebuggerKeyboardHandler {
+   }
+   #log(level, ...data) {
+     this.#reporter.update({
+-      type: "unstable_server_log",
++      type: 'unstable_server_log',
+       level,
+       data,
+     });
+   }
+   #setTerminalMenu(message) {
+     this.#reporter.update({
+-      type: "unstable_server_menu_updated",
++      type: 'unstable_server_menu_updated',
+       message,
+     });
+   }
+   #clearTerminalMenu() {
+     this.#reporter.update({
+-      type: "unstable_server_menu_cleared",
++      type: 'unstable_server_menu_cleared',
+     });
+   }
+ }
+diff --git a/dist/utils/isDevServerRunning.js b/dist/utils/isDevServerRunning.js
+index 553e851b00a7d71469370a5319662254407e8c58..3db243196dddbd8fc694b9f36cd57a425b3fce3a 100644
+--- a/dist/utils/isDevServerRunning.js
++++ b/dist/utils/isDevServerRunning.js
+@@ -1,11 +1,10 @@
+-"use strict";
++'use strict';
+ 
+-Object.defineProperty(exports, "__esModule", {
++Object.defineProperty(exports, '__esModule', {
+   value: true,
+ });
+ exports.default = isDevServerRunning;
+-var _net = _interopRequireDefault(require("net"));
+-var _nodeFetch = _interopRequireDefault(require("node-fetch"));
++var _net = _interopRequireDefault(require('net'));
+ function _interopRequireDefault(e) {
+   return e && e.__esModule ? e : { default: e };
+ }
+@@ -13,37 +12,35 @@ async function isDevServerRunning(devServerUrl, projectRoot) {
+   const { hostname, port } = new URL(devServerUrl);
+   try {
+     if (!(await isPortOccupied(hostname, port))) {
+-      return "not_running";
++      return 'not_running';
+     }
+-    const statusResponse = await (0, _nodeFetch.default)(
+-      `${devServerUrl}/status`
+-    );
++    const statusResponse = await fetch(`${devServerUrl}/status`);
+     const body = await statusResponse.text();
+-    return body === "packager-status:running" &&
+-      statusResponse.headers.get("X-React-Native-Project-Root") === projectRoot
+-      ? "matched_server_running"
+-      : "port_taken";
++    return body === 'packager-status:running' &&
++      statusResponse.headers.get('X-React-Native-Project-Root') === projectRoot
++      ? 'matched_server_running'
++      : 'port_taken';
+   } catch (e) {
+-    return "unknown";
++    return 'unknown';
+   }
+ }
+ async function isPortOccupied(hostname, port) {
+   let result = false;
+   const server = _net.default.createServer();
+   return new Promise((resolve, reject) => {
+-    server.once("error", (e) => {
++    server.once('error', (e) => {
+       server.close();
+-      if (e.code === "EADDRINUSE") {
++      if (e.code === 'EADDRINUSE') {
+         result = true;
+       } else {
+         reject(e);
+       }
+     });
+-    server.once("listening", () => {
++    server.once('listening', () => {
+       result = false;
+       server.close();
+     });
+-    server.once("close", () => {
++    server.once('close', () => {
+       resolve(result);
+     });
+     server.listen({
+diff --git a/package.json b/package.json
+index 09871e59d70d5494824f54a447507fa0b6b4c2a7..48306960bf1d75b0ad8f626879eec845b36c2411 100644
+--- a/package.json
++++ b/package.json
+@@ -30,7 +30,6 @@
+     "metro": "^0.81.0",
+     "metro-config": "^0.81.0",
+     "metro-core": "^0.81.0",
+-    "node-fetch": "^2.2.0",
+     "readline": "^1.3.0"
+   },
+   "devDependencies": {

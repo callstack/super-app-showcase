@@ -31,3 +31,6 @@ buck-out/
 
 # Build dir
 build/
+
+# dist dir
+dist/

@@ -26,20 +26,15 @@
 	<true/>
 	<key>NSAppTransportSecurity</key>
 	<dict>
-		<key>NSExceptionDomains</key>
-		<dict>
-			<key>localhost</key>
-			<dict>
-				<key>NSExceptionAllowsInsecureHTTPLoads</key>
-				<true/>
-			</dict>
-		</dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<false/>
+		<key>NSAllowsLocalNetworking</key>
+		<true/>
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string></string>
 	<key>RepackPublicKey</key>
-	<string>
------BEGIN PUBLIC KEY-----
+	<string>-----BEGIN PUBLIC KEY-----
 MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAvR2JseYMjDTie9MYo/Tw
 4xGQKSBKJ15GcrwcP+eX96WWCkbTH+Oa7oUwuM2l6KyTBZsuWiTbajldnUslyfLu
 uLmAfOjmgVMgWqihRIkvBIzxG2G/wrUGMLOrXWn01enqHORami0N9O7/WayC3UO1
@@ -52,8 +47,7 @@ wsPsZn01/gGJmqS+2v/0428SHra0r1JOXhgOrJDn/SpWkfhcYPti61gq9qKmjylq
 549qj7P7TNS0hdk8gaItciTkN6oNdvLUi3xHWjFauq2nvGq7DrNGis9agb91h6qp
 cY5Xs2ruzayYogugDiaALCPvJpQFCj83AIbWft26fl7VCphxPKaFpeDHseVi6tMi
 1+opwSqunAaqo5rsLlHIw0MCAwEAAQ==
------END PUBLIC KEY-----
-	</string>
+-----END PUBLIC KEY-----</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>AntDesign.ttf</string>
@@ -74,10 +68,10 @@ cY5Xs2ruzayYogugDiaALCPvJpQFCj83AIbWft26fl7VCphxPKaFpeDHseVi6tMi
 		<string>Fontisto.ttf</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
-	<string>BootSplash.storyboard</string>
+	<string>BootSplash</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
-		<string>armv7</string>
+		<string>arm64</string>
 	</array>
 	<key>UIRequiresFullScreen</key>
 	<true/>

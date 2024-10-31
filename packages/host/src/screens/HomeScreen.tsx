@@ -7,7 +7,6 @@ import {
   View,
 } from 'react-native';
 import {CompositeScreenProps} from '@react-navigation/native';
-import {MaterialBottomTabScreenProps} from '@react-navigation/material-bottom-tabs';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {
   Avatar,
@@ -17,6 +16,7 @@ import {
   Text,
   Title,
   Paragraph,
+  MaterialBottomTabScreenProps,
 } from 'react-native-paper';
 import {TabsParamList} from '../navigation/TabsNavigator';
 import {HomeStackParamList} from '../navigation/HomeNavigator';

@@ -1,5 +1,5 @@
 import React from 'react';
-import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
+import {createMaterialBottomTabNavigator} from 'react-native-paper/react-navigation';
 import AccountNavigator from './AccountNavigator';
 import HomeNavigator from './HomeNavigator';
 import SearchNavigator from './SearchNavigator';

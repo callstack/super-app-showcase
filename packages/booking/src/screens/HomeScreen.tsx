@@ -8,9 +8,15 @@ import {
   View,
 } from 'react-native';
 import {CompositeScreenProps} from '@react-navigation/native';
-import {MaterialBottomTabScreenProps} from '@react-navigation/material-bottom-tabs';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {Avatar, Card, Button, Divider, Text} from 'react-native-paper';
+import {
+  Avatar,
+  Card,
+  Button,
+  Divider,
+  Text,
+  MaterialBottomTabScreenProps,
+} from 'react-native-paper';
 import {TabsParamList} from '../navigation/TabsNavigator';
 import {HomeStackParamList} from '../navigation/HomeNavigator';
 import upcomingBookings from '../data/upcomingBookings.json';

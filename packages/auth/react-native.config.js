@@ -1,3 +1,8 @@
+const useWebpack =
+  process.env.USE_WEBPACK === 'true' || process.env.USE_WEBPACK === '1';
+
 module.exports = {
-  commands: require('@callstack/repack/commands'),
+  commands: useWebpack
+    ? require('@callstack/repack/commands/webpack')
+    : require('@callstack/repack/commands/rspack'),
 };

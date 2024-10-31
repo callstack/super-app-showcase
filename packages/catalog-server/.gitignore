@@ -1,6 +1,0 @@
-.env
-
-node_modules/
-
-# prod data
-data/*.prod.json

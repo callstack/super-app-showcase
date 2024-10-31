@@ -142,6 +142,7 @@ export default env => {
             /node_modules(.*[/\\])+abort-controller/,
             /node_modules(.*[/\\])+@callstack[/\\]repack/,
             /node_modules(.*[/\\])+react-freeze/,
+            /node_modules(.*[/\\])+@module-federation/,
           ],
           use: 'babel-loader',
         },

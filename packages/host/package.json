@@ -60,33 +60,6 @@
     "typescript": "^5.6.3",
     "webpack": "^5.95.0"
   },
-  "federatedDependencies": [
-    {
-      "name": "auth",
-      "type": "internal",
-      "url": "https://github.com/callstack/super-app-showcase"
-    },
-    {
-      "name": "booking",
-      "type": "internal",
-      "url": "https://github.com/callstack/super-app-showcase"
-    },
-    {
-      "name": "dashboard",
-      "type": "internal",
-      "url": "https://github.com/callstack/super-app-showcase"
-    },
-    {
-      "name": "shopping",
-      "type": "internal",
-      "url": "https://github.com/callstack/super-app-showcase"
-    },
-    {
-      "name": "news",
-      "type": "external",
-      "url": "https://github.com/callstack/news-mini-app-showcase"
-    }
-  ],
   "rnx-kit": {
     "kitType": "app",
     "alignDeps": {

@@ -54,7 +54,6 @@
     "typescript": "^5.6.3",
     "webpack": "^5.95.0"
   },
-  "federatedModule": "auth",
   "rnx-kit": {
     "kitType": "app",
     "alignDeps": {

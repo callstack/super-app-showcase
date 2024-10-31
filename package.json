@@ -30,7 +30,6 @@
     "check-deps": "pnpm -r check-deps"
   },
   "dependencies": {
-    "@changesets/cli": "^2.26.2",
     "mprocs": "^0.7.1"
   },
   "pnpm": {

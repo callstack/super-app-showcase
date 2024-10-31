@@ -47,7 +47,6 @@ This showcase is a monorepository with a few apps using micro-frondend architect
 The super app contains 4 apps:
 
 - `host` - the main app, which is a super app. It contains all the micro-frontends and provides a way to navigate between them.
-- `shell` - the blueprint of `host` app with shared dependencies. It could be shared across all the teams, since there no necessary secrets available in this version of `host` app.
 - `booking` - micro-frontend for booking service.
   Booking exposes `UpcomingAppointments` screen and `MainNavigator`. `MainNavigator` is Booking app itself. `UpcomingAppointments` screen is a screen, which is used in the super app in its own navigation.
 - `shopping` - micro-frontend for shopping service.
@@ -86,7 +85,7 @@ pnpm pods:update
 
 ### Run
 
-Start dev server for host and mini apps:
+Start dev server for Host and Mini apps:
 
 ```
 pnpm start
@@ -104,20 +103,10 @@ Or start dev server for a specific app as a standalone app. It's useful for test
 pnpm start:standalone:<app-name>
 ```
 
-Running the mini app as a standalone requires running the [catalog-server](./packages/catalog-server/README.md) and [auth module](./packages/auth/README.md):
-
-```
-pnpm start:catalog
-```
+Running the mini app as a standalone requires exposing [auth module](./packages/auth/README.md):
 
 ```
 pnpm start:auth
-```
-
-Or run commands concurrently:
-
-```
-pnpm concurrently -P "pnpm start:catalog" "pnpm start:auth"
 ```
 
 Run iOS or Android app (ios | android):
@@ -131,8 +120,6 @@ For Android, make sure to reverse adb ports:
 ```
 pnpm adbreverse
 ```
-
-There is no `start:shell` script to avoid running shell and host app concurrently. It's not possible to run shell and host app concurrently, since they use the same port. If you want to run shell app, you should run `pnpm start:standalone:shell` and then run each mini app bundler you want to use in shell app.
 
 ### Test
 
@@ -158,20 +145,10 @@ Run type check for all apps:
 pnpm typecheck
 ```
 
-## Troubleshooting
-
-TBD
-
-## Documentation
-
-TBD
-
 ## Known Issues
 
 The "booking" and "shopping" mini-apps can't be run in standalone mode (i.e. without the host running). This is a deliberate decision of this repository to showcase the possibility and to reduce the amount of work to keep the mini-apps dependencies up-to-date.
 The "dashboard" mini-app can be run as a standalone app (without the host). It's up to you to decide on what kind of developer experience your super app has.
-
-Repack v3 HMR breaks React Native inspector/devtools in RN 0.70 version. A bypass added three patches for the dashboard, shell, and host. [link](https://github.com/callstack/repack/issues/251).
 
 ## Contributing
 

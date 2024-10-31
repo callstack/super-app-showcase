@@ -55,14 +55,6 @@
     "typescript": "^5.6.3",
     "webpack": "^5.95.0"
   },
-  "federatedModule": "shopping",
-  "federatedDependencies": [
-    {
-      "name": "auth",
-      "type": "internal",
-      "url": "https://github.com/callstack/super-app-showcase"
-    }
-  ],
   "rnx-kit": {
     "kitType": "app",
     "alignDeps": {

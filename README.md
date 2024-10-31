@@ -4,7 +4,7 @@ Monorepository showcase to showcase Super App development possibilities with Rea
 
 Learn more about Super Apps here: [https://www.callstack.com/super-app-development](https://www.callstack.com/super-app-development?utm_campaign=super_apps&utm_source=github&utm_content=super_app_showcase).
 
-🚧 **We are currently updating this project to support Repack 5 and Module Federation 2. Additionally, we are working on a more streamlined deployment process for mini apps. Stay tuned for more updates!** 🚧
+🚧 **We are currently updating this project to support Re.Pack 5 and Module Federation 2. Additionally, we are working on a more streamlined deployment process for mini apps. Stay tuned for more updates!** 🚧
 
 ---
 

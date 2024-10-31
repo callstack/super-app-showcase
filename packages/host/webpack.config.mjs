@@ -202,11 +202,18 @@ export default env => {
       /**
        * This plugin is nessessary to make Module Federation work.
        */
-      new Repack.plugins.ModuleFederationPluginV1({
+      new Repack.plugins.ModuleFederationPluginV2({
         /**
          * The name of the module is used to identify the module in URLs resolver and imports.
          */
         name: 'host',
+        dts: false,
+        remotes: {
+          booking: `booking@http://localhost:9000/${platform}/mf-manifest.json`,
+          shopping: `shopping@http://localhost:9001/${platform}/mf-manifest.json`,
+          dashboard: `dashboard@http://localhost:9002/${platform}/mf-manifest.json`,
+          auth: `auth@http://localhost:9003/${platform}/mf-manifest.json`,
+        },
         /**
          * Shared modules are shared in the share scope.
          * React, React Native and React Navigation should be provided here because there should be only one instance of these modules.

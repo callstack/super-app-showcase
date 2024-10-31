@@ -59,7 +59,7 @@ export default env => {
      */
     devtool: false,
     context,
-    entry,
+    entry: {},
     resolve: {
       /**
        * `getResolveOptions` returns additional resolution configuration for React Native.
@@ -203,16 +203,21 @@ export default env => {
       /**
        * This plugin is nessessary to make Module Federation work.
        */
-      new Repack.plugins.ModuleFederationPluginV1({
+      new Repack.plugins.ModuleFederationPluginV2({
         /**
          * The name of the module is used to identify the module in URLs resolver and imports.
          */
         name: 'shopping',
+        filename: 'shopping.container.js.bundle',
+        dts: false,
         /**
          * This is a list of modules that will be shared between remote containers.
          */
         exposes: {
           './App': './src/navigation/MainNavigator',
+        },
+        remotes: {
+          auth: `auth@http://localhost:9003/${platform}/mf-manifest.json`,
         },
         /**
          * Shared modules are shared in the share scope.

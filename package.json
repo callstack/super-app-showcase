@@ -39,6 +39,18 @@
     "patchedDependencies": {
       "@react-native/community-cli-plugin": "patches/@react-native__community-cli-plugin.patch",
       "react-native-paper": "patches/react-native-paper.patch"
+    },
+    "packageExtensions": {
+      "@module-federation/data-prefetch": {
+        "peerDependenciesMeta": {
+          "react-dom": {
+            "optional": true
+          }
+        }
+      }
+    },
+    "allowedDeprecatedVersions": {
+      "eslint": "8"
     }
   }
 }

@@ -96,7 +96,7 @@
   },
   "eslint": {
     "name": "eslint",
-    "version": "^8.19.0",
+    "version": "^8.57.0",
     "devOnly": true
   },
   "jest": {

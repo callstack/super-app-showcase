@@ -1,4 +1,5 @@
-const useWebpack = Boolean(process.env.USE_WEBPACK);
+const useWebpack =
+  process.env.USE_WEBPACK === 'true' || process.env.USE_WEBPACK === '1';
 
 module.exports = {
   commands: useWebpack

@@ -115,7 +115,7 @@ Run iOS or Android app (ios | android):
 pnpm run:<app-name>:<platform>
 ```
 
-For Android, make sure to reverse adb ports:
+For Android, make sure to reverse all adb ports:
 
 ```
 pnpm adbreverse

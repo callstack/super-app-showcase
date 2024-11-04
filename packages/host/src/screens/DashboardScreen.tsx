@@ -1,7 +1,7 @@
 import React from 'react';
 import ErrorBoundary from '../components/ErrorBoundary';
 import Placeholder from '../components/Placeholder';
-
+// @ts-ignore temp
 const Dashboard = React.lazy(() => import('dashboard/App'));
 
 const DashboardScreen = () => {

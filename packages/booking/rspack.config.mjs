@@ -178,7 +178,6 @@ export default env => {
          */
         name: 'booking',
         filename: 'booking.container.js.bundle',
-        dts: false,
         /**
          * This is a list of modules that will be shared between remote containers.
          */

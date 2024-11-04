@@ -1,7 +1,7 @@
 import React from 'react';
 import ErrorBoundary from '../components/ErrorBoundary';
 import Placeholder from '../components/Placeholder';
-
+// @ts-ignore temp
 const Booking = React.lazy(() => import('booking/App'));
 
 const BookingScreen = () => {

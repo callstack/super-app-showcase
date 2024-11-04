@@ -178,7 +178,6 @@ export default env => {
          */
         name: 'auth',
         filename: 'auth.container.js.bundle',
-        dts: false,
         /**
          * This is a list of modules that will be shared between remote containers.
          */

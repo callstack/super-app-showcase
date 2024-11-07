@@ -37,6 +37,7 @@
   },
   "@module-federation/enhanced": {
     "name": "@module-federation/enhanced",
-    "version": "0.6.13"
+    "version": "0.7.0",
+    "shared": false
   }
 }

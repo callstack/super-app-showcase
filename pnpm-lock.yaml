@@ -28,8 +28,8 @@ importers:
   packages/auth:
     dependencies:
       '@module-federation/enhanced':
-        specifier: 0.6.13
-        version: 0.6.13(react@18.3.1)(typescript@5.6.3)(webpack@5.95.0)
+        specifier: 0.7.0
+        version: 0.7.0(react@18.3.1)(typescript@5.6.3)(webpack@5.95.0)
       '@react-native-async-storage/async-storage':
         specifier: 2.0.0
         version: 2.0.0(react-native@0.76.1(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.0)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))
@@ -69,7 +69,7 @@ importers:
         version: 7.26.0
       '@callstack/repack':
         specifier: 5.0.0-rc.0
-        version: 5.0.0-rc.0(@module-federation/enhanced@0.6.13(react@18.3.1)(typescript@5.6.3)(webpack@5.95.0))(@react-native-community/cli-debugger-ui@15.0.0)(@react-native-community/cli-server-api@15.0.0)(@react-native-community/cli-types@15.0.0)(@react-native-community/cli@15.0.0(typescript@5.6.3))(@rspack/core@1.0.14(@swc/helpers@0.5.13))(@rspack/plugin-react-refresh@1.0.0(react-refresh@0.14.0))(react-native@0.76.1(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.0)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(webpack@5.95.0)
+        version: 5.0.0-rc.0(@module-federation/enhanced@0.7.0(react@18.3.1)(typescript@5.6.3)(webpack@5.95.0))(@react-native-community/cli-debugger-ui@15.0.0)(@react-native-community/cli-server-api@15.0.0)(@react-native-community/cli-types@15.0.0)(@react-native-community/cli@15.0.0(typescript@5.6.3))(@rspack/core@1.0.14(@swc/helpers@0.5.13))(@rspack/plugin-react-refresh@1.0.0(react-refresh@0.14.0))(react-native@0.76.1(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.0)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(webpack@5.95.0)
       '@react-native-community/cli':
         specifier: ^15.0.0
         version: 15.0.0(typescript@5.6.3)
@@ -146,8 +146,8 @@ importers:
   packages/booking:
     dependencies:
       '@module-federation/enhanced':
-        specifier: 0.6.13
-        version: 0.6.13(react@18.3.1)(typescript@5.6.3)(webpack@5.95.0)
+        specifier: 0.7.0
+        version: 0.7.0(react@18.3.1)(typescript@5.6.3)(webpack@5.95.0)
       '@react-native-async-storage/async-storage':
         specifier: 2.0.0
         version: 2.0.0(react-native@0.76.1(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.0)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))
@@ -190,7 +190,7 @@ importers:
         version: 7.26.0
       '@callstack/repack':
         specifier: 5.0.0-rc.0
-        version: 5.0.0-rc.0(@module-federation/enhanced@0.6.13(react@18.3.1)(typescript@5.6.3)(webpack@5.95.0))(@react-native-community/cli-debugger-ui@15.0.0)(@react-native-community/cli-server-api@15.0.0)(@react-native-community/cli-types@15.0.0)(@react-native-community/cli@15.0.0(typescript@5.6.3))(@rspack/core@1.0.14(@swc/helpers@0.5.13))(@rspack/plugin-react-refresh@1.0.0(react-refresh@0.14.0))(react-native@0.76.1(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.0)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(webpack@5.95.0)
+        version: 5.0.0-rc.0(@module-federation/enhanced@0.7.0(react@18.3.1)(typescript@5.6.3)(webpack@5.95.0))(@react-native-community/cli-debugger-ui@15.0.0)(@react-native-community/cli-server-api@15.0.0)(@react-native-community/cli-types@15.0.0)(@react-native-community/cli@15.0.0(typescript@5.6.3))(@rspack/core@1.0.14(@swc/helpers@0.5.13))(@rspack/plugin-react-refresh@1.0.0(react-refresh@0.14.0))(react-native@0.76.1(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.0)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(webpack@5.95.0)
       '@react-native-community/cli':
         specifier: ^15.0.0
         version: 15.0.0(typescript@5.6.3)
@@ -267,8 +267,8 @@ importers:
   packages/dashboard:
     dependencies:
       '@module-federation/enhanced':
-        specifier: 0.6.13
-        version: 0.6.13(react@18.3.1)(typescript@5.6.3)(webpack@5.95.0)
+        specifier: 0.7.0
+        version: 0.7.0(react@18.3.1)(typescript@5.6.3)(webpack@5.95.0)
       '@react-native-async-storage/async-storage':
         specifier: 2.0.0
         version: 2.0.0(react-native@0.76.1(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.0)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))
@@ -311,7 +311,7 @@ importers:
         version: 7.26.0
       '@callstack/repack':
         specifier: 5.0.0-rc.0
-        version: 5.0.0-rc.0(@module-federation/enhanced@0.6.13(react@18.3.1)(typescript@5.6.3)(webpack@5.95.0))(@react-native-community/cli-debugger-ui@15.0.0)(@react-native-community/cli-server-api@15.0.0)(@react-native-community/cli-types@15.0.0)(@react-native-community/cli@15.0.0(typescript@5.6.3))(@rspack/core@1.0.14(@swc/helpers@0.5.13))(@rspack/plugin-react-refresh@1.0.0(react-refresh@0.14.0))(react-native@0.76.1(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.0)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(webpack@5.95.0)
+        version: 5.0.0-rc.0(@module-federation/enhanced@0.7.0(react@18.3.1)(typescript@5.6.3)(webpack@5.95.0))(@react-native-community/cli-debugger-ui@15.0.0)(@react-native-community/cli-server-api@15.0.0)(@react-native-community/cli-types@15.0.0)(@react-native-community/cli@15.0.0(typescript@5.6.3))(@rspack/core@1.0.14(@swc/helpers@0.5.13))(@rspack/plugin-react-refresh@1.0.0(react-refresh@0.14.0))(react-native@0.76.1(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.0)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(webpack@5.95.0)
       '@react-native-community/cli':
         specifier: ^15.0.0
         version: 15.0.0(typescript@5.6.3)
@@ -388,8 +388,8 @@ importers:
   packages/host:
     dependencies:
       '@module-federation/enhanced':
-        specifier: 0.6.13
-        version: 0.6.13(react@18.3.1)(typescript@5.6.3)(webpack@5.95.0)
+        specifier: 0.7.0
+        version: 0.7.0(react@18.3.1)(typescript@5.6.3)(webpack@5.95.0)
       '@react-native-async-storage/async-storage':
         specifier: 2.0.0
         version: 2.0.0(react-native@0.76.1(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.0)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))
@@ -432,7 +432,7 @@ importers:
         version: 7.26.0
       '@callstack/repack':
         specifier: 5.0.0-rc.0
-        version: 5.0.0-rc.0(@module-federation/enhanced@0.6.13(react@18.3.1)(typescript@5.6.3)(webpack@5.95.0))(@react-native-community/cli-debugger-ui@15.0.0)(@react-native-community/cli-server-api@15.0.0)(@react-native-community/cli-types@15.0.0)(@react-native-community/cli@15.0.0(typescript@5.6.3))(@rspack/core@1.0.14(@swc/helpers@0.5.13))(@rspack/plugin-react-refresh@1.0.0(react-refresh@0.14.0))(react-native@0.76.1(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.0)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(webpack@5.95.0)
+        version: 5.0.0-rc.0(@module-federation/enhanced@0.7.0(react@18.3.1)(typescript@5.6.3)(webpack@5.95.0))(@react-native-community/cli-debugger-ui@15.0.0)(@react-native-community/cli-server-api@15.0.0)(@react-native-community/cli-types@15.0.0)(@react-native-community/cli@15.0.0(typescript@5.6.3))(@rspack/core@1.0.14(@swc/helpers@0.5.13))(@rspack/plugin-react-refresh@1.0.0(react-refresh@0.14.0))(react-native@0.76.1(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.0)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(webpack@5.95.0)
       '@react-native-community/cli':
         specifier: ^15.0.0
         version: 15.0.0(typescript@5.6.3)
@@ -514,8 +514,8 @@ importers:
   packages/shopping:
     dependencies:
       '@module-federation/enhanced':
-        specifier: 0.6.13
-        version: 0.6.13(react@18.3.1)(typescript@5.6.3)(webpack@5.95.0)
+        specifier: 0.7.0
+        version: 0.7.0(react@18.3.1)(typescript@5.6.3)(webpack@5.95.0)
       '@react-native-async-storage/async-storage':
         specifier: 2.0.0
         version: 2.0.0(react-native@0.76.1(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.0)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))
@@ -555,7 +555,7 @@ importers:
         version: 7.26.0
       '@callstack/repack':
         specifier: 5.0.0-rc.0
-        version: 5.0.0-rc.0(@module-federation/enhanced@0.6.13(react@18.3.1)(typescript@5.6.3)(webpack@5.95.0))(@react-native-community/cli-debugger-ui@15.0.0)(@react-native-community/cli-server-api@15.0.0)(@react-native-community/cli-types@15.0.0)(@react-native-community/cli@15.0.0(typescript@5.6.3))(@rspack/core@1.0.14(@swc/helpers@0.5.13))(@rspack/plugin-react-refresh@1.0.0(react-refresh@0.14.0))(react-native@0.76.1(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.0)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(webpack@5.95.0)
+        version: 5.0.0-rc.0(@module-federation/enhanced@0.7.0(react@18.3.1)(typescript@5.6.3)(webpack@5.95.0))(@react-native-community/cli-debugger-ui@15.0.0)(@react-native-community/cli-server-api@15.0.0)(@react-native-community/cli-types@15.0.0)(@react-native-community/cli@15.0.0(typescript@5.6.3))(@rspack/core@1.0.14(@swc/helpers@0.5.13))(@rspack/plugin-react-refresh@1.0.0(react-refresh@0.14.0))(react-native@0.76.1(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.0)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(webpack@5.95.0)
       '@react-native-community/cli':
         specifier: ^15.0.0
         version: 15.0.0(typescript@5.6.3)
@@ -1569,11 +1569,11 @@ packages:
     resolution: {integrity: sha512-9I2Zn6+NJLfaGoz9jN3lpwDgAYvfGeNYdbAIjJOqzs4Tpc+VU3Jqq4IofSUBKajiDS8k9fZIg18/z13mpk1bsA==}
     engines: {node: '>=8'}
 
-  '@module-federation/bridge-react-webpack-plugin@0.6.13':
-    resolution: {integrity: sha512-am2/pQzdSENLz+W8KvxGyosQwDvGt3KOtxLCrT0RRaQKZP9a8xl4rBzpipnv1Pwguw++1YLDuMotCjUmXvCEcQ==}
+  '@module-federation/bridge-react-webpack-plugin@0.7.0':
+    resolution: {integrity: sha512-lSWSM1BJM4eCO7zh9mk1oP09eQjwJKw0kg7brgH69OHcGoglb7oPSYTaw+AS3/CONHLYq1Kg9QKLT+c8DeBOgQ==}
 
-  '@module-federation/data-prefetch@0.6.13':
-    resolution: {integrity: sha512-TUHgJMER1lrDTgUaBLGqgehcF+8g/oiK71IjTFmBHScvrgmxtSpIf2r0FCOOGATh8709hNSErxK1r30wQLfmiQ==}
+  '@module-federation/data-prefetch@0.7.0':
+    resolution: {integrity: sha512-uLXtDrWCfa+VyTnupgUBNkEjxf84pJ6Mbbw6yblPYTHstjzXMwDFMd8C1FhZBquvA3ZvUhv21IagRZjo9g239A==}
     peerDependencies:
       react: '>=16.9.0'
       react-dom: '>=16.9.0'
@@ -1581,8 +1581,8 @@ packages:
       react-dom:
         optional: true
 
-  '@module-federation/dts-plugin@0.6.13':
-    resolution: {integrity: sha512-K2GTyhCMyJlTf935B+No9m8YFYd7LGTGYiSypAROghm8H00ltwYF4G1jPc8cJMTsPEYHGqTHQlq9Dn+HCB3iDA==}
+  '@module-federation/dts-plugin@0.7.0':
+    resolution: {integrity: sha512-Y3+OLLLxc0QvgJmeqJPAw8FP5D1tZEq4jiPTCkcHPxOGkDboz4hGVfUug1g7Xhm/KoB31ioQfqiz9L680fFUvg==}
     peerDependencies:
       typescript: ^4.9.0 || ^5.0.0
       vue-tsc: '>=1.0.24'
@@ -1590,8 +1590,8 @@ packages:
       vue-tsc:
         optional: true
 
-  '@module-federation/enhanced@0.6.13':
-    resolution: {integrity: sha512-mtnPuxtJmxpIcKpKewFplXroE+8xtWVzrGvfv8EvzlA7EEDnUOaM1U7Jn3kCeZcAmzBjpHw0uM9qX1vVOLY4mQ==}
+  '@module-federation/enhanced@0.7.0':
+    resolution: {integrity: sha512-HW5P1q+1L6N+g0UoUoVGtoahJvY7TlIqK899C5uynH+s4gvsBZL7zLZ32+3tBtphvZjlu9LHToh0z1Uq3Sws4w==}
     peerDependencies:
       typescript: ^4.9.0 || ^5.0.0
       vue-tsc: '>=1.0.24'
@@ -1604,14 +1604,17 @@ packages:
       webpack:
         optional: true
 
-  '@module-federation/managers@0.6.13':
-    resolution: {integrity: sha512-cNPYEb/zaMonbilHqtcErGgSKtWf3L5iH23VW1GujZJ19QpBPS6Uz5cOMO++IlCaoeYRs3f/Ybyhe8tyUdciNQ==}
+  '@module-federation/error-codes@0.7.0':
+    resolution: {integrity: sha512-55X5SU4SpyUW8dWlH98+AkbwNfftoJVrZzLH3MEB4ahrpDa5Uuiboj0vqvPN3W4Y2euuEqQg1b7AbuZTIPa6iw==}
 
-  '@module-federation/manifest@0.6.13':
-    resolution: {integrity: sha512-lvdvE5jQRJTewY3ol/TdgQ5CEz0uImQBXCOvx7u/bDC1WLzuEXm6PmheHcvUbYs7vfpls13YaYCQ2GrJUFexEw==}
+  '@module-federation/managers@0.7.0':
+    resolution: {integrity: sha512-MISPhP9toFPm4ztIkt6WCSXVyHhLmP8Uyj60sLD7X2ObS4qRfO1+Noi+Q9MxMn3kTi8uMm5oU6VwzmmNkQKaIA==}
 
-  '@module-federation/rspack@0.6.13':
-    resolution: {integrity: sha512-Dtm7+ZzH71P+4Gns/AL78LyczlfcHqBEwV2+wzlUCGRX2hGl1CH1vtgdxxPu7ImPDigp/FYAcku3JBHJPc6ZCw==}
+  '@module-federation/manifest@0.7.0':
+    resolution: {integrity: sha512-xMinU3KmI3AjcJC4/8qkKWnK1fbmpx5kfbDWAeaPEMMiHnjUcKgLG52LBJ6NIaTe4hV9rxCm5UxLN3jqrzbMpw==}
+
+  '@module-federation/rspack@0.7.0':
+    resolution: {integrity: sha512-QnC12veIVQLTbscE5RK6JJMOI3D/xzv30dTrcVvL9biqQoKX4lEW0WREh1bamCAfYdfNsN8IdqsUyiIuzJ9a9g==}
     peerDependencies:
       typescript: ^4.9.0 || ^5.0.0
       vue-tsc: '>=1.0.24'
@@ -1624,29 +1627,29 @@ packages:
   '@module-federation/runtime-tools@0.5.1':
     resolution: {integrity: sha512-nfBedkoZ3/SWyO0hnmaxuz0R0iGPSikHZOAZ0N/dVSQaIzlffUo35B5nlC2wgWIc0JdMZfkwkjZRrnuuDIJbzg==}
 
-  '@module-federation/runtime-tools@0.6.13':
-    resolution: {integrity: sha512-VZen7bsBPAZFb7r4P/5VtqTkMcKXJ66/yKINOXnfX6GBHxBVSp8xeOiFSK+yJ4eLsGMYgvwXC+m77SEGeTNXpQ==}
+  '@module-federation/runtime-tools@0.7.0':
+    resolution: {integrity: sha512-x7+rzdB+FuG8H3rx7NdSMtEkrAZxTVEPbAxp2/Ey+lrcroOca1GmT4bixgvdN/5PdZKzZFNx+q/RfJZmWsChiA==}
 
   '@module-federation/runtime@0.5.1':
     resolution: {integrity: sha512-xgiMUWwGLWDrvZc9JibuEbXIbhXg6z2oUkemogSvQ4LKvrl/n0kbqP1Blk669mXzyWbqtSp6PpvNdwaE1aN5xQ==}
 
-  '@module-federation/runtime@0.6.13':
-    resolution: {integrity: sha512-xcyOtt9k5u/G201DsMP9bGj0WSeGgCKGKxxmgMC7h5qFFuH/4x5p7TDTBNoBqrgN15ERMxdukTEJEg1GFXymZA==}
+  '@module-federation/runtime@0.7.0':
+    resolution: {integrity: sha512-4jqB05dpnlDvWKQ11aGweU/0V60PkmyhkeEXETh41sXyFtXaOvhQkDN9Kwkuf7eNDuCEGZbxsSr6lEpDSgm0wA==}
 
   '@module-federation/sdk@0.5.1':
     resolution: {integrity: sha512-exvchtjNURJJkpqjQ3/opdbfeT2wPKvrbnGnyRkrwW5o3FH1LaST1tkiNviT6OXTexGaVc2DahbdniQHVtQ7pA==}
 
-  '@module-federation/sdk@0.6.13':
-    resolution: {integrity: sha512-eZvTH8hBZepPkOGeTQfCm57EO/R/F2Tf+OjPOIMDPNDeS6tfvNUA+CLl9ir2UzwGfjgIwCBhBbtxj47t3CH3EA==}
+  '@module-federation/sdk@0.7.0':
+    resolution: {integrity: sha512-4V/ACYDoEOlV8sFcIBx6DPd6DQ/Zn5ckbdNVgO+8md3F9rHUdZowEDCpwzg4au0ZDMiaO2VS/6PIIVKKJw+W4g==}
 
-  '@module-federation/third-party-dts-extractor@0.6.13':
-    resolution: {integrity: sha512-dd9i3pO18Ih0e/6ZzZ3/rj9MD93gqmh5dKdLR6Hw9YnjJCvwQQ5nYNwv6VPJ0E3kt8+xQRl1tcUxSvINkAvNhQ==}
+  '@module-federation/third-party-dts-extractor@0.7.0':
+    resolution: {integrity: sha512-ERKW61ONZ0dgXHDE8Ld/KnwY+0TbmiZSFa99IuW6t+FKUoM9snvGqBSs5bgbY4ZjxG8mG6t1nLdTj2+/f7xejw==}
 
   '@module-federation/webpack-bundler-runtime@0.5.1':
     resolution: {integrity: sha512-mMhRFH0k2VjwHt3Jol9JkUsmI/4XlrAoBG3E0o7HoyoPYv1UFOWyqAflfANcUPgbYpvqmyLzDcO+3IT36LXnrA==}
 
-  '@module-federation/webpack-bundler-runtime@0.6.13':
-    resolution: {integrity: sha512-rYh5LP7Wg1tYyND+myV14OXE55lHHCW5yKcn4aQhSolqnfDs5EsVx+PHklqbmLxMdZYayupC6kcdxQoHCoRQ/g==}
+  '@module-federation/webpack-bundler-runtime@0.7.0':
+    resolution: {integrity: sha512-G5K4zhN1CLRYKTTdS4sZcsxIEtyrdZ7eTbBkXfNgmyuMG0jXv8Yh+ymg2mLmaYEDOjabFL6Kkks15GesHUKxPQ==}
 
   '@nicolo-ribaudo/eslint-scope-5-internals@5.1.1-v1':
     resolution: {integrity: sha512-54/JRvkLIzzDWshCWfuhadfrfZVPiElY8Fcgmg1HroEly/EDSszzhBAsarCux+D/kOslTRquNzuyGSmUSTTHGg==}
@@ -3667,6 +3670,10 @@ packages:
 
   isomorphic-fetch@2.2.1:
     resolution: {integrity: sha512-9c4TNAKYXM5PRyVcwUZrF3W09nQ+sO7+jydgs4ZGW9dhsLG2VOlISJABombdQqQRXCwuYG3sYV/puGf5rp0qmA==}
+
+  isomorphic-rslog@0.0.5:
+    resolution: {integrity: sha512-pkU3vvajRJ0LKLaMFy8Cj7ElbFUdkQKVhUk+DQsVCYsLW4uulU65C2s3l+Sm5OtiOwprzkYYcAIJa/COwCYHWA==}
+    engines: {node: '>=14.17.6'}
 
   isomorphic-ws@5.0.0:
     resolution: {integrity: sha512-muId7Zzn9ywDsyXgTIafTry2sV3nySZeUDe6YedVd1Hvuuep5AsIlqK+XefWpYTyJG5e503F2xIuT2lcU6rCSw==}
@@ -6491,7 +6498,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@callstack/repack@5.0.0-rc.0(@module-federation/enhanced@0.6.13(react@18.3.1)(typescript@5.6.3)(webpack@5.95.0))(@react-native-community/cli-debugger-ui@15.0.0)(@react-native-community/cli-server-api@15.0.0)(@react-native-community/cli-types@15.0.0)(@react-native-community/cli@15.0.0(typescript@5.6.3))(@rspack/core@1.0.14(@swc/helpers@0.5.13))(@rspack/plugin-react-refresh@1.0.0(react-refresh@0.14.0))(react-native@0.76.1(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.0)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(webpack@5.95.0)':
+  '@callstack/repack@5.0.0-rc.0(@module-federation/enhanced@0.7.0(react@18.3.1)(typescript@5.6.3)(webpack@5.95.0))(@react-native-community/cli-debugger-ui@15.0.0)(@react-native-community/cli-server-api@15.0.0)(@react-native-community/cli-types@15.0.0)(@react-native-community/cli@15.0.0(typescript@5.6.3))(@rspack/core@1.0.14(@swc/helpers@0.5.13))(@rspack/plugin-react-refresh@1.0.0(react-refresh@0.14.0))(react-native@0.76.1(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.0)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(webpack@5.95.0)':
     dependencies:
       '@callstack/repack-dev-server': 5.0.0-rc.0(@react-native-community/cli-debugger-ui@15.0.0)(@react-native-community/cli-server-api@15.0.0)
       '@discoveryjs/json-ext': 0.5.7
@@ -6514,7 +6521,7 @@ snapshots:
       shallowequal: 1.1.0
       throttleit: 2.1.0
     optionalDependencies:
-      '@module-federation/enhanced': 0.6.13(react@18.3.1)(typescript@5.6.3)(webpack@5.95.0)
+      '@module-federation/enhanced': 0.7.0(react@18.3.1)(typescript@5.6.3)(webpack@5.95.0)
       '@rspack/core': 1.0.14(@swc/helpers@0.5.13)
       webpack: 5.95.0
     transitivePeerDependencies:
@@ -6866,24 +6873,25 @@ snapshots:
 
   '@lukeed/ms@2.0.2': {}
 
-  '@module-federation/bridge-react-webpack-plugin@0.6.13':
+  '@module-federation/bridge-react-webpack-plugin@0.7.0':
     dependencies:
-      '@module-federation/sdk': 0.6.13
+      '@module-federation/sdk': 0.7.0
       '@types/semver': 7.5.8
       semver: 7.6.3
 
-  '@module-federation/data-prefetch@0.6.13(react@18.3.1)':
+  '@module-federation/data-prefetch@0.7.0(react@18.3.1)':
     dependencies:
-      '@module-federation/runtime': 0.6.13
-      '@module-federation/sdk': 0.6.13
+      '@module-federation/runtime': 0.7.0
+      '@module-federation/sdk': 0.7.0
       fs-extra: 9.1.0
       react: 18.3.1
 
-  '@module-federation/dts-plugin@0.6.13(typescript@5.6.3)':
+  '@module-federation/dts-plugin@0.7.0(typescript@5.6.3)':
     dependencies:
-      '@module-federation/managers': 0.6.13
-      '@module-federation/sdk': 0.6.13
-      '@module-federation/third-party-dts-extractor': 0.6.13
+      '@module-federation/error-codes': 0.7.0
+      '@module-federation/managers': 0.7.0
+      '@module-federation/sdk': 0.7.0
+      '@module-federation/third-party-dts-extractor': 0.7.0
       adm-zip: 0.5.16
       ansi-colors: 4.1.3
       axios: 1.7.7
@@ -6903,16 +6911,16 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@module-federation/enhanced@0.6.13(react@18.3.1)(typescript@5.6.3)(webpack@5.95.0)':
+  '@module-federation/enhanced@0.7.0(react@18.3.1)(typescript@5.6.3)(webpack@5.95.0)':
     dependencies:
-      '@module-federation/bridge-react-webpack-plugin': 0.6.13
-      '@module-federation/data-prefetch': 0.6.13(react@18.3.1)
-      '@module-federation/dts-plugin': 0.6.13(typescript@5.6.3)
-      '@module-federation/managers': 0.6.13
-      '@module-federation/manifest': 0.6.13(typescript@5.6.3)
-      '@module-federation/rspack': 0.6.13(typescript@5.6.3)
-      '@module-federation/runtime-tools': 0.6.13
-      '@module-federation/sdk': 0.6.13
+      '@module-federation/bridge-react-webpack-plugin': 0.7.0
+      '@module-federation/data-prefetch': 0.7.0(react@18.3.1)
+      '@module-federation/dts-plugin': 0.7.0(typescript@5.6.3)
+      '@module-federation/managers': 0.7.0
+      '@module-federation/manifest': 0.7.0(typescript@5.6.3)
+      '@module-federation/rspack': 0.7.0(typescript@5.6.3)
+      '@module-federation/runtime-tools': 0.7.0
+      '@module-federation/sdk': 0.7.0
       btoa: 1.2.1
       upath: 2.0.1
     optionalDependencies:
@@ -6926,17 +6934,19 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@module-federation/managers@0.6.13':
+  '@module-federation/error-codes@0.7.0': {}
+
+  '@module-federation/managers@0.7.0':
     dependencies:
-      '@module-federation/sdk': 0.6.13
+      '@module-federation/sdk': 0.7.0
       find-pkg: 2.0.0
       fs-extra: 9.1.0
 
-  '@module-federation/manifest@0.6.13(typescript@5.6.3)':
+  '@module-federation/manifest@0.7.0(typescript@5.6.3)':
     dependencies:
-      '@module-federation/dts-plugin': 0.6.13(typescript@5.6.3)
-      '@module-federation/managers': 0.6.13
-      '@module-federation/sdk': 0.6.13
+      '@module-federation/dts-plugin': 0.7.0(typescript@5.6.3)
+      '@module-federation/managers': 0.7.0
+      '@module-federation/sdk': 0.7.0
       chalk: 3.0.0
       find-pkg: 2.0.0
     transitivePeerDependencies:
@@ -6947,14 +6957,14 @@ snapshots:
       - utf-8-validate
       - vue-tsc
 
-  '@module-federation/rspack@0.6.13(typescript@5.6.3)':
+  '@module-federation/rspack@0.7.0(typescript@5.6.3)':
     dependencies:
-      '@module-federation/bridge-react-webpack-plugin': 0.6.13
-      '@module-federation/dts-plugin': 0.6.13(typescript@5.6.3)
-      '@module-federation/managers': 0.6.13
-      '@module-federation/manifest': 0.6.13(typescript@5.6.3)
-      '@module-federation/runtime-tools': 0.6.13
-      '@module-federation/sdk': 0.6.13
+      '@module-federation/bridge-react-webpack-plugin': 0.7.0
+      '@module-federation/dts-plugin': 0.7.0(typescript@5.6.3)
+      '@module-federation/managers': 0.7.0
+      '@module-federation/manifest': 0.7.0(typescript@5.6.3)
+      '@module-federation/runtime-tools': 0.7.0
+      '@module-federation/sdk': 0.7.0
     optionalDependencies:
       typescript: 5.6.3
     transitivePeerDependencies:
@@ -6968,24 +6978,27 @@ snapshots:
       '@module-federation/runtime': 0.5.1
       '@module-federation/webpack-bundler-runtime': 0.5.1
 
-  '@module-federation/runtime-tools@0.6.13':
+  '@module-federation/runtime-tools@0.7.0':
     dependencies:
-      '@module-federation/runtime': 0.6.13
-      '@module-federation/webpack-bundler-runtime': 0.6.13
+      '@module-federation/runtime': 0.7.0
+      '@module-federation/webpack-bundler-runtime': 0.7.0
 
   '@module-federation/runtime@0.5.1':
     dependencies:
       '@module-federation/sdk': 0.5.1
 
-  '@module-federation/runtime@0.6.13':
+  '@module-federation/runtime@0.7.0':
     dependencies:
-      '@module-federation/sdk': 0.6.13
+      '@module-federation/error-codes': 0.7.0
+      '@module-federation/sdk': 0.7.0
 
   '@module-federation/sdk@0.5.1': {}
 
-  '@module-federation/sdk@0.6.13': {}
+  '@module-federation/sdk@0.7.0':
+    dependencies:
+      isomorphic-rslog: 0.0.5
 
-  '@module-federation/third-party-dts-extractor@0.6.13':
+  '@module-federation/third-party-dts-extractor@0.7.0':
     dependencies:
       find-pkg: 2.0.0
       fs-extra: 9.1.0
@@ -6996,10 +7009,10 @@ snapshots:
       '@module-federation/runtime': 0.5.1
       '@module-federation/sdk': 0.5.1
 
-  '@module-federation/webpack-bundler-runtime@0.6.13':
+  '@module-federation/webpack-bundler-runtime@0.7.0':
     dependencies:
-      '@module-federation/runtime': 0.6.13
-      '@module-federation/sdk': 0.6.13
+      '@module-federation/runtime': 0.7.0
+      '@module-federation/sdk': 0.7.0
 
   '@nicolo-ribaudo/eslint-scope-5-internals@5.1.1-v1':
     dependencies:
@@ -9409,6 +9422,8 @@ snapshots:
     dependencies:
       node-fetch: 1.7.3
       whatwg-fetch: 3.6.19
+
+  isomorphic-rslog@0.0.5: {}
 
   isomorphic-ws@5.0.0(ws@8.18.0):
     dependencies:

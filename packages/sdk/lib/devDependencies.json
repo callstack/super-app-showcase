@@ -41,7 +41,7 @@
   },
   "@rspack/core": {
     "name": "@rspack/core",
-    "version": "^1.0.14",
+    "version": "^1.1.0",
     "devOnly": true
   },
   "@rspack/plugin-react-refresh": {

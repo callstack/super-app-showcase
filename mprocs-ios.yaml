@@ -1,0 +1,16 @@
+procs:
+  Host:
+    shell: pnpm start:host --platform ios
+    stop: SIGKILL
+  Auth:
+    shell: pnpm start:auth --platform ios
+    stop: SIGKILL
+  Booking:
+    shell: pnpm start:booking --platform ios
+    stop: SIGKILL
+  Dashboard:
+    shell: pnpm start:dashboard --platform ios
+    stop: SIGKILL
+  Shopping:
+    shell: pnpm start:shopping --platform ios
+    stop: SIGKILL

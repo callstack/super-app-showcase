@@ -49,6 +49,9 @@ export default env => {
     devtool: false,
     context,
     entry,
+    experiments: {
+      incremental: mode === 'development',
+    },
     resolve: {
       /**
        * `getResolveOptions` returns additional resolution configuration for React Native.

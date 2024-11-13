@@ -1,0 +1,29 @@
+android.sourceSets.main.assets.srcDirs += file("$buildDir/intermediates/bundles")
+
+afterEvaluate {
+    def directories = [
+        "packages/auth",
+        "packages/booking",
+        "packages/dashboard",
+        "packages/shopping"
+    ]
+
+    directories.each { dir ->
+        def sourceDir = file("../../../../$dir/build/outputs/android/remotes")
+        def targetDir = file("$buildDir/intermediates/bundles")
+        
+        if (sourceDir.exists()) {
+            println sourceDir
+            def miniAppCopyTask = tasks.create(
+                name: "copyMiniAppBundles_${dir.replace('/', '_')}",
+                type: Copy) {
+                description = "Copy mini app bundles from $dir."
+                from sourceDir
+                into targetDir
+            }
+            tasks.getByName("preBuild").dependsOn miniAppCopyTask
+        } else {
+            logger.error("Error: Source directory $sourceDir does not exist.")
+        }
+    }
+}

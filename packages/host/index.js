@@ -20,26 +20,29 @@ const getFileSystemURL = (scriptId, caller) => _webpackContext => {
 };
 
 ScriptManager.shared.addResolver(async (scriptId, caller) => {
-  const containersURL = getContainersURL({
-    hostname: process.env.SAS_CATALOG_SERVER_URL,
-    version: appVersion,
-    platform: Platform.OS,
-    appName,
-  });
+  // COMMENTED OUT TO MAKE ANDROID WORK IN RELEASE MODE
+  // const containersURL = getContainersURL({
+  //   hostname: process.env.SAS_CATALOG_SERVER_URL,
+  //   version: appVersion,
+  //   platform: Platform.OS,
+  //   appName,
+  // });
 
-  const containersResponse = await fetch(containersURL);
+  // const containersResponse = await fetch(containersURL);
 
-  const containers = await containersResponse.json();
+  // const containers = await containersResponse.json();
 
-  const resolveURL = Federated.createURLResolver({
-    containers,
-  });
+  // const resolveURL = Federated.createURLResolver({
+  //   containers,
+  // });
 
   let url;
   if (__DEV__ && caller === 'main') {
     url = Script.getDevServerURL(scriptId);
   } else if (scriptId === 'news' || caller === 'news') {
-    url = resolveURL(scriptId, caller);
+    throw new Error('not supported yet');
+    // COMMENTED OUT TO MAKE ANDROID WORK IN RELEASE MODE
+    // url = resolveURL(scriptId, caller);
   } else {
     url = getFileSystemURL(scriptId, caller);
   }
@@ -51,9 +54,7 @@ ScriptManager.shared.addResolver(async (scriptId, caller) => {
   return {
     url,
     cache: !__DEV__,
-    query: {
-      platform: Platform.OS, // only needed in development
-    },
+    query: __DEV__ ? {platform: Platform.OS} : undefined,
     verifyScriptSignature: __DEV__ ? 'off' : 'strict',
   };
 });

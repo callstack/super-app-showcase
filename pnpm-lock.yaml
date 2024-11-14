@@ -408,6 +408,9 @@ importers:
       react-native-bootsplash:
         specifier: 6.2.6
         version: 6.2.6(react-native@0.76.1(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.0)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(react@18.3.1)
+      react-native-bottom-tabs:
+        specifier: 0.5.2
+        version: 0.5.2(@react-navigation/native@6.1.18(react-native@0.76.1(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.0)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(react@18.3.1))(react-native@0.76.1(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.0)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(react@18.3.1)
       react-native-paper:
         specifier: 5.12.5
         version: 5.12.5(patch_hash=y63saubgvw44zriplyaexrq2dy)(react-native-safe-area-context@4.12.0(react-native@0.76.1(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.0)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(react@18.3.1))(react-native-vector-icons@10.2.0)(react-native@0.76.1(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.0)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(react@18.3.1)
@@ -4619,6 +4622,16 @@ packages:
       react: '>=18.1.0'
       react-native: '>=0.70.0'
 
+  react-native-bottom-tabs@0.5.2:
+    resolution: {integrity: sha512-vQILvr1EVOkled1oxJitZKF0ep0NV/+h0UaSjqFLN2vScMVNKEuayAfgfTRH+U8vDXJmq8x/BmFUC7JvvtVFYQ==}
+    peerDependencies:
+      '@react-navigation/native': '>=6'
+      react: '*'
+      react-native: '*'
+    peerDependenciesMeta:
+      '@react-navigation/native':
+        optional: true
+
   react-native-calendars@1.1291.1:
     resolution: {integrity: sha512-L2MK2t3kbnDg2RoU12UAoQyNrUpDYdj2MyIfg13YrwVb8BuI/gc0q/VpEinY3iz5ETHiFsTLkCsAFwSj7xbZWw==}
 
@@ -4912,6 +4925,10 @@ packages:
 
   setprototypeof@1.2.0:
     resolution: {integrity: sha512-E5LDX7Wrp85Kil5bhZv46j8jOeboKq5JMmYM3gVGdGH8xFpPWXUMsNrlODCrkoxMEeNi/XZIwuRvY4XNwYMJpw==}
+
+  sf-symbols-typescript@2.0.0:
+    resolution: {integrity: sha512-Fc8Uhhl2plqXMw7GQ8q83t/zj1xhNCJvteDNJUDULaH/4a/Eqw5aW1UYEznyEIgkokw7QYXuQ9hOw8jhBLXL0A==}
+    engines: {node: '>=10'}
 
   shallow-clone@3.0.1:
     resolution: {integrity: sha512-/6KqX+GVUdqPuPPd2LxDDxzX6CAbjJehAAOKlNpqqUpAqPM6HeL8f+o3a+JsyGjn2lv0WY8UsTgUJjU9Ok55NA==}
@@ -10711,6 +10728,16 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  react-native-bottom-tabs@0.5.2(@react-navigation/native@6.1.18(react-native@0.76.1(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.0)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(react@18.3.1))(react-native@0.76.1(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.0)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(react@18.3.1):
+    dependencies:
+      color: 4.2.3
+      react: 18.3.1
+      react-native: 0.76.1(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.0)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1)
+      sf-symbols-typescript: 2.0.0
+      use-latest-callback: 0.2.1(react@18.3.1)
+    optionalDependencies:
+      '@react-navigation/native': 6.1.18(react-native@0.76.1(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.0)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(react@18.3.1)
+
   react-native-calendars@1.1291.1(react-native@0.76.1(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.0)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(react@18.3.1):
     dependencies:
       hoist-non-react-statics: 3.3.2
@@ -11090,6 +11117,8 @@ snapshots:
   setimmediate@1.0.5: {}
 
   setprototypeof@1.2.0: {}
+
+  sf-symbols-typescript@2.0.0: {}
 
   shallow-clone@3.0.1:
     dependencies:

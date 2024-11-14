@@ -1,5 +1,5 @@
 import React from 'react';
-import {createMaterialBottomTabNavigator} from 'react-native-paper/react-navigation';
+import {createNativeBottomTabNavigator} from 'react-native-bottom-tabs/react-navigation';
 import HomeNavigator from './HomeNavigator';
 import ServicesNavigator from './ServicesNavigator';
 import AccountNavigator from './AccountNavigator';
@@ -10,7 +10,7 @@ export type TabsParamList = {
   AccountNavigator: undefined;
 };
 
-const Tabs = createMaterialBottomTabNavigator<TabsParamList>();
+const Tabs = createNativeBottomTabNavigator<TabsParamList>();
 
 const TabsNavigator = () => {
   return (
@@ -20,7 +20,7 @@ const TabsNavigator = () => {
         component={HomeNavigator}
         options={{
           title: 'Home',
-          tabBarIcon: 'home',
+          tabBarIcon: () => ({ sfSymbol: 'book' }),
         }}
       />
       <Tabs.Screen
@@ -28,7 +28,7 @@ const TabsNavigator = () => {
         component={ServicesNavigator}
         options={{
           title: 'Services',
-          tabBarIcon: 'apps',
+          tabBarIcon: () => ({ sfSymbol: 'book' }),
         }}
       />
       <Tabs.Screen
@@ -36,7 +36,7 @@ const TabsNavigator = () => {
         component={AccountNavigator}
         options={{
           title: 'Account',
-          tabBarIcon: 'account',
+          tabBarIcon: () => ({ sfSymbol: 'book' }),
         }}
       />
     </Tabs.Navigator>

@@ -21,22 +21,22 @@
   },
   "@react-native/babel-preset": {
     "name": "@react-native/babel-preset",
-    "version": "0.76.1",
+    "version": "0.76.3",
     "devOnly": true
   },
   "@react-native/eslint-config": {
     "name": "@react-native/eslint-config",
-    "version": "0.76.1",
+    "version": "0.76.3",
     "devOnly": true
   },
   "@react-native/typescript-config": {
     "name": "@react-native/typescript-config",
-    "version": "0.76.1",
+    "version": "0.76.3",
     "devOnly": true
   },
   "@react-native-community/cli": {
     "name": "@react-native-community/cli",
-    "version": "^15.0.0",
+    "version": "15.0.1",
     "devOnly": true
   },
   "@rspack/core": {

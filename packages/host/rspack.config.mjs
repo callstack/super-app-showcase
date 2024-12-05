@@ -67,7 +67,7 @@ export default env => {
        * structure. For simple/typical project you won't need it.
        */
       // alias: {
-      //      'react-native': reactNativePath,
+      //   'react-native': reactNativePath,
       // },
     },
     /**

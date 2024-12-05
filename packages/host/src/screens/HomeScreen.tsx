@@ -78,7 +78,9 @@ const renderDivider = () => <Divider style={styles.divider} />;
 
 const HomeScreen = ({navigation}: Props) => {
   return (
-    <ScrollView style={styles.container}>
+    <ScrollView style={styles.container}
+      contentInsetAdjustmentBehavior="automatic"
+    >
       <View style={styles.header}>
         <Text variant="titleLarge" style={styles.headerTitle}>
           Upcoming Appointments

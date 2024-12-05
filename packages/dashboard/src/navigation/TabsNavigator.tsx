@@ -1,6 +1,7 @@
 import React from 'react';
-
-import {createMaterialBottomTabNavigator} from 'react-native-paper/react-navigation';
+import {createNativeBottomTabNavigator} from '@bottom-tabs/react-navigation';
+import {MD3Colors} from 'react-native-paper';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import HomeNavigator from './HomeNavigator';
 import CalendarNavigator from './CalendarNavigator';
 import StatisticsNavigator from './StatisticsNavigator';
@@ -13,41 +14,46 @@ export type TabsParamList = {
   AccountNavigator: undefined;
 };
 
-const Tabs = createMaterialBottomTabNavigator<TabsParamList>();
+const homeIcon = Icon.getImageSourceSync('home', 24);
+const calendarIcon = Icon.getImageSourceSync('calendar', 24);
+const chartBoxIcon = Icon.getImageSourceSync('chart-box', 24);
+const accountIcon = Icon.getImageSourceSync('account', 24);
+
+const Tabs = createNativeBottomTabNavigator<TabsParamList>();
 
 const TabsNavigator = () => {
   return (
-    <Tabs.Navigator>
+    <Tabs.Navigator tabBarActiveTintColor={MD3Colors.primary50}>
       <Tabs.Screen
         name="HomeNavigator"
         component={HomeNavigator}
         options={{
-          tabBarLabel: 'Home',
-          tabBarIcon: 'home',
+          title: 'Home',
+          tabBarIcon: () => homeIcon,
         }}
       />
       <Tabs.Screen
         name="CalendarNavigator"
         component={CalendarNavigator}
         options={{
-          tabBarLabel: 'Calendar',
-          tabBarIcon: 'calendar',
+          title: 'Calendar',
+          tabBarIcon: () => calendarIcon,
         }}
       />
       <Tabs.Screen
         name="StatisticsNavigator"
         component={StatisticsNavigator}
         options={{
-          tabBarLabel: 'Statistics',
-          tabBarIcon: 'chart-box',
+          title: 'Statistics',
+          tabBarIcon: () => chartBoxIcon,
         }}
       />
       <Tabs.Screen
         name="AccountNavigator"
         component={AccountNavigator}
         options={{
-          tabBarLabel: 'Account',
-          tabBarIcon: 'account',
+          title: 'Account',
+          tabBarIcon: () => accountIcon,
         }}
       />
     </Tabs.Navigator>

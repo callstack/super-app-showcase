@@ -1,5 +1,7 @@
 import React from 'react';
-import {createMaterialBottomTabNavigator} from 'react-native-paper/react-navigation';
+import {createNativeBottomTabNavigator} from '@bottom-tabs/react-navigation';
+import {MD3Colors} from 'react-native-paper';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import HomeNavigator from './HomeNavigator';
 import ServicesNavigator from './ServicesNavigator';
 import AccountNavigator from './AccountNavigator';
@@ -10,17 +12,21 @@ export type TabsParamList = {
   AccountNavigator: undefined;
 };
 
-const Tabs = createMaterialBottomTabNavigator<TabsParamList>();
+const homeIcon = Icon.getImageSourceSync('home', 24);
+const compassIcon = Icon.getImageSourceSync('compass', 24);
+const accountIcon = Icon.getImageSourceSync('account', 24);
+
+const Tabs = createNativeBottomTabNavigator<TabsParamList>();
 
 const TabsNavigator = () => {
   return (
-    <Tabs.Navigator>
+    <Tabs.Navigator tabBarActiveTintColor={MD3Colors.primary50}>
       <Tabs.Screen
         name="HomeNavigator"
         component={HomeNavigator}
         options={{
           title: 'Home',
-          tabBarIcon: 'home',
+          tabBarIcon: () => homeIcon,
         }}
       />
       <Tabs.Screen
@@ -28,7 +34,7 @@ const TabsNavigator = () => {
         component={ServicesNavigator}
         options={{
           title: 'Services',
-          tabBarIcon: 'apps',
+          tabBarIcon: () => compassIcon,
         }}
       />
       <Tabs.Screen
@@ -36,7 +42,7 @@ const TabsNavigator = () => {
         component={AccountNavigator}
         options={{
           title: 'Account',
-          tabBarIcon: 'account',
+          tabBarIcon: () => accountIcon,
         }}
       />
     </Tabs.Navigator>

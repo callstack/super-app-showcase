@@ -48,7 +48,9 @@ const renderDivider = () => <Divider style={styles.divider} />;
 
 const HomeScreen = () => {
   return (
-    <ScrollView style={styles.container}>
+    <ScrollView
+      style={styles.container}
+      contentInsetAdjustmentBehavior="automatic">
       <FlatList
         horizontal
         showsHorizontalScrollIndicator={false}

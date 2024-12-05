@@ -27,6 +27,9 @@ importers:
 
   packages/auth:
     dependencies:
+      '@bottom-tabs/react-navigation':
+        specifier: 0.7.3
+        version: 0.7.3(@react-navigation/native@6.1.18(react-native@0.76.3(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(react@18.3.1))(react-native-bottom-tabs@0.7.3(react-native@0.76.3(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(react@18.3.1))(react-native@0.76.3(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(react@18.3.1)
       '@module-federation/enhanced':
         specifier: 0.7.1
         version: 0.7.1(react@18.3.1)(typescript@5.6.3)(webpack@5.95.0)
@@ -45,6 +48,9 @@ importers:
       react-native:
         specifier: 0.76.3
         version: 0.76.3(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1)
+      react-native-bottom-tabs:
+        specifier: 0.7.3
+        version: 0.7.3(react-native@0.76.3(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(react@18.3.1)
       react-native-paper:
         specifier: 5.12.5
         version: 5.12.5(patch_hash=y63saubgvw44zriplyaexrq2dy)(react-native-safe-area-context@4.12.0(react-native@0.76.3(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(react@18.3.1))(react-native-vector-icons@10.2.0)(react-native@0.76.3(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(react@18.3.1)
@@ -145,6 +151,9 @@ importers:
 
   packages/booking:
     dependencies:
+      '@bottom-tabs/react-navigation':
+        specifier: 0.7.3
+        version: 0.7.3(@react-navigation/native@6.1.18(react-native@0.76.3(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(react@18.3.1))(react-native-bottom-tabs@0.7.3(react-native@0.76.3(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(react@18.3.1))(react-native@0.76.3(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(react@18.3.1)
       '@module-federation/enhanced':
         specifier: 0.7.1
         version: 0.7.1(react@18.3.1)(typescript@5.6.3)(webpack@5.95.0)
@@ -163,6 +172,9 @@ importers:
       react-native:
         specifier: 0.76.3
         version: 0.76.3(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1)
+      react-native-bottom-tabs:
+        specifier: 0.7.3
+        version: 0.7.3(react-native@0.76.3(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(react@18.3.1)
       react-native-calendars:
         specifier: 1.1291.1
         version: 1.1291.1(react-native@0.76.3(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(react@18.3.1)
@@ -266,6 +278,9 @@ importers:
 
   packages/dashboard:
     dependencies:
+      '@bottom-tabs/react-navigation':
+        specifier: 0.7.3
+        version: 0.7.3(@react-navigation/native@6.1.18(react-native@0.76.3(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(react@18.3.1))(react-native-bottom-tabs@0.7.3(react-native@0.76.3(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(react@18.3.1))(react-native@0.76.3(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(react@18.3.1)
       '@module-federation/enhanced':
         specifier: 0.7.1
         version: 0.7.1(react@18.3.1)(typescript@5.6.3)(webpack@5.95.0)
@@ -284,6 +299,9 @@ importers:
       react-native:
         specifier: 0.76.3
         version: 0.76.3(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1)
+      react-native-bottom-tabs:
+        specifier: 0.7.3
+        version: 0.7.3(react-native@0.76.3(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(react@18.3.1)
       react-native-calendars:
         specifier: 1.1291.1
         version: 1.1291.1(react-native@0.76.3(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(react@18.3.1)
@@ -387,6 +405,9 @@ importers:
 
   packages/host:
     dependencies:
+      '@bottom-tabs/react-navigation':
+        specifier: 0.7.3
+        version: 0.7.3(@react-navigation/native@6.1.18(react-native@0.76.3(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(react@18.3.1))(react-native-bottom-tabs@0.7.3(react-native@0.76.3(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(react@18.3.1))(react-native@0.76.3(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(react@18.3.1)
       '@module-federation/enhanced':
         specifier: 0.7.1
         version: 0.7.1(react@18.3.1)(typescript@5.6.3)(webpack@5.95.0)
@@ -408,6 +429,9 @@ importers:
       react-native-bootsplash:
         specifier: 6.2.6
         version: 6.2.6(react-native@0.76.3(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(react@18.3.1)
+      react-native-bottom-tabs:
+        specifier: 0.7.3
+        version: 0.7.3(react-native@0.76.3(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(react@18.3.1)
       react-native-paper:
         specifier: 5.12.5
         version: 5.12.5(patch_hash=y63saubgvw44zriplyaexrq2dy)(react-native-safe-area-context@4.12.0(react-native@0.76.3(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(react@18.3.1))(react-native-vector-icons@10.2.0)(react-native@0.76.3(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(react@18.3.1)
@@ -513,6 +537,9 @@ importers:
 
   packages/shopping:
     dependencies:
+      '@bottom-tabs/react-navigation':
+        specifier: 0.7.3
+        version: 0.7.3(@react-navigation/native@6.1.18(react-native@0.76.3(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(react@18.3.1))(react-native-bottom-tabs@0.7.3(react-native@0.76.3(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(react@18.3.1))(react-native@0.76.3(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(react@18.3.1)
       '@module-federation/enhanced':
         specifier: 0.7.1
         version: 0.7.1(react@18.3.1)(typescript@5.6.3)(webpack@5.95.0)
@@ -531,6 +558,9 @@ importers:
       react-native:
         specifier: 0.76.3
         version: 0.76.3(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1)
+      react-native-bottom-tabs:
+        specifier: 0.7.3
+        version: 0.7.3(react-native@0.76.3(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(react@18.3.1)
       react-native-paper:
         specifier: 5.12.5
         version: 5.12.5(patch_hash=y63saubgvw44zriplyaexrq2dy)(react-native-safe-area-context@4.12.0(react-native@0.76.3(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(react@18.3.1))(react-native-vector-icons@10.2.0)(react-native@0.76.3(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(react@18.3.1)
@@ -1325,6 +1355,14 @@ packages:
 
   '@bcoe/v8-coverage@0.2.3':
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
+
+  '@bottom-tabs/react-navigation@0.7.3':
+    resolution: {integrity: sha512-by9BeCfHx/EbxkWhnpYbnxg4dhurbOCKmFbEXuFywhKLY1iD0MrQ6BrEX3wH6+m5XH6TBcst7fxq0LQWIOLnpw==}
+    peerDependencies:
+      '@react-navigation/native': '>=7'
+      react: '*'
+      react-native: '*'
+      react-native-bottom-tabs: '*'
 
   '@callstack/react-theme-provider@3.0.9':
     resolution: {integrity: sha512-tTQ0uDSCL0ypeMa8T/E9wAZRGKWj8kXP7+6RYgPTfOPs9N07C9xM8P02GJ3feETap4Ux5S69D9nteq9mEj86NA==}
@@ -4631,6 +4669,12 @@ packages:
       react: '>=18.1.0'
       react-native: '>=0.70.0'
 
+  react-native-bottom-tabs@0.7.3:
+    resolution: {integrity: sha512-aaLQRkN8lBf2VRN21Kreb3jsGUl5zNunOOMEtNfXrAVJ1EFNqBInbJ8ujJnS3yIcx/upiLNSDll3HTYEweaE+Q==}
+    peerDependencies:
+      react: '*'
+      react-native: '*'
+
   react-native-calendars@1.1291.1:
     resolution: {integrity: sha512-L2MK2t3kbnDg2RoU12UAoQyNrUpDYdj2MyIfg13YrwVb8BuI/gc0q/VpEinY3iz5ETHiFsTLkCsAFwSj7xbZWw==}
 
@@ -4794,10 +4838,6 @@ packages:
     resolution: {integrity: sha512-X2UW6Nw3n/aMgDVy+0rSqgHlv39WZAlZrXCdnbyEiKm17DSqHX4MmQMaST3FbeWR5FTuRcUwYAziZajji0Y7mg==}
     engines: {node: '>=10'}
 
-  resolve@1.22.6:
-    resolution: {integrity: sha512-njhxM7mV12JfufShqGy3Rz8j11RPdLy4xi15UurGJeoHLfJpVXKdh3ueuOqbYUcDZnffr6X739JBo5LzyahEsw==}
-    hasBin: true
-
   resolve@1.22.8:
     resolution: {integrity: sha512-oKWePCxqpd6FlLvGV1VU0x7bkPmmCNolxzjMf4NczoDnQcIWrAF+cPtZn5i6n+RfD2d9i0tzpKnG6Yk168yIyw==}
     hasBin: true
@@ -4924,6 +4964,10 @@ packages:
 
   setprototypeof@1.2.0:
     resolution: {integrity: sha512-E5LDX7Wrp85Kil5bhZv46j8jOeboKq5JMmYM3gVGdGH8xFpPWXUMsNrlODCrkoxMEeNi/XZIwuRvY4XNwYMJpw==}
+
+  sf-symbols-typescript@2.0.0:
+    resolution: {integrity: sha512-Fc8Uhhl2plqXMw7GQ8q83t/zj1xhNCJvteDNJUDULaH/4a/Eqw5aW1UYEznyEIgkokw7QYXuQ9hOw8jhBLXL0A==}
+    engines: {node: '>=10'}
 
   shallow-clone@3.0.1:
     resolution: {integrity: sha512-/6KqX+GVUdqPuPPd2LxDDxzX6CAbjJehAAOKlNpqqUpAqPM6HeL8f+o3a+JsyGjn2lv0WY8UsTgUJjU9Ok55NA==}
@@ -5682,7 +5726,7 @@ snapshots:
       '@babel/helper-plugin-utils': 7.25.9
       debug: 4.3.4
       lodash.debounce: 4.0.8
-      resolve: 1.22.6
+      resolve: 1.22.8
     transitivePeerDependencies:
       - supports-color
 
@@ -6459,6 +6503,14 @@ snapshots:
       '@babel/helper-validator-identifier': 7.25.9
 
   '@bcoe/v8-coverage@0.2.3': {}
+
+  '@bottom-tabs/react-navigation@0.7.3(@react-navigation/native@6.1.18(react-native@0.76.3(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(react@18.3.1))(react-native-bottom-tabs@0.7.3(react-native@0.76.3(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(react@18.3.1))(react-native@0.76.3(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@react-navigation/native': 6.1.18(react-native@0.76.3(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(react@18.3.1)
+      color: 4.2.3
+      react: 18.3.1
+      react-native: 0.76.3(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1)
+      react-native-bottom-tabs: 0.7.3(react-native@0.76.3(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(react@18.3.1)
 
   '@callstack/react-theme-provider@3.0.9(react@18.3.1)':
     dependencies:
@@ -9657,7 +9709,7 @@ snapshots:
       jest-pnp-resolver: 1.2.3(jest-resolve@29.7.0)
       jest-util: 29.7.0
       jest-validate: 29.7.0
-      resolve: 1.22.6
+      resolve: 1.22.8
       resolve.exports: 2.0.2
       slash: 3.0.0
 
@@ -10740,6 +10792,13 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  react-native-bottom-tabs@0.7.3(react-native@0.76.3(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(react@18.3.1):
+    dependencies:
+      react: 18.3.1
+      react-native: 0.76.3(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1)
+      sf-symbols-typescript: 2.0.0
+      use-latest-callback: 0.2.1(react@18.3.1)
+
   react-native-calendars@1.1291.1(react-native@0.76.3(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(react@18.3.1):
     dependencies:
       hoist-non-react-statics: 3.3.2
@@ -10971,12 +11030,6 @@ snapshots:
 
   resolve.exports@2.0.2: {}
 
-  resolve@1.22.6:
-    dependencies:
-      is-core-module: 2.13.0
-      path-parse: 1.0.7
-      supports-preserve-symlinks-flag: 1.0.0
-
   resolve@1.22.8:
     dependencies:
       is-core-module: 2.13.0
@@ -11119,6 +11172,8 @@ snapshots:
   setimmediate@1.0.5: {}
 
   setprototypeof@1.2.0: {}
+
+  sf-symbols-typescript@2.0.0: {}
 
   shallow-clone@3.0.1:
     dependencies:

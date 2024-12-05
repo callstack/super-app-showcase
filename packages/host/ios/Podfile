@@ -17,6 +17,9 @@ target 'host' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
+  pod 'SDWebImage', :modular_headers => true
+  pod 'SDWebImageSVGCoder', :modular_headers => true
+
   target 'hostTests' do
     inherit! :complete
     # Pods for testing

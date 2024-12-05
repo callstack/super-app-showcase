@@ -3,6 +3,7 @@ import {createNativeBottomTabNavigator} from '@bottom-tabs/react-navigation';
 import HomeNavigator from './HomeNavigator';
 import ServicesNavigator from './ServicesNavigator';
 import AccountNavigator from './AccountNavigator';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 export type TabsParamList = {
   HomeNavigator: undefined;
@@ -10,17 +11,23 @@ export type TabsParamList = {
   AccountNavigator: undefined;
 };
 
+const homeIcon = Icon.getImageSourceSync('home', 24);
+const exploreIcon = Icon.getImageSourceSync('compass', 24);
+const person = Icon.getImageSourceSync('account', 24);
+
 const Tabs = createNativeBottomTabNavigator<TabsParamList>();
 
 const TabsNavigator = () => {
   return (
-    <Tabs.Navigator>
+    <Tabs.Navigator
+      tabBarActiveTintColor="#6D50AA"
+    >
       <Tabs.Screen
         name="HomeNavigator"
         component={HomeNavigator}
         options={{
           title: 'Home',
-          tabBarIcon: () => ({sfSymbol: 'house'}),
+          tabBarIcon: () => homeIcon,
         }}
       />
       <Tabs.Screen
@@ -28,7 +35,7 @@ const TabsNavigator = () => {
         component={ServicesNavigator}
         options={{
           title: 'Services',
-          tabBarIcon: () => ({sfSymbol: 'book'}),
+          tabBarIcon: () => exploreIcon,
         }}
       />
       <Tabs.Screen
@@ -36,7 +43,7 @@ const TabsNavigator = () => {
         component={AccountNavigator}
         options={{
           title: 'Account',
-          tabBarIcon: () => ({sfSymbol: 'person'}),
+          tabBarIcon: () => person,
         }}
       />
     </Tabs.Navigator>

@@ -1,5 +1,5 @@
 import React from 'react';
-import {createNativeBottomTabNavigator} from 'react-native-bottom-tabs/react-navigation';
+import {createNativeBottomTabNavigator} from '@bottom-tabs/react-navigation';
 import HomeNavigator from './HomeNavigator';
 import ServicesNavigator from './ServicesNavigator';
 import AccountNavigator from './AccountNavigator';
@@ -20,7 +20,7 @@ const TabsNavigator = () => {
         component={HomeNavigator}
         options={{
           title: 'Home',
-          tabBarIcon: () => ({ sfSymbol: 'book' }),
+          tabBarIcon: () => ({sfSymbol: 'book'}),
         }}
       />
       <Tabs.Screen
@@ -28,7 +28,7 @@ const TabsNavigator = () => {
         component={ServicesNavigator}
         options={{
           title: 'Services',
-          tabBarIcon: () => ({ sfSymbol: 'book' }),
+          tabBarIcon: () => ({sfSymbol: 'book'}),
         }}
       />
       <Tabs.Screen
@@ -36,7 +36,7 @@ const TabsNavigator = () => {
         component={AccountNavigator}
         options={{
           title: 'Account',
-          tabBarIcon: () => ({ sfSymbol: 'book' }),
+          tabBarIcon: () => ({sfSymbol: 'book'}),
         }}
       />
     </Tabs.Navigator>

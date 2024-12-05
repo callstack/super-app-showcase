@@ -20,7 +20,7 @@ const TabsNavigator = () => {
         component={HomeNavigator}
         options={{
           title: 'Home',
-          tabBarIcon: () => ({sfSymbol: 'book'}),
+          tabBarIcon: () => ({sfSymbol: 'house'}),
         }}
       />
       <Tabs.Screen
@@ -36,7 +36,7 @@ const TabsNavigator = () => {
         component={AccountNavigator}
         options={{
           title: 'Account',
-          tabBarIcon: () => ({sfSymbol: 'book'}),
+          tabBarIcon: () => ({sfSymbol: 'person'}),
         }}
       />
     </Tabs.Navigator>

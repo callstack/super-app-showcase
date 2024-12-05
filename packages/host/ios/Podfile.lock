@@ -1266,7 +1266,7 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
-  - react-native-bottom-tabs (0.5.2):
+  - react-native-bottom-tabs (0.7.3-canary-20241205142142):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1279,7 +1279,7 @@ PODS:
     - React-featureflags
     - React-graphics
     - React-ImageManager
-    - react-native-bottom-tabs/common (= 0.5.2)
+    - react-native-bottom-tabs/common (= 0.7.3-canary-20241205142142)
     - React-NativeModulesApple
     - React-RCTFabric
     - React-rendererdebug
@@ -1291,7 +1291,7 @@ PODS:
     - SDWebImageSVGCoder (>= 1.7.0)
     - SwiftUIIntrospect (~> 1.0)
     - Yoga
-  - react-native-bottom-tabs/common (0.5.2):
+  - react-native-bottom-tabs/common (0.7.3-canary-20241205142142):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -2034,7 +2034,7 @@ SPEC CHECKSUMS:
   React-logger: 97c9dafae1f1a638001a9d1d0e93d431f2f9cb7b
   React-Mapbuffer: 3146a13424f9fec2ea1f1462d49d566e4d69b732
   React-microtasksnativemodule: 02d218c79c72d373a92a8552183f4ead0d1c6e05
-  react-native-bottom-tabs: e1a13267a8c4584d6a96bc732f8e9b93fe6dfa2d
+  react-native-bottom-tabs: a0485937d7b2a5e629cf27dfc9e74428c66a0102
   react-native-safe-area-context: 458f6b948437afcb59198016b26bbd02ff9c3b47
   React-nativeconfig: 93fe8c85a8c40820c57814e30f3e44b94c995a7b
   React-NativeModulesApple: b3e076fd0d7b73417fe1e8c8b26e3c57ae9b74aa

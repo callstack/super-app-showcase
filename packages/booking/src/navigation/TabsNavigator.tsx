@@ -1,9 +1,9 @@
 import React from 'react';
-
-import {createMaterialBottomTabNavigator} from 'react-native-paper/react-navigation';
+import {createNativeBottomTabNavigator} from '@bottom-tabs/react-navigation';
 import HomeNavigator from './HomeNavigator';
 import CalendarNavigator from './CalendarNavigator';
 import AccountNavigator from './AccountNavigator';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 export type TabsParamList = {
   HomeNavigator: undefined;
@@ -11,7 +11,11 @@ export type TabsParamList = {
   AccountNavigator: undefined;
 };
 
-const Tabs = createMaterialBottomTabNavigator<TabsParamList>();
+const homeIcon = Icon.getImageSourceSync('home', 24);
+const calendarIcon = Icon.getImageSourceSync('calendar', 24);
+const accountIcon = Icon.getImageSourceSync('account', 24);
+
+const Tabs = createNativeBottomTabNavigator<TabsParamList>();
 
 const TabsNavigator = () => {
   return (
@@ -21,7 +25,7 @@ const TabsNavigator = () => {
         component={HomeNavigator}
         options={{
           title: 'Home',
-          tabBarIcon: 'home',
+          tabBarIcon: () => homeIcon,
         }}
       />
       <Tabs.Screen
@@ -29,7 +33,7 @@ const TabsNavigator = () => {
         component={CalendarNavigator}
         options={{
           title: 'Calendar',
-          tabBarIcon: 'calendar',
+          tabBarIcon: () => calendarIcon,
         }}
       />
       <Tabs.Screen
@@ -37,7 +41,7 @@ const TabsNavigator = () => {
         component={AccountNavigator}
         options={{
           title: 'Account',
-          tabBarIcon: 'account',
+          tabBarIcon: () => accountIcon,
         }}
       />
     </Tabs.Navigator>

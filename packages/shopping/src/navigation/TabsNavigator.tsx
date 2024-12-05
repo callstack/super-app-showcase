@@ -1,8 +1,9 @@
 import React from 'react';
-import {createMaterialBottomTabNavigator} from 'react-native-paper/react-navigation';
+import {createNativeBottomTabNavigator} from '@bottom-tabs/react-navigation';
 import AccountNavigator from './AccountNavigator';
 import HomeNavigator from './HomeNavigator';
 import SearchNavigator from './SearchNavigator';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 export type TabsParamList = {
   HomeNavigator: undefined;
@@ -10,7 +11,11 @@ export type TabsParamList = {
   AccountNavigator: undefined;
 };
 
-const Tabs = createMaterialBottomTabNavigator<TabsParamList>();
+const homeIcon = Icon.getImageSourceSync('home', 24);
+const magnifyIcon = Icon.getImageSourceSync('magnify', 24);
+const accountIcon = Icon.getImageSourceSync('account', 24);
+
+const Tabs = createNativeBottomTabNavigator<TabsParamList>();
 
 const TabsNavigator = () => {
   return (
@@ -19,24 +24,24 @@ const TabsNavigator = () => {
         name="HomeNavigator"
         component={HomeNavigator}
         options={{
-          tabBarIcon: 'home',
-          tabBarLabel: 'Home',
+          title: 'Home',
+          tabBarIcon: () => homeIcon,
         }}
       />
       <Tabs.Screen
         name="SearchNavigator"
         component={SearchNavigator}
         options={{
-          tabBarIcon: 'magnify',
-          tabBarLabel: 'Search',
+          title: 'Search',
+          tabBarIcon: () => magnifyIcon,
         }}
       />
       <Tabs.Screen
         name="AccountNavigator"
         component={AccountNavigator}
         options={{
-          tabBarIcon: 'account',
-          tabBarLabel: 'Account',
+          title: 'Account',
+          tabBarIcon: () => accountIcon,
         }}
       />
     </Tabs.Navigator>

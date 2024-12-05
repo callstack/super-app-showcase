@@ -5,7 +5,7 @@
   },
   "react-native": {
     "name": "react-native",
-    "version": "0.76.1"
+    "version": "0.76.3"
   },
   "@react-native-async-storage/async-storage": {
     "name": "@react-native-async-storage/async-storage",

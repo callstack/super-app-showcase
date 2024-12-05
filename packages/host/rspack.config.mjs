@@ -68,12 +68,6 @@ export default env => {
        */
       alias: {
         // 'react-native': reactNativePath,
-        'react-native-bottom-tabs$':
-            path.dirname(resolve('react-native-bottom-tabs/package.json')) +
-            '/src',
-        'react-native-bottom-tabs/react-navigation':
-            path.dirname(resolve('react-native-bottom-tabs/package.json')) +
-            '/src/react-navigation',
       },
     },
     /**
@@ -132,7 +126,7 @@ export default env => {
           },
         },
         /** Run React Native codegen, required for utilizing new architecture */
-        // Repack.REACT_NATIVE_CODEGEN_RULES,
+        Repack.REACT_NATIVE_CODEGEN_RULES,
         /**
          * This loader handles all static assets (images, video, audio and others), so that you can
          * use (reference) them inside your application.

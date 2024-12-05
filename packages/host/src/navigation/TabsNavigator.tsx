@@ -13,8 +13,8 @@ export type TabsParamList = {
 };
 
 const homeIcon = Icon.getImageSourceSync('home', 24);
-const exploreIcon = Icon.getImageSourceSync('compass', 24);
-const person = Icon.getImageSourceSync('account', 24);
+const compassIcon = Icon.getImageSourceSync('compass', 24);
+const accountIcon = Icon.getImageSourceSync('account', 24);
 
 const Tabs = createNativeBottomTabNavigator<TabsParamList>();
 
@@ -34,7 +34,7 @@ const TabsNavigator = () => {
         component={ServicesNavigator}
         options={{
           title: 'Services',
-          tabBarIcon: () => exploreIcon,
+          tabBarIcon: () => compassIcon,
         }}
       />
       <Tabs.Screen
@@ -42,7 +42,7 @@ const TabsNavigator = () => {
         component={AccountNavigator}
         options={{
           title: 'Account',
-          tabBarIcon: () => person,
+          tabBarIcon: () => accountIcon,
         }}
       />
     </Tabs.Navigator>

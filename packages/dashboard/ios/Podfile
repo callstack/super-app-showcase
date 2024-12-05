@@ -17,6 +17,9 @@ target 'dashboard' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
+  pod 'SDWebImage', :modular_headers => true
+  pod 'SDWebImageSVGCoder', :modular_headers => true
+
   target 'dashboardTests' do
     inherit! :complete
     # Pods for testing

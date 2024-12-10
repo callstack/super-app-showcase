@@ -4,7 +4,7 @@ import {Appbar} from 'react-native-paper';
 
 const NavBar = ({navigation, back, route, options}: NativeStackHeaderProps) => {
   return (
-    <Appbar.Header elevated>
+    <Appbar.Header elevated mode="center-aligned">
       {back ? <Appbar.BackAction onPress={navigation.goBack} /> : null}
       <Appbar.Content title={options.title ?? route.name} />
     </Appbar.Header>

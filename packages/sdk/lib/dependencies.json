@@ -47,5 +47,9 @@
     "name": "@module-federation/enhanced",
     "version": "0.7.1",
     "shared": false
+  },
+  "react-native-edge-to-edge": {
+    "name": "react-native-edge-to-edge",
+    "version": "1.1.3"
   }
 }

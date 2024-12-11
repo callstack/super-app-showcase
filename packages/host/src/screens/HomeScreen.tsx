@@ -8,6 +8,7 @@ import {
 } from 'react-native';
 import {CompositeScreenProps} from '@react-navigation/native';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
+import {NativeBottomTabScreenProps} from '@bottom-tabs/react-navigation';
 import {
   Avatar,
   Card,
@@ -16,7 +17,6 @@ import {
   Text,
   Title,
   Paragraph,
-  MaterialBottomTabScreenProps,
 } from 'react-native-paper';
 import {TabsParamList} from '../navigation/TabsNavigator';
 import {HomeStackParamList} from '../navigation/HomeNavigator';
@@ -27,7 +27,7 @@ import recentArticles from '../data/recentArticles.json';
 
 type Props = CompositeScreenProps<
   NativeStackScreenProps<HomeStackParamList>,
-  MaterialBottomTabScreenProps<TabsParamList, 'HomeNavigator'>
+  NativeBottomTabScreenProps<TabsParamList, 'HomeNavigator'>
 >;
 
 const renderUpcoming = ({item}: any) => (

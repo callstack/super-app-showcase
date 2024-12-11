@@ -18,10 +18,7 @@ const Main = createNativeStackNavigator<MainStackParamList>();
 
 const MainNavigator = () => {
   return (
-    <Main.Navigator
-      screenOptions={{
-        headerShown: false,
-      }}>
+    <Main.Navigator screenOptions={{headerShown: false}}>
       <Main.Screen name="Tabs" component={TabsNavigator} />
       <Main.Screen name="Booking" component={BookingScreen} />
       <Main.Screen name="Shopping" component={ShoppingScreen} />

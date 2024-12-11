@@ -1,15 +1,12 @@
-diff --git a/src/components/BottomNavigation/BottomNavigationBar.tsx b/src/components/BottomNavigation/BottomNavigationBar.tsx
-index 0bfe303bfb443396ede776726faa0f8ba32752cd..789c38829eae0030484787d4e5ab4b36b01c2765 100644
---- a/src/components/BottomNavigation/BottomNavigationBar.tsx
-+++ b/src/components/BottomNavigation/BottomNavigationBar.tsx
-@@ -360,7 +360,9 @@ const BottomNavigationBar = <Route extends BaseRoute>({
-   navigationState,
-   renderIcon,
-   renderLabel,
--  renderTouchable = (props: TouchableProps<Route>) => <Touchable {...props} />,
-+  renderTouchable = ({ key, ...props }: TouchableProps<Route>) => (
-+    <Touchable key={key} {...props} />
-+  ),
-   getLabelText = ({ route }: { route: Route }) => route.title,
-   getBadge = ({ route }: { route: Route }) => route.badge,
-   getColor = ({ route }: { route: Route }) => route.color,
+diff --git a/src/components/Card/CardCover.tsx b/src/components/Card/CardCover.tsx
+index 337de2a94402e3e82908e4b00cffcc9cef2bd97b..e0147381dc866a4a4106780c808d89bd7e118e2f 100644
+--- a/src/components/Card/CardCover.tsx
++++ b/src/components/Card/CardCover.tsx
+@@ -86,7 +86,6 @@ const styles = StyleSheet.create({
+     flex: 1,
+     height: undefined,
+     width: undefined,
+-    padding: 16,
+     justifyContent: 'flex-end',
+   },
+ });

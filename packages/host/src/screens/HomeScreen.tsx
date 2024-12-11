@@ -8,6 +8,7 @@ import {
 } from 'react-native';
 import {CompositeScreenProps} from '@react-navigation/native';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
+import {NativeBottomTabScreenProps} from '@bottom-tabs/react-navigation';
 import {
   Avatar,
   Card,
@@ -16,7 +17,6 @@ import {
   Text,
   Title,
   Paragraph,
-  MaterialBottomTabScreenProps,
 } from 'react-native-paper';
 import {TabsParamList} from '../navigation/TabsNavigator';
 import {HomeStackParamList} from '../navigation/HomeNavigator';
@@ -27,7 +27,7 @@ import recentArticles from '../data/recentArticles.json';
 
 type Props = CompositeScreenProps<
   NativeStackScreenProps<HomeStackParamList>,
-  MaterialBottomTabScreenProps<TabsParamList, 'HomeNavigator'>
+  NativeBottomTabScreenProps<TabsParamList, 'HomeNavigator'>
 >;
 
 const renderUpcoming = ({item}: any) => (
@@ -78,16 +78,18 @@ const renderDivider = () => <Divider style={styles.divider} />;
 
 const HomeScreen = ({navigation}: Props) => {
   return (
-    <ScrollView style={styles.container}
-      contentInsetAdjustmentBehavior="automatic"
-    >
+    <ScrollView
+      style={styles.container}
+      contentInsetAdjustmentBehavior="automatic">
       <View style={styles.header}>
         <Text variant="titleLarge" style={styles.headerTitle}>
           Upcoming Appointments
         </Text>
         <Button
+          compact
           mode="contained-tonal"
-          onPress={() => navigation.navigate('Upcoming')}>
+          onPress={() => navigation.navigate('Upcoming')}
+          style={styles.button}>
           See All
         </Button>
       </View>
@@ -103,7 +105,11 @@ const HomeScreen = ({navigation}: Props) => {
         <Text variant="titleLarge" style={styles.headerTitle}>
           New Products
         </Text>
-        <Button mode="contained-tonal" onPress={() => {}}>
+        <Button
+          compact
+          mode="contained-tonal"
+          onPress={() => {}}
+          style={styles.button}>
           See All
         </Button>
       </View>
@@ -119,7 +125,11 @@ const HomeScreen = ({navigation}: Props) => {
         <Text variant="titleLarge" style={styles.headerTitle}>
           Recent News
         </Text>
-        <Button mode="contained-tonal" onPress={() => {}}>
+        <Button
+          compact
+          mode="contained-tonal"
+          onPress={() => {}}
+          style={styles.button}>
           See All
         </Button>
       </View>
@@ -135,7 +145,11 @@ const HomeScreen = ({navigation}: Props) => {
         <Text variant="titleLarge" style={styles.headerTitle}>
           Recent Articles
         </Text>
-        <Button mode="contained-tonal" onPress={() => {}}>
+        <Button
+          compact
+          mode="contained-tonal"
+          onPress={() => {}}
+          style={styles.button}>
           See All
         </Button>
       </View>
@@ -152,6 +166,9 @@ const HomeScreen = ({navigation}: Props) => {
 };
 
 const styles = StyleSheet.create({
+  button: {
+    paddingHorizontal: 16,
+  },
   container: {
     flex: 1,
     backgroundColor: '#fff',

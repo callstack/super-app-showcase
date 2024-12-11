@@ -9,7 +9,7 @@
   },
   "@bottom-tabs/react-navigation": {
     "name": "@bottom-tabs/react-navigation",
-    "version": "0.7.3"
+    "version": "0.7.4"
   },
   "@react-native-async-storage/async-storage": {
     "name": "@react-native-async-storage/async-storage",
@@ -25,7 +25,7 @@
   },
   "react-native-bottom-tabs": {
     "name": "react-native-bottom-tabs",
-    "version": "0.7.3"
+    "version": "0.7.4"
   },
   "react-native-paper": {
     "name": "react-native-paper",

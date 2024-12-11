@@ -28,7 +28,7 @@ const App = () => {
 
             return (
               <NavigationContainer
-                onReady={() => RNBootSplash.hide({fade: true, duration: 500})}>
+                onReady={() => RNBootSplash.hide({fade: true})}>
                 <MainNavigator />
               </NavigationContainer>
             );

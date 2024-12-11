@@ -1,6 +1,6 @@
 <resources>
     <style name="AppTheme"
-        parent="Theme.Material3.DayNight.NoActionBar">
+        parent="Theme.EdgeToEdge.Material3">
         <!-- Customize your theme here. -->
         <item name="android:editTextBackground">@drawable/rn_edit_text_material</item>
     </style>

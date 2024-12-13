@@ -1266,7 +1266,7 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
-  - react-native-bottom-tabs (0.7.4):
+  - react-native-bottom-tabs (0.7.6):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1279,7 +1279,7 @@ PODS:
     - React-featureflags
     - React-graphics
     - React-ImageManager
-    - react-native-bottom-tabs/common (= 0.7.4)
+    - react-native-bottom-tabs/common (= 0.7.6)
     - React-NativeModulesApple
     - React-RCTFabric
     - React-rendererdebug
@@ -1291,7 +1291,7 @@ PODS:
     - SDWebImageSVGCoder (>= 1.7.0)
     - SwiftUIIntrospect (~> 1.0)
     - Yoga
-  - react-native-bottom-tabs/common (0.7.4):
+  - react-native-bottom-tabs/common (0.7.6):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1759,7 +1759,7 @@ PODS:
   - SDWebImage (5.20.0):
     - SDWebImage/Core (= 5.20.0)
   - SDWebImage/Core (5.20.0)
-  - SDWebImageSVGCoder (1.7.0):
+  - SDWebImageSVGCoder (1.8.0):
     - SDWebImage/Core (~> 5.6)
   - SocketRocket (0.7.1)
   - SwiftUIIntrospect (1.3.0)
@@ -2034,7 +2034,7 @@ SPEC CHECKSUMS:
   React-logger: 26155dc23db5c9038794db915f80bd2044512c2e
   React-Mapbuffer: ad1ba0205205a16dbff11b8ade6d1b3959451658
   React-microtasksnativemodule: e771eb9eb6ace5884ee40a293a0e14a9d7a4343c
-  react-native-bottom-tabs: 7ce16518e2a0e664bd38bec2b49c50bde4a1bdc7
+  react-native-bottom-tabs: efc4265bb52b9b7a67fc30965b51cdf84f5be3cd
   react-native-safe-area-context: 458f6b948437afcb59198016b26bbd02ff9c3b47
   React-nativeconfig: aeed6e2a8ac02b2df54476afcc7c663416c12bf7
   React-NativeModulesApple: c5b7813da94136f50ef084fa1ac077332dcfc658
@@ -2068,7 +2068,7 @@ SPEC CHECKSUMS:
   RNScreens: 949445ea5fb20daea35cbaba4f482ff98d1a50c6
   RNVectorIcons: 07792a9538e8577c1263fcad187712e90d65d8fb
   SDWebImage: 73c6079366fea25fa4bb9640d5fb58f0893facd8
-  SDWebImageSVGCoder: 15a300a97ec1c8ac958f009c02220ac0402e936c
+  SDWebImageSVGCoder: 8e10c8f6cc879c7dfb317b284e13dd589379f01c
   SocketRocket: d4aabe649be1e368d1318fdf28a022d714d65748
   SwiftUIIntrospect: fee9aa07293ee280373a591e1824e8ddc869ba5d
   SwiftyRSA: 8c6dd1ea7db1b8dc4fb517a202f88bb1354bc2c6

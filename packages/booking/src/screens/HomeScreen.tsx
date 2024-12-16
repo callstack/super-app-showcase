@@ -9,14 +9,8 @@ import {
 } from 'react-native';
 import {CompositeScreenProps} from '@react-navigation/native';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {
-  Avatar,
-  Card,
-  Button,
-  Divider,
-  Text,
-  MaterialBottomTabScreenProps,
-} from 'react-native-paper';
+import {NativeBottomTabScreenProps} from '@bottom-tabs/react-navigation';
+import {Avatar, Card, Button, Divider, Text} from 'react-native-paper';
 import {TabsParamList} from '../navigation/TabsNavigator';
 import {HomeStackParamList} from '../navigation/HomeNavigator';
 import upcomingBookings from '../data/upcomingBookings.json';
@@ -25,7 +19,7 @@ import featuredServices from '../data/featuredServices.json';
 
 type Props = CompositeScreenProps<
   NativeStackScreenProps<HomeStackParamList>,
-  MaterialBottomTabScreenProps<TabsParamList, 'HomeNavigator'>
+  NativeBottomTabScreenProps<TabsParamList, 'HomeNavigator'>
 >;
 
 const renderAppointment = ({item}: any) => (

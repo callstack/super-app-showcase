@@ -59,7 +59,20 @@ Each of the mini apps could be deployed and run as a standalone app.
 
 ## How to use
 
-We use `pnpm` to manage dependencies. Learn how to install `pnpm` [here](https://pnpm.io/installation)
+### Requirements
+
+⚠️ **Important:** This project requires:
+
+- Node.js version 22 or higher
+- pnpm as package manager
+
+Please refer to the official [pnpm installation guide](https://pnpm.io/installation) for detailed setup instructions.
+
+After installation, it's recommended to align your pnpm version with the project:
+
+```bash
+pnpm self-update
+```
 
 ### Setup
 
@@ -81,45 +94,43 @@ Pods might sometimes be outdated, and they might fail to install, in that case y
 pnpm pods:update
 ```
 
-### Run
+### Running the Super App
 
-Start dev server for Host and Mini apps:
+Start DevServer for Host and Mini apps:
 
 ```
 pnpm start
 ```
 
-Or start dev server for a specific app ([host](./packages/host/README.md) | [booking](./packages/booking/README.md) | [shopping](./packages/shopping/README.md) | [news](https://github.com/callstack/news-mini-app-showcase) | [dashboard](./packages/dashboard/README.md)):
+Run Super App on iOS or Android (ios | android):
 
 ```
-pnpm start:<app-name>
+pnpm run:host:<platform>
 ```
 
-Or start dev server for a specific app as a standalone app. It's useful for testing micro-frontend as a standalone app:
+### Running the Mini App as a standalone app
+
+> **💡 NOTE**
+>
+> The "booking" and "shopping" mini-apps can't be run in standalone mode (i.e. without the host running). This is a deliberate decision of this repository to showcase the possibility and to reduce the amount of work to keep the mini-apps dependencies up-to-date.
+>
+> It's up to you to decide on what kind of developer experience your super app has.
+
+Start DevServer for a Dashboard Mini App as a standalone app:
 
 ```
-pnpm start:standalone:<app-name>
+pnpm start:standalone:dashboard
 ```
 
-Running the mini app as a standalone requires exposing [auth module](./packages/auth/README.md):
+> **⚠️ IMPORTANT**
+>
+> Running the Dashboard Mini App as a standalone requires exposing [auth module](./packages/auth/README.md):
+>
+> ```
+> pnpm start:auth
+> ```
 
-```
-pnpm start:auth
-```
-
-Run iOS or Android app (ios | android):
-
-```
-pnpm run:<app-name>:<platform>
-```
-
-For Android, make sure to reverse all adb ports:
-
-```
-pnpm adbreverse
-```
-
-### Test
+### Code Quality Scripts
 
 Run tests for all apps:
 
@@ -127,26 +138,17 @@ Run tests for all apps:
 pnpm test
 ```
 
-### Lint
-
 Run linter for all apps:
 
 ```
 pnpm lint
 ```
 
-### Type check
-
 Run type check for all apps:
 
 ```
 pnpm typecheck
 ```
-
-## Known Issues
-
-The "booking" and "shopping" mini-apps can't be run in standalone mode (i.e. without the host running). This is a deliberate decision of this repository to showcase the possibility and to reduce the amount of work to keep the mini-apps dependencies up-to-date.
-The "dashboard" mini-app can be run as a standalone app (without the host). It's up to you to decide on what kind of developer experience your super app has.
 
 ## Contributing
 

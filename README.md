@@ -82,7 +82,9 @@ Install dependencies for all apps:
 pnpm install
 ```
 
-[Optional] Install pods where applicable
+#### iOS
+
+Install pods where applicable when running on an iOS device:
 
 ```
 pnpm pods

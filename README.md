@@ -64,18 +64,14 @@ Each of the mini apps could be deployed and run as a standalone app.
 ⚠️ **Important:** This project requires:
 
 - Node.js version 22 or higher
-- pnpm as specified in `packageManager` field in `package.json`
+- pnpm as package manager
 
-We recommend using [corepack](https://nodejs.org/api/corepack.html) to manage pnpm:
+Please refer to the official [pnpm installation guide](https://pnpm.io/installation) for detailed setup instructions.
 
-```bash
-corepack enable
-```
-
-To install the version of pnpm specified in the `package.json`:
+After installation, it's recommended to align your pnpm version with the project:
 
 ```bash
-corepack install
+pnpm self-update
 ```
 
 ### Setup

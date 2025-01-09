@@ -82,16 +82,12 @@ Install dependencies for all apps:
 pnpm install
 ```
 
-[Optional] Install pods where applicable
+#### iOS
+
+In case automatic pods installation doesn't work when running iOS project, you can install manually:
 
 ```
 pnpm pods
-```
-
-Pods might sometimes be outdated, and they might fail to install, in that case you can update them by running:
-
-```
-pnpm pods:update
 ```
 
 ### Running the Super App

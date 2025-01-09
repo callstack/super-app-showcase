@@ -6,7 +6,7 @@ pluginManagement {
     def gradlePluginPath = resolveNodePackage('@react-native/gradle-plugin', reactNativePath)
     // expose gradlePluginPath outside of pluginManagement block
     settings.ext.gradlePluginPath = gradlePluginPath.path
-    includeBuild(gradlePluginPat.path)
+    includeBuild(gradlePluginPath.path)
 }
 
 plugins { id("com.facebook.react.settings") }

@@ -1,6 +1,6 @@
 import React from 'react';
 import {Pressable, StyleSheet, View} from 'react-native';
-import {Button, MD3Colors, Text} from 'react-native-paper';
+import {MD3Colors, Text} from 'react-native-paper';
 import {useAuth} from '../contexts/AuthContext';
 
 const SignInScreen = () => {

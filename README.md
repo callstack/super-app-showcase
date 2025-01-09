@@ -82,20 +82,6 @@ Install dependencies for all apps:
 pnpm install
 ```
 
-#### iOS
-
-Install pods where applicable when running on an iOS device:
-
-```
-pnpm pods
-```
-
-Pods might sometimes be outdated, and they might fail to install, in that case you can update them by running:
-
-```
-pnpm pods:update
-```
-
 ### Running the Super App
 
 Start DevServer for Host and Mini apps:

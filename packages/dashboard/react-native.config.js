@@ -5,4 +5,9 @@ module.exports = {
   commands: useWebpack
     ? require('@callstack/repack/commands/webpack')
     : require('@callstack/repack/commands/rspack'),
+  project: {
+    ios: {
+      automaticPodsInstallation: true,
+    },
+  },
 };

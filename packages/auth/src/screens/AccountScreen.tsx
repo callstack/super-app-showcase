@@ -1,6 +1,6 @@
 import React from 'react';
-import {StyleSheet, View} from 'react-native';
-import {Button} from 'react-native-paper';
+import {Pressable, StyleSheet, View} from 'react-native';
+import {MD3Colors, Text} from 'react-native-paper';
 import {useAuth} from '../contexts/AuthContext';
 
 const AccountScreen = () => {
@@ -8,9 +8,9 @@ const AccountScreen = () => {
 
   return (
     <View style={styles.container}>
-      <Button mode="contained" onPress={signOut}>
-        Logout
-      </Button>
+      <Pressable style={styles.button} onPress={signOut}>
+        <Text>Logout</Text>
+      </Pressable>
     </View>
   );
 };
@@ -21,6 +21,11 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  button: {
+    backgroundColor: MD3Colors.primary90,
+    padding: 16,
+    borderRadius: 16,
   },
 });
 

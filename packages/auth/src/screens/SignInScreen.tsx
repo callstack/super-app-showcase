@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet, View} from 'react-native';
+import {Pressable, StyleSheet, View} from 'react-native';
 import {Button, MD3Colors, Text} from 'react-native-paper';
 import {useAuth} from '../contexts/AuthContext';
 
@@ -15,9 +15,9 @@ const SignInScreen = () => {
         This is a dummy login screen. Just press the button and have a look
         around this super app 🚀
       </Text>
-      <Button mode="contained" onPress={signIn}>
-        Login
-      </Button>
+      <Pressable style={styles.button} onPress={signIn}>
+        <Text>Login</Text>
+      </Pressable>
     </View>
   );
 };
@@ -35,6 +35,11 @@ const styles = StyleSheet.create({
   welcomeText: {
     padding: 16,
     paddingBottom: 32,
+  },
+  button: {
+    backgroundColor: MD3Colors.primary90,
+    padding: 16,
+    borderRadius: 16,
   },
 });
 

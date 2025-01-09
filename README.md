@@ -82,6 +82,14 @@ Install dependencies for all apps:
 pnpm install
 ```
 
+#### iOS
+
+In case automatic pods installation doesn't work when running iOS project, you can install manually:
+
+```
+pnpm pods
+```
+
 ### Running the Super App
 
 Start DevServer for Host and Mini apps:

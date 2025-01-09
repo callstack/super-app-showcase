@@ -16,22 +16,22 @@
   },
   "@callstack/repack": {
     "name": "@callstack/repack",
-    "version": "5.0.0-rc.3",
+    "version": "5.0.0-rc.5",
     "devOnly": true
   },
   "@react-native/babel-preset": {
     "name": "@react-native/babel-preset",
-    "version": "0.76.3",
+    "version": "0.76.6",
     "devOnly": true
   },
   "@react-native/eslint-config": {
     "name": "@react-native/eslint-config",
-    "version": "0.76.3",
+    "version": "0.76.6",
     "devOnly": true
   },
   "@react-native/typescript-config": {
     "name": "@react-native/typescript-config",
-    "version": "0.76.3",
+    "version": "0.76.6",
     "devOnly": true
   },
   "@react-native-community/cli": {

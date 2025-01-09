@@ -191,9 +191,9 @@ export default env => {
         /**
          * This is a list of modules that will be shared between remote containers.
          */
-        exposes: {
-          './App': './src/navigation/MainNavigator',
-        },
+        exposes: STANDALONE
+          ? undefined
+          : {'./App': './src/navigation/MainNavigator'},
         remotes: {
           auth: `auth@http://localhost:9003/${platform}/mf-manifest.json`,
         },

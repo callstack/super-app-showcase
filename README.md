@@ -59,7 +59,24 @@ Each of the mini apps could be deployed and run as a standalone app.
 
 ## How to use
 
-We use `pnpm` to manage dependencies. Learn how to install `pnpm` [here](https://pnpm.io/installation)
+### Requirements
+
+⚠️ **Important:** This project requires:
+
+- Node.js version 22 or higher
+- pnpm as specified in `packageManager` field in `package.json`
+
+We recommend using [corepack](https://nodejs.org/api/corepack.html) to manage pnpm:
+
+```bash
+corepack enable
+```
+
+To install the version of pnpm specified in the `package.json`:
+
+```bash
+corepack install
+```
 
 ### Setup
 

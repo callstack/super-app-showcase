@@ -112,12 +112,6 @@ Run Super App on iOS or Android (ios | android):
 pnpm run:host:<platform>
 ```
 
-For Android, make sure to reverse all adb ports:
-
-```
-pnpm adbreverse
-```
-
 ### Running the Mini App as a standalone app
 
 > **💡 NOTE**

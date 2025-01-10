@@ -115,16 +115,8 @@ pnpm run:host:<platform>
 Start DevServer for a Dashboard Mini App as a standalone app:
 
 ```
-pnpm start:standalone:dashboard
+pnpm start:dashboard
 ```
-
-> **⚠️ IMPORTANT**
->
-> Running the Dashboard Mini App as a standalone requires exposing [auth module](./packages/auth/README.md):
->
-> ```
-> pnpm start:auth
-> ```
 
 ### Code Quality Scripts
 

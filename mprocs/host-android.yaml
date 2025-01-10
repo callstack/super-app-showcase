@@ -1,0 +1,16 @@
+procs:
+  Host:
+    shell: pnpm --filter host start --platform android
+    stop: SIGKILL
+  Auth:
+    shell: pnpm --filter auth start --platform android
+    stop: SIGKILL
+  Booking:
+    shell: pnpm --filter booking start --platform android
+    stop: SIGKILL
+  Dashboard:
+    shell: pnpm --filter dashboard start --platform android
+    stop: SIGKILL
+  Shopping:
+    shell: pnpm --filter shopping start --platform android
+    stop: SIGKILL

@@ -1,0 +1,7 @@
+procs:
+  Auth:
+    shell: pnpm --filter auth start --platform ios
+    stop: SIGKILL
+  Dashboard:
+    shell: pnpm --filter dashboard start:standalone --platform ios
+    stop: SIGKILL

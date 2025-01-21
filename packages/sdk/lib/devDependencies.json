@@ -16,7 +16,7 @@
   },
   "@callstack/repack": {
     "name": "@callstack/repack",
-    "version": "5.0.0-rc.6",
+    "version": "5.0.0-rc.8",
     "devOnly": true
   },
   "@react-native/babel-preset": {
@@ -41,17 +41,12 @@
   },
   "@rspack/core": {
     "name": "@rspack/core",
-    "version": "^1.1.0",
-    "devOnly": true
-  },
-  "@rspack/plugin-react-refresh": {
-    "name": "@rspack/plugin-react-refresh",
-    "version": "^1.0.0",
+    "version": "^1.2.0",
     "devOnly": true
   },
   "@swc/helpers": {
     "name": "@swc/helpers",
-    "version": "0.5.13",
+    "version": "^0.5.15",
     "devOnly": true
   },
   "@types/jest": {
@@ -87,11 +82,6 @@
   "babel-jest": {
     "name": "babel-jest",
     "version": "^29.6.3",
-    "devOnly": true
-  },
-  "babel-loader": {
-    "name": "babel-loader",
-    "version": "^9.2.1",
     "devOnly": true
   },
   "eslint": {

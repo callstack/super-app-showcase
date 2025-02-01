@@ -181,7 +181,6 @@ export default env => {
          */
         name: 'shopping',
         filename: 'shopping.container.js.bundle',
-        dts: false,
         /**
          * This is a list of modules that will be shared between remote containers.
          */

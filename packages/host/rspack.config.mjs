@@ -178,7 +178,6 @@ export default env => {
          * The name of the module is used to identify the module in URLs resolver and imports.
          */
         name: 'host',
-        dts: false,
         remotes: {
           booking: `booking@http://localhost:9000/${platform}/mf-manifest.json`,
           shopping: `shopping@http://localhost:9001/${platform}/mf-manifest.json`,

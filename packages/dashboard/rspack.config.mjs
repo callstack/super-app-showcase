@@ -187,7 +187,6 @@ export default env => {
          */
         name: 'dashboard',
         filename: 'dashboard.container.js.bundle',
-        dts: false,
         /**
          * This is a list of modules that will be shared between remote containers.
          */

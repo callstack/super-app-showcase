@@ -121,9 +121,6 @@ importers:
       babel-jest:
         specifier: ^29.6.3
         version: 29.7.0(@babel/core@7.26.0)
-      babel-loader:
-        specifier: ^9.2.1
-        version: 9.2.1(@babel/core@7.26.0)(webpack@5.95.0)
       eslint:
         specifier: ^8.57.0
         version: 8.57.1

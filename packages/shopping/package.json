@@ -32,13 +32,13 @@
     "@babel/core": "^7.25.2",
     "@babel/preset-env": "^7.25.3",
     "@babel/runtime": "^7.25.0",
-    "@callstack/repack": "5.0.0-rc.8",
+    "@callstack/repack": "5.0.0-rc.11",
     "@react-native-community/cli": "15.0.1",
     "@react-native/babel-preset": "0.76.6",
     "@react-native/eslint-config": "0.76.6",
     "@react-native/typescript-config": "0.76.6",
     "@rnx-kit/align-deps": "^2.5.1",
-    "@rspack/core": "^1.2.0",
+    "@rspack/core": "^1.2.3",
     "@swc/helpers": "^0.5.15",
     "@types/jest": "^29.5.14",
     "@types/react": "^18.2.6",
@@ -52,9 +52,7 @@
     "prettier": "^2.8.8",
     "react-test-renderer": "^18.3.1",
     "super-app-showcase-sdk": "0.0.2",
-    "terser-webpack-plugin": "^5.3.10",
-    "typescript": "^5.6.3",
-    "webpack": "^5.95.0"
+    "typescript": "^5.6.3"
   },
   "rnx-kit": {
     "kitType": "app",

@@ -17,7 +17,7 @@ const STANDALONE = Boolean(process.env.STANDALONE);
  */
 
 export default env => {
-  const {mode = 'development', platform} = env;
+  const {mode, platform} = env;
 
   return {
     mode,

@@ -15,7 +15,7 @@ const __dirname = path.dirname(__filename);
  */
 
 export default env => {
-  const {mode = 'development'} = env;
+  const {mode} = env;
 
   return {
     mode,

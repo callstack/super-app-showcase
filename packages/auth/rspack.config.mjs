@@ -20,7 +20,7 @@ export default env => {
   return {
     mode,
     context: __dirname,
-    entry: './index.js',
+    entry: {},
     experiments: {
       incremental: mode === 'development',
     },

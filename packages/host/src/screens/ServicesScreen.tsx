@@ -58,7 +58,11 @@ const ServicesScreen = ({navigation}: ServiceScreenProps) => {
 
       return (
         <View style={[styles.serviceItem, lastItem && styles.lastServiceItem]}>
-          <Card mode="contained" onPress={onPress} style={styles.cardItem}>
+          <Card
+            mode="contained"
+            disabled={item.id === 'news'}
+            onPress={onPress}
+            style={[styles.cardItem, item.id === 'news' && styles.disabled]}>
             <Card.Cover source={{uri: `${item.image}?${index}`}} />
             <Card.Content>
               <Title numberOfLines={1}>{item.title}</Title>
@@ -95,6 +99,9 @@ const styles = StyleSheet.create({
   },
   cardItem: {
     flex: 1,
+  },
+  disabled: {
+    opacity: 0.4,
   },
 });
 

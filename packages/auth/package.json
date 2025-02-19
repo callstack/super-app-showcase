@@ -51,9 +51,7 @@
     "prettier": "^2.8.8",
     "react-test-renderer": "^18.3.1",
     "super-app-showcase-sdk": "0.0.2",
-    "terser-webpack-plugin": "^5.3.10",
-    "typescript": "^5.6.3",
-    "webpack": "^5.95.0"
+    "typescript": "^5.6.3"
   },
   "rnx-kit": {
     "kitType": "app",

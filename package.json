@@ -27,9 +27,6 @@
     "mprocs": "^0.7.1"
   },
   "pnpm": {
-    "overrides": {
-      "@react-native/dev-middleware": "0.76.1"
-    },
     "patchedDependencies": {
       "@react-native/community-cli-plugin": "patches/@react-native__community-cli-plugin.patch",
       "react-native-paper": "patches/react-native-paper.patch"
@@ -38,6 +35,13 @@
       "@module-federation/data-prefetch": {
         "peerDependenciesMeta": {
           "react-dom": {
+            "optional": true
+          }
+        }
+      },
+      "babel-loader": {
+        "peerDependenciesMeta": {
+          "webpack": {
             "optional": true
           }
         }

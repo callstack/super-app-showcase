@@ -1,17 +1,21 @@
 // source: https://github.com/facebook/react-native/pull/39520
 // TODO remove in the future when this lands in RN
+// modified to better support resolving symlinks(junctions) on Windows
+
+import java.nio.file.*
 
 ext.resolveNodePackage = { String packageName, File startDir ->
-    def candidate = new File(startDir, "node_modules/$packageName")
+    def startPath = startDir.toPath()
+    def candidate = startPath.resolve("node_modules").resolve(packageName)
 
-    if (candidate.exists()) {
-        return candidate.canonicalFile
+    if (Files.exists(candidate)) {
+        return candidate.toRealPath().toFile()
     }
 
-    def parentDir = startDir.parentFile
-    if (parentDir == null || startDir.canonicalPath == parentDir.canonicalPath) {
+    def parentDir = startPath.parent
+    if (parentDir == null || startPath.toRealPath() == parentDir.toRealPath()) {
         throw new GradleException("Failed to find the package '$packageName'. Ensure you have installed node_modules.")
     }
 
-    return resolveNodePackage(packageName, parentDir)
+    return resolveNodePackage(packageName, parentDir.toFile())
 }

@@ -74,8 +74,8 @@ importers:
         specifier: ^7.25.0
         version: 7.26.0
       '@callstack/repack':
-        specifier: 5.0.0-rc.11
-        version: 5.0.0-rc.11(@babel/core@7.26.0)(@module-federation/enhanced@0.7.1(react@18.3.1)(typescript@5.6.3))(@react-native-community/cli-server-api@15.0.1)(@react-native-community/cli-tools@15.0.1)(@react-native-community/cli-types@15.0.1)(@react-native-community/cli@15.0.1(typescript@5.6.3))(@rspack/core@1.2.5(@swc/helpers@0.5.15))(react-native@0.76.6(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))
+        specifier: 5.0.0
+        version: 5.0.0(@babel/core@7.26.0)(@module-federation/enhanced@0.7.1(react@18.3.1)(typescript@5.6.3))(@react-native-community/cli-server-api@15.0.1)(@react-native-community/cli-tools@15.0.1)(@react-native-community/cli-types@15.0.1)(@react-native-community/cli@15.0.1(typescript@5.6.3))(@rspack/core@1.2.7(@swc/helpers@0.5.15))(react-native@0.76.6(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))
       '@react-native-community/cli':
         specifier: 15.0.1
         version: 15.0.1(typescript@5.6.3)
@@ -92,8 +92,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1
       '@rspack/core':
-        specifier: ^1.2.3
-        version: 1.2.5(@swc/helpers@0.5.15)
+        specifier: ^1.2.7
+        version: 1.2.7(@swc/helpers@0.5.15)
       '@swc/helpers':
         specifier: ^0.5.15
         version: 0.5.15
@@ -192,8 +192,8 @@ importers:
         specifier: ^7.25.0
         version: 7.26.0
       '@callstack/repack':
-        specifier: 5.0.0-rc.11
-        version: 5.0.0-rc.11(@babel/core@7.26.0)(@module-federation/enhanced@0.7.1(react@18.3.1)(typescript@5.6.3))(@react-native-community/cli-server-api@15.0.1)(@react-native-community/cli-tools@15.0.1)(@react-native-community/cli-types@15.0.1)(@react-native-community/cli@15.0.1(typescript@5.6.3))(@rspack/core@1.2.5(@swc/helpers@0.5.15))(react-native@0.76.6(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))
+        specifier: 5.0.0
+        version: 5.0.0(@babel/core@7.26.0)(@module-federation/enhanced@0.7.1(react@18.3.1)(typescript@5.6.3))(@react-native-community/cli-server-api@15.0.1)(@react-native-community/cli-tools@15.0.1)(@react-native-community/cli-types@15.0.1)(@react-native-community/cli@15.0.1(typescript@5.6.3))(@rspack/core@1.2.7(@swc/helpers@0.5.15))(react-native@0.76.6(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))
       '@react-native-community/cli':
         specifier: 15.0.1
         version: 15.0.1(typescript@5.6.3)
@@ -210,8 +210,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1
       '@rspack/core':
-        specifier: ^1.2.3
-        version: 1.2.5(@swc/helpers@0.5.15)
+        specifier: ^1.2.7
+        version: 1.2.7(@swc/helpers@0.5.15)
       '@swc/helpers':
         specifier: ^0.5.15
         version: 0.5.15
@@ -310,8 +310,8 @@ importers:
         specifier: ^7.25.0
         version: 7.26.0
       '@callstack/repack':
-        specifier: 5.0.0-rc.11
-        version: 5.0.0-rc.11(@babel/core@7.26.0)(@module-federation/enhanced@0.7.1(react@18.3.1)(typescript@5.6.3))(@react-native-community/cli-server-api@15.0.1)(@react-native-community/cli-tools@15.0.1)(@react-native-community/cli-types@15.0.1)(@react-native-community/cli@15.0.1(typescript@5.6.3))(@rspack/core@1.2.5(@swc/helpers@0.5.15))(react-native@0.76.6(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))
+        specifier: 5.0.0
+        version: 5.0.0(@babel/core@7.26.0)(@module-federation/enhanced@0.7.1(react@18.3.1)(typescript@5.6.3))(@react-native-community/cli-server-api@15.0.1)(@react-native-community/cli-tools@15.0.1)(@react-native-community/cli-types@15.0.1)(@react-native-community/cli@15.0.1(typescript@5.6.3))(@rspack/core@1.2.7(@swc/helpers@0.5.15))(react-native@0.76.6(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))
       '@react-native-community/cli':
         specifier: 15.0.1
         version: 15.0.1(typescript@5.6.3)
@@ -328,8 +328,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1
       '@rspack/core':
-        specifier: ^1.2.3
-        version: 1.2.5(@swc/helpers@0.5.15)
+        specifier: ^1.2.7
+        version: 1.2.7(@swc/helpers@0.5.15)
       '@swc/helpers':
         specifier: ^0.5.15
         version: 0.5.15
@@ -428,8 +428,8 @@ importers:
         specifier: ^7.25.0
         version: 7.26.0
       '@callstack/repack':
-        specifier: 5.0.0-rc.11
-        version: 5.0.0-rc.11(@babel/core@7.26.0)(@module-federation/enhanced@0.7.1(react@18.3.1)(typescript@5.6.3))(@react-native-community/cli-server-api@15.0.1)(@react-native-community/cli-tools@15.0.1)(@react-native-community/cli-types@15.0.1)(@react-native-community/cli@15.0.1(typescript@5.6.3))(@rspack/core@1.2.5(@swc/helpers@0.5.15))(react-native@0.76.6(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))
+        specifier: 5.0.0
+        version: 5.0.0(@babel/core@7.26.0)(@module-federation/enhanced@0.7.1(react@18.3.1)(typescript@5.6.3))(@react-native-community/cli-server-api@15.0.1)(@react-native-community/cli-tools@15.0.1)(@react-native-community/cli-types@15.0.1)(@react-native-community/cli@15.0.1(typescript@5.6.3))(@rspack/core@1.2.7(@swc/helpers@0.5.15))(react-native@0.76.6(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))
       '@react-native-community/cli':
         specifier: 15.0.1
         version: 15.0.1(typescript@5.6.3)
@@ -446,8 +446,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1
       '@rspack/core':
-        specifier: ^1.2.3
-        version: 1.2.5(@swc/helpers@0.5.15)
+        specifier: ^1.2.7
+        version: 1.2.7(@swc/helpers@0.5.15)
       '@swc/helpers':
         specifier: ^0.5.15
         version: 0.5.15
@@ -548,8 +548,8 @@ importers:
         specifier: ^7.25.0
         version: 7.26.0
       '@callstack/repack':
-        specifier: 5.0.0-rc.11
-        version: 5.0.0-rc.11(@babel/core@7.26.0)(@module-federation/enhanced@0.7.1(react@18.3.1)(typescript@5.6.3))(@react-native-community/cli-server-api@15.0.1)(@react-native-community/cli-tools@15.0.1)(@react-native-community/cli-types@15.0.1)(@react-native-community/cli@15.0.1(typescript@5.6.3))(@rspack/core@1.2.5(@swc/helpers@0.5.15))(react-native@0.76.6(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))
+        specifier: 5.0.0
+        version: 5.0.0(@babel/core@7.26.0)(@module-federation/enhanced@0.7.1(react@18.3.1)(typescript@5.6.3))(@react-native-community/cli-server-api@15.0.1)(@react-native-community/cli-tools@15.0.1)(@react-native-community/cli-types@15.0.1)(@react-native-community/cli@15.0.1(typescript@5.6.3))(@rspack/core@1.2.7(@swc/helpers@0.5.15))(react-native@0.76.6(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))
       '@react-native-community/cli':
         specifier: 15.0.1
         version: 15.0.1(typescript@5.6.3)
@@ -566,8 +566,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1
       '@rspack/core':
-        specifier: ^1.2.3
-        version: 1.2.5(@swc/helpers@0.5.15)
+        specifier: ^1.2.7
+        version: 1.2.7(@swc/helpers@0.5.15)
       '@swc/helpers':
         specifier: ^0.5.15
         version: 0.5.15
@@ -1321,8 +1321,8 @@ packages:
     peerDependencies:
       react: '>=16.3.0'
 
-  '@callstack/repack-dev-server@5.0.0-rc.11':
-    resolution: {integrity: sha512-Y6E2tY/6drHogP2yALoIQdmkIJ6UQGCcYm7ZB8VpYTap/G19gcT9QH7IC/me4OEYWTpz50O7meg58J4A8pminQ==}
+  '@callstack/repack-dev-server@5.0.0':
+    resolution: {integrity: sha512-zMasSPyLLLYeps7J8ein1Fc7KrgS9s1goFSVPfuDbbnOrmAo+DRykaItOBeGWfyZienGXTEktgwXyo6kbsE5nA==}
     engines: {node: '>=18'}
     peerDependencies:
       '@react-native-community/cli-server-api': '>=13.6.4'
@@ -1330,8 +1330,8 @@ packages:
       '@react-native-community/cli-server-api':
         optional: true
 
-  '@callstack/repack@5.0.0-rc.11':
-    resolution: {integrity: sha512-1WzwTXXqoPU90V2EqUnB0m9mjM7hdV5pA9HSX0lQ1M/qeoTEFposV3cf7IchsfNNpNGyP4FoMXi38DZFRrdTug==}
+  '@callstack/repack@5.0.0':
+    resolution: {integrity: sha512-SwuYXQm5mF0JxqsY1BtiNcf5i0wIXtJinWioaIILhso6TZzoHiUR93TUuT0ivuj01TzZsj8+mZONtVpFoi2B5A==}
     engines: {node: '>=18'}
     peerDependencies:
       '@module-federation/enhanced': '>=0.6.10'
@@ -1728,16 +1728,8 @@ packages:
       '@react-native-community/cli-server-api':
         optional: true
 
-  '@react-native/debugger-frontend@0.76.1':
-    resolution: {integrity: sha512-0gExx7GR8o2ctGfjIZ9+x54iFbg0eP6+kMYzRA6AcgmFAmMGLADMmjtObCN0CqGeZyWtdVVqcv5mAwRwmMlNWA==}
-    engines: {node: '>=18'}
-
   '@react-native/debugger-frontend@0.76.6':
     resolution: {integrity: sha512-kP97xMQjiANi5/lmf8MakS7d8FTJl+BqYHQMqyvNiY+eeWyKnhqW2GL2v3eEUBAuyPBgJGivuuO4RvjZujduJg==}
-    engines: {node: '>=18'}
-
-  '@react-native/dev-middleware@0.76.1':
-    resolution: {integrity: sha512-htaFSN2dwI0CinsMxjRuvIVdSDN6d6TDPeOJczM1bdAYalZX1M58knTKs5LJDComW5tleOCAg5lS5tIeFlM9+Q==}
     engines: {node: '>=18'}
 
   '@react-native/dev-middleware@0.76.6':
@@ -1826,56 +1818,56 @@ packages:
     engines: {node: '>=12.13'}
     hasBin: true
 
-  '@rspack/binding-darwin-arm64@1.2.5':
-    resolution: {integrity: sha512-ou0NXMLp6RxY9Bx8P9lA8ArVjz/WAI/gSu5kKrdKKtMs6WKutl4vvP9A4HHZnISd9Tn00dlvDwNeNSUR7fjoDQ==}
+  '@rspack/binding-darwin-arm64@1.2.7':
+    resolution: {integrity: sha512-dT5eSMTknZaI8Djmz8KnaWM68rjZuBZwsKyF144o+ZSJM55vgiNXyL0lQYB8mX9nR3Gck+jKuGUAT2W/EF/t5Q==}
     cpu: [arm64]
     os: [darwin]
 
-  '@rspack/binding-darwin-x64@1.2.5':
-    resolution: {integrity: sha512-RdvH9YongQlDE9+T2Xh5D2+dyiLHx2Gz38Af1uObyBRNWjF1qbuR51hOas0f2NFUdyA03j1+HWZCbE7yZrmI3w==}
+  '@rspack/binding-darwin-x64@1.2.7':
+    resolution: {integrity: sha512-5n8IhKBxH71d4BUIvyzTwSOAOKNneLPJwLIphSPNIbCMGjLI59/EVpxSQ/AAUfyMkqOs635NNCn0eGQVuzpI/w==}
     cpu: [x64]
     os: [darwin]
 
-  '@rspack/binding-linux-arm64-gnu@1.2.5':
-    resolution: {integrity: sha512-jznk/CI/wN93fr8I1j3la/CAiGf8aG7ZHIpRBtT4CkNze0c5BcF3AaJVSBHVNQqgSv0qddxMt3SADpzV8rWZ6g==}
+  '@rspack/binding-linux-arm64-gnu@1.2.7':
+    resolution: {integrity: sha512-DTtFBJmgQQrVWjbklpgJDr3kE9Uf1fHsPh+1GVslsBuyn+o4O7JslrnjuVsQCYKoiEg0Lg4ZPQmwnhJLHssZ5A==}
     cpu: [arm64]
     os: [linux]
 
-  '@rspack/binding-linux-arm64-musl@1.2.5':
-    resolution: {integrity: sha512-oYzcaJ0xjb1fWbbtPmjjPXeehExEgwJ8fEGYQ5TikB+p9oCLkAghnNjsz9evUhgjByxi+NTZ1YmUNwxRuQDY1Q==}
+  '@rspack/binding-linux-arm64-musl@1.2.7':
+    resolution: {integrity: sha512-01/OoQQF9eyDvRKkxj4DzCznfGZIvnzI8qOsrv+M7VBm8FLoKpb3hygXixaGQOXmNL42XTh61qjgm++fBu6aUA==}
     cpu: [arm64]
     os: [linux]
 
-  '@rspack/binding-linux-x64-gnu@1.2.5':
-    resolution: {integrity: sha512-dzEKs8oi86Vi+TFRCPpgmfF5ANL0VmlZN45e1An7HipeI2C5B1xrz/H8V43vPy8XEvQuMmkXO6Sp82A0zlHvIA==}
+  '@rspack/binding-linux-x64-gnu@1.2.7':
+    resolution: {integrity: sha512-lUOAUq0YSsofCXsP6XnlgfH0ZRDZ2X2XqXLXYjqf4xkSxCl5eBmE0EQYjAHF4zjUvU5rVx4a4bDLWv7+t3bOHg==}
     cpu: [x64]
     os: [linux]
 
-  '@rspack/binding-linux-x64-musl@1.2.5':
-    resolution: {integrity: sha512-4ENeVPVSD97rRRGr6kJSm4sIPf1tKJ8vlr9hJi4sSvF7eMLWipSwIVmqRXJ2riVMRjYD2einmJ9KzI8rqQ2OwA==}
+  '@rspack/binding-linux-x64-musl@1.2.7':
+    resolution: {integrity: sha512-ZrPXfgT30p4DlydYavaTHiluxHkWvZHt7K4q7qNyTfYYowG6jRGwWi/PATdugNICGv027Wsh5nzEO4o27Iuhwg==}
     cpu: [x64]
     os: [linux]
 
-  '@rspack/binding-win32-arm64-msvc@1.2.5':
-    resolution: {integrity: sha512-WUoJvX/z43MWeW1JKAQIxdvqH02oLzbaGMCzIikvniZnakQovYLPH6tCYh7qD3p7uQsm+IafFddhFxTtogC3pg==}
+  '@rspack/binding-win32-arm64-msvc@1.2.7':
+    resolution: {integrity: sha512-1OzzM+OUSWX39XYcDfxJ8bGX5vNNrRejCMGotBEdP+uQ3KMWCPz0G4KRc3QIjghaLIYk3ofd83hcfUxyk/2Xog==}
     cpu: [arm64]
     os: [win32]
 
-  '@rspack/binding-win32-ia32-msvc@1.2.5':
-    resolution: {integrity: sha512-YzPvmt/gpiacE6aAacz4dxgEbNWwoKYPaT4WYy/oITobnAui++iCFXC4IICSmlpoA1y7O8K3Qb9jbaB/lLhbwA==}
+  '@rspack/binding-win32-ia32-msvc@1.2.7':
+    resolution: {integrity: sha512-VWlDCV9kDtijk9GK6ZtBQmYoVzKGpnrJB0iI3d2gIEa/2NwikJ89bLMFE4dFx8UNH3p/sSyb5pmPOQnbudFK7Q==}
     cpu: [ia32]
     os: [win32]
 
-  '@rspack/binding-win32-x64-msvc@1.2.5':
-    resolution: {integrity: sha512-QDDshfteMZiglllm7WUh/ITemFNuexwn1Yul7cHBFGQu6HqtqKNAR0kGR8J3e15MPMlinSaygVpfRE4A0KPmjQ==}
+  '@rspack/binding-win32-x64-msvc@1.2.7':
+    resolution: {integrity: sha512-l/sTdeMsQF1a1aB79cWykDNRZG6nkUA0biJo2/sEARP3ijdr8TuwUdirp2JRDmZfQJkoJnQ2un9y9qyW+TIZzA==}
     cpu: [x64]
     os: [win32]
 
-  '@rspack/binding@1.2.5':
-    resolution: {integrity: sha512-q9vQmGDFZyFVMULwOFL7488WNSgn4ue94R/njDLMMIPF4K0oEJP2QT02elfG4KVGv2CbP63D7vEFN4ZNreo/Rw==}
+  '@rspack/binding@1.2.7':
+    resolution: {integrity: sha512-QH+kxkG0I9C6lmlwgBUDFsy24ihXMGG5lfiNtQilk4CyBN+AgSWFENcYrnkUaBioZAvMBznQLiccV3X0JeH9iQ==}
 
-  '@rspack/core@1.2.5':
-    resolution: {integrity: sha512-x/riOl05gOVGgGQFimBqS5i8XbUpBxPIKUC+tDX4hmNNkzxRaGpspZfNtcL+1HBMyYuoM6fOWGyCp2R290Uy6g==}
+  '@rspack/core@1.2.7':
+    resolution: {integrity: sha512-Vg7ySflnqI1nNOBPd6VJkQozWADssxn3einbxa9OqDVAB+dGSj8qihTs6rlaTSewidoaYTGIAiTMHO2y+61qqQ==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       '@rspack/tracing': ^1.x
@@ -1981,6 +1973,9 @@ packages:
 
   '@types/stack-utils@2.0.1':
     resolution: {integrity: sha512-Hl219/BT5fLAaz6NDkSuhzasy49dwQS/DSdu4MdggFB8zcXv7vflBI3xp7FEmkmdDkBUI2bPUNeMttp2knYdxw==}
+
+  '@types/tinycolor2@1.4.6':
+    resolution: {integrity: sha512-iEN8J0BoMnsWBqjVbWH/c0G0Hh7O21lpR2/+PrvAVgWdzL7eexIFm4JN/Wn10PTcmNdtS6U67r499mlWMXOxNw==}
 
   '@types/yargs-parser@21.0.1':
     resolution: {integrity: sha512-axdPBuLuEJt0c4yI5OZssC19K2Mq1uKdrfZBzuxLvaztgqUtFYZUNw7lETExPYJR9jdEoIg4mb7RQKRQzOkeGQ==}
@@ -2461,8 +2456,8 @@ packages:
     resolution: {integrity: sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA==}
     engines: {node: '>=10'}
 
-  caniuse-lite@1.0.30001674:
-    resolution: {integrity: sha512-jOsKlZVRnzfhLojb+Ykb+gyUSp9Xb57So+fAiFlLzzTKpqg8xxSav0e40c8/4F/v9N8QSvrRRaLeVzQbLqomYw==}
+  caniuse-lite@1.0.30001702:
+    resolution: {integrity: sha512-LoPe/D7zioC0REI5W73PeR1e1MLCipRGq/VkovJnd6Df+QVqT+vT33OXCp8QUd7kA7RZrHWxb1B36OQKI/0gOA==}
 
   chalk@2.4.2:
     resolution: {integrity: sha512-Mti+f9lpJNcwF4tWV8/OrTTtF1gZi+f8FqlyAdouralcFWFQWF2+NgCHShjkCb+IFBLq9buZwE1xckQU4peSuQ==}
@@ -3298,6 +3293,10 @@ packages:
 
   graceful-fs@4.2.11:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
+
+  gradient-string@2.0.2:
+    resolution: {integrity: sha512-rEDCuqUQ4tbD78TpzsMtt5OIf0cBCSDWSJtUDaF6JsAh+k0v9r++NzxNEG87oDZx9ZwGhD8DaezR2L/yrw0Jdw==}
+    engines: {node: '>=10'}
 
   graphemer@1.4.0:
     resolution: {integrity: sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==}
@@ -5105,6 +5104,12 @@ packages:
   through2@2.0.5:
     resolution: {integrity: sha512-/mrRod8xqpA+IHSLyGCQ2s8SPHiCDEeQJSep1jqLYeEUClOFG2Qsh+4FU6G9VeqpZnGW/Su8LQGc4YKni5rYSQ==}
 
+  tinycolor2@1.6.0:
+    resolution: {integrity: sha512-XPaBkWQJdsf3pLKJV9p4qN/S+fm2Oj8AIPo1BTUhg5oxkvm9+SVEGFdhyOz7tTdUTfvxMiAs4sp6/eZO2Ew+pw==}
+
+  tinygradient@1.1.5:
+    resolution: {integrity: sha512-8nIfc2vgQ4TeLnk2lFj4tRLvvJwEfQuabdsmvDdQPT0xlk9TaNtpGd6nNRxXoK6vQhN6RSzj+Cnp5tTQmpxmbw==}
+
   tmpl@1.0.5:
     resolution: {integrity: sha512-3f0uOEAQwIqGuWW2MVzYg8fV/QNnc/IpuJNG837rLuczAaLVHslWHZQj4IGiEl5Hs3kkbhwL9Ab7Hrsmuj+Smw==}
 
@@ -5144,9 +5149,6 @@ packages:
 
   tslib@1.14.1:
     resolution: {integrity: sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==}
-
-  tslib@2.6.2:
-    resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
 
   tslib@2.8.1:
     resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
@@ -6383,12 +6385,12 @@ snapshots:
       hoist-non-react-statics: 3.3.2
       react: 18.3.1
 
-  '@callstack/repack-dev-server@5.0.0-rc.11(@react-native-community/cli-server-api@15.0.1)':
+  '@callstack/repack-dev-server@5.0.0(@react-native-community/cli-server-api@15.0.1)':
     dependencies:
       '@babel/code-frame': 7.26.0
       '@fastify/middie': 8.3.1
       '@fastify/sensible': 5.6.0
-      '@react-native/dev-middleware': 0.76.1
+      '@react-native/dev-middleware': 0.76.6
       fastify: 4.28.1
       fastify-favicon: 4.3.0
       fastify-plugin: 4.5.1
@@ -6402,9 +6404,9 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@callstack/repack@5.0.0-rc.11(@babel/core@7.26.0)(@module-federation/enhanced@0.7.1(react@18.3.1)(typescript@5.6.3))(@react-native-community/cli-server-api@15.0.1)(@react-native-community/cli-tools@15.0.1)(@react-native-community/cli-types@15.0.1)(@react-native-community/cli@15.0.1(typescript@5.6.3))(@rspack/core@1.2.5(@swc/helpers@0.5.15))(react-native@0.76.6(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))':
+  '@callstack/repack@5.0.0(@babel/core@7.26.0)(@module-federation/enhanced@0.7.1(react@18.3.1)(typescript@5.6.3))(@react-native-community/cli-server-api@15.0.1)(@react-native-community/cli-tools@15.0.1)(@react-native-community/cli-types@15.0.1)(@react-native-community/cli@15.0.1(typescript@5.6.3))(@rspack/core@1.2.7(@swc/helpers@0.5.15))(react-native@0.76.6(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))':
     dependencies:
-      '@callstack/repack-dev-server': 5.0.0-rc.11(@react-native-community/cli-server-api@15.0.1)
+      '@callstack/repack-dev-server': 5.0.0(@react-native-community/cli-server-api@15.0.1)
       '@discoveryjs/json-ext': 0.5.7
       '@react-native-community/cli': 15.0.1(typescript@5.6.3)
       '@react-native-community/cli-tools': 15.0.1
@@ -6417,6 +6419,7 @@ snapshots:
       events: 3.3.0
       execa: 5.1.1
       flow-remove-types: 2.251.0
+      gradient-string: 2.0.2
       image-size: 1.1.1
       jsonwebtoken: 9.0.2
       memfs: 4.14.0
@@ -6430,7 +6433,7 @@ snapshots:
       webpack-merge: 6.0.1
     optionalDependencies:
       '@module-federation/enhanced': 0.7.1(react@18.3.1)(typescript@5.6.3)
-      '@rspack/core': 1.2.5(@swc/helpers@0.5.15)
+      '@rspack/core': 1.2.7(@swc/helpers@0.5.15)
     transitivePeerDependencies:
       - '@babel/core'
       - '@react-native-community/cli-server-api'
@@ -7174,27 +7177,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@react-native/debugger-frontend@0.76.1': {}
-
   '@react-native/debugger-frontend@0.76.6': {}
-
-  '@react-native/dev-middleware@0.76.1':
-    dependencies:
-      '@isaacs/ttlcache': 1.4.1
-      '@react-native/debugger-frontend': 0.76.1
-      chrome-launcher: 0.15.2
-      chromium-edge-launcher: 0.2.0
-      connect: 3.7.0
-      debug: 2.6.9
-      nullthrows: 1.1.1
-      open: 7.4.2
-      selfsigned: 2.4.1
-      serve-static: 1.15.0
-      ws: 6.2.3
-    transitivePeerDependencies:
-      - bufferutil
-      - supports-color
-      - utf-8-validate
 
   '@react-native/dev-middleware@0.76.6':
     dependencies:
@@ -7311,51 +7294,51 @@ snapshots:
 
   '@rnx-kit/align-deps@2.5.1': {}
 
-  '@rspack/binding-darwin-arm64@1.2.5':
+  '@rspack/binding-darwin-arm64@1.2.7':
     optional: true
 
-  '@rspack/binding-darwin-x64@1.2.5':
+  '@rspack/binding-darwin-x64@1.2.7':
     optional: true
 
-  '@rspack/binding-linux-arm64-gnu@1.2.5':
+  '@rspack/binding-linux-arm64-gnu@1.2.7':
     optional: true
 
-  '@rspack/binding-linux-arm64-musl@1.2.5':
+  '@rspack/binding-linux-arm64-musl@1.2.7':
     optional: true
 
-  '@rspack/binding-linux-x64-gnu@1.2.5':
+  '@rspack/binding-linux-x64-gnu@1.2.7':
     optional: true
 
-  '@rspack/binding-linux-x64-musl@1.2.5':
+  '@rspack/binding-linux-x64-musl@1.2.7':
     optional: true
 
-  '@rspack/binding-win32-arm64-msvc@1.2.5':
+  '@rspack/binding-win32-arm64-msvc@1.2.7':
     optional: true
 
-  '@rspack/binding-win32-ia32-msvc@1.2.5':
+  '@rspack/binding-win32-ia32-msvc@1.2.7':
     optional: true
 
-  '@rspack/binding-win32-x64-msvc@1.2.5':
+  '@rspack/binding-win32-x64-msvc@1.2.7':
     optional: true
 
-  '@rspack/binding@1.2.5':
+  '@rspack/binding@1.2.7':
     optionalDependencies:
-      '@rspack/binding-darwin-arm64': 1.2.5
-      '@rspack/binding-darwin-x64': 1.2.5
-      '@rspack/binding-linux-arm64-gnu': 1.2.5
-      '@rspack/binding-linux-arm64-musl': 1.2.5
-      '@rspack/binding-linux-x64-gnu': 1.2.5
-      '@rspack/binding-linux-x64-musl': 1.2.5
-      '@rspack/binding-win32-arm64-msvc': 1.2.5
-      '@rspack/binding-win32-ia32-msvc': 1.2.5
-      '@rspack/binding-win32-x64-msvc': 1.2.5
+      '@rspack/binding-darwin-arm64': 1.2.7
+      '@rspack/binding-darwin-x64': 1.2.7
+      '@rspack/binding-linux-arm64-gnu': 1.2.7
+      '@rspack/binding-linux-arm64-musl': 1.2.7
+      '@rspack/binding-linux-x64-gnu': 1.2.7
+      '@rspack/binding-linux-x64-musl': 1.2.7
+      '@rspack/binding-win32-arm64-msvc': 1.2.7
+      '@rspack/binding-win32-ia32-msvc': 1.2.7
+      '@rspack/binding-win32-x64-msvc': 1.2.7
 
-  '@rspack/core@1.2.5(@swc/helpers@0.5.15)':
+  '@rspack/core@1.2.7(@swc/helpers@0.5.15)':
     dependencies:
       '@module-federation/runtime-tools': 0.8.4
-      '@rspack/binding': 1.2.5
+      '@rspack/binding': 1.2.7
       '@rspack/lite-tapable': 1.0.1
-      caniuse-lite: 1.0.30001674
+      caniuse-lite: 1.0.30001702
     optionalDependencies:
       '@swc/helpers': 0.5.15
 
@@ -7468,6 +7451,8 @@ snapshots:
   '@types/semver@7.5.8': {}
 
   '@types/stack-utils@2.0.1': {}
+
+  '@types/tinycolor2@1.4.6': {}
 
   '@types/yargs-parser@21.0.1': {}
 
@@ -7998,7 +7983,7 @@ snapshots:
 
   browserslist@4.24.2:
     dependencies:
-      caniuse-lite: 1.0.30001674
+      caniuse-lite: 1.0.30001702
       electron-to-chromium: 1.5.49
       node-releases: 2.0.18
       update-browserslist-db: 1.1.1(browserslist@4.24.2)
@@ -8051,7 +8036,7 @@ snapshots:
 
   camelcase@6.3.0: {}
 
-  caniuse-lite@1.0.30001674: {}
+  caniuse-lite@1.0.30001702: {}
 
   chalk@2.4.2:
     dependencies:
@@ -8999,6 +8984,11 @@ snapshots:
       get-intrinsic: 1.2.1
 
   graceful-fs@4.2.11: {}
+
+  gradient-string@2.0.2:
+    dependencies:
+      chalk: 4.1.2
+      tinygradient: 1.1.5
 
   graphemer@1.4.0: {}
 
@@ -10739,7 +10729,7 @@ snapshots:
       ast-types: 0.15.2
       esprima: 4.0.1
       source-map: 0.6.1
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   recyclerlistview@3.0.5(react-native@0.76.6(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.0.1)(@types/react@18.2.27)(encoding@0.1.13)(react@18.3.1))(react@18.3.1):
     dependencies:
@@ -11221,6 +11211,13 @@ snapshots:
       readable-stream: 2.3.8
       xtend: 4.0.2
 
+  tinycolor2@1.6.0: {}
+
+  tinygradient@1.1.5:
+    dependencies:
+      '@types/tinycolor2': 1.4.6
+      tinycolor2: 1.6.0
+
   tmpl@1.0.5: {}
 
   to-regex-range@5.0.1:
@@ -11246,8 +11243,6 @@ snapshots:
   ts-object-utils@0.0.5: {}
 
   tslib@1.14.1: {}
-
-  tslib@2.6.2: {}
 
   tslib@2.8.1: {}
 

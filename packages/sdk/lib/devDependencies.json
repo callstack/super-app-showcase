@@ -16,7 +16,7 @@
   },
   "@callstack/repack": {
     "name": "@callstack/repack",
-    "version": "5.0.0",
+    "version": "5.0.4",
     "devOnly": true
   },
   "@react-native/babel-preset": {

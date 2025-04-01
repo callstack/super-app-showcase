@@ -26,12 +26,12 @@
   },
   "@react-native/eslint-config": {
     "name": "@react-native/eslint-config",
-    "version": "0.76.6",
+    "version": "0.78.1",
     "devOnly": true
   },
   "@react-native/typescript-config": {
     "name": "@react-native/typescript-config",
-    "version": "0.76.6",
+    "version": "0.78.1",
     "devOnly": true
   },
   "@react-native-community/cli": {

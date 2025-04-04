@@ -5,11 +5,11 @@
   },
   "react-native": {
     "name": "react-native",
-    "version": "0.78.1"
+    "version": "0.78.2"
   },
   "@bottom-tabs/react-navigation": {
     "name": "@bottom-tabs/react-navigation",
-    "version": "0.7.8"
+    "version": "0.9.0"
   },
   "@react-native-async-storage/async-storage": {
     "name": "@react-native-async-storage/async-storage",

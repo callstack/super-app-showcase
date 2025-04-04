@@ -46,7 +46,6 @@ export default env => {
           shopping: `shopping@http://localhost:9001/${platform}/mf-manifest.json`,
           dashboard: `dashboard@http://localhost:9002/${platform}/mf-manifest.json`,
           auth: `auth@http://localhost:9003/${platform}/mf-manifest.json`,
-          news: `news@http://localhost:9004/${platform}/mf-manifest.json`,
         },
         shared: getSharedDependencies({eager: true}),
       }),

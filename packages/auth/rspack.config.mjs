@@ -14,12 +14,20 @@ const __dirname = path.dirname(__filename);
  * Learn about Re.Pack configuration: https://re-pack.dev/docs/guides/configuration
  */
 
+const {applyProfile} = await import('./profile.mjs');
+await applyProfile(
+  process.env.RSPACK_PROFILE ?? 'ALL',
+  process.env.RSPACK_TRACE_LAYER,
+  process.env.RSPACK_TRACE_OUTPUT,
+);
+
 export default env => {
   const {mode} = env;
 
   return {
     mode,
     context: __dirname,
+    profile: true,
     entry: {},
     experiments: {
       incremental: mode === 'development',

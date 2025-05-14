@@ -16,7 +16,7 @@
   },
   "@callstack/repack": {
     "name": "@callstack/repack",
-    "version": "5.1.0-rc.0",
+    "version": "5.1.0",
     "devOnly": true
   },
   "@react-native/babel-preset": {
@@ -41,7 +41,7 @@
   },
   "@rspack/core": {
     "name": "@rspack/core",
-    "version": "^1.3.9",
+    "version": "^1.3.10",
     "devOnly": true
   },
   "@swc/helpers": {

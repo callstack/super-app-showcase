@@ -118,9 +118,6 @@ importers:
       eslint:
         specifier: ^8.57.0
         version: 8.57.1
-      exit-hook:
-        specifier: ^4.0.0
-        version: 4.0.0
       jest:
         specifier: ^29.6.3
         version: 29.7.0(@types/node@20.8.4)

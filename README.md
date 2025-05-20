@@ -2,9 +2,7 @@
 
 Bring micro-frontend architecture to your mobile [React Native](https://reactnative.dev) app with [Re.Pack](https://re-pack.dev) and make it a Super App.
 
-Learn more about Super Apps here: [https://www.callstack.com/super-app-development](https://www.callstack.com/super-app-development?utm_campaign=super_apps&utm_source=github&utm_content=super_app_showcase).
-
-🚧 **We are currently updating this project to support Re.Pack 5 and Module Federation 2. Additionally, we are working on a more streamlined deployment process for mini apps. Stay tuned for more updates!** 🚧
+Learn more about Super Apps here: [https://www.callstack.com/services/super-app-development](https://www.callstack.com/services/super-app-development?utm_campaign=super_apps&utm_source=github&utm_content=super_app_showcase).
 
 ---
 

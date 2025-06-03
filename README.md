@@ -1,7 +1,7 @@
 <a href="https://www.callstack.com/open-source" align="center">
   <img src="https://github.com/user-attachments/assets/4ee05e68-54ca-42b3-994c-9de988d66333" alt="Super App Showcase" />
-  <h3 align="center">Super Apps in React Native with Re.Pack</h3>
 </a>
+<h3 align="center">Super Apps in React Native with Re.Pack</h3>
 <div align="center">
 
 [![mit licence][license-badge]][license]

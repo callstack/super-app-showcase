@@ -5,7 +5,6 @@
 <div align="center">
 
 [![mit licence][license-badge]][license]
-[![npm downloads][npm-downloads-badge]][npm-downloads]
 [![Chat][chat-badge]][chat]
 [![PRs Welcome][prs-welcome-badge]][prs-welcome]
 
@@ -146,11 +145,9 @@ Super App showcase is an open source project and will always remain free to use.
 
 <!-- badges -->
 
-[callstack-readme-with-love]: https://callstack.com/?utm_source=github.com&utm_medium=referral&utm_campaign=repack&utm_term=readme-with-love
-[license-badge]: https://img.shields.io/npm/l/@callstack/repack?style=for-the-badge
-[license]: https://github.com/callstack/repack/blob/main/LICENSE
-[npm-downloads-badge]: https://img.shields.io/npm/dm/@callstack/repack?style=for-the-badge
-[npm-downloads]: https://www.npmjs.com/package/@callstack/repack
+[callstack-readme-with-love]: https://callstack.com/?utm_source=github.com&utm_medium=referral&utm_campaign=super-app-showcase&utm_term=readme-with-love
+[license-badge]: https://img.shields.io/github/license/callstack/super-app-showcase?style=for-the-badge
+[license]: https://github.com/callstack/super-app-showcase/blob/main/LICENSE
 [prs-welcome-badge]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge
 [prs-welcome]: ./CONTRIBUTING.md
 [chat-badge]: https://img.shields.io/discord/426714625279524876.svg?style=for-the-badge

@@ -1,17 +1,17 @@
-# Super App Showcase – micro-frontends for mobile apps
+<a href="https://www.callstack.com/open-source" align="center">
+  <img src="https://github.com/user-attachments/assets/4ee05e68-54ca-42b3-994c-9de988d66333" alt="Super App Showcase" />
+  <h3 align="center">Super Apps in React Native with Re.Pack</h3>
+</a>
+<div align="center">
 
-Bring micro-frontend architecture to your mobile [React Native](https://reactnative.dev) app with [Re.Pack](https://re-pack.dev) and make it a Super App.
-
-Learn more about Super Apps here: [https://www.callstack.com/services/super-app-development](https://www.callstack.com/services/super-app-development?utm_campaign=super_apps&utm_source=github&utm_content=super_app_showcase).
-
----
-
-[![Build Status][build-badge]][build]
-[![Version][version-badge]][package]
-[![MIT License][license-badge]][license]
-[![PRs Welcome][prs-welcome-badge]][prs-welcome]
+[![mit licence][license-badge]][license]
+[![npm downloads][npm-downloads-badge]][npm-downloads]
 [![Chat][chat-badge]][chat]
-[![Sponsored by Callstack][callstack-badge]][callstack]
+[![PRs Welcome][prs-welcome-badge]][prs-welcome]
+
+</div>
+
+Bring micro-frontend architecture to your mobile [React Native](https://reactnative.dev) app with [Re.Pack](https://re-pack.dev) and make it a Super App. [Learn more.](https://www.callstack.com/services/super-app-development?utm_campaign=super_apps&utm_source=github&utm_content=super_app_showcase)
 
 ## The problem
 
@@ -146,16 +146,12 @@ Super App showcase is an open source project and will always remain free to use.
 
 <!-- badges -->
 
-[build-badge]: https://img.shields.io/circleci/project/github/callstack/super-app-showcase/master.svg?style=flat-square
-[build]: https://circleci.com/gh/callstack/super-app-showcase
-[version-badge]: https://img.shields.io/npm/v/super-app-showcase.svg?style=flat-square
-[package]: https://www.npmjs.com/package/super-app-showcase
-[license-badge]: https://img.shields.io/npm/l/super-app-showcase.svg?style=flat-square
-[license]: https://opensource.org/licenses/MIT
-[prs-welcome-badge]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square
-[prs-welcome]: http://makeapullrequest.com
-[chat-badge]: https://img.shields.io/discord/426714625279524876.svg?style=flat-square&colorB=758ED3
-[chat]: https://discord.gg/zwR2Cdh
-[callstack-badge]: https://callstack.com/images/callstack-badge.svg
-[callstack]: https://callstack.com/open-source/?utm_source=github.com&utm_medium=referral&utm_campaign=super-app-showcase&utm_term=readme-badge
-[callstack-readme-with-love]: https://callstack.com/?utm_source=github.com&utm_medium=referral&utm_campaign=super-app-showcase&utm_term=readme-with-love
+[callstack-readme-with-love]: https://callstack.com/?utm_source=github.com&utm_medium=referral&utm_campaign=repack&utm_term=readme-with-love
+[license-badge]: https://img.shields.io/npm/l/@callstack/repack?style=for-the-badge
+[license]: https://github.com/callstack/repack/blob/main/LICENSE
+[npm-downloads-badge]: https://img.shields.io/npm/dm/@callstack/repack?style=for-the-badge
+[npm-downloads]: https://www.npmjs.com/package/@callstack/repack
+[prs-welcome-badge]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge
+[prs-welcome]: ./CONTRIBUTING.md
+[chat-badge]: https://img.shields.io/discord/426714625279524876.svg?style=for-the-badge
+[chat]: https://discord.gg/Q4yr2rTWYF

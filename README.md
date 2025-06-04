@@ -1,4 +1,4 @@
-<a href="https://www.callstack.com/open-source" align="center">
+<a href="https://www.callstack.com/open-source?utm_campaign=generic&utm_source=github&utm_medium=referral&utm_content=super-app-showcase" align="center">
   <img src="https://github.com/user-attachments/assets/4ee05e68-54ca-42b3-994c-9de988d66333" alt="Super App Showcase" />
 </a>
 <h3 align="center">Super Apps in React Native with Re.Pack</h3>

@@ -1,107 +1,107 @@
 {
-  "@babel/core": {
-    "name": "@babel/core",
-    "version": "^7.25.2",
-    "devOnly": true
-  },
-  "@babel/preset-env": {
-    "name": "@babel/preset-env",
-    "version": "^7.25.3",
-    "devOnly": true
-  },
-  "@babel/runtime": {
-    "name": "@babel/runtime",
-    "version": "^7.25.0",
-    "devOnly": true
-  },
-  "@callstack/repack": {
-    "name": "@callstack/repack",
-    "version": "5.1.0",
-    "devOnly": true
-  },
-  "@react-native/babel-preset": {
-    "name": "@react-native/babel-preset",
-    "version": "0.78.2",
-    "devOnly": true
-  },
-  "@react-native/eslint-config": {
-    "name": "@react-native/eslint-config",
-    "version": "0.78.2",
-    "devOnly": true
-  },
-  "@react-native/typescript-config": {
-    "name": "@react-native/typescript-config",
-    "version": "0.78.2",
-    "devOnly": true
-  },
-  "@react-native-community/cli": {
-    "name": "@react-native-community/cli",
-    "version": "15.0.1",
-    "devOnly": true
-  },
-  "@rspack/core": {
-    "name": "@rspack/core",
-    "version": "^1.3.10",
-    "devOnly": true
-  },
-  "@swc/helpers": {
-    "name": "@swc/helpers",
-    "version": "^0.5.17",
-    "devOnly": true
-  },
-  "@types/jest": {
-    "name": "@types/jest",
-    "version": "^29.5.14",
-    "devOnly": true
-  },
-  "@types/react": {
-    "name": "@types/react",
-    "version": "^19.0.0",
-    "devOnly": true
-  },
-  "@types/react-native-vector-icons": {
-    "name": "@types/react-native-vector-icons",
-    "version": "^6.4.12",
-    "devOnly": true
-  },
-  "@types/react-test-renderer": {
-    "name": "@types/react-test-renderer",
-    "version": "^19.0.0",
-    "devOnly": true
-  },
-  "@typescript-eslint/eslint-plugin": {
-    "name": "@typescript-eslint/eslint-plugin",
-    "version": "^8.12.2",
-    "devOnly": true
-  },
-  "@typescript-eslint/parser": {
-    "name": "@typescript-eslint/parser",
-    "version": "^8.12.2",
-    "devOnly": true
-  },
-  "eslint": {
-    "name": "eslint",
-    "version": "^8.57.0",
-    "devOnly": true
-  },
-  "jest": {
-    "name": "jest",
-    "version": "^29.6.3",
-    "devOnly": true
-  },
-  "prettier": {
-    "name": "prettier",
-    "version": "^2.8.8",
-    "devOnly": true
-  },
-  "react-test-renderer": {
-    "name": "react-test-renderer",
-    "version": "^19.0.0",
-    "devOnly": true
-  },
-  "typescript": {
-    "name": "typescript",
-    "version": "^5.6.3",
-    "devOnly": true
-  }
+	"@babel/core": {
+		"name": "@babel/core",
+		"version": "^7.25.2",
+		"devOnly": true
+	},
+	"@babel/preset-env": {
+		"name": "@babel/preset-env",
+		"version": "^7.25.3",
+		"devOnly": true
+	},
+	"@babel/runtime": {
+		"name": "@babel/runtime",
+		"version": "^7.25.0",
+		"devOnly": true
+	},
+	"@callstack/repack": {
+		"name": "@callstack/repack",
+		"version": "5.2.0",
+		"devOnly": true
+	},
+	"@react-native/babel-preset": {
+		"name": "@react-native/babel-preset",
+		"version": "0.78.2",
+		"devOnly": true
+	},
+	"@react-native/eslint-config": {
+		"name": "@react-native/eslint-config",
+		"version": "0.78.2",
+		"devOnly": true
+	},
+	"@react-native/typescript-config": {
+		"name": "@react-native/typescript-config",
+		"version": "0.78.2",
+		"devOnly": true
+	},
+	"@react-native-community/cli": {
+		"name": "@react-native-community/cli",
+		"version": "15.0.1",
+		"devOnly": true
+	},
+	"@rspack/core": {
+		"name": "@rspack/core",
+		"version": "1.5.0",
+		"devOnly": true
+	},
+	"@swc/helpers": {
+		"name": "@swc/helpers",
+		"version": "^0.5.17",
+		"devOnly": true
+	},
+	"@types/jest": {
+		"name": "@types/jest",
+		"version": "^29.5.14",
+		"devOnly": true
+	},
+	"@types/react": {
+		"name": "@types/react",
+		"version": "^19.0.0",
+		"devOnly": true
+	},
+	"@types/react-native-vector-icons": {
+		"name": "@types/react-native-vector-icons",
+		"version": "^6.4.12",
+		"devOnly": true
+	},
+	"@types/react-test-renderer": {
+		"name": "@types/react-test-renderer",
+		"version": "^19.0.0",
+		"devOnly": true
+	},
+	"@typescript-eslint/eslint-plugin": {
+		"name": "@typescript-eslint/eslint-plugin",
+		"version": "^8.12.2",
+		"devOnly": true
+	},
+	"@typescript-eslint/parser": {
+		"name": "@typescript-eslint/parser",
+		"version": "^8.12.2",
+		"devOnly": true
+	},
+	"eslint": {
+		"name": "eslint",
+		"version": "^8.57.0",
+		"devOnly": true
+	},
+	"jest": {
+		"name": "jest",
+		"version": "^29.6.3",
+		"devOnly": true
+	},
+	"prettier": {
+		"name": "prettier",
+		"version": "^2.8.8",
+		"devOnly": true
+	},
+	"react-test-renderer": {
+		"name": "react-test-renderer",
+		"version": "^19.0.0",
+		"devOnly": true
+	},
+	"typescript": {
+		"name": "typescript",
+		"version": "^5.6.3",
+		"devOnly": true
+	}
 }

@@ -16,16 +16,11 @@ const STANDALONE = Boolean(process.env.STANDALONE);
  * Learn about Re.Pack configuration: https://re-pack.dev/docs/guides/configuration
  */
 
-export default env => {
-  const {mode, platform} = env;
-
+export default Repack.defineRspackConfig(({mode, platform}) => {
   return {
     mode,
     context: __dirname,
     entry: './index.js',
-    experiments: {
-      incremental: mode === 'development',
-    },
     resolve: {
       ...Repack.getResolveOptions(),
     },
@@ -34,7 +29,15 @@ export default env => {
     },
     module: {
       rules: [
-        ...Repack.getJsTransformRules(),
+        {
+          test: /\.[cm]?[jt]sx?$/,
+          use: {
+            loader: '@callstack/repack/babel-swc-loader',
+            parallel: true,
+            options: {},
+          },
+          type: 'javascript/auto',
+        },
         ...Repack.getAssetTransformRules({inline: !STANDALONE}),
       ],
     },
@@ -62,4 +65,4 @@ export default env => {
       }),
     ],
   };
-};
+});

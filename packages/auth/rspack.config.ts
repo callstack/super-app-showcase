@@ -42,7 +42,7 @@ export default Repack.defineRspackConfig(({mode}) => {
       new Repack.plugins.ModuleFederationPluginV2({
         name: 'auth',
         filename: 'auth.container.js.bundle',
-        dts: true,
+        dts: false,
         exposes: {
           './AccountScreen': './src/screens/AccountScreen',
           './SignInScreen': './src/screens/SignInScreen',

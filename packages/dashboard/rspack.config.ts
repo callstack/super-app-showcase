@@ -46,7 +46,7 @@ export default Repack.defineRspackConfig(({mode, platform}) => {
       new Repack.plugins.ModuleFederationPluginV2({
         name: 'dashboard',
         filename: 'dashboard.container.js.bundle',
-        dts: true,
+        dts: false,
         exposes: STANDALONE
           ? undefined
           : {'./App': './src/navigation/MainNavigator'},

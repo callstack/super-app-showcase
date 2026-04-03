@@ -42,7 +42,7 @@ export default Repack.defineRspackConfig(({mode, platform}) => {
       new Repack.plugins.ModuleFederationPluginV2({
         name: 'shopping',
         filename: 'shopping.container.js.bundle',
-        dts: true,
+        dts: false,
         exposes: {
           './App': './src/navigation/MainNavigator',
         },

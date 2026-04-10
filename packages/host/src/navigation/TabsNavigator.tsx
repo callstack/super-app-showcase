@@ -23,7 +23,7 @@ const TabsNavigator = () => {
     <Tabs.Navigator
       translucent={false}
       tabBarActiveTintColor={MD3Colors.primary50}
-      barTintColor={MD3Colors.primary95}>
+      tabBarInactiveTintColor={MD3Colors.primary20}>
       <Tabs.Screen
         name="HomeNavigator"
         component={HomeNavigator}

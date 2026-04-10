@@ -7,8 +7,6 @@ import {getSharedDependencies} from 'super-app-showcase-sdk';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const STANDALONE = Boolean(process.env.STANDALONE);
-
 /**
  * Rspack configuration enhanced with Re.Pack defaults for React Native.
  *
@@ -16,16 +14,14 @@ const STANDALONE = Boolean(process.env.STANDALONE);
  * Learn about Re.Pack configuration: https://re-pack.dev/docs/guides/configuration
  */
 
-export default Repack.defineRspackConfig(({mode, platform}) => {
+export default Repack.defineRspackConfig(({mode}) => {
   return {
     mode,
     context: __dirname,
-    entry: './index.js',
-    resolve: {
-      ...Repack.getResolveOptions(),
-    },
+    entry: {},
+    resolve: {...Repack.getResolveOptions({enablePackageExports: true})},
     output: {
-      uniqueName: 'sas-dashboard',
+      uniqueName: 'sas-auth',
     },
     module: {
       rules: [
@@ -38,22 +34,21 @@ export default Repack.defineRspackConfig(({mode, platform}) => {
           },
           type: 'javascript/auto',
         },
-        ...Repack.getAssetTransformRules({inline: !STANDALONE}),
+        ...Repack.getAssetTransformRules({inline: true}),
       ],
     },
     plugins: [
       new Repack.RepackPlugin(),
       new Repack.plugins.ModuleFederationPluginV2({
-        name: 'dashboard',
-        filename: 'dashboard.container.js.bundle',
+        name: 'auth',
+        filename: 'auth.container.js.bundle',
         dts: false,
-        exposes: STANDALONE
-          ? undefined
-          : {'./App': './src/navigation/MainNavigator'},
-        remotes: {
-          auth: `auth@http://localhost:9003/${platform}/mf-manifest.json`,
+        exposes: {
+          './AccountScreen': './src/screens/AccountScreen',
+          './SignInScreen': './src/screens/SignInScreen',
+          './AuthProvider': './src/providers/AuthProvider',
         },
-        shared: getSharedDependencies({eager: STANDALONE}),
+        shared: getSharedDependencies({eager: false}),
       }),
       new Repack.plugins.CodeSigningPlugin({
         enabled: mode === 'production',

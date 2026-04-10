@@ -6,12 +6,20 @@
  * @returns Shared dependencies object.
  */
 const getSharedDependencies = ({ eager = true }) => {
-  const dependencies = require('./dependencies.json');
+  const dependencies = require("./dependencies.json");
 
   const shared = Object.entries(dependencies)
     .filter(([dep, props]) => props.shared !== false)
     .map(([dep, { version }]) => {
-      return [dep, { singleton: true, eager, requiredVersion: version }];
+      return [
+        dep,
+        {
+          singleton: true,
+          eager,
+          version,
+          requiredVersion: version,
+        },
+      ];
     });
   return Object.fromEntries(shared);
 };

@@ -5,3 +5,6 @@ procs:
   Auth:
     shell: pnpm --filter auth start
     stop: SIGKILL
+  Trading:
+    shell: pnpm --filter trading start
+    stop: SIGKILL

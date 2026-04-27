@@ -46,6 +46,8 @@ export default Repack.defineRspackConfig(({mode, platform}) => {
         dts: false,
         remotes: {
           auth: `auth@http://localhost:9003/${platform}/mf-manifest.json`,
+          trading: `trading@http://localhost:9001/${platform}/mf-manifest.json`,
+          wallet: `wallet@http://localhost:9002/${platform}/mf-manifest.json`,
         },
         shared: getSharedDependencies({eager: true}),
       }),

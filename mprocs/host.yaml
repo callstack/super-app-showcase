@@ -5,12 +5,3 @@ procs:
   Auth:
     shell: pnpm --filter auth start
     stop: SIGKILL
-  Booking:
-    shell: pnpm --filter booking start
-    stop: SIGKILL
-  Dashboard:
-    shell: pnpm --filter dashboard start
-    stop: SIGKILL
-  Shopping:
-    shell: pnpm --filter shopping start
-    stop: SIGKILL

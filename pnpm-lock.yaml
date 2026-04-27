@@ -134,242 +134,6 @@ importers:
         specifier: ^5.8.3
         version: 5.9.3
 
-  packages/booking:
-    dependencies:
-      '@bottom-tabs/react-navigation':
-        specifier: 1.1.0
-        version: 1.1.0(@react-navigation/native@7.2.2(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3))(react-native-bottom-tabs@1.1.0(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3))(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
-      '@module-federation/enhanced':
-        specifier: 2.3.1
-        version: 2.3.1(@rspack/core@1.7.11(@swc/helpers@0.5.20))(react@19.2.3)(typescript@5.9.3)
-      '@react-native-async-storage/async-storage':
-        specifier: 3.0.2
-        version: 3.0.2(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
-      '@react-navigation/native':
-        specifier: 7.2.2
-        version: 7.2.2(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
-      '@react-navigation/native-stack':
-        specifier: 7.14.10
-        version: 7.14.10(@react-navigation/native@7.2.2(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3))(react-native-safe-area-context@5.7.0(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3))(react-native-screens@4.24.0(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3))(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
-      react:
-        specifier: 19.2.3
-        version: 19.2.3
-      react-native:
-        specifier: 0.84.1
-        version: 0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3)
-      react-native-bottom-tabs:
-        specifier: 1.1.0
-        version: 1.1.0(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
-      react-native-calendars:
-        specifier: 1.1291.1
-        version: 1.1291.1(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
-      react-native-edge-to-edge:
-        specifier: 1.8.1
-        version: 1.8.1(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
-      react-native-paper:
-        specifier: 5.15.0
-        version: 5.15.0(patch_hash=jbcjvd6hhp2gtyomtoldpygoay)(react-native-safe-area-context@5.7.0(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3))(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
-      react-native-safe-area-context:
-        specifier: 5.7.0
-        version: 5.7.0(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
-      react-native-screens:
-        specifier: 4.24.0
-        version: 4.24.0(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
-      react-native-vector-icons:
-        specifier: 10.3.0
-        version: 10.3.0
-    devDependencies:
-      '@babel/core':
-        specifier: ^7.25.2
-        version: 7.26.0
-      '@babel/preset-env':
-        specifier: ^7.25.3
-        version: 7.26.0(@babel/core@7.26.0)
-      '@babel/runtime':
-        specifier: ^7.25.0
-        version: 7.26.0
-      '@callstack/repack':
-        specifier: 5.2.5
-        version: 5.2.5(@babel/core@7.26.0)(@module-federation/enhanced@2.3.1(@rspack/core@1.7.11(@swc/helpers@0.5.20))(react@19.2.3)(typescript@5.9.3))(@rspack/core@1.7.11(@swc/helpers@0.5.20))(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))
-      '@react-native-community/cli':
-        specifier: 20.1.0
-        version: 20.1.0(typescript@5.9.3)
-      '@react-native/babel-preset':
-        specifier: 0.84.1
-        version: 0.84.1(@babel/core@7.26.0)
-      '@react-native/eslint-config':
-        specifier: 0.84.1
-        version: 0.84.1(eslint@8.57.1)(jest@29.7.0(@types/node@20.8.4))(prettier@2.8.8)(typescript@5.9.3)
-      '@react-native/typescript-config':
-        specifier: 0.84.1
-        version: 0.84.1
-      '@rnx-kit/align-deps':
-        specifier: ^3.4.3
-        version: 3.4.3(metro@0.83.5)
-      '@rspack/core':
-        specifier: 1.7.11
-        version: 1.7.11(@swc/helpers@0.5.20)
-      '@swc/helpers':
-        specifier: ^0.5.20
-        version: 0.5.20
-      '@types/jest':
-        specifier: ^29.5.14
-        version: 29.5.14
-      '@types/react':
-        specifier: ^19.2.0
-        version: 19.2.14
-      '@types/react-native-vector-icons':
-        specifier: ^6.4.18
-        version: 6.4.18
-      '@types/react-test-renderer':
-        specifier: ^19.1.0
-        version: 19.1.0
-      '@typescript-eslint/eslint-plugin':
-        specifier: ^8.12.2
-        version: 8.12.2(@typescript-eslint/parser@8.12.2(eslint@8.57.1)(typescript@5.9.3))(eslint@8.57.1)(typescript@5.9.3)
-      '@typescript-eslint/parser':
-        specifier: ^8.12.2
-        version: 8.12.2(eslint@8.57.1)(typescript@5.9.3)
-      eslint:
-        specifier: ^8.57.0
-        version: 8.57.1
-      jest:
-        specifier: ^29.6.3
-        version: 29.7.0(@types/node@20.8.4)
-      prettier:
-        specifier: ^2.8.8
-        version: 2.8.8
-      react-test-renderer:
-        specifier: ^19.2.3
-        version: 19.2.4(react@19.2.3)
-      super-app-showcase-sdk:
-        specifier: 0.0.2
-        version: link:../sdk
-      typescript:
-        specifier: ^5.8.3
-        version: 5.9.3
-
-  packages/dashboard:
-    dependencies:
-      '@bottom-tabs/react-navigation':
-        specifier: 1.1.0
-        version: 1.1.0(@react-navigation/native@7.2.2(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3))(react-native-bottom-tabs@1.1.0(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3))(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
-      '@module-federation/enhanced':
-        specifier: 2.3.1
-        version: 2.3.1(@rspack/core@1.7.11(@swc/helpers@0.5.20))(react@19.2.3)(typescript@5.9.3)
-      '@react-native-async-storage/async-storage':
-        specifier: 3.0.2
-        version: 3.0.2(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
-      '@react-navigation/native':
-        specifier: 7.2.2
-        version: 7.2.2(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
-      '@react-navigation/native-stack':
-        specifier: 7.14.10
-        version: 7.14.10(@react-navigation/native@7.2.2(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3))(react-native-safe-area-context@5.7.0(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3))(react-native-screens@4.24.0(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3))(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
-      react:
-        specifier: 19.2.3
-        version: 19.2.3
-      react-native:
-        specifier: 0.84.1
-        version: 0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3)
-      react-native-bottom-tabs:
-        specifier: 1.1.0
-        version: 1.1.0(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
-      react-native-calendars:
-        specifier: 1.1291.1
-        version: 1.1291.1(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
-      react-native-edge-to-edge:
-        specifier: 1.8.1
-        version: 1.8.1(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
-      react-native-paper:
-        specifier: 5.15.0
-        version: 5.15.0(patch_hash=jbcjvd6hhp2gtyomtoldpygoay)(react-native-safe-area-context@5.7.0(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3))(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
-      react-native-safe-area-context:
-        specifier: 5.7.0
-        version: 5.7.0(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
-      react-native-screens:
-        specifier: 4.24.0
-        version: 4.24.0(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
-      react-native-vector-icons:
-        specifier: 10.3.0
-        version: 10.3.0
-    devDependencies:
-      '@babel/core':
-        specifier: ^7.25.2
-        version: 7.26.0
-      '@babel/preset-env':
-        specifier: ^7.25.3
-        version: 7.26.0(@babel/core@7.26.0)
-      '@babel/runtime':
-        specifier: ^7.25.0
-        version: 7.26.0
-      '@callstack/repack':
-        specifier: 5.2.5
-        version: 5.2.5(@babel/core@7.26.0)(@module-federation/enhanced@2.3.1(@rspack/core@1.7.11(@swc/helpers@0.5.20))(react@19.2.3)(typescript@5.9.3))(@rspack/core@1.7.11(@swc/helpers@0.5.20))(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))
-      '@react-native-community/cli':
-        specifier: 20.1.0
-        version: 20.1.0(typescript@5.9.3)
-      '@react-native-community/cli-platform-android':
-        specifier: 20.1.0
-        version: 20.1.0
-      '@react-native-community/cli-platform-ios':
-        specifier: 20.1.0
-        version: 20.1.0
-      '@react-native/babel-preset':
-        specifier: 0.84.1
-        version: 0.84.1(@babel/core@7.26.0)
-      '@react-native/eslint-config':
-        specifier: 0.84.1
-        version: 0.84.1(eslint@8.57.1)(jest@29.7.0(@types/node@20.8.4))(prettier@2.8.8)(typescript@5.9.3)
-      '@react-native/typescript-config':
-        specifier: 0.84.1
-        version: 0.84.1
-      '@rnx-kit/align-deps':
-        specifier: ^3.4.3
-        version: 3.4.3(metro@0.83.5)
-      '@rspack/core':
-        specifier: 1.7.11
-        version: 1.7.11(@swc/helpers@0.5.20)
-      '@swc/helpers':
-        specifier: ^0.5.20
-        version: 0.5.20
-      '@types/jest':
-        specifier: ^29.5.14
-        version: 29.5.14
-      '@types/react':
-        specifier: ^19.2.0
-        version: 19.2.14
-      '@types/react-native-vector-icons':
-        specifier: ^6.4.18
-        version: 6.4.18
-      '@types/react-test-renderer':
-        specifier: ^19.1.0
-        version: 19.1.0
-      '@typescript-eslint/eslint-plugin':
-        specifier: ^8.12.2
-        version: 8.12.2(@typescript-eslint/parser@8.12.2(eslint@8.57.1)(typescript@5.9.3))(eslint@8.57.1)(typescript@5.9.3)
-      '@typescript-eslint/parser':
-        specifier: ^8.12.2
-        version: 8.12.2(eslint@8.57.1)(typescript@5.9.3)
-      eslint:
-        specifier: ^8.57.0
-        version: 8.57.1
-      jest:
-        specifier: ^29.6.3
-        version: 29.7.0(@types/node@20.8.4)
-      prettier:
-        specifier: ^2.8.8
-        version: 2.8.8
-      react-test-renderer:
-        specifier: ^19.2.3
-        version: 19.2.4(react@19.2.3)
-      super-app-showcase-sdk:
-        specifier: 0.0.2
-        version: link:../sdk
-      typescript:
-        specifier: ^5.8.3
-        version: 5.9.3
-
   packages/host:
     dependencies:
       '@bottom-tabs/react-navigation':
@@ -498,118 +262,6 @@ importers:
         version: 5.9.3
 
   packages/sdk: {}
-
-  packages/shopping:
-    dependencies:
-      '@bottom-tabs/react-navigation':
-        specifier: 1.1.0
-        version: 1.1.0(@react-navigation/native@7.2.2(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3))(react-native-bottom-tabs@1.1.0(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3))(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
-      '@module-federation/enhanced':
-        specifier: 2.3.1
-        version: 2.3.1(@rspack/core@1.7.11(@swc/helpers@0.5.20))(react@19.2.3)(typescript@5.9.3)
-      '@react-native-async-storage/async-storage':
-        specifier: 3.0.2
-        version: 3.0.2(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
-      '@react-navigation/native':
-        specifier: 7.2.2
-        version: 7.2.2(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
-      '@react-navigation/native-stack':
-        specifier: 7.14.10
-        version: 7.14.10(@react-navigation/native@7.2.2(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3))(react-native-safe-area-context@5.7.0(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3))(react-native-screens@4.24.0(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3))(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
-      react:
-        specifier: 19.2.3
-        version: 19.2.3
-      react-native:
-        specifier: 0.84.1
-        version: 0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3)
-      react-native-bottom-tabs:
-        specifier: 1.1.0
-        version: 1.1.0(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
-      react-native-edge-to-edge:
-        specifier: 1.8.1
-        version: 1.8.1(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
-      react-native-paper:
-        specifier: 5.15.0
-        version: 5.15.0(patch_hash=jbcjvd6hhp2gtyomtoldpygoay)(react-native-safe-area-context@5.7.0(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3))(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
-      react-native-safe-area-context:
-        specifier: 5.7.0
-        version: 5.7.0(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
-      react-native-screens:
-        specifier: 4.24.0
-        version: 4.24.0(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
-      react-native-vector-icons:
-        specifier: 10.3.0
-        version: 10.3.0
-    devDependencies:
-      '@babel/core':
-        specifier: ^7.25.2
-        version: 7.26.0
-      '@babel/preset-env':
-        specifier: ^7.25.3
-        version: 7.26.0(@babel/core@7.26.0)
-      '@babel/runtime':
-        specifier: ^7.25.0
-        version: 7.26.0
-      '@callstack/repack':
-        specifier: 5.2.5
-        version: 5.2.5(@babel/core@7.26.0)(@module-federation/enhanced@2.3.1(@rspack/core@1.7.11(@swc/helpers@0.5.20))(react@19.2.3)(typescript@5.9.3))(@rspack/core@1.7.11(@swc/helpers@0.5.20))(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))
-      '@react-native-community/cli':
-        specifier: 20.1.0
-        version: 20.1.0(typescript@5.9.3)
-      '@react-native/babel-preset':
-        specifier: 0.84.1
-        version: 0.84.1(@babel/core@7.26.0)
-      '@react-native/eslint-config':
-        specifier: 0.84.1
-        version: 0.84.1(eslint@8.57.1)(jest@29.7.0(@types/node@20.8.4))(prettier@2.8.8)(typescript@5.9.3)
-      '@react-native/typescript-config':
-        specifier: 0.84.1
-        version: 0.84.1
-      '@rnx-kit/align-deps':
-        specifier: ^3.4.3
-        version: 3.4.3(metro@0.83.5)
-      '@rspack/core':
-        specifier: 1.7.11
-        version: 1.7.11(@swc/helpers@0.5.20)
-      '@swc/helpers':
-        specifier: ^0.5.20
-        version: 0.5.20
-      '@types/jest':
-        specifier: ^29.5.14
-        version: 29.5.14
-      '@types/react':
-        specifier: ^19.2.0
-        version: 19.2.14
-      '@types/react-native-vector-icons':
-        specifier: ^6.4.18
-        version: 6.4.18
-      '@types/react-test-renderer':
-        specifier: ^19.1.0
-        version: 19.1.0
-      '@typescript-eslint/eslint-plugin':
-        specifier: ^8.12.2
-        version: 8.12.2(@typescript-eslint/parser@8.12.2(eslint@8.57.1)(typescript@5.9.3))(eslint@8.57.1)(typescript@5.9.3)
-      '@typescript-eslint/parser':
-        specifier: ^8.12.2
-        version: 8.12.2(eslint@8.57.1)(typescript@5.9.3)
-      eslint:
-        specifier: ^8.57.0
-        version: 8.57.1
-      jest:
-        specifier: ^29.6.3
-        version: 29.7.0(@types/node@20.8.4)
-      prettier:
-        specifier: ^2.8.8
-        version: 2.8.8
-      react-test-renderer:
-        specifier: ^19.2.3
-        version: 19.2.4(react@19.2.3)
-      super-app-showcase-sdk:
-        specifier: 0.0.2
-        version: link:../sdk
-      typescript:
-        specifier: ^5.8.3
-        version: 5.9.3
 
 packages:
 
@@ -2875,10 +2527,6 @@ packages:
   core-js-compat@3.38.1:
     resolution: {integrity: sha512-JRH6gfXxGmrzF3tZ57lFx97YARxCXPaMzPo6jELZhv88pBH5VXpQ+y0znKGlFnzuaihqhLbefxSJxWJMPtfDzw==}
 
-  core-js@1.2.7:
-    resolution: {integrity: sha512-ZiPp9pZlgxpWRu0M+YWbm6+aQ84XEfH1JRXvfOc/fILWI0VKhLC2LX13X1NYq4fULzLMq7Hfh43CSo2/aIaUPA==}
-    deprecated: core-js@<3.23.3 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Some versions have web compatibility issues. Please, upgrade your dependencies to the actual version of core-js.
-
   cosmiconfig@9.0.0:
     resolution: {integrity: sha512-itvL5h8RETACmOTFc4UfIyB2RfEHi71Ax6E/PivVxq9NseKbOWpeyHEOIbmAw1rs8Ak0VursQNww7lf7YtUwzg==}
     engines: {node: '>=14'}
@@ -3086,9 +2734,6 @@ packages:
   encodeurl@2.0.0:
     resolution: {integrity: sha512-Q0n9HRi4m6JuGIV1eFlmvJB7ZEVxu93IrMyiMsGC0lrMJMWzRgx6WGquyfQgZVb31vhGgXnfmPNNXmxnOkRBrg==}
     engines: {node: '>= 0.8'}
-
-  encoding@0.1.13:
-    resolution: {integrity: sha512-ETBauow1T35Y/WZMkio9jiM0Z5xjHHmJ4XmjZOq1l/dXz3lr2sRn87nJy20RupqSh1F2m3HHPSp8ShIPQJrJ3A==}
 
   entities@4.5.0:
     resolution: {integrity: sha512-V0hjH4dGPh9Ao5p0MoRY6BVqtwCjhz6vI5LT8AJ55H+4g9/4vbHx1I54fS0XuclLhDHArPQCiMjDxjaL8fPxhw==}
@@ -3370,9 +3015,6 @@ packages:
 
   fb-watchman@2.0.2:
     resolution: {integrity: sha512-p5161BqbuCaSnB8jIbzQHOlpgsPmK5rJVDfDKO91Axs5NC1uu3HRQm6wt9cd9/+GtQQIO53JdGXXoyDpTAsgYA==}
-
-  fbjs@0.8.18:
-    resolution: {integrity: sha512-EQaWFK+fEPSoibjNy8IxUtaFOMXcWsY0JaVrQoZR9zC8N2Ygf9iDITPWjUTVIax95b6I742JFLqASHfsag/vKA==}
 
   fdir@6.5.0:
     resolution: {integrity: sha512-tIbYtZbucOs0BRGqPJkshJUYdL+SDH7dVM8gjy+ERp3WAUjLEFJE+02kanyHtwjWOnwrKYBiwAmM0p4kLJAnXg==}
@@ -3718,10 +3360,6 @@ packages:
     resolution: {integrity: sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA==}
     engines: {node: '>=0.10.0'}
 
-  iconv-lite@0.6.3:
-    resolution: {integrity: sha512-4fCk79wshMdzMp2rH06qWrJE4iolqLhCUH+OiuIgU++RB0+94NlDL81atO7GX55uUKueo0txHNtvEyI6D7WdMw==}
-    engines: {node: '>=0.10.0'}
-
   idb@8.0.3:
     resolution: {integrity: sha512-LtwtVyVYO5BqRvcsKuB2iUMnHwPVByPCXFXOpuU96IZPPoPN6xjOGxZQ74pgSVVLQWtUOYgyeL4GE98BY5D3wg==}
 
@@ -3740,9 +3378,6 @@ packages:
     resolution: {integrity: sha512-541xKlUw6jr/6gGuk92F+mYM5zaFAc5ahphvkqvNe2bQ6gVBkd6bfrmVJ2t4KDAfikAYZyIqTnktX3i6/aQDrQ==}
     engines: {node: '>=16.x'}
     hasBin: true
-
-  immutable@4.3.4:
-    resolution: {integrity: sha512-fsXeu4J4i6WNWSikpI88v/PcVflZz+6kMhUfIwc5SY+poQRPnaf5V7qds6SUyUN3cVxEzuCab7QIoLOQ+DQ1wA==}
 
   import-fresh@3.3.0:
     resolution: {integrity: sha512-veYYhQa+D1QBKznvhUHxb8faxlrwUnxseDAbAp457E0wLNio2bOSKnjYDhMj+YiAq61xrMGhQk9iXVk5FzgQMw==}
@@ -3892,10 +3527,6 @@ packages:
   is-shared-array-buffer@1.0.2:
     resolution: {integrity: sha512-sqN2UDu1/0y6uvXyStCOzyhAjCSlHceFoMKJW8W9EU9cvic/QdsZ0kEU93HEy3IUEFZIiH/3w+AH/UQbPHNdhA==}
 
-  is-stream@1.1.0:
-    resolution: {integrity: sha512-uQPm8kcs47jx38atAcWTVxyltQYoPT68y9aWYdV6yWXSyW8mzSat0TL6CiWdZeCdF3KrAvpVtnHbTv4RN+rqdQ==}
-    engines: {node: '>=0.10.0'}
-
   is-stream@2.0.1:
     resolution: {integrity: sha512-hFoiJiTl63nn+kstHGBtewWSKnQLpyb155KHheA1l39uvtO9nWIop1p3udqPcUd/xbF1VLMO4n7OI6p7RbngDg==}
     engines: {node: '>=8'}
@@ -3950,9 +3581,6 @@ packages:
   isobject@3.0.1:
     resolution: {integrity: sha512-WhB9zCku7EGTj/HQQRz5aUQEUeoQZH2bWcltRErOpymJ4boYE6wL9Tbr23krRPSZ+C5zqNSrSw+Cc7sZZ4b7vg==}
     engines: {node: '>=0.10.0'}
-
-  isomorphic-fetch@2.2.1:
-    resolution: {integrity: sha512-9c4TNAKYXM5PRyVcwUZrF3W09nQ+sO7+jydgs4ZGW9dhsLG2VOlISJABombdQqQRXCwuYG3sYV/puGf5rp0qmA==}
 
   isomorphic-ws@5.0.0:
     resolution: {integrity: sha512-muId7Zzn9ywDsyXgTIafTry2sV3nySZeUDe6YedVd1Hvuuep5AsIlqK+XefWpYTyJG5e503F2xIuT2lcU6rCSw==}
@@ -4434,9 +4062,6 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
 
-  moment@2.29.4:
-    resolution: {integrity: sha512-5LC9SOxjSc2HF6vO2CyuTDNivEdoz2IvyJJGj6X8DJ0eFyfszE0QiEd+iXmBvUP3WHxSjFH/vIsA0EN00cgr8w==}
-
   mprocs@0.7.1:
     resolution: {integrity: sha512-v22SIwcOphZm6XLdNfeHf4ZDYHqV1hghyfqNLwmZ604lEXlEkiuazYBWUz3xEB2GdABEAKfCZ8qiOVIoREM6CQ==}
     engines: {node: '>=0.10.0'}
@@ -4470,9 +4095,6 @@ packages:
   nocache@3.0.4:
     resolution: {integrity: sha512-WDD0bdg9mbq6F4mRxEYcPWwfA1vxd0mrvKOyxI7Xj/atfRHVeutzuWByG//jfm4uPzp0y4Kj051EORCBSQMycw==}
     engines: {node: '>=12.0.0'}
-
-  node-fetch@1.7.3:
-    resolution: {integrity: sha512-NhZ4CsKx7cYm2vSrBAr2PvFOe6sWDf0UYLRqA6svUYg7+/TSfVAu49jYC4BvQ4Sms9SZgdqGBgroqfDhJdTyKQ==}
 
   node-html-parser@7.1.0:
     resolution: {integrity: sha512-iJo8b2uYGT40Y8BTyy5ufL6IVbN8rbm/1QK2xffXU/1a/v3AAa0d1YAoqBNYqaS4R/HajkWIpIfdE6KcyFh1AQ==}
@@ -4729,18 +4351,12 @@ packages:
   process-warning@5.0.0:
     resolution: {integrity: sha512-a39t9ApHNx2L4+HBnQKqxxHNs1r7KF+Intd8Q/g1bUh6q0WIp9voPXJ/x0j+ZL45KF1pJd9+q2jLIRMfvEshkA==}
 
-  promise@7.3.1:
-    resolution: {integrity: sha512-nolQXZ/4L+bP/UGlkfaIujX9BKxGwmQ9OT4mOt5yvy8iK1h3wqTEJCijzGANTCCl9nWjY41juyAn2K3Q1hLLTg==}
-
   promise@8.3.0:
     resolution: {integrity: sha512-rZPNPKTOYVNEEKFaq1HqTgOwZD+4/YHS5ukLzQCypkj+OkYx7iv0mA91lJlpPPZ8vMau3IIGj5Qlwrx+8iiSmg==}
 
   prompts@2.4.2:
     resolution: {integrity: sha512-NxNv/kLguCA7p3jE8oL2aEBsrJWgAakBpgmgK6lpPWV+WuOmY6r2/zbAVnP+T8bQlA0nzHXSJSJW0Hq7ylaD2Q==}
     engines: {node: '>= 6'}
-
-  prop-types@15.5.8:
-    resolution: {integrity: sha512-QiDx7s0lWoAVxmEmOYnn3rIZGduup2PZgj3rta5O5y0NfPKu3ApWi+GdMfTto7PmO/5+p4yamSLMZkj0jaTL4A==}
 
   prop-types@15.8.1:
     resolution: {integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==}
@@ -4820,9 +4436,6 @@ packages:
       react: '*'
       react-native: '*'
 
-  react-native-calendars@1.1291.1:
-    resolution: {integrity: sha512-L2MK2t3kbnDg2RoU12UAoQyNrUpDYdj2MyIfg13YrwVb8BuI/gc0q/VpEinY3iz5ETHiFsTLkCsAFwSj7xbZWw==}
-
   react-native-edge-to-edge@1.8.1:
     resolution: {integrity: sha512-bhvsKqeX9PGkY9wBUk9vni/tJNJdKtLPbs/j3e/3CdV4JmUWfTXYYoL+4Hc8Wmej+5eJxkc8KOFa454ruFWBCA==}
     peerDependencies:
@@ -4853,9 +4466,6 @@ packages:
     peerDependencies:
       react: '*'
       react-native: '*'
-
-  react-native-swipe-gestures@1.0.5:
-    resolution: {integrity: sha512-Ns7Bn9H/Tyw278+5SQx9oAblDZ7JixyzeOczcBK8dipQk2pD7Djkcfnf1nB/8RErAmMLL9iXgW0QHqiII8AhKw==}
 
   react-native-vector-icons@10.3.0:
     resolution: {integrity: sha512-IFQ0RE57819hOUdFvgK4FowM5aMXg7C7XKsuGLevqXkkIJatc3QopN0wYrb2IrzUgmdpfP+QVIbI3S6h7M0btw==}
@@ -4893,12 +4503,6 @@ packages:
   real-require@0.2.0:
     resolution: {integrity: sha512-57frrGM/OCTLqLOAh0mhVA9VBMHd+9U7Zb2THMGdBUoZVOtGbJzjxsYGDJ3A9AYYCP4hn6y1TVbaOfzWtm5GFg==}
     engines: {node: '>= 12.13.0'}
-
-  recyclerlistview@3.0.5:
-    resolution: {integrity: sha512-JVHz13u520faEsbVqFrJOMuJjc4mJlOXODe5QdqAJHdl5/IpyYeo83uiHrpzxyLb8QtJ0889JMlDik+Z1Ed0QQ==}
-    peerDependencies:
-      react: '>= 15.2.1'
-      react-native: '>= 0.30.0'
 
   reflect.getprototypeof@1.0.4:
     resolution: {integrity: sha512-ECkTw8TmJwW60lOTR+ZkODISW6RQ8+2CL3COqtiJKLd6MmB45hN51HprHFziKLGkAuTGQhBb91V8cy+KHlaCjw==}
@@ -5084,9 +4688,6 @@ packages:
   set-function-name@2.0.1:
     resolution: {integrity: sha512-tMNCiqYVkXIZgc2Hnoy2IvC/f8ezc5koaRFkCjrpWzGpCd3qbZXPzVy9MAZzK1ch/X0jvSkojys3oqJN0qCmdA==}
     engines: {node: '>= 0.4'}
-
-  setimmediate@1.0.5:
-    resolution: {integrity: sha512-MATJdZp8sLqDl/68LfQmbP8zKPLQNV6BIZoIgrscFDQ+RsvK/BxeDQOgyxKKoh0y/8h3BqVFnCqQ/gd+reiIXA==}
 
   setprototypeof@1.2.0:
     resolution: {integrity: sha512-E5LDX7Wrp85Kil5bhZv46j8jOeboKq5JMmYM3gVGdGH8xFpPWXUMsNrlODCrkoxMEeNi/XZIwuRvY4XNwYMJpw==}
@@ -5396,9 +4997,6 @@ packages:
     resolution: {integrity: sha512-q5W7tVM71e2xjHZTlgfTDoPF/SmqKG5hddq9SzR49CH2hayqRKJtQ4mtRlSxKaJlR/+9rEM+mnBHf7I2/BQcpQ==}
     engines: {node: '>=6.10'}
 
-  ts-object-utils@0.0.5:
-    resolution: {integrity: sha512-iV0GvHqOmilbIKJsfyfJY9/dNHCs969z3so90dQWsO1eMMozvTpnB1MEaUbb3FYtZTGjv5sIy/xmslEz0Rg2TA==}
-
   tslib@2.8.1:
     resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
 
@@ -5449,9 +5047,6 @@ packages:
     resolution: {integrity: sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==}
     engines: {node: '>=14.17'}
     hasBin: true
-
-  ua-parser-js@0.7.36:
-    resolution: {integrity: sha512-CPPLoCts2p7D8VbybttE3P2ylv0OBZEAy7a12DsulIEcAiMtWJy+PBgMXgWDI80D5UwqE8oQPHYnk13tm38M2Q==}
 
   unbox-primitive@1.0.2:
     resolution: {integrity: sha512-61pPlCD9h51VoreyJ0BReideM3MDKMKnh6+V9L08331ipq6Q8OFXZYiqP6n/tbHx4s5I9uRhcye6BrbkizkBDw==}
@@ -5653,9 +5248,6 @@ packages:
   xcode@3.0.1:
     resolution: {integrity: sha512-kCz5k7J7XbJtjABOvkc5lJmkiDh8VhjVCGNiqdKCscmVpdVUpEAyXv1xmCLkQJ5dsHqx3IPO4XW+NTDhU/fatA==}
     engines: {node: '>=10.0.0'}
-
-  xdate@0.8.2:
-    resolution: {integrity: sha512-sNBlLfOC8S3V0vLDEUianQOXcTsc9j4lfeKU/klHe0RjHAYn0CXsSttumTot8dzalboV8gZbH38B+WcCIBjhFQ==}
 
   xml-formatter@3.7.0:
     resolution: {integrity: sha512-+8qTc3zv2UcJ1v9IsSIce37Dl4MQG14Cp7tWrwmy202UaI1wqRukw5QMX1JHsV+DX64yw77EgGsj2s5wGvuMbQ==}
@@ -8739,8 +8331,6 @@ snapshots:
     dependencies:
       browserslist: 4.24.2
 
-  core-js@1.2.7: {}
-
   cosmiconfig@9.0.0(typescript@5.9.3):
     dependencies:
       env-paths: 2.2.1
@@ -8913,10 +8503,6 @@ snapshots:
   encodeurl@1.0.2: {}
 
   encodeurl@2.0.0: {}
-
-  encoding@0.1.13:
-    dependencies:
-      iconv-lite: 0.6.3
 
   entities@4.5.0: {}
 
@@ -9301,16 +8887,6 @@ snapshots:
     dependencies:
       bser: 2.1.1
 
-  fbjs@0.8.18:
-    dependencies:
-      core-js: 1.2.7
-      isomorphic-fetch: 2.2.1
-      loose-envify: 1.4.0
-      object-assign: 4.1.1
-      promise: 7.3.1
-      setimmediate: 1.0.5
-      ua-parser-js: 0.7.36
-
   fdir@6.5.0(picomatch@4.0.4):
     optionalDependencies:
       picomatch: 4.0.4
@@ -9671,10 +9247,6 @@ snapshots:
     dependencies:
       safer-buffer: 2.1.2
 
-  iconv-lite@0.6.3:
-    dependencies:
-      safer-buffer: 2.1.2
-
   idb@8.0.3: {}
 
   ieee754@1.2.1: {}
@@ -9686,8 +9258,6 @@ snapshots:
   image-size@1.1.1:
     dependencies:
       queue: 6.0.2
-
-  immutable@4.3.4: {}
 
   import-fresh@3.3.0:
     dependencies:
@@ -9814,8 +9384,6 @@ snapshots:
     dependencies:
       call-bind: 1.0.2
 
-  is-stream@1.1.0: {}
-
   is-stream@2.0.1: {}
 
   is-string@1.0.7:
@@ -9860,11 +9428,6 @@ snapshots:
   isexe@2.0.0: {}
 
   isobject@3.0.1: {}
-
-  isomorphic-fetch@2.2.1:
-    dependencies:
-      node-fetch: 1.7.3
-      whatwg-fetch: 3.6.19
 
   isomorphic-ws@5.0.0(ws@8.18.0):
     dependencies:
@@ -10652,9 +10215,6 @@ snapshots:
 
   mkdirp@1.0.4: {}
 
-  moment@2.29.4:
-    optional: true
-
   mprocs@0.7.1: {}
 
   ms@2.0.0: {}
@@ -10672,11 +10232,6 @@ snapshots:
   negotiator@1.0.0: {}
 
   nocache@3.0.4: {}
-
-  node-fetch@1.7.3:
-    dependencies:
-      encoding: 0.1.13
-      is-stream: 1.1.0
 
   node-html-parser@7.1.0:
     dependencies:
@@ -10937,10 +10492,6 @@ snapshots:
 
   process-warning@5.0.0: {}
 
-  promise@7.3.1:
-    dependencies:
-      asap: 2.0.6
-
   promise@8.3.0:
     dependencies:
       asap: 2.0.6
@@ -10949,10 +10500,6 @@ snapshots:
     dependencies:
       kleur: 3.0.3
       sisteransi: 1.0.5
-
-  prop-types@15.5.8:
-    dependencies:
-      fbjs: 0.8.18
 
   prop-types@15.8.1:
     dependencies:
@@ -11046,22 +10593,6 @@ snapshots:
       sf-symbols-typescript: 2.0.0
       use-latest-callback: 0.2.1(react@19.2.3)
 
-  react-native-calendars@1.1291.1(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3):
-    dependencies:
-      hoist-non-react-statics: 3.3.2
-      immutable: 4.3.4
-      lodash: 4.17.21
-      memoize-one: 5.2.1
-      prop-types: 15.8.1
-      react-native-swipe-gestures: 1.0.5
-      recyclerlistview: 3.0.5(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
-      xdate: 0.8.2
-    optionalDependencies:
-      moment: 2.29.4
-    transitivePeerDependencies:
-      - react
-      - react-native
-
   react-native-edge-to-edge@1.8.1(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3):
     dependencies:
       react: 19.2.3
@@ -11092,8 +10623,6 @@ snapshots:
       react-freeze: 1.0.3(react@19.2.3)
       react-native: 0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3)
       warn-once: 0.1.1
-
-  react-native-swipe-gestures@1.0.5: {}
 
   react-native-vector-icons@10.3.0:
     dependencies:
@@ -11165,14 +10694,6 @@ snapshots:
       util-deprecate: 1.0.2
 
   real-require@0.2.0: {}
-
-  recyclerlistview@3.0.5(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3):
-    dependencies:
-      lodash.debounce: 4.0.8
-      prop-types: 15.5.8
-      react: 19.2.3
-      react-native: 0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3)
-      ts-object-utils: 0.0.5
 
   reflect.getprototypeof@1.0.4:
     dependencies:
@@ -11362,8 +10883,6 @@ snapshots:
       define-data-property: 1.1.0
       functions-have-names: 1.2.3
       has-property-descriptors: 1.0.0
-
-  setimmediate@1.0.5: {}
 
   setprototypeof@1.2.0: {}
 
@@ -11674,8 +11193,6 @@ snapshots:
 
   ts-dedent@2.2.0: {}
 
-  ts-object-utils@0.0.5: {}
-
   tslib@2.8.1: {}
 
   type-check@0.4.0:
@@ -11729,8 +11246,6 @@ snapshots:
       is-typed-array: 1.1.12
 
   typescript@5.9.3: {}
-
-  ua-parser-js@0.7.36: {}
 
   unbox-primitive@1.0.2:
     dependencies:
@@ -11907,8 +11422,6 @@ snapshots:
     dependencies:
       simple-plist: 1.3.1
       uuid: 7.0.3
-
-  xdate@0.8.2: {}
 
   xml-formatter@3.7.0:
     dependencies:

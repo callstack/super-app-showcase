@@ -5,6 +5,7 @@ import {ASSETS, type Asset} from 'super-app-showcase-sdk';
 import {useNavigation} from '@react-navigation/native';
 import type {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import AssetRow from '../components/AssetRow';
+import ConnectionBanner from '../components/ConnectionBanner';
 import {colors} from '../theme';
 import type {TradingStackParamList} from '../navigation/MainNavigator';
 
@@ -22,6 +23,7 @@ const AssetListScreen = () => {
 
   return (
     <View style={styles.container}>
+      <ConnectionBanner />
       <LegendList
         data={ASSETS}
         keyExtractor={item => item.symbol}

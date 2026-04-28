@@ -1,6 +1,8 @@
 import {ASSETS, KRAKEN_PAIR_TO_SYMBOL} from '../constants';
 
 type PriceListener = (price: number) => void;
+export type ConnectionStatus = 'connecting' | 'connected' | 'reconnecting' | 'disconnected';
+type StatusListener = (status: ConnectionStatus) => void;
 
 const WS_URL = 'wss://ws.kraken.com';
 const RECONNECT_DELAY_MS = 2000;
@@ -15,6 +17,8 @@ class KrakenWebSocketService {
   private reconnectDelay = RECONNECT_DELAY_MS;
   private reconnectTimer: ReturnType<typeof setTimeout> | null = null;
   private intentionalClose = false;
+  private _status: ConnectionStatus = 'disconnected';
+  private statusListeners = new Set<StatusListener>();
 
   static get shared(): KrakenWebSocketService {
     if (!KrakenWebSocketService._instance) {
@@ -23,16 +27,33 @@ class KrakenWebSocketService {
     return KrakenWebSocketService._instance;
   }
 
+  get status(): ConnectionStatus {
+    return this._status;
+  }
+
+  onStatusChange(listener: StatusListener): () => void {
+    this.statusListeners.add(listener);
+    listener(this._status);
+    return () => this.statusListeners.delete(listener);
+  }
+
+  private setStatus(status: ConnectionStatus): void {
+    this._status = status;
+    this.statusListeners.forEach(l => l(status));
+  }
+
   connect(): void {
     if (this.ws?.readyState === WebSocket.OPEN) {
       return;
     }
 
     this.intentionalClose = false;
+    this.setStatus('connecting');
     this.ws = new WebSocket(WS_URL);
 
     this.ws.onopen = () => {
       this.reconnectDelay = RECONNECT_DELAY_MS;
+      this.setStatus('connected');
       this.ws?.send(
         JSON.stringify({
           event: 'subscribe',
@@ -48,7 +69,10 @@ class KrakenWebSocketService {
 
     this.ws.onclose = () => {
       if (!this.intentionalClose) {
+        this.setStatus('reconnecting');
         this.scheduleReconnect();
+      } else {
+        this.setStatus('disconnected');
       }
     };
 

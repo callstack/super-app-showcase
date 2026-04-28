@@ -24,6 +24,7 @@
     "check-deps": "pnpm -r check-deps"
   },
   "dependencies": {
+    "babel-plugin-react-compiler": "^1.0.0",
     "mprocs": "^0.7.1"
   },
   "pnpm": {

@@ -4,6 +4,7 @@ import {LegendList} from '@legendapp/list';
 import {useAssetPrice} from 'super-app-showcase-sdk';
 import {HOLDINGS, type Holding} from '../constants';
 import HoldingRow from '../components/HoldingRow';
+import ConnectionBanner from '../components/ConnectionBanner';
 import {colors} from '../theme';
 
 const formatCurrency = (value: number): string =>
@@ -38,6 +39,7 @@ const renderHolding = ({item}: {item: Holding}) => (
 const WalletScreen = () => {
   return (
     <View style={styles.container}>
+      <ConnectionBanner />
       <LegendList
         data={HOLDINGS}
         keyExtractor={item => item.symbol}

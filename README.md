@@ -1,7 +1,7 @@
 <a href="https://www.callstack.com/open-source?utm_campaign=generic&utm_source=github&utm_medium=referral&utm_content=super-app-showcase" align="center">
-  <img src="https://github.com/user-attachments/assets/4ee05e68-54ca-42b3-994c-9de988d66333" alt="Super App Showcase" />
+  <img src="https://github.com/user-attachments/assets/4ee05e68-54ca-42b3-994c-9de988d66333" alt="Fintech Super App" />
 </a>
-<h3 align="center">Super Apps in React Native with Re.Pack</h3>
+<h3 align="center">Fintech Super App — React Native with Re.Pack & Module Federation</h3>
 <div align="center">
 
 [![mit licence][license-badge]][license]
@@ -10,129 +10,111 @@
 
 </div>
 
-Bring micro-frontend architecture to your mobile [React Native](https://reactnative.dev) app with [Re.Pack](https://re-pack.dev) and make it a Super App. [Learn more.](https://www.callstack.com/services/super-app-development?utm_campaign=super_apps&utm_source=github&utm_content=super_app_showcase)
+A production-grade **Fintech Super App** demo built with [React Native](https://reactnative.dev), [Re.Pack](https://re-pack.dev), and **Module Federation**. It demonstrates micro-frontend architecture for mobile: independent mini apps (Trading, Wallet) loaded at runtime into a host shell, sharing a live WebSocket price feed from Kraken.
 
-## The problem
+## Architecture
 
-As small apps grow, offering multiple services (payments, messaging, social network, gaming, news, etc.), maintaining them becomes challenging. The codebase can become cluttered, and the app size may deter users who only need a few services. Today, teams dealing with such a challenge can either use monorepo to help draw the boundaries between functionalities, or leverage publishing and consuming packages from npm. However, both approaches have their drawbacks. At the same time, web teams have acccess to micro-frontend architecture, which allows them to split the app into smaller, more manageable parts downloadable on demand.
+```
+┌─────────────────────────────────────────────────────┐
+│                     host (port 8081)                │
+│  Native shell · dark theme · GestureHandler root    │
+│  PriceProvider (Kraken WS singleton via sdk)        │
+│                                                     │
+│   ┌──────────────────┐   ┌──────────────────┐      │
+│   │  trading (9001)  │   │  wallet  (9002)  │      │
+│   │  Asset list      │   │  Portfolio bal.  │      │
+│   │  Chart + trade   │   │  Live holdings   │      │
+│   └──────────────────┘   └──────────────────┘      │
+│                                                     │
+│   ┌──────────────────┐   ┌──────────────────┐      │
+│   │   auth  (9003)   │   │       sdk        │      │
+│   │  Sign-in screen  │   │  KrakenWS service│      │
+│   │  AuthProvider    │   │  Shared types    │      │
+│   └──────────────────┘   └──────────────────┘      │
+└─────────────────────────────────────────────────────┘
+```
 
-## The solution
+**Key design decisions:**
+- All native dependencies live in `host`. Mini apps declare them as `peerDependencies` and consume them as Module Federation shared singletons.
+- `sdk` is itself a shared singleton — its `PriceContext` and `KrakenWebSocketService` instance are the same object across host and all mini apps.
+- `rspack.config.ts` in each mini app points `resolve.modules` at `../host/node_modules` so the bundler can locate peer deps during compilation.
 
-This showcase demonstrates how to achieve a proper micro-frontend architecture for mobile apps with [Module Federation](https://module-federation.io). It simplifies setup and maintenance, allowing independent apps to be deployed separately or as part of a super app. Micro-frontends can be moved to separate repositories, enabling independent team work or external contributions. Unlike classic monorepos, this setup uses runtime dependencies, so updating a micro-frontend automatically updates all apps using it without redeployment.
+## Stack
 
-## The Super App
-
-<table>
-  <tr>
-    <td>Host App</td>
-    <td>Mini Apps Interaction</td>
-    <td>Booking Standalone App</td>
-  </tr>
-  <tr>
-    <td><img src="images/host-main-screen.png" alt="host-main-screen" width="200"></td>
-    <td><img src="images/host.gif" alt="host" width="200"></td>
-    <td><img src="images/booking.gif" alt="booking" width="200"></td>
-  </tr>  
-</table>
+| | |
+|---|---|
+| React Native | 0.84 |
+| React | 19 |
+| Re.Pack | 5.2 (Rspack) |
+| Module Federation | V2 |
+| Animations | react-native-reanimated 4 + react-native-worklets |
+| Charts | victory-native 41 (Skia-based) |
+| Lists | @legendapp/list 2 |
+| Bottom sheet | @gorhom/bottom-sheet 5 |
+| React Compiler | babel-plugin-react-compiler 1.0 |
 
 ## Structure
 
-<img src="images/super-app-showcase-scheme.png" />
+| Package | Role |
+|---|---|
+| `packages/host` | Native shell — owns binary, all native deps, top-level navigation, MF remote wiring |
+| `packages/auth` | Auth mini app — `AuthProvider`, `SignInScreen`, `AccountScreen` |
+| `packages/trading` | Trading mini app — live asset list, Skia chart, trade bottom sheet |
+| `packages/wallet` | Wallet mini app — real-time portfolio balance |
+| `packages/sdk` | Shared library — `KrakenWebSocketService`, `PriceProvider`, `useAssetPrice`, types |
 
-The super app contains 4 apps:
+## Requirements
 
-- `host` - the main app, which is a super app. It contains all the micro-frontends and provides a way to navigate between them.
-- `booking` - micro-frontend for booking service.
-  Booking exposes `UpcomingAppointments` screen and `MainNavigator`. `MainNavigator` is Booking app itself. `UpcomingAppointments` screen is a screen, which is used in the super app in its own navigation.
-- `shopping` - micro-frontend for shopping service.
-  Shopping exposes `MainNavigator`. `MainNavigator` is Shopping app itself.
-- `news` - micro-frontend for news service.
-  News exposes `MainNavigator`. `MainNavigator` is News app itself. News mini app stored in separate repository https://github.com/callstack/news-mini-app-showcase to provide the example of using remote container outside of the monorepo.
-- `dashboard` - micro-frontend for dashboard service.
-  Dashboard exposes `MainNavigator`. `MainNavigator` is Dashboard app itself.
-- `auth` - module that is used by other modules to provide authentication and authorization flow and UI.
-
-Each of the mini apps could be deployed and run as a standalone app.
-
-## How to use
-
-### Requirements
-
-⚠️ **Important:** This project requires:
-
-- Node.js version 22 or higher
-- pnpm as package manager
-
-Please refer to the official [pnpm installation guide](https://pnpm.io/installation) for detailed setup instructions.
-
-After installation, it's recommended to align your pnpm version with the project:
+- Node.js 22+
+- pnpm 9.15.3
 
 ```bash
-pnpm self-update
+npm install -g pnpm@9.15.3
 ```
 
-### Setup
+On macOS, Homebrew Ruby is required for pod install:
 
-Install dependencies for all apps:
-
+```bash
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 ```
+
+## Setup
+
+```bash
 pnpm install
+pnpm pods        # iOS only — install CocoaPods
 ```
 
-#### iOS
+## Running
 
-In case automatic pods installation doesn't work when running iOS project, you can install manually:
+Start all dev servers (host + mini apps) via mprocs:
 
-```
-pnpm pods
-```
-
-### Running the Super App
-
-Start DevServer for Host and Mini apps:
-
-```
+```bash
 pnpm start
 ```
 
-Run Super App on iOS or Android (ios | android):
+Run on device/simulator:
 
-```
-pnpm run:host:<platform>
-```
-
-### Running the Mini App as a standalone app
-
-> **💡 NOTE**
->
-> The "booking" and "shopping" mini-apps can't be run in standalone mode (i.e. without the host running). This is a deliberate decision of this repository to showcase the possibility and to reduce the amount of work to keep the mini-apps dependencies up-to-date.
->
-> It's up to you to decide on what kind of developer experience your super app has.
-
-Start DevServer for a Dashboard Mini App as a standalone app:
-
-```
-pnpm start:dashboard
+```bash
+pnpm run:host:ios
+pnpm run:host:android
 ```
 
-### Code Quality Scripts
+## Dev server ports
 
-Run tests for all apps:
+| App | Port |
+|---|---|
+| host | 8081 |
+| trading | 9001 |
+| wallet | 9002 |
+| auth | 9003 |
 
-```
-pnpm test
-```
+## Code quality
 
-Run linter for all apps:
-
-```
-pnpm lint
-```
-
-Run type check for all apps:
-
-```
-pnpm typecheck
+```bash
+pnpm test        # run all tests
+pnpm lint        # ESLint across all packages
+pnpm typecheck   # TypeScript across all packages
 ```
 
 ## Contributing
@@ -141,7 +123,7 @@ Read the [contribution guidelines](/CONTRIBUTING.md) before contributing.
 
 ## Made with ❤️ at Callstack
 
-Super App showcase is an open source project and will always remain free to use. If you think it's cool, please star it 🌟. [Callstack][callstack-readme-with-love] is a group of React and React Native geeks, contact us at [hello@callstack.com](mailto:hello@callstack.com) if you need any help with these or just want to say hi!
+Super App Showcase is an open source project and will always remain free to use. If you think it's cool, please star it 🌟. [Callstack][callstack-readme-with-love] is a group of React and React Native geeks, contact us at [hello@callstack.com](mailto:hello@callstack.com) if you need any help with these or just want to say hi!
 
 <!-- badges -->
 

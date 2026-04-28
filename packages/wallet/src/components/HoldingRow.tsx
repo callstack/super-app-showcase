@@ -28,27 +28,27 @@ const HoldingRow = ({holding}: Props) => {
   const price = useAssetPrice(holding.symbol);
   const value = price * holding.quantity;
   const prevValueRef = React.useRef(0);
-  const isUpRef = React.useRef(true);
+  const isUp = useSharedValue(true);
   const flashProgress = useSharedValue(0);
 
   const asset = ASSETS.find(a => a.symbol === holding.symbol);
 
   React.useEffect(() => {
     if (prevValueRef.current !== 0 && value !== prevValueRef.current) {
-      isUpRef.current = value > prevValueRef.current;
+      isUp.value = value > prevValueRef.current;
       flashProgress.value = withSequence(
         withTiming(1, {duration: 150}),
         withTiming(0, {duration: 600}),
       );
     }
     prevValueRef.current = value;
-  }, [value, flashProgress]);
+  }, [value, flashProgress, isUp]);
 
   const animatedStyle = useAnimatedStyle(() => ({
     backgroundColor: interpolateColor(
       flashProgress.value,
       [0, 1],
-      [colors.transparent, isUpRef.current ? colors.priceUp : colors.priceDown],
+      [colors.transparent, isUp.value ? colors.priceUp : colors.priceDown],
     ),
   }));
 

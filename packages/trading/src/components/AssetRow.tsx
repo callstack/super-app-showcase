@@ -32,19 +32,19 @@ interface AssetRowProps {
 const AssetRow = ({asset, onPress}: AssetRowProps) => {
   const price = useAssetPrice(asset.symbol);
   const prevPriceRef = React.useRef(0);
-  const isUpRef = React.useRef(true);
+  const isUp = useSharedValue(true);
   const flashProgress = useSharedValue(0);
 
   React.useEffect(() => {
     if (prevPriceRef.current !== 0 && price !== prevPriceRef.current) {
-      isUpRef.current = price > prevPriceRef.current;
+      isUp.value = price > prevPriceRef.current;
       flashProgress.value = withSequence(
         withTiming(1, {duration: 150}),
         withTiming(0, {duration: 600}),
       );
     }
     prevPriceRef.current = price;
-  }, [price, flashProgress]);
+  }, [price, flashProgress, isUp]);
 
   const animatedStyle = useAnimatedStyle(() => ({
     backgroundColor: interpolateColor(
@@ -52,7 +52,7 @@ const AssetRow = ({asset, onPress}: AssetRowProps) => {
       [0, 1],
       [
         colors.transparent,
-        isUpRef.current ? colors.priceUp : colors.priceDown,
+        isUp.value ? colors.priceUp : colors.priceDown,
       ],
     ),
   }));

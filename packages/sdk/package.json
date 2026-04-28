@@ -21,6 +21,11 @@
     "index.js",
     "preset.js"
   ],
+  "devDependencies": {
+    "@swc/helpers": "^0.5.20",
+    "react": "19.2.3",
+    "react-native": "*"
+  },
   "peerDependencies": {
     "react": "*",
     "react-native": "*"

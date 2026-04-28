@@ -2,6 +2,7 @@ import React from 'react';
 import RNBootSplash from 'react-native-bootsplash';
 import {NavigationContainer} from '@react-navigation/native';
 import {Provider as PaperProvider} from 'react-native-paper';
+import {GestureHandlerRootView} from 'react-native-gesture-handler';
 import {PriceProvider} from 'super-app-showcase-sdk';
 import MainNavigator from './navigation/MainNavigator';
 import SplashScreen from './components/SplashScreen';
@@ -13,6 +14,7 @@ const SignInScreen = React.lazy(() => import('auth/SignInScreen'));
 
 const App = () => {
   return (
+    <GestureHandlerRootView style={{flex: 1}}>
     <PaperProvider theme={theme}>
       <PriceProvider>
         <ErrorBoundary name="AuthProvider">
@@ -43,6 +45,7 @@ const App = () => {
         </ErrorBoundary>
       </PriceProvider>
     </PaperProvider>
+    </GestureHandlerRootView>
   );
 };
 

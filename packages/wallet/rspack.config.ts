@@ -14,6 +14,10 @@ export default Repack.defineRspackConfig(({mode, platform}) => {
     entry: './index.js',
     resolve: {
       ...Repack.getResolveOptions({enablePackageExports: true}),
+      modules: [
+        path.resolve(__dirname, '../host/node_modules'),
+        'node_modules',
+      ],
     },
     output: {
       uniqueName: 'sas-wallet',

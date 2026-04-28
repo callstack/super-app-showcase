@@ -282,7 +282,17 @@ importers:
         specifier: ^5.8.3
         version: 5.9.3
 
-  packages/sdk: {}
+  packages/sdk:
+    devDependencies:
+      '@swc/helpers':
+        specifier: ^0.5.20
+        version: 0.5.20
+      react:
+        specifier: 19.2.3
+        version: 19.2.3
+      react-native:
+        specifier: '*'
+        version: 0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0)(@types/react@19.2.14)(react@19.2.3)
 
   packages/trading:
     dependencies:
@@ -7909,7 +7919,7 @@ snapshots:
       tinyglobby: 0.2.15
       yargs: 17.7.2
 
-  '@react-native/community-cli-plugin@0.84.1(patch_hash=gdpi5rwh3blcwxgyspzwxjdb6a)(@react-native-community/cli@20.1.0(typescript@5.9.3))':
+  '@react-native/community-cli-plugin@0.84.1(patch_hash=gdpi5rwh3blcwxgyspzwxjdb6a)(@react-native-community/cli@20.1.0)':
     dependencies:
       '@react-native/dev-middleware': 0.84.1
       debug: 4.4.3
@@ -8012,6 +8022,15 @@ snapshots:
       nullthrows: 1.1.1
       react: 19.2.3
       react-native: 0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3)
+    optionalDependencies:
+      '@types/react': 19.2.14
+
+  '@react-native/virtualized-lists@0.84.1(@types/react@19.2.14)(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0)(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)':
+    dependencies:
+      invariant: 2.2.4
+      nullthrows: 1.1.1
+      react: 19.2.3
+      react-native: 0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0)(@types/react@19.2.14)(react@19.2.3)
     optionalDependencies:
       '@types/react': 19.2.14
 
@@ -11431,11 +11450,59 @@ snapshots:
       '@jest/create-cache-key-function': 29.7.0
       '@react-native/assets-registry': 0.84.1
       '@react-native/codegen': 0.84.1(@babel/core@7.26.0)
-      '@react-native/community-cli-plugin': 0.84.1(patch_hash=gdpi5rwh3blcwxgyspzwxjdb6a)(@react-native-community/cli@20.1.0(typescript@5.9.3))
+      '@react-native/community-cli-plugin': 0.84.1(patch_hash=gdpi5rwh3blcwxgyspzwxjdb6a)(@react-native-community/cli@20.1.0)
       '@react-native/gradle-plugin': 0.84.1
       '@react-native/js-polyfills': 0.84.1
       '@react-native/normalize-colors': 0.84.1
       '@react-native/virtualized-lists': 0.84.1(@types/react@19.2.14)(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
+      abort-controller: 3.0.0
+      anser: 1.4.10
+      ansi-regex: 5.0.1
+      babel-jest: 29.7.0(@babel/core@7.26.0)
+      babel-plugin-syntax-hermes-parser: 0.32.0
+      base64-js: 1.5.1
+      commander: 12.1.0
+      flow-enums-runtime: 0.0.6
+      hermes-compiler: 250829098.0.9
+      invariant: 2.2.4
+      jest-environment-node: 29.7.0
+      memoize-one: 5.2.1
+      metro-runtime: 0.83.5
+      metro-source-map: 0.83.5
+      nullthrows: 1.1.1
+      pretty-format: 29.7.0
+      promise: 8.3.0
+      react: 19.2.3
+      react-devtools-core: 6.1.5
+      react-refresh: 0.14.0
+      regenerator-runtime: 0.13.11
+      scheduler: 0.27.0
+      semver: 7.7.4
+      stacktrace-parser: 0.1.10
+      tinyglobby: 0.2.15
+      whatwg-fetch: 3.6.19
+      ws: 7.5.10
+      yargs: 17.7.2
+    optionalDependencies:
+      '@types/react': 19.2.14
+    transitivePeerDependencies:
+      - '@babel/core'
+      - '@react-native-community/cli'
+      - '@react-native/metro-config'
+      - bufferutil
+      - supports-color
+      - utf-8-validate
+
+  react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0)(@types/react@19.2.14)(react@19.2.3):
+    dependencies:
+      '@jest/create-cache-key-function': 29.7.0
+      '@react-native/assets-registry': 0.84.1
+      '@react-native/codegen': 0.84.1(@babel/core@7.26.0)
+      '@react-native/community-cli-plugin': 0.84.1(patch_hash=gdpi5rwh3blcwxgyspzwxjdb6a)(@react-native-community/cli@20.1.0)
+      '@react-native/gradle-plugin': 0.84.1
+      '@react-native/js-polyfills': 0.84.1
+      '@react-native/normalize-colors': 0.84.1
+      '@react-native/virtualized-lists': 0.84.1(@types/react@19.2.14)(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0)(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
       abort-controller: 3.0.0
       anser: 1.4.10
       ansi-regex: 5.0.1

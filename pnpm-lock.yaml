@@ -330,6 +330,9 @@ importers:
       '@callstack/repack':
         specifier: 5.2.5
         version: 5.2.5(@babel/core@7.26.0)(@module-federation/enhanced@2.3.1(@rspack/core@1.7.11(@swc/helpers@0.5.20))(react@19.2.3)(typescript@5.9.3))(@rspack/core@1.7.11(@swc/helpers@0.5.20))(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))
+      '@gorhom/bottom-sheet':
+        specifier: 5.2.10
+        version: 5.2.10(@types/react-native@0.70.15)(@types/react@19.2.14)(react-native-gesture-handler@2.31.1(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3))(react-native-reanimated@4.3.0(react-native-worklets@0.8.1(@babel/core@7.26.0)(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3))(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3))(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
       '@react-native/babel-preset':
         specifier: 0.84.1
         version: 0.84.1(@babel/core@7.26.0)
@@ -357,12 +360,21 @@ importers:
       eslint:
         specifier: ^8.57.0
         version: 8.57.1
+      react-native-gesture-handler:
+        specifier: 2.31.1
+        version: 2.31.1(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
+      react-native-reanimated:
+        specifier: 4.3.0
+        version: 4.3.0(react-native-worklets@0.8.1(@babel/core@7.26.0)(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3))(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
       super-app-showcase-sdk:
         specifier: 0.0.2
         version: link:../sdk
       typescript:
         specifier: ^5.8.3
         version: 5.9.3
+      victory-native:
+        specifier: 41.20.2
+        version: 41.20.2(5ofnavbsw2wiu7jdpiydqfpi2a)
 
   packages/wallet:
     dependencies:
@@ -424,6 +436,9 @@ importers:
       eslint:
         specifier: ^8.57.0
         version: 8.57.1
+      react-native-reanimated:
+        specifier: 4.3.0
+        version: 4.3.0(react-native-worklets@0.8.1(@babel/core@7.26.0)(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3))(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
       super-app-showcase-sdk:
         specifier: 0.0.2
         version: link:../sdk
@@ -1941,6 +1956,8 @@ packages:
   '@react-native/codegen@0.84.1':
     resolution: {integrity: sha512-n1RIU0QAavgCg1uC5+s53arL7/mpM+16IBhJ3nCFSd/iK5tUmCwxQDcIDC703fuXfpub/ZygeSjVN8bcOWn0gA==}
     engines: {node: '>= 20.19.4'}
+    peerDependencies:
+      '@babel/core': '*'
 
   '@react-native/community-cli-plugin@0.84.1':
     resolution: {integrity: sha512-f6a+mJEJ6Joxlt/050TqYUr7uRRbeKnz8lnpL7JajhpsgZLEbkJRjH8HY5QiLcRdUwWFtizml4V+vcO3P4RxoQ==}
@@ -7858,11 +7875,12 @@ snapshots:
 
   '@react-native/assets-registry@0.84.1': {}
 
-  '@react-native/babel-plugin-codegen@0.84.1':
+  '@react-native/babel-plugin-codegen@0.84.1(@babel/core@7.26.0)':
     dependencies:
       '@babel/traverse': 7.27.0
-      '@react-native/codegen': 0.84.1
+      '@react-native/codegen': 0.84.1(@babel/core@7.26.0)
     transitivePeerDependencies:
+      - '@babel/core'
       - supports-color
 
   '@react-native/babel-preset@0.84.1(@babel/core@7.26.0)':
@@ -7896,14 +7914,14 @@ snapshots:
       '@babel/plugin-transform-runtime': 7.25.9(@babel/core@7.26.0)
       '@babel/plugin-transform-typescript': 7.27.0(@babel/core@7.26.0)
       '@babel/plugin-transform-unicode-regex': 7.25.9(@babel/core@7.26.0)
-      '@react-native/babel-plugin-codegen': 0.84.1
+      '@react-native/babel-plugin-codegen': 0.84.1(@babel/core@7.26.0)
       babel-plugin-syntax-hermes-parser: 0.32.0
       babel-plugin-transform-flow-enums: 0.0.2(@babel/core@7.26.0)
       react-refresh: 0.14.0
     transitivePeerDependencies:
       - supports-color
 
-  '@react-native/codegen@0.84.1':
+  '@react-native/codegen@0.84.1(@babel/core@7.26.0)':
     dependencies:
       '@babel/core': 7.26.0
       '@babel/parser': 7.27.0
@@ -7912,10 +7930,8 @@ snapshots:
       nullthrows: 1.1.1
       tinyglobby: 0.2.15
       yargs: 17.7.2
-    transitivePeerDependencies:
-      - supports-color
 
-  '@react-native/community-cli-plugin@0.84.1(patch_hash=gdpi5rwh3blcwxgyspzwxjdb6a)(@react-native-community/cli@20.1.0(typescript@5.9.3))':
+  '@react-native/community-cli-plugin@0.84.1(patch_hash=gdpi5rwh3blcwxgyspzwxjdb6a)(@react-native-community/cli@20.1.0)':
     dependencies:
       '@react-native/dev-middleware': 0.84.1
       debug: 4.4.3
@@ -11449,8 +11465,8 @@ snapshots:
     dependencies:
       '@jest/create-cache-key-function': 29.7.0
       '@react-native/assets-registry': 0.84.1
-      '@react-native/codegen': 0.84.1
-      '@react-native/community-cli-plugin': 0.84.1(patch_hash=gdpi5rwh3blcwxgyspzwxjdb6a)(@react-native-community/cli@20.1.0(typescript@5.9.3))
+      '@react-native/codegen': 0.84.1(@babel/core@7.26.0)
+      '@react-native/community-cli-plugin': 0.84.1(patch_hash=gdpi5rwh3blcwxgyspzwxjdb6a)(@react-native-community/cli@20.1.0)
       '@react-native/gradle-plugin': 0.84.1
       '@react-native/js-polyfills': 0.84.1
       '@react-native/normalize-colors': 0.84.1
@@ -11497,8 +11513,8 @@ snapshots:
     dependencies:
       '@jest/create-cache-key-function': 29.7.0
       '@react-native/assets-registry': 0.84.1
-      '@react-native/codegen': 0.84.1
-      '@react-native/community-cli-plugin': 0.84.1(patch_hash=gdpi5rwh3blcwxgyspzwxjdb6a)(@react-native-community/cli@20.1.0(typescript@5.9.3))
+      '@react-native/codegen': 0.84.1(@babel/core@7.26.0)
+      '@react-native/community-cli-plugin': 0.84.1(patch_hash=gdpi5rwh3blcwxgyspzwxjdb6a)(@react-native-community/cli@20.1.0)
       '@react-native/gradle-plugin': 0.84.1
       '@react-native/js-polyfills': 0.84.1
       '@react-native/normalize-colors': 0.84.1

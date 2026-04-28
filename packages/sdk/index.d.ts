@@ -1,0 +1,1 @@
+export declare function getSharedDependencies(options: {eager: boolean}): Record<string, {singleton: boolean; eager: boolean; version: string; requiredVersion: string}>;

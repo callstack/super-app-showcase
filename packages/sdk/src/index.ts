@@ -1,3 +1,4 @@
+export {getSharedDependencies} from './sharedDeps';
 export {KrakenWebSocketService} from './services/KrakenWebSocketService';
 export type {ConnectionStatus} from './services/KrakenWebSocketService';
 export {PriceProvider, PriceContext} from './providers/PriceProvider';

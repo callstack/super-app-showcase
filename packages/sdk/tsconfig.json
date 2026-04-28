@@ -8,6 +8,7 @@
     "strict": true,
     "skipLibCheck": true,
     "noEmit": true,
+    "resolveJsonModule": true,
     "typeRoots": ["../../node_modules/.pnpm/node_modules/@types", "../../node_modules/@types"]
   },
   "include": ["src/**/*.ts", "src/**/*.tsx"],

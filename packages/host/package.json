@@ -31,6 +31,7 @@
     "react-native-bootsplash": "7.2.0",
     "react-native-bottom-tabs": "1.1.0",
     "react-native-edge-to-edge": "1.8.1",
+    "react-native-gesture-handler": "^2.31.1",
     "react-native-paper": "5.15.0",
     "react-native-reanimated": "^4.3.0",
     "react-native-safe-area-context": "5.7.0",

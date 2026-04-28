@@ -1994,6 +1994,28 @@ PODS:
     - ReactCommon/turbomodule/core
     - ReactNativeDependencies
     - Yoga
+  - RNGestureHandler (2.31.1):
+    - hermes-engine
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-Core-prebuilt
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-jsi
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-renderercss
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - ReactNativeDependencies
+    - Yoga
   - RNReanimated (4.3.0):
     - hermes-engine
     - RCTRequired
@@ -2299,6 +2321,7 @@ DEPENDENCIES:
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
   - ReactNativeDependencies (from `../node_modules/react-native/third-party-podspecs/ReactNativeDependencies.podspec`)
   - RNBootSplash (from `../node_modules/react-native-bootsplash`)
+  - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
   - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNScreens (from `../node_modules/react-native-screens`)
   - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
@@ -2473,6 +2496,8 @@ EXTERNAL SOURCES:
     :podspec: "../node_modules/react-native/third-party-podspecs/ReactNativeDependencies.podspec"
   RNBootSplash:
     :path: "../node_modules/react-native-bootsplash"
+  RNGestureHandler:
+    :path: "../node_modules/react-native-gesture-handler"
   RNReanimated:
     :path: "../node_modules/react-native-reanimated"
   RNScreens:
@@ -2564,6 +2589,7 @@ SPEC CHECKSUMS:
   ReactCommon: 309419492d417c4cbb87af06f67735afa40ecb9d
   ReactNativeDependencies: f63a20ef8b926344e77506cc9de14081d1f3c65c
   RNBootSplash: 7adde79e6fbb9e8ccff6b8eccbcda6856b1f816e
+  RNGestureHandler: eb2f4f545ed5e6b597d60b6515e193cf63a2c1ba
   RNReanimated: ea02d79937f48a3f353527633150e7f4e13f05d2
   RNScreens: 088d923c4327c63c9f8c942cae17a9d038f47d97
   RNVectorIcons: af977c18ed27deba54ed038b439fca2911a08cfc

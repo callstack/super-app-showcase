@@ -21,6 +21,7 @@
   "peerDependencies": {
     "@gorhom/bottom-sheet": "*",
     "@shopify/react-native-skia": "*",
+    "react-native-gesture-handler": "*",
     "react-native-reanimated": "*",
     "react-native-worklets": "*",
     "victory-native": "*"

@@ -141,7 +141,7 @@ importers:
         version: 1.1.0(@react-navigation/native@7.2.2(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3))(react-native-bottom-tabs@1.1.0(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3))(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
       '@gorhom/bottom-sheet':
         specifier: ^5.2.10
-        version: 5.2.10(@types/react-native@0.70.15)(@types/react@19.2.14)(react-native-reanimated@4.3.0(react-native-worklets@0.8.1(@babel/core@7.26.0)(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3))(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3))(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
+        version: 5.2.10(@types/react-native@0.70.15)(@types/react@19.2.14)(react-native-gesture-handler@2.31.1(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3))(react-native-reanimated@4.3.0(react-native-worklets@0.8.1(@babel/core@7.26.0)(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3))(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3))(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
       '@legendapp/list':
         specifier: ^2.0.19
         version: 2.0.19(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
@@ -178,6 +178,9 @@ importers:
       react-native-edge-to-edge:
         specifier: 1.8.1
         version: 1.8.1(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
+      react-native-gesture-handler:
+        specifier: ^2.31.1
+        version: 2.31.1(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
       react-native-paper:
         specifier: 5.15.0
         version: 5.15.0(patch_hash=jbcjvd6hhp2gtyomtoldpygoay)(react-native-safe-area-context@5.7.0(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3))(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
@@ -198,7 +201,7 @@ importers:
         version: 0.8.1(@babel/core@7.26.0)(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
       victory-native:
         specifier: ^41.20.2
-        version: 41.20.2(le62itfg45cgdofndenggnn7zu)
+        version: 41.20.2(5ofnavbsw2wiu7jdpiydqfpi2a)
     devDependencies:
       '@babel/core':
         specifier: ^7.25.2
@@ -1265,6 +1268,10 @@ packages:
     resolution: {integrity: sha512-dBVuXR082gk3jsFp7Rd/JI4kytwGHecnCoTtXFb7DB6CNHp4rg5k1bhg0nWdLGLnOV71lmDzGQaLMy8iPLY0pw==}
     engines: {node: '>=10.0.0'}
 
+  '@egjs/hammerjs@2.0.17':
+    resolution: {integrity: sha512-XQsZgjm2EcVUiZQf11UBJQfmZeEmOW8DpI1gsFeln6w0ae0ii4dMQEQ0kjl6DspdWX1aGY1/loyXnP0JS06e/A==}
+    engines: {node: '>=0.8.0'}
+
   '@emnapi/core@1.9.1':
     resolution: {integrity: sha512-mukuNALVsoix/w1BJwFzwXBN/dHeejQtuVzcDsfOEsdpCumXb/E9j8w11h5S54tT1xhifGfbbSm/ICrObRb3KA==}
 
@@ -2120,6 +2127,9 @@ packages:
 
   '@types/graceful-fs@4.1.7':
     resolution: {integrity: sha512-MhzcwU8aUygZroVwL2jeYk6JisJrPl/oov/gsgGCue9mkgl9wjGbzReYQClxiUgFDnib9FuHqTndccKeZKxTRw==}
+
+  '@types/hammerjs@2.0.46':
+    resolution: {integrity: sha512-ynRvcq6wvqexJ9brDMS4BnBLzmr0e14d6ZJTEShTBWKymQiHwlAyGu0ZPEFI2Fh1U53F7tN9ufClWM5KvqkKOw==}
 
   '@types/http-proxy@1.17.16':
     resolution: {integrity: sha512-sdWoUajOB1cd0A8cRRQ1cfyWNbmFKLAqBB89Y8x5iYyG/mkJHc0YUH8pdWBy2omi9qtCpiIgGjuwO0dQST2l5w==}
@@ -4763,6 +4773,12 @@ packages:
       react: '*'
       react-native: '*'
 
+  react-native-gesture-handler@2.31.1:
+    resolution: {integrity: sha512-wQDlECdEzHhYKTnQXFnSqWUtJ5TS3MGQi7EWvQczTnEVKfk6XVSBecnpWAoI/CqlYQ7IWMJEyutY6BxwEBoxeg==}
+    peerDependencies:
+      react: '*'
+      react-native: '*'
+
   react-native-is-edge-to-edge@1.3.1:
     resolution: {integrity: sha512-NIXU/iT5+ORyCc7p0z2nnlkouYKX425vuU1OEm6bMMtWWR9yvb+Xg5AZmImTKoF9abxCPqrKC3rOZsKzUYgYZA==}
     peerDependencies:
@@ -6910,6 +6926,10 @@ snapshots:
 
   '@discoveryjs/json-ext@0.5.7': {}
 
+  '@egjs/hammerjs@2.0.17':
+    dependencies:
+      '@types/hammerjs': 2.0.46
+
   '@emnapi/core@1.9.1':
     dependencies:
       '@emnapi/wasi-threads': 1.2.0
@@ -7033,12 +7053,13 @@ snapshots:
       type-is: 2.0.1
       vary: 1.1.2
 
-  '@gorhom/bottom-sheet@5.2.10(@types/react-native@0.70.15)(@types/react@19.2.14)(react-native-reanimated@4.3.0(react-native-worklets@0.8.1(@babel/core@7.26.0)(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3))(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3))(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)':
+  '@gorhom/bottom-sheet@5.2.10(@types/react-native@0.70.15)(@types/react@19.2.14)(react-native-gesture-handler@2.31.1(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3))(react-native-reanimated@4.3.0(react-native-worklets@0.8.1(@babel/core@7.26.0)(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3))(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3))(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)':
     dependencies:
       '@gorhom/portal': 1.0.14(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
       invariant: 2.2.4
       react: 19.2.3
       react-native: 0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3)
+      react-native-gesture-handler: 2.31.1(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
       react-native-reanimated: 4.3.0(react-native-worklets@0.8.1(@babel/core@7.26.0)(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3))(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
     optionalDependencies:
       '@types/react': 19.2.14
@@ -8141,6 +8162,8 @@ snapshots:
   '@types/graceful-fs@4.1.7':
     dependencies:
       '@types/node': 20.8.4
+
+  '@types/hammerjs@2.0.46': {}
 
   '@types/http-proxy@1.17.16':
     dependencies:
@@ -11261,6 +11284,15 @@ snapshots:
       react: 19.2.3
       react-native: 0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3)
 
+  react-native-gesture-handler@2.31.1(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3):
+    dependencies:
+      '@egjs/hammerjs': 2.0.17
+      '@types/react-test-renderer': 19.1.0
+      hoist-non-react-statics: 3.3.2
+      invariant: 2.2.4
+      react: 19.2.3
+      react-native: 0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3)
+
   react-native-is-edge-to-edge@1.3.1(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3):
     dependencies:
       react: 19.2.3
@@ -12027,7 +12059,7 @@ snapshots:
 
   vary@1.1.2: {}
 
-  victory-native@41.20.2(le62itfg45cgdofndenggnn7zu):
+  victory-native@41.20.2(5ofnavbsw2wiu7jdpiydqfpi2a):
     dependencies:
       '@shopify/react-native-skia': 2.6.2(react-native-reanimated@4.3.0(react-native-worklets@0.8.1(@babel/core@7.26.0)(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3))(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3))(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
       d3-scale: 4.0.2
@@ -12037,6 +12069,7 @@ snapshots:
       react: 19.2.3
       react-fast-compare: 3.2.2
       react-native: 0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3)
+      react-native-gesture-handler: 2.31.1(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
       react-native-reanimated: 4.3.0(react-native-worklets@0.8.1(@babel/core@7.26.0)(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3))(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
     transitivePeerDependencies:
       - '@types/react'

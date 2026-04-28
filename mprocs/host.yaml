@@ -8,3 +8,6 @@ procs:
   Trading:
     shell: pnpm --filter trading start
     stop: SIGKILL
+  Wallet:
+    shell: pnpm --filter wallet start
+    stop: SIGKILL

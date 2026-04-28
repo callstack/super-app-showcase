@@ -6,6 +6,7 @@ import {
   Text,
   View,
 } from 'react-native';
+import {useBottomTabBarHeight} from 'react-native-bottom-tabs';
 import {CartesianChart, Line} from 'victory-native';
 import {useSharedValue, withTiming} from 'react-native-reanimated';
 import {useDerivedValue} from 'react-native-reanimated';
@@ -49,6 +50,7 @@ const NEWS_ITEMS = [
 
 const AssetDetailsScreen = ({route, navigation}: Props) => {
   const {asset} = route.params;
+  const tabBarHeight = useBottomTabBarHeight();
   const price = useAssetPrice(asset.symbol);
   const prevPriceRef = React.useRef(0);
   const tradeSheetRef = React.useRef<BottomSheetRef>(null);
@@ -156,7 +158,7 @@ const AssetDetailsScreen = ({route, navigation}: Props) => {
       </ScrollView>
 
       {/* Trade button */}
-      <View style={styles.footer}>
+      <View style={[styles.footer, {paddingBottom: tabBarHeight + 8}]}>
         <Pressable
           style={({pressed}) => [
             styles.tradeButton,
@@ -245,7 +247,6 @@ const styles = StyleSheet.create({
   },
   footer: {
     padding: 16,
-    paddingBottom: 32,
     backgroundColor: colors.background,
     borderTopWidth: StyleSheet.hairlineWidth,
     borderTopColor: colors.border,

@@ -39,12 +39,18 @@ const TabsNavigator = () => {
       <Tabs.Screen
         name="Trading"
         component={TradingScreen}
-        options={{title: 'Trading'}}
+        options={{
+          title: 'Trading',
+          tabBarIcon: () => ({sfSymbol: 'chart.line.uptrend.xyaxis'}),
+        }}
       />
       <Tabs.Screen
         name="Wallet"
         component={WalletScreen}
-        options={{title: 'Wallet'}}
+        options={{
+          title: 'Wallet',
+          tabBarIcon: () => ({sfSymbol: 'creditcard'}),
+        }}
       />
     </Tabs.Navigator>
   );

@@ -1,4 +1,4 @@
-import type {Asset} from './types';
+import type {Asset, AssetSymbol} from './types';
 
 export const ASSETS: Asset[] = [
   {symbol: 'BTC', name: 'Bitcoin', krakenPair: 'XBT/USD'},
@@ -7,6 +7,10 @@ export const ASSETS: Asset[] = [
   {symbol: 'XRP', name: 'XRP', krakenPair: 'XRP/USD'},
   {symbol: 'ADA', name: 'Cardano', krakenPair: 'ADA/USD'},
 ];
+
+export const ASSET_MAP: Record<AssetSymbol, Asset> = Object.fromEntries(
+  ASSETS.map(a => [a.symbol, a]),
+) as Record<AssetSymbol, Asset>;
 
 // Kraken uses XBT for Bitcoin — map krakenPair back to our symbol
 export const KRAKEN_PAIR_TO_SYMBOL: Record<string, string> = {

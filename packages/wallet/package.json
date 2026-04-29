@@ -32,7 +32,6 @@
     "@rspack/core": "1.7.11",
     "@swc/helpers": "^0.5.20",
     "@types/react": "^19.2.0",
-    "react-native-reanimated": "4.3.0",
     "@typescript-eslint/eslint-plugin": "^8.12.2",
     "@typescript-eslint/parser": "^8.12.2",
     "eslint": "^8.57.0",

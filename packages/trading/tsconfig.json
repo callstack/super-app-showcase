@@ -2,7 +2,14 @@
   "extends": "@react-native/typescript-config",
   "compilerOptions": {
     "module": "es2020",
-    "types": ["react-native", "jest"]
+    "types": ["react-native", "jest"],
+    "paths": {
+      "@gorhom/bottom-sheet": ["../host/node_modules/@gorhom/bottom-sheet"],
+      "react-native-bottom-tabs": ["../host/node_modules/react-native-bottom-tabs"],
+      "react-native-gesture-handler": ["../host/node_modules/react-native-gesture-handler"],
+      "react-native-reanimated": ["../host/node_modules/react-native-reanimated"],
+      "victory-native": ["../host/node_modules/victory-native"]
+    }
   },
   "include": ["**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules", "babel.config.js", "jest.config.js"]

@@ -290,12 +290,18 @@ importers:
       '@swc/helpers':
         specifier: ^0.5.20
         version: 0.5.20
+      '@types/react':
+        specifier: ^19.2.0
+        version: 19.2.14
       react:
         specifier: 19.2.3
         version: 19.2.3
       react-native:
         specifier: '*'
-        version: 0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0)(@types/react@19.2.14)(react@19.2.3)
+        version: 0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3)
+      typescript:
+        specifier: ^5.8.3
+        version: 5.9.3
 
   packages/trading:
     dependencies:
@@ -330,9 +336,6 @@ importers:
       '@callstack/repack':
         specifier: 5.2.5
         version: 5.2.5(@babel/core@7.26.0)(@module-federation/enhanced@2.3.1(@rspack/core@1.7.11(@swc/helpers@0.5.20))(react@19.2.3)(typescript@5.9.3))(@rspack/core@1.7.11(@swc/helpers@0.5.20))(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))
-      '@gorhom/bottom-sheet':
-        specifier: 5.2.10
-        version: 5.2.10(@types/react-native@0.70.15)(@types/react@19.2.14)(react-native-gesture-handler@2.31.1(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3))(react-native-reanimated@4.3.0(react-native-worklets@0.8.1(@babel/core@7.26.0)(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3))(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3))(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
       '@react-native/babel-preset':
         specifier: 0.84.1
         version: 0.84.1(@babel/core@7.26.0)
@@ -360,21 +363,12 @@ importers:
       eslint:
         specifier: ^8.57.0
         version: 8.57.1
-      react-native-gesture-handler:
-        specifier: 2.31.1
-        version: 2.31.1(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
-      react-native-reanimated:
-        specifier: 4.3.0
-        version: 4.3.0(react-native-worklets@0.8.1(@babel/core@7.26.0)(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3))(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
       super-app-showcase-sdk:
         specifier: 0.0.2
         version: link:../sdk
       typescript:
         specifier: ^5.8.3
         version: 5.9.3
-      victory-native:
-        specifier: 41.20.2
-        version: 41.20.2(5ofnavbsw2wiu7jdpiydqfpi2a)
 
   packages/wallet:
     dependencies:
@@ -436,9 +430,6 @@ importers:
       eslint:
         specifier: ^8.57.0
         version: 8.57.1
-      react-native-reanimated:
-        specifier: 4.3.0
-        version: 4.3.0(react-native-worklets@0.8.1(@babel/core@7.26.0)(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3))(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
       super-app-showcase-sdk:
         specifier: 0.0.2
         version: link:../sdk
@@ -5171,10 +5162,6 @@ packages:
   setprototypeof@1.2.0:
     resolution: {integrity: sha512-E5LDX7Wrp85Kil5bhZv46j8jOeboKq5JMmYM3gVGdGH8xFpPWXUMsNrlODCrkoxMEeNi/XZIwuRvY4XNwYMJpw==}
 
-  sf-symbols-typescript@2.0.0:
-    resolution: {integrity: sha512-Fc8Uhhl2plqXMw7GQ8q83t/zj1xhNCJvteDNJUDULaH/4a/Eqw5aW1UYEznyEIgkokw7QYXuQ9hOw8jhBLXL0A==}
-    engines: {node: '>=10'}
-
   sf-symbols-typescript@2.2.0:
     resolution: {integrity: sha512-TPbeg0b7ylrswdGCji8FRGFAKuqbpQlLbL8SOle3j1iHSs5Ob5mhvMAxWN2UItOjgALAB5Zp3fmMfj8mbWvXKw==}
     engines: {node: '>=10'}
@@ -5570,11 +5557,6 @@ packages:
 
   uri-js@4.4.1:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
-
-  use-latest-callback@0.2.1:
-    resolution: {integrity: sha512-QWlq8Is8BGWBf883QOEQP5HWYX/kMI+JTbJ5rdtvJLmXTIh9XoHIO3PQcmQl8BU44VKxow1kbQUHa6mQSMALDQ==}
-    peerDependencies:
-      react: '>=16.8'
 
   use-latest-callback@0.2.6:
     resolution: {integrity: sha512-FvRG9i1HSo0wagmX63Vrm8SnlUU3LMM3WyZkQ76RnslpBrX694AdG4A0zQBx2B3ZifFA0yv/BaEHGBnEax5rZg==}
@@ -7931,7 +7913,7 @@ snapshots:
       tinyglobby: 0.2.15
       yargs: 17.7.2
 
-  '@react-native/community-cli-plugin@0.84.1(patch_hash=gdpi5rwh3blcwxgyspzwxjdb6a)(@react-native-community/cli@20.1.0)':
+  '@react-native/community-cli-plugin@0.84.1(patch_hash=gdpi5rwh3blcwxgyspzwxjdb6a)(@react-native-community/cli@20.1.0(typescript@5.9.3))':
     dependencies:
       '@react-native/dev-middleware': 0.84.1
       debug: 4.4.3
@@ -8034,15 +8016,6 @@ snapshots:
       nullthrows: 1.1.1
       react: 19.2.3
       react-native: 0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3)
-    optionalDependencies:
-      '@types/react': 19.2.14
-
-  '@react-native/virtualized-lists@0.84.1(@types/react@19.2.14)(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0)(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)':
-    dependencies:
-      invariant: 2.2.4
-      nullthrows: 1.1.1
-      react: 19.2.3
-      react-native: 0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0)(@types/react@19.2.14)(react@19.2.3)
     optionalDependencies:
       '@types/react': 19.2.14
 
@@ -11378,8 +11351,8 @@ snapshots:
       react: 19.2.3
       react-freeze: 1.0.3(react@19.2.3)
       react-native: 0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3)
-      sf-symbols-typescript: 2.0.0
-      use-latest-callback: 0.2.1(react@19.2.3)
+      sf-symbols-typescript: 2.2.0
+      use-latest-callback: 0.2.6(react@19.2.3)
 
   react-native-edge-to-edge@1.8.1(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3):
     dependencies:
@@ -11466,59 +11439,11 @@ snapshots:
       '@jest/create-cache-key-function': 29.7.0
       '@react-native/assets-registry': 0.84.1
       '@react-native/codegen': 0.84.1(@babel/core@7.26.0)
-      '@react-native/community-cli-plugin': 0.84.1(patch_hash=gdpi5rwh3blcwxgyspzwxjdb6a)(@react-native-community/cli@20.1.0)
+      '@react-native/community-cli-plugin': 0.84.1(patch_hash=gdpi5rwh3blcwxgyspzwxjdb6a)(@react-native-community/cli@20.1.0(typescript@5.9.3))
       '@react-native/gradle-plugin': 0.84.1
       '@react-native/js-polyfills': 0.84.1
       '@react-native/normalize-colors': 0.84.1
       '@react-native/virtualized-lists': 0.84.1(@types/react@19.2.14)(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0(typescript@5.9.3))(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
-      abort-controller: 3.0.0
-      anser: 1.4.10
-      ansi-regex: 5.0.1
-      babel-jest: 29.7.0(@babel/core@7.26.0)
-      babel-plugin-syntax-hermes-parser: 0.32.0
-      base64-js: 1.5.1
-      commander: 12.1.0
-      flow-enums-runtime: 0.0.6
-      hermes-compiler: 250829098.0.9
-      invariant: 2.2.4
-      jest-environment-node: 29.7.0
-      memoize-one: 5.2.1
-      metro-runtime: 0.83.5
-      metro-source-map: 0.83.5
-      nullthrows: 1.1.1
-      pretty-format: 29.7.0
-      promise: 8.3.0
-      react: 19.2.3
-      react-devtools-core: 6.1.5
-      react-refresh: 0.14.0
-      regenerator-runtime: 0.13.11
-      scheduler: 0.27.0
-      semver: 7.7.4
-      stacktrace-parser: 0.1.10
-      tinyglobby: 0.2.15
-      whatwg-fetch: 3.6.19
-      ws: 7.5.10
-      yargs: 17.7.2
-    optionalDependencies:
-      '@types/react': 19.2.14
-    transitivePeerDependencies:
-      - '@babel/core'
-      - '@react-native-community/cli'
-      - '@react-native/metro-config'
-      - bufferutil
-      - supports-color
-      - utf-8-validate
-
-  react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0)(@types/react@19.2.14)(react@19.2.3):
-    dependencies:
-      '@jest/create-cache-key-function': 29.7.0
-      '@react-native/assets-registry': 0.84.1
-      '@react-native/codegen': 0.84.1(@babel/core@7.26.0)
-      '@react-native/community-cli-plugin': 0.84.1(patch_hash=gdpi5rwh3blcwxgyspzwxjdb6a)(@react-native-community/cli@20.1.0)
-      '@react-native/gradle-plugin': 0.84.1
-      '@react-native/js-polyfills': 0.84.1
-      '@react-native/normalize-colors': 0.84.1
-      '@react-native/virtualized-lists': 0.84.1(@types/react@19.2.14)(react-native@0.84.1(@babel/core@7.26.0)(@react-native-community/cli@20.1.0)(@types/react@19.2.14)(react@19.2.3))(react@19.2.3)
       abort-controller: 3.0.0
       anser: 1.4.10
       ansi-regex: 5.0.1
@@ -11789,8 +11714,6 @@ snapshots:
       has-property-descriptors: 1.0.0
 
   setprototypeof@1.2.0: {}
-
-  sf-symbols-typescript@2.0.0: {}
 
   sf-symbols-typescript@2.2.0: {}
 
@@ -12182,10 +12105,6 @@ snapshots:
   uri-js@4.4.1:
     dependencies:
       punycode: 2.3.0
-
-  use-latest-callback@0.2.1(react@19.2.3):
-    dependencies:
-      react: 19.2.3
 
   use-latest-callback@0.2.6(react@19.2.3):
     dependencies:

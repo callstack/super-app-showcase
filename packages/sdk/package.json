@@ -6,11 +6,9 @@
   "homepage": "https://github.com/callstack/super-app-showcase",
   "repository": "github:callstack/super-app-showcase",
   "main": "index.js",
-  "types": "index.d.ts",
   "exports": {
     ".": {
       "react-native": "./src/index.ts",
-      "types": "./index.d.ts",
       "require": "./index.js",
       "default": "./index.js"
     }
@@ -21,13 +19,14 @@
     "lib",
     "src",
     "index.js",
-    "index.d.ts",
     "preset.js"
   ],
   "devDependencies": {
     "@swc/helpers": "^0.5.20",
+    "@types/react": "^19.2.0",
     "react": "19.2.3",
-    "react-native": "*"
+    "react-native": "*",
+    "typescript": "^5.8.3"
   },
   "peerDependencies": {
     "react": "*",

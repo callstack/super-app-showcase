@@ -1,28 +1,11 @@
 import React from 'react';
 import {Image, Pressable, StyleSheet, Text, View} from 'react-native';
-import Animated, {
-  interpolateColor,
-  useAnimatedStyle,
-  useSharedValue,
-  withSequence,
-  withTiming,
-} from 'react-native-reanimated';
-import {useAssetPrice, type Asset} from 'super-app-showcase-sdk';
+import Animated from 'react-native-reanimated';
+import {useAssetPrice, formatPrice, type Asset} from 'super-app-showcase-sdk';
+import {useFlashAnimation} from '../hooks/useFlashAnimation';
 import {colors} from '../theme';
 
 const ICON_BASE_URL = 'https://assets.coincap.io/assets/icons';
-
-const formatPrice = (price: number): string => {
-  if (price === 0) {
-    return '—';
-  }
-  const decimals = price >= 1 ? 2 : 6;
-  return price.toLocaleString('en-US', {
-    style: 'currency',
-    currency: 'USD',
-    maximumFractionDigits: decimals,
-  });
-};
 
 interface AssetRowProps {
   asset: Asset;
@@ -31,31 +14,7 @@ interface AssetRowProps {
 
 const AssetRow = ({asset, onPress}: AssetRowProps) => {
   const price = useAssetPrice(asset.symbol);
-  const prevPriceRef = React.useRef(0);
-  const isUp = useSharedValue(true);
-  const flashProgress = useSharedValue(0);
-
-  React.useEffect(() => {
-    if (prevPriceRef.current !== 0 && price !== prevPriceRef.current) {
-      isUp.value = price > prevPriceRef.current;
-      flashProgress.value = withSequence(
-        withTiming(1, {duration: 150}),
-        withTiming(0, {duration: 600}),
-      );
-    }
-    prevPriceRef.current = price;
-  }, [price, flashProgress, isUp]);
-
-  const animatedStyle = useAnimatedStyle(() => ({
-    backgroundColor: interpolateColor(
-      flashProgress.value,
-      [0, 1],
-      [
-        colors.transparent,
-        isUp.value ? colors.priceUp : colors.priceDown,
-      ],
-    ),
-  }));
+  const animatedStyle = useFlashAnimation(price);
 
   return (
     <Pressable onPress={() => onPress(asset)}>

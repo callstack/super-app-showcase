@@ -5,7 +5,7 @@ import {ASSETS, type Asset} from 'super-app-showcase-sdk';
 import {useNavigation} from '@react-navigation/native';
 import type {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import AssetRow from '../components/AssetRow';
-import ConnectionBanner from '../components/ConnectionBanner';
+import {ConnectionBanner} from 'super-app-showcase-sdk';
 import {colors} from '../theme';
 import type {TradingStackParamList} from '../navigation/MainNavigator';
 

@@ -8,10 +8,9 @@ import {
 } from 'react-native';
 import {useBottomTabBarHeight} from 'react-native-bottom-tabs';
 import {CartesianChart, Line} from 'victory-native';
-import {useSharedValue, withTiming} from 'react-native-reanimated';
-import {useDerivedValue} from 'react-native-reanimated';
+import {useDerivedValue, useSharedValue, withTiming} from 'react-native-reanimated';
 import type {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {useAssetPrice} from 'super-app-showcase-sdk';
+import {useAssetPrice, formatPrice} from 'super-app-showcase-sdk';
 import type {TradingStackParamList} from '../navigation/MainNavigator';
 import {colors} from '../theme';
 import TradeBottomSheet from '../components/TradeBottomSheet';
@@ -108,13 +107,7 @@ const AssetDetailsScreen = ({route, navigation}: Props) => {
         {/* Current price */}
         <View style={styles.priceRow}>
           <Text style={styles.currentPrice}>
-            {price > 0
-              ? price.toLocaleString('en-US', {
-                  style: 'currency',
-                  currency: 'USD',
-                  maximumFractionDigits: price >= 1 ? 2 : 6,
-                })
-              : '—'}
+            {formatPrice(price)}
           </Text>
           <Text style={styles.symbol}>{asset.symbol}/USD</Text>
         </View>

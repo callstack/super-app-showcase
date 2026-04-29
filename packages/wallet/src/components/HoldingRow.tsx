@@ -1,80 +1,40 @@
 import React from 'react';
 import {Image, StyleSheet, Text, View} from 'react-native';
-import Animated, {
-  interpolateColor,
-  useAnimatedStyle,
-  useSharedValue,
-  withSequence,
-  withTiming,
-} from 'react-native-reanimated';
-import {useAssetPrice, ASSETS} from 'super-app-showcase-sdk';
+import Animated from 'react-native-reanimated';
+import {useAssetPrice, formatPrice, formatValue, type Asset} from 'super-app-showcase-sdk';
+import {useFlashAnimation} from '../hooks/useFlashAnimation';
 import type {Holding} from '../constants';
 import {colors} from '../theme';
 
 const ICON_BASE_URL = 'https://assets.coincap.io/assets/icons';
 
-const formatCurrency = (value: number): string =>
-  value.toLocaleString('en-US', {
-    style: 'currency',
-    currency: 'USD',
-    maximumFractionDigits: 2,
-  });
-
 interface Props {
   holding: Holding;
+  asset: Asset;
 }
 
-const HoldingRow = ({holding}: Props) => {
+const HoldingRow = ({holding, asset}: Props) => {
   const price = useAssetPrice(holding.symbol);
   const value = price * holding.quantity;
-  const prevValueRef = React.useRef(0);
-  const isUp = useSharedValue(true);
-  const flashProgress = useSharedValue(0);
-
-  const asset = ASSETS.find(a => a.symbol === holding.symbol);
-
-  React.useEffect(() => {
-    if (prevValueRef.current !== 0 && value !== prevValueRef.current) {
-      isUp.value = value > prevValueRef.current;
-      flashProgress.value = withSequence(
-        withTiming(1, {duration: 150}),
-        withTiming(0, {duration: 600}),
-      );
-    }
-    prevValueRef.current = value;
-  }, [value, flashProgress, isUp]);
-
-  const animatedStyle = useAnimatedStyle(() => ({
-    backgroundColor: interpolateColor(
-      flashProgress.value,
-      [0, 1],
-      [colors.transparent, isUp.value ? colors.priceUp : colors.priceDown],
-    ),
-  }));
+  const animatedStyle = useFlashAnimation(value);
 
   return (
     <Animated.View style={[styles.row, animatedStyle]}>
       <Image
-        source={{uri: `${ICON_BASE_URL}/${holding.symbol.toLowerCase()}@2x.png`}}
+        source={{
+          uri: `${ICON_BASE_URL}/${holding.symbol.toLowerCase()}@2x.png`,
+        }}
         style={styles.icon}
       />
       <View style={styles.info}>
-        <Text style={styles.name}>{asset?.name ?? holding.symbol}</Text>
+        <Text style={styles.name}>{asset.name}</Text>
         <Text style={styles.quantity}>
           {holding.quantity} {holding.symbol}
         </Text>
       </View>
       <View style={styles.valueContainer}>
-        <Text style={styles.value}>{value > 0 ? formatCurrency(value) : '—'}</Text>
-        <Text style={styles.price}>
-          {price > 0
-            ? price.toLocaleString('en-US', {
-                style: 'currency',
-                currency: 'USD',
-                maximumFractionDigits: 2,
-              })
-            : '—'}
-        </Text>
+        <Text style={styles.value}>{formatValue(value)}</Text>
+        <Text style={styles.price}>{formatPrice(price)}</Text>
       </View>
     </Animated.View>
   );

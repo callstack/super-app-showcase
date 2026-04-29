@@ -1,39 +1,29 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import {LegendList} from '@legendapp/list';
-import {useAssetPrice} from 'super-app-showcase-sdk';
+import {usePrices, ASSET_MAP, formatValue, ConnectionBanner} from 'super-app-showcase-sdk';
 import {HOLDINGS, type Holding} from '../constants';
 import HoldingRow from '../components/HoldingRow';
-import ConnectionBanner from '../components/ConnectionBanner';
 import {colors} from '../theme';
 
-const formatCurrency = (value: number): string =>
-  value.toLocaleString('en-US', {
-    style: 'currency',
-    currency: 'USD',
-    maximumFractionDigits: 2,
-  });
-
 const TotalBalance = () => {
-  const btcPrice = useAssetPrice('BTC');
-  const ethPrice = useAssetPrice('ETH');
-
-  const total =
-    HOLDINGS[0].quantity * btcPrice + HOLDINGS[1].quantity * ethPrice;
+  const prices = usePrices();
+  const total = HOLDINGS.reduce(
+    (sum, h) => sum + h.quantity * (prices[h.symbol] ?? 0),
+    0,
+  );
 
   return (
     <View style={styles.balanceCard}>
       <Text style={styles.balanceLabel}>Total Portfolio Value</Text>
-      <Text style={styles.balanceAmount}>
-        {total > 0 ? formatCurrency(total) : '—'}
-      </Text>
+      <Text style={styles.balanceAmount}>{formatValue(total)}</Text>
       <Text style={styles.balanceSubtext}>Updates in real-time</Text>
     </View>
   );
 };
 
 const renderHolding = ({item}: {item: Holding}) => (
-  <HoldingRow holding={item} />
+  <HoldingRow holding={item} asset={ASSET_MAP[item.symbol]} />
 );
 
 const WalletScreen = () => {

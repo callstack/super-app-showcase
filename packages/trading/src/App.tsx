@@ -6,7 +6,7 @@ import MainNavigator from './navigation/MainNavigator';
 const App = () => {
   return (
     <GestureHandlerRootView style={{flex: 1}}>
-      <NavigationContainer independent={true}>
+      <NavigationContainer>
         <MainNavigator />
       </NavigationContainer>
     </GestureHandlerRootView>

@@ -4,7 +4,7 @@ import MainNavigator from './navigation/MainNavigator';
 
 const App = () => {
   return (
-    <NavigationContainer independent={true}>
+    <NavigationContainer>
       <MainNavigator />
     </NavigationContainer>
   );

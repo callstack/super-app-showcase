@@ -4,6 +4,7 @@ export type {ConnectionStatus} from './services/KrakenWebSocketService';
 export {PriceProvider, PriceContext} from './providers/PriceProvider';
 export {useAssetPrice, usePrices} from './hooks/usePrices';
 export {useConnectionStatus} from './hooks/useConnectionStatus';
+export {useHistoricalPrices} from './hooks/useHistoricalPrices';
 export {ASSETS, ASSET_MAP, KRAKEN_PAIR_TO_SYMBOL} from './constants';
 export type {Asset, AssetSymbol, PriceUpdate, PriceMap} from './types';
 export {formatPrice, formatValue} from './utils/formatPrice';

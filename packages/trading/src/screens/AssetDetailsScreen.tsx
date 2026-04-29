@@ -10,7 +10,7 @@ import {useBottomTabBarHeight} from 'react-native-bottom-tabs';
 import {CartesianChart, Line} from 'victory-native';
 import {useDerivedValue, useSharedValue, withTiming} from 'react-native-reanimated';
 import type {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {useAssetPrice, formatPrice} from 'super-app-showcase-sdk';
+import {useAssetPrice, useHistoricalPrices, formatPrice} from 'super-app-showcase-sdk';
 import type {TradingStackParamList} from '../navigation/MainNavigator';
 import {colors} from '../theme';
 import TradeBottomSheet from '../components/TradeBottomSheet';
@@ -51,6 +51,7 @@ const AssetDetailsScreen = ({route, navigation}: Props) => {
   const {asset} = route.params;
   const tabBarHeight = useBottomTabBarHeight();
   const price = useAssetPrice(asset.symbol);
+  const historicalPrices = useHistoricalPrices(asset.krakenPair);
   const prevPriceRef = React.useRef(0);
   const tradeSheetRef = React.useRef<BottomSheetRef>(null);
 
@@ -58,6 +59,16 @@ const AssetDetailsScreen = ({route, navigation}: Props) => {
     {index: number; price: number}[]
   >([]);
   const bufferRef = React.useRef<number[]>([]);
+  const seededRef = React.useRef(false);
+
+  React.useEffect(() => {
+    if (historicalPrices.length === 0 || seededRef.current) {
+      return;
+    }
+    seededRef.current = true;
+    bufferRef.current = historicalPrices;
+    setChartData(historicalPrices.map((p, index) => ({index, price: p})));
+  }, [historicalPrices]);
 
   // Shared value for line color: 0 = neutral, 1 = up, -1 = down
   const lineColorProgress = useSharedValue(0);

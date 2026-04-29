@@ -8,10 +8,10 @@ enum ActionTypes {
   SIGN_OUT = 'SIGN_OUT',
 }
 
-type Action = {
-  type: ActionTypes;
-  payload?: any;
-};
+type Action =
+  | {type: ActionTypes.RESTORE_TOKEN; payload: boolean}
+  | {type: ActionTypes.SIGN_IN}
+  | {type: ActionTypes.SIGN_OUT};
 
 type State = {
   isLoading: boolean;
@@ -56,29 +56,24 @@ const AuthProvider = ({
       signIn: async () => {
         try {
           await AuthService.shared.setCredentials('dummy-auth-token');
-        } catch (e) {
-          // Handle error
+          dispatch({type: ActionTypes.SIGN_IN});
+        } catch {
+          // credentials failed to persist — remain signed out
         }
-
-        dispatch({type: ActionTypes.SIGN_IN});
       },
       signOut: async () => {
         try {
           await AuthService.shared.removeCredentials();
-        } catch (e) {
-          // Handle error
-        }
-
+        } catch {}
         dispatch({type: ActionTypes.SIGN_OUT});
       },
       signUp: async () => {
         try {
           await AuthService.shared.setCredentials('dummy-auth-token');
-        } catch (e) {
-          // Handle error
+          dispatch({type: ActionTypes.SIGN_IN});
+        } catch {
+          // credentials failed to persist — remain signed out
         }
-
-        dispatch({type: ActionTypes.SIGN_IN});
       },
     }),
     [],

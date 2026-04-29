@@ -1,7 +1,7 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 class AuthService {
-  TOKEN_KEY = 'token';
+  private readonly TOKEN_KEY = 'token';
 
   getCredentials(): Promise<string | null> {
     return AsyncStorage.getItem(this.TOKEN_KEY);

@@ -2,7 +2,7 @@ import React from 'react';
 import {Pressable, StyleSheet, Text, View} from 'react-native';
 import type {NativeStackScreenProps} from '@react-navigation/native-stack';
 import type {TradingStackParamList} from '../navigation/MainNavigator';
-import {colors} from '../theme';
+import {colors} from 'super-app-showcase-sdk';
 
 type Props = NativeStackScreenProps<TradingStackParamList, 'TradeSuccess'>;
 

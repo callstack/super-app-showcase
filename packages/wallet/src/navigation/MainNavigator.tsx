@@ -1,7 +1,7 @@
 import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import WalletScreen from '../screens/WalletScreen';
-import {colors} from '../theme';
+import {colors} from 'super-app-showcase-sdk';
 
 export type WalletStackParamList = {
   Wallet: undefined;

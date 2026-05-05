@@ -6,7 +6,7 @@ import {
   withSequence,
   withTiming,
 } from 'react-native-reanimated';
-import {colors} from '../theme';
+import {colors} from 'super-app-showcase-sdk';
 
 export const useFlashAnimation = (value: number) => {
   const prevRef = React.useRef(0);

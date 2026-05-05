@@ -11,9 +11,8 @@ import {matchFont} from '@shopify/react-native-skia';
 import {CartesianChart, Line} from 'victory-native';
 import {useDerivedValue, useSharedValue, withTiming} from 'react-native-reanimated';
 import type {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {useAssetPrice, useHistoricalPrices, formatPrice} from 'super-app-showcase-sdk';
+import {useAssetPrice, useHistoricalPrices, formatPrice, colors} from 'super-app-showcase-sdk';
 import type {TradingStackParamList} from '../navigation/MainNavigator';
-import {colors} from '../theme';
 import TradeBottomSheet from '../components/TradeBottomSheet';
 import type {BottomSheetRef} from '../components/TradeBottomSheet';
 

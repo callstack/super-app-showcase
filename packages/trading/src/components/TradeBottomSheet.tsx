@@ -11,8 +11,7 @@ import BottomSheet, {
   BottomSheetView,
   type BottomSheetBackdropProps,
 } from '@gorhom/bottom-sheet';
-import type {Asset} from 'super-app-showcase-sdk';
-import {colors} from '../theme';
+import {colors, type Asset} from 'super-app-showcase-sdk';
 
 export interface BottomSheetRef {
   open: () => void;

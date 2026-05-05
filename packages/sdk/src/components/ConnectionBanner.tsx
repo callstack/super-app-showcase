@@ -1,14 +1,12 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import {useConnectionStatus} from '../hooks/useConnectionStatus';
-import {useAssetPrice} from '../hooks/usePrices';
 import {colors} from '../theme';
 
 const ConnectionBanner = () => {
   const status = useConnectionStatus();
-  const btcPrice = useAssetPrice('BTC');
 
-  if (btcPrice > 0) {
+  if (status === 'connected') {
     return null;
   }
 

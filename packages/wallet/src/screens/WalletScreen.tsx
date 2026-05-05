@@ -1,10 +1,9 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import {LegendList} from '@legendapp/list';
-import {usePrices, ASSET_MAP, formatValue, ConnectionBanner} from 'super-app-showcase-sdk';
+import {usePrices, ASSET_MAP, formatValue, colors, ConnectionBanner} from 'super-app-showcase-sdk';
 import {HOLDINGS, type Holding} from '../constants';
 import HoldingRow from '../components/HoldingRow';
-import {colors} from '../theme';
 
 const TotalBalance = () => {
   const prices = usePrices();

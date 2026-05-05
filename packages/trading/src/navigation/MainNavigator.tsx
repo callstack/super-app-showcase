@@ -3,8 +3,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import AssetListScreen from '../screens/AssetListScreen';
 import AssetDetailsScreen from '../screens/AssetDetailsScreen';
 import TradeSuccessScreen from '../screens/TradeSuccessScreen';
-import {colors} from '../theme';
-import type {Asset} from 'super-app-showcase-sdk';
+import {colors, type Asset} from 'super-app-showcase-sdk';
 
 export type TradingStackParamList = {
   AssetList: undefined;

@@ -1,12 +1,9 @@
 import React from 'react';
 import {Image, StyleSheet, Text, View} from 'react-native';
 import Animated from 'react-native-reanimated';
-import {useAssetPrice, formatPrice, formatValue, type Asset} from 'super-app-showcase-sdk';
+import {useAssetPrice, formatPrice, formatValue, getAssetIconUri, colors, type Asset} from 'super-app-showcase-sdk';
 import {useFlashAnimation} from '../hooks/useFlashAnimation';
 import type {Holding} from '../constants';
-import {colors} from '../theme';
-
-const ICON_BASE_URL = 'https://assets.coincap.io/assets/icons';
 
 interface Props {
   holding: Holding;
@@ -21,9 +18,7 @@ const HoldingRow = ({holding, asset}: Props) => {
   return (
     <Animated.View style={[styles.row, animatedStyle]}>
       <Image
-        source={{
-          uri: `${ICON_BASE_URL}/${holding.symbol.toLowerCase()}@2x.png`,
-        }}
+        source={{uri: getAssetIconUri(holding.symbol)}}
         style={styles.icon}
       />
       <View style={styles.info}>

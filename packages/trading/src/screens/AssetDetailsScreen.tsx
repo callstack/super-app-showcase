@@ -7,6 +7,7 @@ import {
   View,
 } from 'react-native';
 import {useBottomTabBarHeight} from 'react-native-bottom-tabs';
+import {matchFont} from '@shopify/react-native-skia';
 import {CartesianChart, Line} from 'victory-native';
 import {useDerivedValue, useSharedValue, withTiming} from 'react-native-reanimated';
 import type {NativeStackScreenProps} from '@react-navigation/native-stack';
@@ -103,6 +104,14 @@ const AssetDetailsScreen = ({route, navigation}: Props) => {
     prevPriceRef.current = price;
   }, [price, lineColorProgress]);
 
+  const chartFont = React.useMemo(() => {
+    try {
+      return matchFont({fontSize: 11});
+    } catch {
+      return null;
+    }
+  }, []);
+
   const openTradeSheet = React.useCallback(() => {
     tradeSheetRef.current?.open();
   }, []);
@@ -130,7 +139,24 @@ const AssetDetailsScreen = ({route, navigation}: Props) => {
               data={chartData}
               xKey="index"
               yKeys={['price']}
-              domainPadding={{top: 16, bottom: 16}}>
+              domainPadding={{top: 16, bottom: 16}}
+              padding={{left: 8, right: 8, top: 8, bottom: 8}}
+              yAxis={[{
+                font: chartFont,
+                tickCount: 4,
+                labelColor: colors.secondary,
+                axisSide: 'right',
+                formatYLabel: value => {
+                  const n = Number(value);
+                  if (n >= 1000) {
+                    return `$${(n / 1000).toFixed(1)}k`;
+                  }
+                  if (n >= 1) {
+                    return `$${n.toFixed(0)}`;
+                  }
+                  return `$${n.toFixed(3)}`;
+                },
+              }]}>
               {({points}) => (
                 <Line
                   points={points.price}

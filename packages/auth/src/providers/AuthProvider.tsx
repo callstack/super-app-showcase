@@ -47,7 +47,7 @@ const AuthProvider = ({
   children: (data: State) => React.ReactNode;
 }) => {
   const [state, dispatch] = React.useReducer(reducer, {
-    isLoading: false,
+    isLoading: true,
     isSignout: false,
   });
 

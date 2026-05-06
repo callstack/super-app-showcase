@@ -52,28 +52,7 @@ Authentication is handled by a shared `AuthProvider` federated from `packages/au
 
 ## Architecture
 
-<!-- TODO: replace with updated architecture diagram image showing Host → Trading, Wallet, Auth with SDK price feed -->
-
-```
-┌─────────────────────────────────────────────────────────┐
-│                    host  (port 8081)                    │
-│  Native shell · dark theme · GestureHandler root        │
-│  PriceProvider (Kraken WebSocket singleton via sdk)     │
-│                                                         │
-│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐  │
-│  │ trading 9001 │  │ wallet  9002 │  │  auth   9003 │  │
-│  │ Asset list   │  │ Portfolio    │  │ SignInScreen  │  │
-│  │ Chart+trade  │  │ Live balance │  │ AuthProvider │  │
-│  └──────────────┘  └──────────────┘  └──────────────┘  │
-│                                                         │
-│                   ┌──────────────┐                      │
-│                   │     sdk      │                      │
-│                   │ KrakenWS svc │                      │
-│                   │ PriceProvider│                      │
-│                   │ Shared types │                      │
-│                   └──────────────┘                      │
-└─────────────────────────────────────────────────────────┘
-```
+![Architecture diagram](images/diagram.png)
 
 **Key design decisions:**
 

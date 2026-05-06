@@ -28,26 +28,7 @@ This showcase makes that concrete with a production-grade Fintech app: a trading
 
 ## Architecture
 
-```
-┌─────────────────────────────────────────────────────────┐
-│                    host  (port 8081)                    │
-│  Native shell · dark theme · GestureHandler root        │
-│  PriceProvider — single Kraken WebSocket connection     │
-│                                                         │
-│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐  │
-│  │ trading 9001 │  │ wallet  9002 │  │  auth   9003 │  │
-│  │ Asset list   │  │ Portfolio    │  │ SignInScreen  │  │
-│  │ Chart+trade  │  │ Live balance │  │ AuthProvider │  │
-│  └──────────────┘  └──────────────┘  └──────────────┘  │
-│                                                         │
-│                   ┌──────────────┐                      │
-│                   │     sdk      │                      │
-│                   │ KrakenWS svc │                      │
-│                   │ PriceProvider│                      │
-│                   │ Shared types │                      │
-│                   └──────────────┘                      │
-└─────────────────────────────────────────────────────────┘
-```
+![Architecture diagram](../images/diagram.png)
 
 ### Packages
 

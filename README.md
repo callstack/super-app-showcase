@@ -27,7 +27,18 @@ Key properties of this architecture:
 
 ## The App
 
-<!-- TODO: add screenshot/GIF of the running app (host with all three tabs visible) -->
+<table>
+  <tr>
+    <td>Trading App</td>
+    <td>Wallet App</td>
+    <td>Auth App</td>
+  </tr>
+  <tr>
+    <td><img src="images/trading-app.gif" alt="trading-app" width="200"></td>
+    <td><img src="images/wallet-app.png" alt="wallet-app" width="200"></td>
+    <td><img src="images/auth-app.png" alt="auth-app" width="200"></td>
+  </tr>  
+</table>
 
 A dark-themed Fintech Super App with three tabs:
 

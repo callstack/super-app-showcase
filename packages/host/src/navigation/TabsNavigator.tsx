@@ -5,9 +5,18 @@ import Placeholder from '../components/Placeholder';
 import ErrorBoundary from '../components/ErrorBoundary';
 import {colors} from '../theme';
 
-const TradingApp = React.lazy(() => import('trading/App'));
-const WalletApp = React.lazy(() => import('wallet/App'));
-const AccountScreenRemote = React.lazy(() => import('auth/AccountScreen'));
+const randomDelay = () =>
+  new Promise(resolve => setTimeout(resolve, 250 + Math.random() * 100));
+
+const TradingApp = React.lazy(() =>
+  randomDelay().then(() => import('trading/App')),
+);
+const WalletApp = React.lazy(() =>
+  randomDelay().then(() => import('wallet/App')),
+);
+const AccountScreenRemote = React.lazy(() =>
+  randomDelay().then(() => import('auth/AccountScreen')),
+);
 
 const TradingScreen = () => (
   <ErrorBoundary name="Trading">

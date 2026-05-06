@@ -1,4 +1,14 @@
-import React from 'react';
+import 'react-native-gesture-handler/jestSetup';
+
+jest.mock('@bottom-tabs/react-navigation', () => {
+  const React = require('react');
+  const {View} = require('react-native');
+  const createNativeBottomTabNavigator = () => ({
+    Navigator: ({children}) => React.createElement(View, null, children),
+    Screen: ({component: Component}) => React.createElement(Component),
+  });
+  return {createNativeBottomTabNavigator};
+});
 
 jest.mock('react-native-bootsplash', () => {
   return {
@@ -19,24 +29,20 @@ jest.mock('@callstack/repack/client', () => ({
         const authMock = require('../auth/mocks/federated');
         return Promise.resolve(authMock.default(module));
       }
-      if (container === 'booking') {
-        const bookingMock = require('../booking/mocks/federated');
-        return Promise.resolve(bookingMock.default(module));
-      }
-      if (container === 'dashboard') {
-        const dashboardMock = require('../booking/mocks/federated');
-        return Promise.resolve(dashboardMock.default(module));
-      }
-      if (container === 'shopping') {
-        const shoppingMock = require('../booking/mocks/federated');
-        return Promise.resolve(shoppingMock.default(module));
-      }
-      if (container === 'news') {
+      if (container === 'trading') {
         switch (module) {
           case './App':
-            return Promise.resolve({default: () => <></>});
+            return Promise.resolve({default: () => null});
           default:
-            throw new Error(`NewsMock: unknown module: ${module}`);
+            throw new Error(`TradingMock: unknown module: ${module}`);
+        }
+      }
+      if (container === 'wallet') {
+        switch (module) {
+          case './App':
+            return Promise.resolve({default: () => null});
+          default:
+            throw new Error(`WalletMock: unknown module: ${module}`);
         }
       }
       throw new Error('jest.setup.js: unknown container: ' + container);

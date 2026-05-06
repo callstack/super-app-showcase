@@ -6,6 +6,7 @@
   "homepage": "https://github.com/callstack/super-app-showcase",
   "repository": "github:callstack/super-app-showcase",
   "main": "index.js",
+  "types": "./src/index.ts",
   "exports": {
     ".": {
       "react-native": "./src/index.ts",

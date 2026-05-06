@@ -14,12 +14,9 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
-    "skipLibCheck": true,
-    "paths": {
-      "*": ["./@mf-types/*"]
-    }
+    "skipLibCheck": true
   },
-  "include": ["**/*.ts", "**/*.tsx", "./@mf-types/*"],
+  "include": ["**/*.ts", "**/*.tsx"],
   "exclude": [
     "babel.config.js",
     "metro.config.js",

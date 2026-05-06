@@ -142,6 +142,10 @@ pnpm lint        # ESLint across all packages
 pnpm typecheck   # TypeScript across all packages
 ```
 
+## Demo guide
+
+Looking to run this in a client demo or build a business case? Read the [Module Federation Demo Guide](docs/MODULE_FEDERATION_DEMO_GUIDE.md) — it covers the architecture, a step-by-step demo script, and a business case template with bundle size and CI time tables.
+
 ## Contributing
 
 Read the [contribution guidelines](/CONTRIBUTING.md) before contributing.

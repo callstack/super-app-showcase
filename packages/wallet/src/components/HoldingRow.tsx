@@ -1,8 +1,7 @@
 import React from 'react';
 import {Image, StyleSheet, Text, View} from 'react-native';
 import Animated from 'react-native-reanimated';
-import {useAssetPrice, formatPrice, formatValue, getAssetIconUri, colors, type Asset} from 'super-app-showcase-sdk';
-import {useFlashAnimation} from '../hooks/useFlashAnimation';
+import {useAssetPrice, useFlashAnimation, formatPrice, formatValue, getAssetIconUri, colors, type Asset} from 'super-app-showcase-sdk';
 import type {Holding} from '../constants';
 
 interface Props {

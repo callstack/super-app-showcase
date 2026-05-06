@@ -11,10 +11,7 @@
   "scripts": {
     "run:host:ios": "pnpm --filter host ios",
     "run:host:android": "pnpm --filter host android",
-    "run:dashboard:ios": "pnpm --filter dashboard ios",
-    "run:dashboard:android": "pnpm --filter dashboard android",
     "start": "mprocs -c mprocs/host.yaml",
-    "start:dashboard": "mprocs -c mprocs/dashboard.yaml",
     "pods": "pnpm -r pods",
     "pods:update": "pnpm -r pods:update",
     "lint": "pnpm -r lint",

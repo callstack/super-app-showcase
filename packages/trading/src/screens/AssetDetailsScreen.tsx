@@ -90,9 +90,11 @@ const AssetDetailsScreen = ({route, navigation}: Props) => {
 
     // Update 60-tick buffer
     bufferRef.current = [...bufferRef.current, price].slice(-MAX_TICKS);
-    setChartData(
-      bufferRef.current.map((p, index) => ({index, price: p})),
-    );
+    React.startTransition(() => {
+      setChartData(
+        bufferRef.current.map((p, index) => ({index, price: p})),
+      );
+    });
 
     // Animate line color on direction change
     if (prevPriceRef.current !== 0 && price !== prevPriceRef.current) {

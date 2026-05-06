@@ -1,7 +1,12 @@
 import React from 'react';
 import {Image, Pressable, StyleSheet, Text, View} from 'react-native';
-import Animated from 'react-native-reanimated';
-import {useAssetPrice, useFlashAnimation, formatPrice, getAssetIconUri, colors, type Asset} from 'super-app-showcase-sdk';
+import Animated, {
+  interpolateColor,
+  useAnimatedStyle,
+  useSharedValue,
+} from 'react-native-reanimated';
+import {getAssetIconUri, colors, type Asset} from 'super-app-showcase-sdk';
+import PriceCell from './PriceCell';
 
 interface AssetRowProps {
   asset: Asset;
@@ -9,12 +14,20 @@ interface AssetRowProps {
 }
 
 const AssetRow = ({asset, onPress}: AssetRowProps) => {
-  const price = useAssetPrice(asset.symbol);
-  const animatedStyle = useFlashAnimation(price);
+  const flashProgress = useSharedValue(0);
+  const flashIsUp = useSharedValue(true);
+
+  const rowStyle = useAnimatedStyle(() => ({
+    backgroundColor: interpolateColor(
+      flashProgress.value,
+      [0, 1],
+      [colors.transparent, flashIsUp.value ? colors.priceUp : colors.priceDown],
+    ),
+  }));
 
   return (
     <Pressable onPress={() => onPress(asset)}>
-      <Animated.View style={[styles.row, animatedStyle]}>
+      <Animated.View style={[styles.row, rowStyle]}>
         <Image
           source={{uri: getAssetIconUri(asset.symbol)}}
           style={styles.icon}
@@ -23,7 +36,11 @@ const AssetRow = ({asset, onPress}: AssetRowProps) => {
           <Text style={styles.name}>{asset.name}</Text>
           <Text style={styles.symbol}>{asset.symbol}</Text>
         </View>
-        <Text style={styles.price}>{formatPrice(price)}</Text>
+        <PriceCell
+          symbol={asset.symbol}
+          flashProgress={flashProgress}
+          flashIsUp={flashIsUp}
+        />
       </Animated.View>
     </Pressable>
   );
@@ -57,12 +74,6 @@ const styles = StyleSheet.create({
   symbol: {
     color: colors.secondary,
     fontSize: 13,
-  },
-  price: {
-    color: colors.onSurface,
-    fontSize: 16,
-    fontWeight: '500',
-    fontVariant: ['tabular-nums'],
   },
 });
 

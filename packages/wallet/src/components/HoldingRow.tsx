@@ -1,8 +1,13 @@
 import React from 'react';
 import {Image, StyleSheet, Text, View} from 'react-native';
-import Animated from 'react-native-reanimated';
-import {useAssetPrice, useFlashAnimation, formatPrice, formatValue, getAssetIconUri, colors, type Asset} from 'super-app-showcase-sdk';
+import Animated, {
+  interpolateColor,
+  useAnimatedStyle,
+  useSharedValue,
+} from 'react-native-reanimated';
+import {getAssetIconUri, colors, type Asset} from 'super-app-showcase-sdk';
 import type {Holding} from '../constants';
+import ValueCell from './ValueCell';
 
 interface Props {
   holding: Holding;
@@ -10,12 +15,19 @@ interface Props {
 }
 
 const HoldingRow = ({holding, asset}: Props) => {
-  const price = useAssetPrice(holding.symbol);
-  const value = price * holding.quantity;
-  const animatedStyle = useFlashAnimation(value);
+  const flashProgress = useSharedValue(0);
+  const flashIsUp = useSharedValue(true);
+
+  const rowStyle = useAnimatedStyle(() => ({
+    backgroundColor: interpolateColor(
+      flashProgress.value,
+      [0, 1],
+      [colors.transparent, flashIsUp.value ? colors.priceUp : colors.priceDown],
+    ),
+  }));
 
   return (
-    <Animated.View style={[styles.row, animatedStyle]}>
+    <Animated.View style={[styles.row, rowStyle]}>
       <Image
         source={{uri: getAssetIconUri(holding.symbol)}}
         style={styles.icon}
@@ -26,10 +38,12 @@ const HoldingRow = ({holding, asset}: Props) => {
           {holding.quantity} {holding.symbol}
         </Text>
       </View>
-      <View style={styles.valueContainer}>
-        <Text style={styles.value}>{formatValue(value)}</Text>
-        <Text style={styles.price}>{formatPrice(price)}</Text>
-      </View>
+      <ValueCell
+        symbol={holding.symbol}
+        quantity={holding.quantity}
+        flashProgress={flashProgress}
+        flashIsUp={flashIsUp}
+      />
     </Animated.View>
   );
 };
@@ -62,21 +76,6 @@ const styles = StyleSheet.create({
   quantity: {
     color: colors.secondary,
     fontSize: 13,
-  },
-  valueContainer: {
-    alignItems: 'flex-end',
-    gap: 3,
-  },
-  value: {
-    color: colors.onSurface,
-    fontSize: 16,
-    fontWeight: '600',
-    fontVariant: ['tabular-nums'],
-  },
-  price: {
-    color: colors.secondary,
-    fontSize: 12,
-    fontVariant: ['tabular-nums'],
   },
 });
 

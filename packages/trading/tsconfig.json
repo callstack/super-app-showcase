@@ -2,7 +2,7 @@
   "extends": "@react-native/typescript-config",
   "compilerOptions": {
     "module": "es2020",
-    "types": ["react-native", "jest"],
+    "types": ["react-native"],
     "paths": {
       "@gorhom/bottom-sheet": ["../host/node_modules/@gorhom/bottom-sheet"],
       "@shopify/react-native-skia": ["../host/node_modules/@shopify/react-native-skia"],

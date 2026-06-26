@@ -16,6 +16,26 @@ import type {TradingStackParamList} from '../navigation/MainNavigator';
 import TradeBottomSheet from '../components/TradeBottomSheet';
 import type {BottomSheetRef} from '../components/TradeBottomSheet';
 
+// victory-native@41 still builds its line path via skia's deprecated
+// SkPath.addPath(), which logs a deprecation warning on every chart render.
+// The call site is inside victory-native (not our code), so silence just this
+// one message until the lib migrates to Skia.PathBuilder. See:
+// https://shopify.github.io/react-native-skia/docs/shapes/path-migration
+type PatchableConsole = typeof console & {__skiaAddPathWarnPatched?: boolean};
+if (__DEV__ && !(console as PatchableConsole).__skiaAddPathWarnPatched) {
+  const originalWarn = console.warn.bind(console);
+  console.warn = (...args: Parameters<typeof console.warn>) => {
+    if (
+      typeof args[0] === 'string' &&
+      args[0].includes('SkPath.addPath() is deprecated')
+    ) {
+      return;
+    }
+    originalWarn(...args);
+  };
+  (console as PatchableConsole).__skiaAddPathWarnPatched = true;
+}
+
 type Props = NativeStackScreenProps<TradingStackParamList, 'AssetDetails'>;
 
 const MAX_TICKS = 60;

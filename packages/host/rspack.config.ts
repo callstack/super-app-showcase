@@ -1,6 +1,7 @@
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import * as Repack from '@callstack/repack';
+import {ReanimatedPlugin} from '@callstack/repack-plugin-reanimated';
 import rspack from '@rspack/core';
 import {getSharedDependencies} from 'super-app-showcase-sdk';
 
@@ -63,6 +64,13 @@ export default Repack.defineRspackConfig(({mode, platform}) => {
     },
     plugins: [
       new Repack.RepackPlugin(),
+      // react-native-reanimated is in host's dependencies, so Re.Pack's
+      // validatePlugins expects a ReanimatedPlugin in the config. The worklet
+      // transform is already handled by react-native-worklets/plugin in
+      // babel.config.js (run via babel-swc-loader), so disable this plugin's
+      // own transform rule to avoid double-transforming — it's only here to
+      // satisfy the check and silence the spurious build warning.
+      new ReanimatedPlugin({unstable_disableTransform: true}),
       new Repack.plugins.ModuleFederationPluginV2({
         name: 'host',
         dts: false,

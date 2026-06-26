@@ -21,6 +21,13 @@ export default Repack.defineRspackConfig(({mode, platform}) => {
     entry: './index.js',
     resolve: {
       ...Repack.getResolveOptions({enablePackageExports: true}),
+      // Expose host's node_modules as an absolute resolution root so that
+      // shared-module fallbacks (Module Federation) requested from sibling
+      // workspace packages — e.g. sdk's useFlashAnimation.ts importing the
+      // host-owned react-native-reanimated — resolve correctly. Without this,
+      // node resolution walks up from packages/sdk and never reaches
+      // host/node_modules. Mirrors the modules config in the mini apps.
+      modules: [path.resolve(__dirname, 'node_modules'), 'node_modules'],
     },
     output: {
       uniqueName: 'sas-host',

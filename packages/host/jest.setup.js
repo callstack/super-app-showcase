@@ -1,5 +1,16 @@
 import 'react-native-gesture-handler/jestSetup';
 
+// react-native-reanimated v4 has no bundled jest mock and its real entry point
+// loads react-native-worklets, which throws outside a native runtime. Mock the
+// handful of APIs the shared SDK's useFlashAnimation actually uses.
+jest.mock('react-native-reanimated', () => ({
+  useSharedValue: initial => ({value: initial}),
+  useAnimatedStyle: factory => factory(),
+  interpolateColor: (_value, _input, output) => output[0],
+  withTiming: toValue => toValue,
+  withSequence: (...steps) => steps[steps.length - 1],
+}));
+
 jest.mock('@bottom-tabs/react-navigation', () => {
   const React = require('react');
   const {View} = require('react-native');

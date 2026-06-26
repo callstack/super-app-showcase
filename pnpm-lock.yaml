@@ -7,9 +7,6 @@ settings:
 packageExtensionsChecksum: 1da4657e354dc8431e292873fdb307b8
 
 patchedDependencies:
-  '@react-native/community-cli-plugin':
-    hash: gdpi5rwh3blcwxgyspzwxjdb6a
-    path: patches/@react-native__community-cli-plugin.patch
   react-native-paper:
     hash: twfh72ckor2cqmjojoaxihh3de
     path: patches/react-native-paper.patch
@@ -7931,7 +7928,7 @@ snapshots:
       tinyglobby: 0.2.15
       yargs: 17.7.2
 
-  '@react-native/community-cli-plugin@0.84.1(patch_hash=gdpi5rwh3blcwxgyspzwxjdb6a)(@react-native-community/cli@20.1.0(typescript@5.9.3))':
+  '@react-native/community-cli-plugin@0.84.1(@react-native-community/cli@20.1.0(typescript@5.9.3))':
     dependencies:
       '@react-native/dev-middleware': 0.84.1
       debug: 4.4.3
@@ -11457,7 +11454,7 @@ snapshots:
       '@jest/create-cache-key-function': 29.7.0
       '@react-native/assets-registry': 0.84.1
       '@react-native/codegen': 0.84.1(@babel/core@7.26.0)
-      '@react-native/community-cli-plugin': 0.84.1(patch_hash=gdpi5rwh3blcwxgyspzwxjdb6a)(@react-native-community/cli@20.1.0(typescript@5.9.3))
+      '@react-native/community-cli-plugin': 0.84.1(@react-native-community/cli@20.1.0(typescript@5.9.3))
       '@react-native/gradle-plugin': 0.84.1
       '@react-native/js-polyfills': 0.84.1
       '@react-native/normalize-colors': 0.84.1

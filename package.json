@@ -26,7 +26,6 @@
   },
   "pnpm": {
     "patchedDependencies": {
-      "@react-native/community-cli-plugin": "patches/@react-native__community-cli-plugin.patch",
       "react-native-paper": "patches/react-native-paper.patch"
     },
     "packageExtensions": {

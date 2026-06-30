@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import RNBootSplash from 'react-native-bootsplash';
 import {NavigationContainer} from '@react-navigation/native';
 import {Provider as PaperProvider} from 'react-native-paper';
@@ -12,39 +12,46 @@ import {theme} from './theme';
 const AuthProvider = React.lazy(() => import('auth/AuthProvider'));
 const SignInScreen = React.lazy(() => import('auth/SignInScreen'));
 
+const SignInWrapper = () => {
+  useEffect(() => {
+    RNBootSplash.hide({fade: true});
+  }, []);
+  return (
+    <React.Suspense fallback={<SplashScreen />}>
+      <SignInScreen />
+    </React.Suspense>
+  );
+};
+
 const App = () => {
   return (
     <GestureHandlerRootView style={{flex: 1}}>
-    <PaperProvider theme={theme}>
-      <PriceProvider>
-        <ErrorBoundary name="AuthProvider">
-          <React.Suspense fallback={<SplashScreen />}>
-            <AuthProvider>
-              {(authData: {isSignout: boolean; isLoading: boolean}) => {
-                if (authData.isLoading) {
-                  return <SplashScreen />;
-                }
+      <PaperProvider theme={theme}>
+        <PriceProvider>
+          <ErrorBoundary name="AuthProvider">
+            <React.Suspense fallback={<SplashScreen />}>
+              <AuthProvider>
+                {(authData: {isSignout: boolean; isLoading: boolean}) => {
+                  if (authData.isLoading) {
+                    return <SplashScreen />;
+                  }
 
-                if (authData.isSignout) {
+                  if (authData.isSignout) {
+                    return <SignInWrapper />;
+                  }
+
                   return (
-                    <React.Suspense fallback={<SplashScreen />}>
-                      <SignInScreen />
-                    </React.Suspense>
+                    <NavigationContainer
+                      onReady={() => RNBootSplash.hide({fade: true})}>
+                      <MainNavigator />
+                    </NavigationContainer>
                   );
-                }
-
-                return (
-                  <NavigationContainer
-                    onReady={() => RNBootSplash.hide({fade: true})}>
-                    <MainNavigator />
-                  </NavigationContainer>
-                );
-              }}
-            </AuthProvider>
-          </React.Suspense>
-        </ErrorBoundary>
-      </PriceProvider>
-    </PaperProvider>
+                }}
+              </AuthProvider>
+            </React.Suspense>
+          </ErrorBoundary>
+        </PriceProvider>
+      </PaperProvider>
     </GestureHandlerRootView>
   );
 };

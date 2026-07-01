@@ -1,9 +1,23 @@
 import React from 'react';
+import {Platform} from 'react-native';
 import {createNativeBottomTabNavigator} from '@bottom-tabs/react-navigation';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import Placeholder from '../components/Placeholder';
 import ErrorBoundary from '../components/ErrorBoundary';
 import {colors} from '../theme';
+
+// `sfSymbol` only renders on iOS, so Android needs a rasterized ImageSource instead.
+const tabIcon =
+  (sfSymbol: string, materialIconName: string) =>
+  ({focused}: {focused: boolean}) =>
+    Platform.OS === 'ios'
+      ? {sfSymbol}
+      : Icon.getImageSourceSync(
+          materialIconName,
+          24,
+          focused ? colors.primary : colors.secondary,
+        );
 
 const randomDelay = () =>
   new Promise(resolve => setTimeout(resolve, 250 + Math.random() * 100));
@@ -72,14 +86,16 @@ const TabsNavigator = () => {
   return (
     <Tabs.Navigator
       translucent={false}
+      tabBarStyle={{backgroundColor: colors.surface}}
       tabBarActiveTintColor={colors.primary}
-      tabBarInactiveTintColor={colors.secondary}>
+      tabBarInactiveTintColor={colors.secondary}
+      screenOptions={{sceneStyle: {backgroundColor: colors.background}}}>
       <Tabs.Screen
         name="Trading"
         component={TradingScreen}
         options={{
           title: 'Trading',
-          tabBarIcon: () => ({sfSymbol: 'chart.line.uptrend.xyaxis'}),
+          tabBarIcon: tabIcon('chart.line.uptrend.xyaxis', 'chart-line'),
         }}
       />
       <Tabs.Screen
@@ -87,7 +103,7 @@ const TabsNavigator = () => {
         component={WalletScreen}
         options={{
           title: 'Wallet',
-          tabBarIcon: () => ({sfSymbol: 'creditcard'}),
+          tabBarIcon: tabIcon('creditcard', 'credit-card'),
         }}
       />
       <Tabs.Screen
@@ -95,7 +111,7 @@ const TabsNavigator = () => {
         component={AccountScreen}
         options={{
           title: 'Account',
-          tabBarIcon: () => ({sfSymbol: 'person.crop.circle'}),
+          tabBarIcon: tabIcon('person.crop.circle', 'account-circle'),
         }}
       />
     </Tabs.Navigator>

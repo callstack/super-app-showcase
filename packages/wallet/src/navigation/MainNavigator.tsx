@@ -4,7 +4,7 @@ import WalletScreen from '../screens/WalletScreen';
 import {colors} from 'super-app-showcase-sdk';
 
 export type WalletStackParamList = {
-  Wallet: undefined;
+  WalletMain: undefined;
 };
 
 const Stack = createNativeStackNavigator<WalletStackParamList>();
@@ -18,7 +18,7 @@ const MainNavigator = () => {
         contentStyle: {backgroundColor: colors.background},
       }}>
       <Stack.Screen
-        name="Wallet"
+        name="WalletMain"
         component={WalletScreen}
         options={{title: 'My Wallet'}}
       />

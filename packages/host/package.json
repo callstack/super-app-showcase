@@ -5,7 +5,7 @@
   "scripts": {
     "android": "react-native run-android --no-packager",
     "ios": "react-native run-ios --no-packager",
-    "start": "react-native start",
+    "start": "NODE_OPTIONS=--disable-warning=DEP0155 react-native start",
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "typecheck": "tsc",
@@ -45,6 +45,7 @@
     "@babel/preset-env": "^7.25.3",
     "@babel/runtime": "^7.25.0",
     "@callstack/repack": "5.2.5",
+    "@callstack/repack-plugin-reanimated": "5.2.5",
     "@react-native-community/cli": "20.1.0",
     "@react-native-community/cli-platform-android": "20.1.0",
     "@react-native-community/cli-platform-ios": "20.1.0",

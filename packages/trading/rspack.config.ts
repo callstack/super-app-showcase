@@ -11,6 +11,14 @@ export default Repack.defineRspackConfig(({mode, platform}) => {
   return {
     mode,
     context: __dirname,
+    // Silence benign "Critical dependency" warnings from dynamic require()s
+    // that don't run in the app bundle (worklets/reanimated Metro-only and
+    // jest-only paths, and bottom-sheet's optional flash-list fallback).
+    ignoreWarnings: [
+      {module: /react-native-worklets[\\/]src[\\/]bundleMode[\\/]metroOverrides/},
+      {module: /react-native-reanimated[\\/]src[\\/]jestUtils/},
+      {module: /@gorhom[\\/]bottom-sheet[\\/].*BottomSheetFlashList/},
+    ],
     entry: './index.js',
     resolve: {
       ...Repack.getResolveOptions({enablePackageExports: true}),

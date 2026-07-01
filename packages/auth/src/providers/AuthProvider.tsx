@@ -85,8 +85,8 @@ const AuthProvider = ({
 
       try {
         userToken = await AuthService.shared.getCredentials();
-      } catch (e) {
-        // Handle error
+      } catch {
+        // no stored credentials — fall through and treat as signed out
       }
 
       dispatch({type: ActionTypes.RESTORE_TOKEN, payload: !userToken});

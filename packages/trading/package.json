@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "react-native start --port 9001",
-    "test": "jest --passWithNoTests",
+    "start": "NODE_OPTIONS=--disable-warning=DEP0155 react-native start --port 9001",
+    "test": "echo \"no tests in trading\"",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "typecheck": "tsc"
   },

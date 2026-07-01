@@ -11,6 +11,21 @@ export default Repack.defineRspackConfig(({mode, platform}) => {
   return {
     mode,
     context: __dirname,
+    // Ignore benign "Critical dependency" warnings from reanimated/worklets'
+    // dynamic require()s that Rspack can't statically extract. Neither path
+    // runs in the app bundle under Re.Pack:
+    //   - worklets bundleMode/metroOverrides: Metro-only runtime APIs
+    //   - reanimated jestUtils: only executes when IS_JEST is true
+    // Use the {module} form — a bare RegExp is matched against the warning
+    // message, not the module path, so it would never match here.
+    // Also ignore @gorhom/bottom-sheet's optional require('@shopify/flash-list')
+    // (wrapped in try/catch) — flash-list isn't installed and the component
+    // falls back to a regular list when it's absent.
+    ignoreWarnings: [
+      {module: /react-native-worklets[\\/]src[\\/]bundleMode[\\/]metroOverrides/},
+      {module: /react-native-reanimated[\\/]src[\\/]jestUtils/},
+      {module: /@gorhom[\\/]bottom-sheet[\\/].*BottomSheetFlashList/},
+    ],
     entry: './index.js',
     resolve: {
       ...Repack.getResolveOptions({enablePackageExports: true}),

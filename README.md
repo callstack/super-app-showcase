@@ -52,7 +52,22 @@ Authentication is handled by a shared `AuthProvider` federated from `packages/au
 
 ## Architecture
 
-![Architecture diagram](images/diagram.png)
+```mermaid
+flowchart LR
+  subgraph HostBox["Host app"]
+    direction TB
+    Host["Host (port 8081)<br/>Native shell<br/>Navigation + auth gate"]
+    SDK["SDK<br/>KrakenWS svc<br/>PriceProvider<br/>Shared types"]
+  end
+
+  Trading["Trading (port 9001)<br/>Asset list<br/>Chart + Trade"]
+  Wallet["Wallet (port 9002)<br/>Portfolio<br/>Live Balance"]
+  Auth["Auth (port 9003)<br/>SignInScreen<br/>AuthProvider"]
+
+  HostBox --> Trading
+  HostBox --> Wallet
+  HostBox --> Auth
+```
 
 **Key design decisions:**
 

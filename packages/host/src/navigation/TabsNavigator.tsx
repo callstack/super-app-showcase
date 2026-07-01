@@ -88,7 +88,8 @@ const TabsNavigator = () => {
       translucent={false}
       tabBarStyle={{backgroundColor: colors.surface}}
       tabBarActiveTintColor={colors.primary}
-      tabBarInactiveTintColor={colors.secondary}>
+      tabBarInactiveTintColor={colors.secondary}
+      screenOptions={{sceneStyle: {backgroundColor: colors.background}}}>
       <Tabs.Screen
         name="Trading"
         component={TradingScreen}

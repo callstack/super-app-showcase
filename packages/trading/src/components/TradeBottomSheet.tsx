@@ -21,6 +21,7 @@ export interface BottomSheetRef {
 
 interface Props {
   asset: Asset;
+  bottomInset: number;
   onConfirm: () => void;
 }
 
@@ -35,7 +36,7 @@ const renderBackdrop = (props: BottomSheetBackdropProps) => (
 );
 
 const TradeBottomSheet = React.forwardRef<BottomSheetRef, Props>(
-  ({asset, onConfirm}, ref) => {
+  ({ asset, bottomInset, onConfirm }, ref) => {
     const sheetRef = React.useRef<BottomSheet>(null);
     const amountRef = React.useRef('');
 
@@ -71,7 +72,8 @@ const TradeBottomSheet = React.forwardRef<BottomSheetRef, Props>(
         backgroundStyle={styles.background}
         handleIndicatorStyle={styles.indicator}
         onClose={Keyboard.dismiss}>
-        <BottomSheetView style={styles.content}>
+        <BottomSheetView
+          style={[styles.content, {paddingBottom: bottomInset + 16}]}>
           <Text style={styles.title}>Trade {asset.name}</Text>
           <Text style={styles.subtitle}>{asset.symbol}/USD</Text>
 

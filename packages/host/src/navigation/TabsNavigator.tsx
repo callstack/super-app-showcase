@@ -72,6 +72,7 @@ const TabsNavigator = () => {
   return (
     <Tabs.Navigator
       translucent={false}
+      tabBarStyle={{backgroundColor: colors.surface}}
       tabBarActiveTintColor={colors.primary}
       tabBarInactiveTintColor={colors.secondary}>
       <Tabs.Screen

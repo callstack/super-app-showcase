@@ -1,13 +1,14 @@
 import React from 'react';
 import {
+  Keyboard,
   Pressable,
   StyleSheet,
   Text,
-  TextInput,
   View,
 } from 'react-native';
 import BottomSheet, {
   BottomSheetBackdrop,
+  BottomSheetTextInput,
   BottomSheetView,
   type BottomSheetBackdropProps,
 } from '@gorhom/bottom-sheet';
@@ -23,14 +24,13 @@ interface Props {
   onConfirm: () => void;
 }
 
-const SNAP_POINTS = ['45%'];
-
 const renderBackdrop = (props: BottomSheetBackdropProps) => (
   <BottomSheetBackdrop
     {...props}
     disappearsOnIndex={-1}
     appearsOnIndex={0}
     opacity={0.6}
+    onPress={Keyboard.dismiss}
   />
 );
 
@@ -39,36 +39,45 @@ const TradeBottomSheet = React.forwardRef<BottomSheetRef, Props>(
     const sheetRef = React.useRef<BottomSheet>(null);
     const amountRef = React.useRef('');
 
-    React.useImperativeHandle(ref, () => ({
-      open: () => sheetRef.current?.expand(),
-      close: () => sheetRef.current?.close(),
-    }));
-
-    const handleConfirm = React.useCallback(() => {
-      sheetRef.current?.close();
-      onConfirm();
-    }, [onConfirm]);
-
-    const handleCancel = React.useCallback(() => {
+    const closeSheet = React.useCallback(() => {
+      Keyboard.dismiss();
       sheetRef.current?.close();
     }, []);
+
+    React.useImperativeHandle(ref, () => ({
+      open: () => sheetRef.current?.snapToIndex(0),
+      close: closeSheet,
+    }), [closeSheet]);
+
+    const handleConfirm = React.useCallback(() => {
+      closeSheet();
+      onConfirm();
+    }, [closeSheet, onConfirm]);
+
+    const handleCancel = React.useCallback(() => {
+      closeSheet();
+    }, [closeSheet]);
 
     return (
       <BottomSheet
         ref={sheetRef}
         index={-1}
-        snapPoints={SNAP_POINTS}
         enablePanDownToClose
+        keyboardBehavior="interactive"
+        keyboardBlurBehavior="restore"
+        android_keyboardInputMode="adjustPan"
+        enableBlurKeyboardOnGesture
         backdropComponent={renderBackdrop}
         backgroundStyle={styles.background}
-        handleIndicatorStyle={styles.indicator}>
+        handleIndicatorStyle={styles.indicator}
+        onClose={Keyboard.dismiss}>
         <BottomSheetView style={styles.content}>
           <Text style={styles.title}>Trade {asset.name}</Text>
           <Text style={styles.subtitle}>{asset.symbol}/USD</Text>
 
           <View style={styles.inputContainer}>
             <Text style={styles.inputLabel}>Amount (USD)</Text>
-            <TextInput
+            <BottomSheetTextInput
               style={styles.input}
               placeholder="0.00"
               placeholderTextColor={colors.secondary}

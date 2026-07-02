@@ -78,7 +78,7 @@ const AssetDetailsScreen = ({route, navigation}: Props) => {
     Platform.OS === 'ios'
       // sometimes the first render would get 0 for tab bar height
       ? Math.max(tabBarHeight, IOS_TAB_BAR_FALLBACK_HEIGHT + insets.bottom)
-      : tabBarHeight;
+      : 0;
   const footerPaddingBottom =
     Platform.OS === 'ios' ? effectiveTabBarHeight + 8 : 16;
   const price = useAssetPrice(asset.symbol);

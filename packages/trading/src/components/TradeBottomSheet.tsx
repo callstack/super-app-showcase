@@ -39,6 +39,17 @@ const TradeBottomSheet = React.forwardRef<BottomSheetRef, Props>(
   ({ asset, bottomInset, onConfirm }, ref) => {
     const sheetRef = React.useRef<BottomSheet>(null);
     const amountRef = React.useRef('');
+    const [keyboardVisible, setKeyboardVisible] = React.useState(() => Keyboard.isVisible());
+
+    React.useEffect(() => {
+      const willShowSub = Keyboard.addListener('keyboardWillShow', () => setKeyboardVisible(true));
+      const willHideSub = Keyboard.addListener('keyboardWillHide', () => setKeyboardVisible(false));
+
+      return () => {
+        willShowSub.remove();
+        willHideSub.remove();
+      };
+    }, []);
 
     const closeSheet = React.useCallback(() => {
       Keyboard.dismiss();
@@ -73,7 +84,7 @@ const TradeBottomSheet = React.forwardRef<BottomSheetRef, Props>(
         handleIndicatorStyle={styles.indicator}
         onClose={Keyboard.dismiss}>
         <BottomSheetView
-          style={[styles.content, {paddingBottom: bottomInset + 16}]}>
+          style={[styles.content, {paddingBottom: keyboardVisible ? 32 : Math.max(32, bottomInset + 16) }]}>
           <Text style={styles.title}>Trade {asset.name}</Text>
           <Text style={styles.subtitle}>{asset.symbol}/USD</Text>
 
@@ -125,7 +136,6 @@ const styles = StyleSheet.create({
   content: {
     paddingHorizontal: 24,
     paddingTop: 8,
-    paddingBottom: 32,
     gap: 16,
   },
   title: {

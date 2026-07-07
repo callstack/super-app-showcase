@@ -1563,6 +1563,30 @@ PODS:
     - ReactCommon/turbomodule/core
     - ReactNativeDependencies
     - Yoga
+  - react-native-skia (2.6.2):
+    - hermes-engine
+    - RCTRequired
+    - RCTTypeSafety
+    - React
+    - React-callinvoker
+    - React-Core
+    - React-Core-prebuilt
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-jsi
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-renderercss
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - ReactNativeDependencies
+    - Yoga
   - React-NativeModulesApple (0.84.1):
     - hermes-engine
     - React-callinvoker
@@ -1970,6 +1994,102 @@ PODS:
     - ReactCommon/turbomodule/core
     - ReactNativeDependencies
     - Yoga
+  - RNGestureHandler (2.31.1):
+    - hermes-engine
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-Core-prebuilt
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-jsi
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-renderercss
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - ReactNativeDependencies
+    - Yoga
+  - RNReanimated (4.3.0):
+    - hermes-engine
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-Core-prebuilt
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-hermes
+    - React-ImageManager
+    - React-jsi
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-renderercss
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - ReactNativeDependencies
+    - RNReanimated/apple (= 4.3.0)
+    - RNReanimated/common (= 4.3.0)
+    - RNWorklets
+    - Yoga
+  - RNReanimated/apple (4.3.0):
+    - hermes-engine
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-Core-prebuilt
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-hermes
+    - React-ImageManager
+    - React-jsi
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-renderercss
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - ReactNativeDependencies
+    - RNWorklets
+    - Yoga
+  - RNReanimated/common (4.3.0):
+    - hermes-engine
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-Core-prebuilt
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-hermes
+    - React-ImageManager
+    - React-jsi
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-renderercss
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - ReactNativeDependencies
+    - RNWorklets
+    - Yoga
   - RNScreens (4.24.0):
     - hermes-engine
     - RCTRequired
@@ -2039,6 +2159,77 @@ PODS:
     - ReactCommon/turbomodule/core
     - ReactNativeDependencies
     - Yoga
+  - RNWorklets (0.8.1):
+    - hermes-engine
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-Core-prebuilt
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-hermes
+    - React-ImageManager
+    - React-jsi
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-renderercss
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - ReactNativeDependencies
+    - RNWorklets/apple (= 0.8.1)
+    - RNWorklets/common (= 0.8.1)
+    - Yoga
+  - RNWorklets/apple (0.8.1):
+    - hermes-engine
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-Core-prebuilt
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-hermes
+    - React-ImageManager
+    - React-jsi
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-renderercss
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - ReactNativeDependencies
+    - Yoga
+  - RNWorklets/common (0.8.1):
+    - hermes-engine
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-Core-prebuilt
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-hermes
+    - React-ImageManager
+    - React-jsi
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-renderercss
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - ReactNativeDependencies
+    - Yoga
   - SDWebImage (5.21.0):
     - SDWebImage/Core (= 5.21.0)
   - SDWebImage/Core (5.21.0)
@@ -2094,6 +2285,7 @@ DEPENDENCIES:
   - React-microtasksnativemodule (from `../node_modules/react-native/ReactCommon/react/nativemodule/microtasks`)
   - react-native-bottom-tabs (from `../node_modules/react-native-bottom-tabs`)
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
+  - "react-native-skia (from `../node_modules/@shopify/react-native-skia`)"
   - React-NativeModulesApple (from `../node_modules/react-native/ReactCommon/react/nativemodule/core/platform/ios`)
   - React-networking (from `../node_modules/react-native/ReactCommon/react/networking`)
   - React-oscompat (from `../node_modules/react-native/ReactCommon/oscompat`)
@@ -2129,8 +2321,11 @@ DEPENDENCIES:
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
   - ReactNativeDependencies (from `../node_modules/react-native/third-party-podspecs/ReactNativeDependencies.podspec`)
   - RNBootSplash (from `../node_modules/react-native-bootsplash`)
+  - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
+  - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNScreens (from `../node_modules/react-native-screens`)
   - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
+  - RNWorklets (from `../node_modules/react-native-worklets`)
   - SDWebImage
   - SDWebImageSVGCoder
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
@@ -2229,6 +2424,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-bottom-tabs"
   react-native-safe-area-context:
     :path: "../node_modules/react-native-safe-area-context"
+  react-native-skia:
+    :path: "../node_modules/@shopify/react-native-skia"
   React-NativeModulesApple:
     :path: "../node_modules/react-native/ReactCommon/react/nativemodule/core/platform/ios"
   React-networking:
@@ -2299,10 +2496,16 @@ EXTERNAL SOURCES:
     :podspec: "../node_modules/react-native/third-party-podspecs/ReactNativeDependencies.podspec"
   RNBootSplash:
     :path: "../node_modules/react-native-bootsplash"
+  RNGestureHandler:
+    :path: "../node_modules/react-native-gesture-handler"
+  RNReanimated:
+    :path: "../node_modules/react-native-reanimated"
   RNScreens:
     :path: "../node_modules/react-native-screens"
   RNVectorIcons:
     :path: "../node_modules/react-native-vector-icons"
+  RNWorklets:
+    :path: "../node_modules/react-native-worklets"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -2310,7 +2513,7 @@ SPEC CHECKSUMS:
   AsyncStorage: b9dbc3eecddb3ec3c5254c8eb57e9018724912d8
   callstack-repack: ac761bfc09e2d4c5946bcbe5d1ee7518aae8ac58
   FBLazyVector: e97c19a5a442429d1988f182a1940fb08df514da
-  hermes-engine: 09800667f08d1bf10b4661e100bf5320637da57d
+  hermes-engine: 4ba7c66be07d1549a6e5a9a7727eee77ac24035c
   JWTDecode: 2eed97c2fa46ccaf3049a787004eedf0be474a87
   RCTDeprecation: af44b104091a34482596cd9bd7e8d90c4e9b4bd7
   RCTRequired: bb77b070f75f53398ce43c0aaaa58337cebe2bf6
@@ -2320,7 +2523,7 @@ SPEC CHECKSUMS:
   React: 1ba7d364ade7d883a1ec055bfc3606f35fdee17b
   React-callinvoker: bc2a26f8d84fb01f003fc6de6c9337b64715f95b
   React-Core: bdaa87b276ca31877632a982ecf7c36f8c826414
-  React-Core-prebuilt: caaf2954c9c1b8c7bd210b197eaa8f1c23ce8231
+  React-Core-prebuilt: d9c87fdbf9767648783ae17c37432552b7f34a83
   React-CoreModules: b24989f62d56390ae08ca4f65e6f38fe6802de42
   React-cxxreact: 1a2dfcbc18a6b610664dba152adf327f063a0d12
   React-debug: 755200a6e7f5e6e0a40ff8d215493d43cce285fc
@@ -2350,6 +2553,7 @@ SPEC CHECKSUMS:
   React-microtasksnativemodule: ab9d1a05fe1f58ea44a97d307ef1b53463f45a3f
   react-native-bottom-tabs: 484fe90c49d4d7d547d15ae78f4de75492a395fa
   react-native-safe-area-context: 29044d05d61f2c60d0828c373bd0ebe17eed58d0
+  react-native-skia: 474a33d4da66b68a0c2f53e7ee142b3e991449e2
   React-NativeModulesApple: b94faa2dce6d8c0a9d722ed7ee27b996d28b62d1
   React-networking: e409d8fb062162da6293e98b77f8d80cf4430e07
   React-oscompat: ff26abf0ae3e3fdbe47b44224571e3fc7226a573
@@ -2383,15 +2587,18 @@ SPEC CHECKSUMS:
   ReactAppDependencyProvider: 26bbf1e26768d08dd965a2b5e372e53f67b21fee
   ReactCodegen: cac18d8d019ac167415438d199aa944954b1b874
   ReactCommon: 309419492d417c4cbb87af06f67735afa40ecb9d
-  ReactNativeDependencies: 69a154f5efab1091661811a15131521a293b1d87
+  ReactNativeDependencies: f63a20ef8b926344e77506cc9de14081d1f3c65c
   RNBootSplash: 7adde79e6fbb9e8ccff6b8eccbcda6856b1f816e
+  RNGestureHandler: eb2f4f545ed5e6b597d60b6515e193cf63a2c1ba
+  RNReanimated: ea02d79937f48a3f353527633150e7f4e13f05d2
   RNScreens: 088d923c4327c63c9f8c942cae17a9d038f47d97
   RNVectorIcons: af977c18ed27deba54ed038b439fca2911a08cfc
+  RNWorklets: 2544cd45df728091473f905f3a805bc66595e198
   SDWebImage: f84b0feeb08d2d11e6a9b843cb06d75ebf5b8868
   SDWebImageSVGCoder: 8e10c8f6cc879c7dfb317b284e13dd589379f01c
   SwiftUIIntrospect: fee9aa07293ee280373a591e1824e8ddc869ba5d
   SwiftyRSA: 8c6dd1ea7db1b8dc4fb517a202f88bb1354bc2c6
-  Yoga: 7c1c3b93e408ac46c7ed64b5641ca7161747378d
+  Yoga: c0b3f2c7e8d3e327e450223a2414ca3fa296b9a2
 
 PODFILE CHECKSUM: 57649a0176502afe3243eedb7d7d166d4177e6f9
 

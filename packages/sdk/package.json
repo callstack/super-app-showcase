@@ -6,13 +6,34 @@
   "homepage": "https://github.com/callstack/super-app-showcase",
   "repository": "github:callstack/super-app-showcase",
   "main": "index.js",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": {
+      "react-native": "./src/index.ts",
+      "require": "./index.js",
+      "default": "./index.js"
+    }
+  },
   "files": [
     "android",
     "ios",
     "lib",
+    "src",
     "index.js",
     "preset.js"
   ],
+  "devDependencies": {
+    "@swc/helpers": "^0.5.20",
+    "@types/react": "^19.2.0",
+    "react": "19.2.3",
+    "react-native": "*",
+    "typescript": "^5.8.3"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*",
+    "react-native-reanimated": "*"
+  },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
     "access": "public"

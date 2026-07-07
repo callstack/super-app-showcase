@@ -1,0 +1,41 @@
+{
+  "name": "wallet",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "NODE_OPTIONS=--disable-warning=DEP0155 react-native start --port 9002",
+    "test": "echo \"no tests in wallet\"",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "@legendapp/list": "2.0.19",
+    "@module-federation/enhanced": "2.3.1",
+    "@react-navigation/native": "7.2.2",
+    "@react-navigation/native-stack": "7.14.10",
+    "react": "19.2.3",
+    "react-native": "0.84.1",
+    "react-native-safe-area-context": "5.7.0",
+    "react-native-screens": "4.24.0"
+  },
+  "peerDependencies": {
+    "@shopify/react-native-skia": "*",
+    "react-native-reanimated": "*",
+    "react-native-worklets": "*"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@callstack/repack": "5.2.5",
+    "@react-native/babel-preset": "0.84.1",
+    "@react-native/eslint-config": "0.84.1",
+    "@react-native/typescript-config": "0.84.1",
+    "@rspack/core": "1.7.11",
+    "@swc/helpers": "^0.5.20",
+    "@types/react": "^19.2.0",
+    "@typescript-eslint/eslint-plugin": "^8.12.2",
+    "@typescript-eslint/parser": "^8.12.2",
+    "eslint": "^8.57.0",
+    "super-app-showcase-sdk": "0.0.2",
+    "typescript": "^5.8.3"
+  }
+}

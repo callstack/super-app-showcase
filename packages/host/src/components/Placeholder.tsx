@@ -1,19 +1,18 @@
 import React, {FC} from 'react';
-import {SafeAreaView, StyleSheet, Text} from 'react-native';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-import {MD3Colors} from 'react-native-paper';
+import {ActivityIndicator, StyleSheet, Text, View} from 'react-native';
+import {colors} from '../theme';
 
 type Props = {
   label: string;
-  icon: string;
+  icon?: string;
 };
 
-const Placeholder: FC<Props> = ({label, icon}) => {
+const Placeholder: FC<Props> = ({label}) => {
   return (
-    <SafeAreaView style={styles.container}>
-      <Icon size={96} color={MD3Colors.primary20} name={icon} />
+    <View style={styles.container}>
+      <ActivityIndicator size="large" color={colors.primary} />
       <Text style={styles.text}>{label}</Text>
-    </SafeAreaView>
+    </View>
   );
 };
 
@@ -22,10 +21,12 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    backgroundColor: colors.background,
+    gap: 16,
   },
   text: {
-    fontSize: 24,
-    color: MD3Colors.primary20,
+    fontSize: 16,
+    color: colors.secondary,
   },
 });
 

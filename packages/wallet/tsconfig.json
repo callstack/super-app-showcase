@@ -1,0 +1,12 @@
+{
+  "extends": "@react-native/typescript-config",
+  "compilerOptions": {
+    "module": "es2020",
+    "types": ["react-native"],
+    "paths": {
+      "react-native-reanimated": ["../host/node_modules/react-native-reanimated"]
+    }
+  },
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules", "babel.config.js", "jest.config.js"]
+}

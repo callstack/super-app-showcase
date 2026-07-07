@@ -43,6 +43,10 @@
     "name": "react-native-vector-icons",
     "version": "10.3.0"
   },
+  "super-app-showcase-sdk": {
+    "name": "super-app-showcase-sdk",
+    "version": "0.0.2"
+  },
   "@module-federation/enhanced": {
     "name": "@module-federation/enhanced",
     "version": "2.3.1",
@@ -51,5 +55,37 @@
   "react-native-edge-to-edge": {
     "name": "react-native-edge-to-edge",
     "version": "1.8.1"
+  },
+  "react-native-reanimated": {
+    "name": "react-native-reanimated",
+    "version": "4.3.0"
+  },
+  "react-native-worklets": {
+    "name": "react-native-worklets",
+    "version": "0.8.1"
+  },
+  "react-native-gesture-handler": {
+    "name": "react-native-gesture-handler",
+    "version": "2.31.1"
+  },
+  "@shopify/react-native-skia": {
+    "name": "@shopify/react-native-skia",
+    "version": "2.6.2"
+  },
+  "victory-native": {
+    "name": "victory-native",
+    "version": "41.20.2"
+  },
+  "@gorhom/bottom-sheet": {
+    "name": "@gorhom/bottom-sheet",
+    "version": "5.2.10"
+  },
+  "react-native-bottom-tabs": {
+    "name": "react-native-bottom-tabs",
+    "version": "1.1.0"
+  },
+  "@bottom-tabs/react-navigation": {
+    "name": "@bottom-tabs/react-navigation",
+    "version": "1.1.0"
   }
 }

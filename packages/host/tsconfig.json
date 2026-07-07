@@ -5,6 +5,10 @@
     "jsx": "react-native",
     "module": "es2020",
     "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "react-native-reanimated": ["./node_modules/react-native-reanimated"]
+    },
     "types": ["react-native", "jest"],
     "resolveJsonModule": true,
     "allowJs": true,
@@ -14,12 +18,9 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
-    "skipLibCheck": true,
-    "paths": {
-      "*": ["./@mf-types/*"]
-    }
+    "skipLibCheck": true
   },
-  "include": ["**/*.ts", "**/*.tsx", "./@mf-types/*"],
+  "include": ["**/*.ts", "**/*.tsx"],
   "exclude": [
     "babel.config.js",
     "metro.config.js",

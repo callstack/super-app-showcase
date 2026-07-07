@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+  Platform,
   Pressable,
   ScrollView,
   StyleSheet,
@@ -7,6 +8,7 @@ import {
   View,
 } from 'react-native';
 import {useBottomTabBarHeight} from 'react-native-bottom-tabs';
+import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import {matchFont} from '@shopify/react-native-skia';
 import {CartesianChart, Line} from 'victory-native';
 import {useDerivedValue, useSharedValue, withTiming} from 'react-native-reanimated';
@@ -39,6 +41,7 @@ if (__DEV__ && !(console as PatchableConsole).__skiaAddPathWarnPatched) {
 type Props = NativeStackScreenProps<TradingStackParamList, 'AssetDetails'>;
 
 const MAX_TICKS = 60;
+const IOS_TAB_BAR_FALLBACK_HEIGHT = 49;
 
 const NEWS_ITEMS = [
   {
@@ -70,6 +73,14 @@ const NEWS_ITEMS = [
 const AssetDetailsScreen = ({route, navigation}: Props) => {
   const {asset} = route.params;
   const tabBarHeight = useBottomTabBarHeight();
+  const insets = useSafeAreaInsets();
+  const effectiveTabBarHeight =
+    Platform.OS === 'ios'
+      // sometimes the first render would get 0 for tab bar height
+      ? Math.max(tabBarHeight, IOS_TAB_BAR_FALLBACK_HEIGHT + insets.bottom)
+      : 0;
+  const footerPaddingBottom =
+    Platform.OS === 'ios' ? effectiveTabBarHeight + 8 : 16;
   const price = useAssetPrice(asset.symbol);
   const historicalPrices = useHistoricalPrices(asset.krakenPair);
   const prevPriceRef = React.useRef(0);
@@ -209,7 +220,7 @@ const AssetDetailsScreen = ({route, navigation}: Props) => {
       </ScrollView>
 
       {/* Trade button */}
-      <View style={[styles.footer, {paddingBottom: tabBarHeight + 8}]}>
+      <View style={[styles.footer, {paddingBottom: footerPaddingBottom}]}>
         <Pressable
           style={({pressed}) => [
             styles.tradeButton,
@@ -223,6 +234,7 @@ const AssetDetailsScreen = ({route, navigation}: Props) => {
       <TradeBottomSheet
         ref={tradeSheetRef}
         asset={asset}
+        bottomInset={effectiveTabBarHeight}
         onConfirm={() => {
           navigation.navigate('TradeSuccess', {symbol: asset.symbol});
         }}

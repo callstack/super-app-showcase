@@ -6,7 +6,10 @@ const MAX_TICKS = 60;
 
 type KrakenOHLCResponse = {
   error: string[];
-  result: Record<string, [number, string, string, string, string, ...unknown[]][]> & {last: number};
+  result: Record<
+    string,
+    [number, string, string, string, string, ...unknown[]][]
+  > & {last: number};
 };
 
 export function useHistoricalPrices(krakenPair: string): number[] {

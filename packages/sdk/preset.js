@@ -1,1 +1,1 @@
-module.exports = require("./lib/rnxPreset");
+module.exports = require('./lib/rnxPreset');

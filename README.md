@@ -21,6 +21,7 @@ At the same time, web teams have had micro-frontend architecture for years. Mobi
 This showcase demonstrates a **production-grade micro-frontend architecture for React Native** using [Re.Pack](https://re-pack.dev) and [Module Federation](https://module-federation.io). Each mini app (Trading, Wallet, Auth) is an independent JavaScript bundle, loaded at runtime by the host shell. Teams can develop, test, and deploy their mini app independently. Users only download the bundles they need.
 
 Key properties of this architecture:
+
 - **Runtime dependencies** — updating a mini app takes effect immediately without a host app release
 - **Independent deployability** — each mini app has its own dev server, bundle, and release pipeline
 - **Shared singletons** — native libraries (`react-native`, `react-native-reanimated`, etc.) and the live price feed (`KrakenWebSocketService`) are shared across all mini apps at runtime, keeping bundle sizes small and behaviour consistent
@@ -42,11 +43,11 @@ Key properties of this architecture:
 
 A dark-themed Fintech Super App with three tabs:
 
-| Tab | Mini App | Description |
-|---|---|---|
+| Tab     | Mini App           | Description                                                  |
+| ------- | ------------------ | ------------------------------------------------------------ |
 | Trading | `packages/trading` | Live crypto asset list, Skia price chart, trade bottom sheet |
-| Wallet | `packages/wallet` | Real-time portfolio balance, per-asset holdings |
-| Account | `packages/auth` | Demo user profile, sign-out |
+| Wallet  | `packages/wallet`  | Real-time portfolio balance, per-asset holdings              |
+| Account | `packages/auth`    | Demo user profile, sign-out                                  |
 
 Authentication is handled by a shared `AuthProvider` federated from `packages/auth`, gating the tab bar until the user signs in.
 
@@ -78,28 +79,28 @@ flowchart LR
 
 ## Stack
 
-| | |
-|---|---|
-| React Native | 0.84 |
-| React | 19 |
-| Re.Pack | 5.2 (Rspack-based) |
-| Module Federation | V2 |
-| Animations | react-native-reanimated 4 + react-native-worklets |
-| Charts | victory-native 41 (Skia-based) |
-| Lists | @legendapp/list 2 |
-| Bottom sheet | @gorhom/bottom-sheet 5 |
-| Navigation | @react-navigation/native 7 + react-native-bottom-tabs |
-| React Compiler | babel-plugin-react-compiler 1.0 |
+|                   |                                                       |
+| ----------------- | ----------------------------------------------------- |
+| React Native      | 0.84                                                  |
+| React             | 19                                                    |
+| Re.Pack           | 5.2 (Rspack-based)                                    |
+| Module Federation | V2                                                    |
+| Animations        | react-native-reanimated 4 + react-native-worklets     |
+| Charts            | victory-native 41 (Skia-based)                        |
+| Lists             | @legendapp/list 2                                     |
+| Bottom sheet      | @gorhom/bottom-sheet 5                                |
+| Navigation        | @react-navigation/native 7 + react-native-bottom-tabs |
+| React Compiler    | babel-plugin-react-compiler 1.0                       |
 
 ## Structure
 
-| Package | Role |
-|---|---|
-| `packages/host` | Native shell — owns binary, all native deps, top-level navigation, MF remote wiring |
-| `packages/auth` | Auth mini app — `AuthProvider`, `SignInScreen`, `AccountScreen` |
-| `packages/trading` | Trading mini app — live asset list, Skia chart, trade bottom sheet |
-| `packages/wallet` | Wallet mini app — real-time portfolio balance and holdings |
-| `packages/sdk` | Shared library — `KrakenWebSocketService`, `PriceProvider`, hooks, utils, types |
+| Package            | Role                                                                                |
+| ------------------ | ----------------------------------------------------------------------------------- |
+| `packages/host`    | Native shell — owns binary, all native deps, top-level navigation, MF remote wiring |
+| `packages/auth`    | Auth mini app — `AuthProvider`, `SignInScreen`, `AccountScreen`                     |
+| `packages/trading` | Trading mini app — live asset list, Skia chart, trade bottom sheet                  |
+| `packages/wallet`  | Wallet mini app — real-time portfolio balance and holdings                          |
+| `packages/sdk`     | Shared library — `KrakenWebSocketService`, `PriceProvider`, hooks, utils, types     |
 
 ## Requirements
 
@@ -142,12 +143,12 @@ pnpm run:host:android
 
 ### Dev server ports
 
-| App | Port |
-|---|---|
-| host | 8081 |
+| App     | Port |
+| ------- | ---- |
+| host    | 8081 |
 | trading | 9001 |
-| wallet | 9002 |
-| auth | 9003 |
+| wallet  | 9002 |
+| auth    | 9003 |
 
 ## Code quality
 

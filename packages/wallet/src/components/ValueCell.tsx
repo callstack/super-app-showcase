@@ -1,7 +1,17 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
-import {withSequence, withTiming, type SharedValue} from 'react-native-reanimated';
-import {useAssetPrice, formatPrice, formatValue, colors, type AssetSymbol} from 'super-app-showcase-sdk';
+import {
+  withSequence,
+  withTiming,
+  type SharedValue,
+} from 'react-native-reanimated';
+import {
+  useAssetPrice,
+  formatPrice,
+  formatValue,
+  colors,
+  type AssetSymbol,
+} from 'super-app-showcase-sdk';
 
 interface ValueCellProps {
   symbol: AssetSymbol;
@@ -10,29 +20,31 @@ interface ValueCellProps {
   flashIsUp: SharedValue<boolean>;
 }
 
-const ValueCell = React.memo(({symbol, quantity, flashProgress, flashIsUp}: ValueCellProps) => {
-  const price = useAssetPrice(symbol);
-  const value = price * quantity;
-  const prevRef = React.useRef(0);
+const ValueCell = React.memo(
+  ({symbol, quantity, flashProgress, flashIsUp}: ValueCellProps) => {
+    const price = useAssetPrice(symbol);
+    const value = price * quantity;
+    const prevRef = React.useRef(0);
 
-  React.useEffect(() => {
-    if (prevRef.current !== 0 && value !== prevRef.current) {
-      flashIsUp.value = value > prevRef.current;
-      flashProgress.value = withSequence(
-        withTiming(1, {duration: 150}),
-        withTiming(0, {duration: 600}),
-      );
-    }
-    prevRef.current = value;
-  }, [value, flashProgress, flashIsUp]);
+    React.useEffect(() => {
+      if (prevRef.current !== 0 && value !== prevRef.current) {
+        flashIsUp.value = value > prevRef.current;
+        flashProgress.value = withSequence(
+          withTiming(1, {duration: 150}),
+          withTiming(0, {duration: 600}),
+        );
+      }
+      prevRef.current = value;
+    }, [value, flashProgress, flashIsUp]);
 
-  return (
-    <View style={styles.valueContainer}>
-      <Text style={styles.value}>{formatValue(value)}</Text>
-      <Text style={styles.price}>{formatPrice(price)}</Text>
-    </View>
-  );
-});
+    return (
+      <View style={styles.valueContainer}>
+        <Text style={styles.value}>{formatValue(value)}</Text>
+        <Text style={styles.price}>{formatPrice(price)}</Text>
+      </View>
+    );
+  },
+);
 
 const styles = StyleSheet.create({
   valueContainer: {

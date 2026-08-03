@@ -42,13 +42,13 @@ This is a **React Native Fintech Super App** using [Re.Pack](https://re-pack.dev
 
 ### Workspace packages
 
-| Package | Role |
-|---|---|
-| `packages/host` | Native shell — owns the native binary, all native dependencies, top-level navigation, and MF remote wiring |
-| `packages/auth` | Auth mini app — exposes `AuthProvider`, `SignInScreen`, `AccountScreen` |
-| `packages/sdk` | Shared library — `KrakenWebSocketService`, `PriceProvider`, hooks, utilities, types, `getSharedDependencies()` for MF |
-| `packages/trading` | Trading mini app — live asset list, Skia chart with OHLC history, trade bottom sheet |
-| `packages/wallet` | Wallet mini app — real-time portfolio balance using live prices |
+| Package            | Role                                                                                                                  |
+| ------------------ | --------------------------------------------------------------------------------------------------------------------- |
+| `packages/host`    | Native shell — owns the native binary, all native dependencies, top-level navigation, and MF remote wiring            |
+| `packages/auth`    | Auth mini app — exposes `AuthProvider`, `SignInScreen`, `AccountScreen`                                               |
+| `packages/sdk`     | Shared library — `KrakenWebSocketService`, `PriceProvider`, hooks, utilities, types, `getSharedDependencies()` for MF |
+| `packages/trading` | Trading mini app — live asset list, Skia chart with OHLC history, trade bottom sheet                                  |
+| `packages/wallet`  | Wallet mini app — real-time portfolio balance using live prices                                                       |
 
 ### Module Federation pattern
 
@@ -63,14 +63,14 @@ This is a **React Native Fintech Super App** using [Re.Pack](https://re-pack.dev
 ```tsx
 // In host — lazy load a remote module via React.lazy + Suspense
 const TradingApp = React.lazy(() =>
-  randomDelay().then(() => import('trading/App'))
+  randomDelay().then(() => import('trading/App')),
 );
 
 <ErrorBoundary name="Trading">
   <React.Suspense fallback={<Placeholder label="Trading" />}>
     <TradingApp />
   </React.Suspense>
-</ErrorBoundary>
+</ErrorBoundary>;
 ```
 
 The `randomDelay()` (250–350ms) is intentional for demo purposes — it makes the loading state visible. Remove it for production.
@@ -78,6 +78,7 @@ The `randomDelay()` (250–350ms) is intentional for demo purposes — it makes 
 ### Native dependencies
 
 **All native deps live in `host`** — mini apps declare them as `peerDependencies` only. When adding a new native dep:
+
 1. Add it to `host/package.json` dependencies
 2. Add it to `sdk/lib/dependencies.json` if it should be a MF shared singleton
 3. Add it as `peerDependency` in each mini app that uses it
@@ -87,6 +88,7 @@ The `randomDelay()` (250–350ms) is intentional for demo purposes — it makes 
 ### SDK exports
 
 `packages/sdk` is a shared singleton federated across all mini apps. It exports:
+
 - `KrakenWebSocketService` — singleton WebSocket to Kraken, shared across Trading and Wallet
 - `PriceProvider` / `PriceContext` — React context wrapping the WS service
 - `usePrices()` / `useAssetPrice(symbol)` — price subscription hooks (updates wrapped in `useTransition`)
@@ -109,12 +111,12 @@ The `randomDelay()` (250–350ms) is intentional for demo purposes — it makes 
 
 ### Dev server ports
 
-| App | Port |
-|---|---|
-| host | 8081 |
-| auth | 9003 |
+| App     | Port |
+| ------- | ---- |
+| host    | 8081 |
+| auth    | 9003 |
 | trading | 9001 |
-| wallet | 9002 |
+| wallet  | 9002 |
 
 ### Mocks for standalone development
 
@@ -127,6 +129,7 @@ Each package has an `rspack.config.ts`. The loader used is `@callstack/repack/ba
 ### Testing
 
 Host has a Jest test suite (`pnpm --filter host test`). Key mocks in `packages/host/jest.setup.js`:
+
 - `react-native-gesture-handler/jestSetup`
 - `@bottom-tabs/react-navigation` — mocked (native-only, can't run in Jest)
 - `react-native-bootsplash` — mocked

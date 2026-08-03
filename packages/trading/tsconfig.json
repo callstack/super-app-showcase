@@ -5,10 +5,18 @@
     "types": ["react-native"],
     "paths": {
       "@gorhom/bottom-sheet": ["../host/node_modules/@gorhom/bottom-sheet"],
-      "@shopify/react-native-skia": ["../host/node_modules/@shopify/react-native-skia"],
-      "react-native-bottom-tabs": ["../host/node_modules/react-native-bottom-tabs"],
-      "react-native-gesture-handler": ["../host/node_modules/react-native-gesture-handler"],
-      "react-native-reanimated": ["../host/node_modules/react-native-reanimated"],
+      "@shopify/react-native-skia": [
+        "../host/node_modules/@shopify/react-native-skia"
+      ],
+      "react-native-bottom-tabs": [
+        "../host/node_modules/react-native-bottom-tabs"
+      ],
+      "react-native-gesture-handler": [
+        "../host/node_modules/react-native-gesture-handler"
+      ],
+      "react-native-reanimated": [
+        "../host/node_modules/react-native-reanimated"
+      ],
       "victory-native": ["../host/node_modules/victory-native"]
     }
   },

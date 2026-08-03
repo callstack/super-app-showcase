@@ -3,9 +3,9 @@
   "version": "0.0.1",
   "license": "MIT",
   "private": true,
-  "packageManager": "pnpm@9.15.3",
+  "packageManager": "pnpm@11.18.0",
   "engines": {
-    "node": ">=22"
+    "node": ">=24.18.0"
   },
   "engineStrict": true,
   "scripts": {
@@ -18,34 +18,16 @@
     "test": "pnpm -r test",
     "typecheck": "pnpm -r typecheck",
     "align-deps": "pnpm -r align-deps",
-    "check-deps": "pnpm -r check-deps"
+    "check-deps": "pnpm install --lockfile-only --frozen-lockfile && pnpm peers check",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check"
   },
   "dependencies": {
     "babel-plugin-react-compiler": "^1.0.0",
-    "mprocs": "^0.7.1"
+    "mprocs": "^0.9.6"
   },
-  "pnpm": {
-    "patchedDependencies": {
-      "react-native-paper": "patches/react-native-paper.patch"
-    },
-    "packageExtensions": {
-      "@module-federation/data-prefetch": {
-        "peerDependenciesMeta": {
-          "react-dom": {
-            "optional": true
-          }
-        }
-      },
-      "babel-loader": {
-        "peerDependenciesMeta": {
-          "webpack": {
-            "optional": true
-          }
-        }
-      }
-    },
-    "allowedDeprecatedVersions": {
-      "eslint": "8"
-    }
+  "devDependencies": {
+    "@prettier/plugin-oxc": "^0.2.2",
+    "prettier": "catalog:"
   }
 }

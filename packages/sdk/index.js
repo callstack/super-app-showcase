@@ -1,3 +1,3 @@
 module.exports = {
-  getSharedDependencies: require("./lib/sharedDeps"),
+  getSharedDependencies: require('./lib/sharedDeps'),
 };

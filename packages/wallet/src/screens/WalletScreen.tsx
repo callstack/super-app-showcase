@@ -1,7 +1,13 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
-import {LegendList} from '@legendapp/list';
-import {usePrices, ASSET_MAP, formatValue, colors, ConnectionBanner} from 'super-app-showcase-sdk';
+import {LegendList} from '@legendapp/list/react-native';
+import {
+  usePrices,
+  ASSET_MAP,
+  formatValue,
+  colors,
+  ConnectionBanner,
+} from 'super-app-showcase-sdk';
 import {HOLDINGS, type Holding} from '../constants';
 import HoldingRow from '../components/HoldingRow';
 

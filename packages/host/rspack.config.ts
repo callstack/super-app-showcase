@@ -30,7 +30,10 @@ export default Repack.defineRspackConfig(({mode, platform}) => {
     // (wrapped in try/catch) — flash-list isn't installed and the component
     // falls back to a regular list when it's absent.
     ignoreWarnings: [
-      {module: /react-native-worklets[\\/]src[\\/]bundleMode[\\/]metroOverrides/},
+      {
+        module:
+          /react-native-worklets[\\/]src[\\/]bundleMode[\\/]metroOverrides/,
+      },
       {module: /react-native-reanimated[\\/]src[\\/]jestUtils/},
       {module: /@gorhom[\\/]bottom-sheet[\\/].*BottomSheetFlashList/},
     ],
@@ -44,6 +47,17 @@ export default Repack.defineRspackConfig(({mode, platform}) => {
       // node resolution walks up from packages/sdk and never reaches
       // host/node_modules. Mirrors the modules config in the mini apps.
       modules: [path.resolve(__dirname, 'node_modules'), 'node_modules'],
+      // Vector Icons' common runtime declares get-image as a peer dependency.
+      // Resolve it from the host explicitly so Rspack can traverse pnpm's
+      // peer-dependent virtual-store layout. The Expo font probe is guarded by
+      // a web-only branch and is not needed for bundled native fonts.
+      alias: {
+        '@react-native-vector-icons/get-image': path.resolve(
+          __dirname,
+          'node_modules/@react-native-vector-icons/get-image',
+        ),
+        'expo-font': false,
+      },
     },
     output: {
       uniqueName: 'sas-host',

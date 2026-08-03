@@ -1,0 +1,14 @@
+arrowParens: avoid
+bracketSameLine: true
+bracketSpacing: false
+singleQuote: true
+trailingComma: all
+plugins:
+  - '@prettier/plugin-oxc'
+overrides:
+  - files: '**/*.{js,mjs,cjs,jsx}'
+    options:
+      parser: oxc
+  - files: '**/*.{ts,mts,cts,tsx}'
+    options:
+      parser: oxc-ts

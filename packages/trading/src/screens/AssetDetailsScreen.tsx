@@ -11,9 +11,18 @@ import {useBottomTabBarHeight} from 'react-native-bottom-tabs';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import {matchFont} from '@shopify/react-native-skia';
 import {CartesianChart, Line} from 'victory-native';
-import {useDerivedValue, useSharedValue, withTiming} from 'react-native-reanimated';
+import {
+  useDerivedValue,
+  useSharedValue,
+  withTiming,
+} from 'react-native-reanimated';
 import type {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {useAssetPrice, useHistoricalPrices, formatPrice, colors} from 'super-app-showcase-sdk';
+import {
+  useAssetPrice,
+  useHistoricalPrices,
+  formatPrice,
+  colors,
+} from 'super-app-showcase-sdk';
 import type {TradingStackParamList} from '../navigation/MainNavigator';
 import TradeBottomSheet from '../components/TradeBottomSheet';
 import type {BottomSheetRef} from '../components/TradeBottomSheet';
@@ -52,7 +61,8 @@ const NEWS_ITEMS = [
   },
   {
     id: '2',
-    title: 'Institutional adoption accelerates as major banks enter crypto market',
+    title:
+      'Institutional adoption accelerates as major banks enter crypto market',
     time: '4h ago',
     source: 'Bloomberg',
   },
@@ -64,7 +74,8 @@ const NEWS_ITEMS = [
   },
   {
     id: '4',
-    title: 'New regulatory framework proposed to clarify digital asset classification',
+    title:
+      'New regulatory framework proposed to clarify digital asset classification',
     time: '8h ago',
     source: 'Financial Times',
   },
@@ -76,8 +87,8 @@ const AssetDetailsScreen = ({route, navigation}: Props) => {
   const insets = useSafeAreaInsets();
   const effectiveTabBarHeight =
     Platform.OS === 'ios'
-      // sometimes the first render would get 0 for tab bar height
-      ? Math.max(tabBarHeight, IOS_TAB_BAR_FALLBACK_HEIGHT + insets.bottom)
+      ? // sometimes the first render would get 0 for tab bar height
+        Math.max(tabBarHeight, IOS_TAB_BAR_FALLBACK_HEIGHT + insets.bottom)
       : 0;
   const footerPaddingBottom =
     Platform.OS === 'ios' ? effectiveTabBarHeight + 8 : 16;
@@ -122,9 +133,7 @@ const AssetDetailsScreen = ({route, navigation}: Props) => {
     // Update 60-tick buffer
     bufferRef.current = [...bufferRef.current, price].slice(-MAX_TICKS);
     React.startTransition(() => {
-      setChartData(
-        bufferRef.current.map((p, index) => ({index, price: p})),
-      );
+      setChartData(bufferRef.current.map((p, index) => ({index, price: p})));
     });
 
     // Animate line color on direction change
@@ -158,9 +167,7 @@ const AssetDetailsScreen = ({route, navigation}: Props) => {
         showsVerticalScrollIndicator={false}>
         {/* Current price */}
         <View style={styles.priceRow}>
-          <Text style={styles.currentPrice}>
-            {formatPrice(price)}
-          </Text>
+          <Text style={styles.currentPrice}>{formatPrice(price)}</Text>
           <Text style={styles.symbol}>{asset.symbol}/USD</Text>
         </View>
 
@@ -173,22 +180,24 @@ const AssetDetailsScreen = ({route, navigation}: Props) => {
               yKeys={['price']}
               domainPadding={{top: 16, bottom: 16}}
               padding={{left: 8, right: 8, top: 8, bottom: 8}}
-              yAxis={[{
-                font: chartFont,
-                tickCount: 4,
-                labelColor: colors.secondary,
-                axisSide: 'right',
-                formatYLabel: value => {
-                  const n = Number(value);
-                  if (n >= 1000) {
-                    return `$${(n / 1000).toFixed(1)}k`;
-                  }
-                  if (n >= 1) {
-                    return `$${n.toFixed(0)}`;
-                  }
-                  return `$${n.toFixed(3)}`;
+              yAxis={[
+                {
+                  font: chartFont,
+                  tickCount: 4,
+                  labelColor: colors.secondary,
+                  axisSide: 'right',
+                  formatYLabel: value => {
+                    const n = Number(value);
+                    if (n >= 1000) {
+                      return `$${(n / 1000).toFixed(1)}k`;
+                    }
+                    if (n >= 1) {
+                      return `$${n.toFixed(0)}`;
+                    }
+                    return `$${n.toFixed(3)}`;
+                  },
                 },
-              }]}>
+              ]}>
               {({points}) => (
                 <Line
                   points={points.price}

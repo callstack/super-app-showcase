@@ -11,7 +11,9 @@ const TradeSuccessScreen = ({navigation, route}: Props) => {
     <View style={styles.container}>
       <Text style={styles.checkmark}>✓</Text>
       <Text style={styles.title}>Trade Placed!</Text>
-      <Text style={styles.subtitle}>{route.params.symbol}/USD order confirmed</Text>
+      <Text style={styles.subtitle}>
+        {route.params.symbol}/USD order confirmed
+      </Text>
       <Pressable
         style={({pressed}) => [styles.button, pressed && styles.buttonPressed]}
         onPress={() => navigation.goBack()}>

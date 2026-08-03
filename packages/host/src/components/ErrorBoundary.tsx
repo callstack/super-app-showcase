@@ -1,7 +1,7 @@
 import React from 'react';
 import {StyleSheet, Text, SafeAreaView} from 'react-native';
 import {MD3Colors} from 'react-native-paper';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import {MaterialDesignIcons as Icon} from '@react-native-vector-icons/material-design-icons/static';
 
 type Props = {
   children: React.ReactNode;

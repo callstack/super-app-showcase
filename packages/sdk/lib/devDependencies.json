@@ -1,17 +1,17 @@
 {
   "@babel/core": {
     "name": "@babel/core",
-    "version": "^7.25.2",
+    "version": "^7.29.7",
     "devOnly": true
   },
   "@babel/preset-env": {
     "name": "@babel/preset-env",
-    "version": "^7.25.3",
+    "version": "^7.29.7",
     "devOnly": true
   },
   "@babel/runtime": {
     "name": "@babel/runtime",
-    "version": "^7.25.0",
+    "version": "^7.29.7",
     "devOnly": true
   },
   "@callstack/repack": {
@@ -21,32 +21,32 @@
   },
   "@react-native/babel-preset": {
     "name": "@react-native/babel-preset",
-    "version": "0.84.1",
+    "version": "0.86.2",
     "devOnly": true
   },
   "@react-native/eslint-config": {
     "name": "@react-native/eslint-config",
-    "version": "0.84.1",
+    "version": "0.86.2",
     "devOnly": true
   },
   "@react-native/typescript-config": {
     "name": "@react-native/typescript-config",
-    "version": "0.84.1",
+    "version": "0.86.2",
     "devOnly": true
   },
   "@react-native-community/cli": {
     "name": "@react-native-community/cli",
-    "version": "20.1.0",
+    "version": "20.2.0",
     "devOnly": true
   },
   "@rspack/core": {
     "name": "@rspack/core",
-    "version": "1.7.11",
+    "version": "2.1.7",
     "devOnly": true
   },
   "@swc/helpers": {
     "name": "@swc/helpers",
-    "version": "^0.5.20",
+    "version": "^0.5.23",
     "devOnly": true
   },
   "@types/jest": {
@@ -56,12 +56,7 @@
   },
   "@types/react": {
     "name": "@types/react",
-    "version": "^19.2.0",
-    "devOnly": true
-  },
-  "@types/react-native-vector-icons": {
-    "name": "@types/react-native-vector-icons",
-    "version": "^6.4.18",
+    "version": "^19.2.18",
     "devOnly": true
   },
   "@types/react-test-renderer": {
@@ -71,37 +66,37 @@
   },
   "@typescript-eslint/eslint-plugin": {
     "name": "@typescript-eslint/eslint-plugin",
-    "version": "^8.12.2",
+    "version": "^8.65.0",
     "devOnly": true
   },
   "@typescript-eslint/parser": {
     "name": "@typescript-eslint/parser",
-    "version": "^8.12.2",
+    "version": "^8.65.0",
     "devOnly": true
   },
   "eslint": {
     "name": "eslint",
-    "version": "^8.57.0",
+    "version": "^9.39.5",
     "devOnly": true
   },
   "jest": {
     "name": "jest",
-    "version": "^29.6.3",
+    "version": "^29.7.0",
     "devOnly": true
   },
   "prettier": {
     "name": "prettier",
-    "version": "^2.8.8",
+    "version": "^3.9.6",
     "devOnly": true
   },
   "react-test-renderer": {
     "name": "react-test-renderer",
-    "version": "^19.2.3",
+    "version": "^19.2.8",
     "devOnly": true
   },
   "typescript": {
     "name": "typescript",
-    "version": "^5.8.3",
+    "version": "^6.0.3",
     "devOnly": true
   }
 }

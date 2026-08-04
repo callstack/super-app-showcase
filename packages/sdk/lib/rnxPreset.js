@@ -28,23 +28,23 @@
  * 2. Run `rnx-align-deps` to check alignment of dependnecies or `rnx-align-deps --write` to align them.
  */
 const addSdkCapabilities = (dependencies, devDependencies) => {
-  const path = require("path");
-  const sdkPackagePath = path.resolve(__dirname, "..", "package.json");
+  const path = require('path');
+  const sdkPackagePath = path.resolve(__dirname, '..', 'package.json');
   const sdkPackageJson = require(sdkPackagePath);
 
   const profile = {
     ...dependencies,
     ...devDependencies,
-    "super-app-showcase-sdk": {
-      name: "super-app-showcase-sdk",
+    'super-app-showcase-sdk': {
+      name: 'super-app-showcase-sdk',
       version: sdkPackageJson.version,
       devOnly: true,
     },
   };
 
   return Object.assign(profile, {
-    "super-app": {
-      name: "#meta",
+    'super-app': {
+      name: '#meta',
       capabilities: Object.keys(profile),
     },
   });
@@ -52,7 +52,7 @@ const addSdkCapabilities = (dependencies, devDependencies) => {
 
 module.exports = {
   main: addSdkCapabilities(
-    require("./dependencies.json"),
-    require("./devDependencies.json")
+    require('./dependencies.json'),
+    require('./devDependencies.json'),
   ),
 };

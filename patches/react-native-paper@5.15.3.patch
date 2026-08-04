@@ -1,0 +1,33 @@
+diff --git a/src/components/MaterialCommunityIcon.tsx b/src/components/MaterialCommunityIcon.tsx
+index 52719bdbe10ea47ab029cdde3df440183795c7f6..32d2e54a671434da071972d9e6eaf664d356f093 100644
+--- a/src/components/MaterialCommunityIcon.tsx
++++ b/src/components/MaterialCommunityIcon.tsx
+@@ -39,25 +39,15 @@ export const accessibilityProps: AccessibilityProps =
+  */
+ const loadIconModule = () => {
+   try {
+-    return require('@react-native-vector-icons/material-design-icons').default;
++    return require('@react-native-vector-icons/material-design-icons/static').default;
+   } catch (e) {
+-    try {
+-      return require('@expo/vector-icons/MaterialCommunityIcons').default;
+-    } catch (e) {
+-      try {
+-        return require('react-native-vector-icons/MaterialCommunityIcons')
+-          .default;
+-      } catch (e) {
+-        return null;
+-      }
+-    }
++    return null;
+   }
+ };
+ 
+ type IconModuleType = React.ComponentType<
+   React.ComponentProps<
+-    | typeof import('@react-native-vector-icons/material-design-icons').default
+-    | typeof import('react-native-vector-icons/MaterialCommunityIcons').default
++    typeof import('@react-native-vector-icons/material-design-icons/static').default
+   > & {
+     color: string;
+     pointerEvents?: ViewProps['pointerEvents'];

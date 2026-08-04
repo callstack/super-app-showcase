@@ -33,7 +33,7 @@ pnpm start
 Or start dev server for Host app:
 
 ```
-pnpm start:host
+pnpm --filter host start
 ```
 
 Run iOS or Android app (ios | android):

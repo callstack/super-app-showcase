@@ -1,7 +1,8 @@
 import {ASSETS, KRAKEN_PAIR_TO_SYMBOL} from '../constants';
 
 type PriceListener = (price: number) => void;
-export type ConnectionStatus = 'connecting' | 'connected' | 'reconnecting' | 'disconnected';
+export type ConnectionStatus =
+  'connecting' | 'connected' | 'reconnecting' | 'disconnected';
 type StatusListener = (status: ConnectionStatus) => void;
 
 const WS_URL = 'wss://ws.kraken.com';

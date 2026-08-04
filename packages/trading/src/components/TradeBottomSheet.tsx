@@ -1,11 +1,5 @@
 import React from 'react';
-import {
-  Keyboard,
-  Pressable,
-  StyleSheet,
-  Text,
-  View,
-} from 'react-native';
+import {Keyboard, Pressable, StyleSheet, Text, View} from 'react-native';
 import BottomSheet, {
   BottomSheetBackdrop,
   BottomSheetTextInput,
@@ -36,14 +30,20 @@ const renderBackdrop = (props: BottomSheetBackdropProps) => (
 );
 
 const TradeBottomSheet = React.forwardRef<BottomSheetRef, Props>(
-  ({ asset, bottomInset, onConfirm }, ref) => {
+  ({asset, bottomInset, onConfirm}, ref) => {
     const sheetRef = React.useRef<BottomSheet>(null);
     const amountRef = React.useRef('');
-    const [keyboardVisible, setKeyboardVisible] = React.useState(() => Keyboard.isVisible());
+    const [keyboardVisible, setKeyboardVisible] = React.useState(() =>
+      Keyboard.isVisible(),
+    );
 
     React.useEffect(() => {
-      const willShowSub = Keyboard.addListener('keyboardWillShow', () => setKeyboardVisible(true));
-      const willHideSub = Keyboard.addListener('keyboardWillHide', () => setKeyboardVisible(false));
+      const willShowSub = Keyboard.addListener('keyboardWillShow', () =>
+        setKeyboardVisible(true),
+      );
+      const willHideSub = Keyboard.addListener('keyboardWillHide', () =>
+        setKeyboardVisible(false),
+      );
 
       return () => {
         willShowSub.remove();
@@ -56,10 +56,14 @@ const TradeBottomSheet = React.forwardRef<BottomSheetRef, Props>(
       sheetRef.current?.close();
     }, []);
 
-    React.useImperativeHandle(ref, () => ({
-      open: () => sheetRef.current?.snapToIndex(0),
-      close: closeSheet,
-    }), [closeSheet]);
+    React.useImperativeHandle(
+      ref,
+      () => ({
+        open: () => sheetRef.current?.snapToIndex(0),
+        close: closeSheet,
+      }),
+      [closeSheet],
+    );
 
     const handleConfirm = React.useCallback(() => {
       closeSheet();
@@ -84,7 +88,14 @@ const TradeBottomSheet = React.forwardRef<BottomSheetRef, Props>(
         handleIndicatorStyle={styles.indicator}
         onClose={Keyboard.dismiss}>
         <BottomSheetView
-          style={[styles.content, {paddingBottom: keyboardVisible ? 32 : Math.max(32, bottomInset + 16) }]}>
+          style={[
+            styles.content,
+            {
+              paddingBottom: keyboardVisible
+                ? 32
+                : Math.max(32, bottomInset + 16),
+            },
+          ]}>
           <Text style={styles.title}>Trade {asset.name}</Text>
           <Text style={styles.subtitle}>{asset.symbol}/USD</Text>
 

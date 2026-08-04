@@ -17,6 +17,7 @@ Web teams solved this years ago with micro-frontends: independently deployable U
 [Re.Pack](https://re-pack.dev) is a Webpack/Rspack-based bundler for React Native. Its Module Federation V2 plugin lets you do something React Native was never designed to support: **load a JavaScript bundle from a remote URL at runtime, after the app has shipped**.
 
 Each mini app is:
+
 - A separate bundle, hosted on your CDN
 - Independently deployable — no App Store release required
 - Developed and tested by its own team in isolation
@@ -32,13 +33,13 @@ This showcase makes that concrete with a production-grade Fintech app: a trading
 
 ### Packages
 
-| Package | Role |
-|---|---|
-| `packages/host` | Native shell — owns the binary, all native deps, top-level navigation, MF remote wiring |
-| `packages/trading` | Trading mini app — live asset list, Skia chart, trade bottom sheet |
-| `packages/wallet` | Wallet mini app — real-time portfolio balance and holdings |
-| `packages/auth` | Auth mini app — `AuthProvider`, `SignInScreen`, `AccountScreen` |
-| `packages/sdk` | Shared library — `KrakenWebSocketService`, `PriceProvider`, hooks, types, utilities |
+| Package            | Role                                                                                    |
+| ------------------ | --------------------------------------------------------------------------------------- |
+| `packages/host`    | Native shell — owns the binary, all native deps, top-level navigation, MF remote wiring |
+| `packages/trading` | Trading mini app — live asset list, Skia chart, trade bottom sheet                      |
+| `packages/wallet`  | Wallet mini app — real-time portfolio balance and holdings                              |
+| `packages/auth`    | Auth mini app — `AuthProvider`, `SignInScreen`, `AccountScreen`                         |
+| `packages/sdk`     | Shared library — `KrakenWebSocketService`, `PriceProvider`, hooks, types, utilities     |
 
 ### Key design decisions
 
@@ -89,12 +90,12 @@ Each mini app exposes a single entry point — its navigator. It consumes shared
 ```tsx
 // packages/host/src/navigation/TabsNavigator.tsx
 const TradingApp = React.lazy(() =>
-  randomDelay().then(() => import('trading/App'))
+  randomDelay().then(() => import('trading/App')),
 );
 
 <React.Suspense fallback={<Placeholder label="Trading" />}>
   <TradingApp />
-</React.Suspense>
+</React.Suspense>;
 ```
 
 `React.lazy` + `Suspense` gives you code splitting and loading states for free. The `randomDelay()` in this showcase makes the loading state visible during demos — in production you'd remove it.
@@ -215,7 +216,7 @@ In a production app this matters for: battery life, data usage, connection limit
 ### Setup
 
 ```bash
-npm install -g pnpm@9.15.3
+npm install -g pnpm@11.20.0
 pnpm install
 pnpm pods          # iOS only
 ```
@@ -230,31 +231,37 @@ pnpm run:host:ios  # or run:host:android
 ### Demo script
 
 **Step 1 — Authentication gate**
+
 > "The host shell owns authentication. The sign-in screen is a federated module from the `auth` package — the host doesn't ship auth UI code, it loads it at runtime."
 
 Sign in as Demo User. The tab bar appears.
 
 **Step 2 — Live trading list**
+
 > "Every price on this list is a real WebSocket tick from Kraken. Watch the green and red flashes — that's Reanimated running on the UI thread, not the JS thread. The list itself is LegendList, a high-performance alternative to FlatList."
 
 Scroll the list while prices are updating. No jank.
 
 **Step 3 — Asset details and chart**
+
 > "The chart is pre-populated with 60 minutes of real OHLC history. As new ticks arrive, the chart extends — but we wrap those updates in `startTransition`, so opening the trade sheet is always instant."
 
 Tap an asset. Open the trade sheet while prices are updating.
 
 **Step 4 — Trade flow**
+
 > "The trade sheet is `@gorhom/bottom-sheet`. Entering an amount uses an uncontrolled input — no re-render per keystroke. Confirm navigates to a modal success screen."
 
 Complete a trade.
 
 **Step 5 — Wallet with shared price feed**
+
 > "Switch to Wallet. The portfolio balance is updating in real time — same prices as Trading, because both mini apps share the same singleton WebSocket connection via Module Federation. No second connection, no duplication."
 
 Switch to Wallet. Watch the total balance update.
 
 **Step 6 — Independent deployment (the key point)**
+
 > "Now here's the business case argument: if I push a fix to the Trading mini app, I deploy a new bundle to the CDN. The host app on your device gets the update on the next launch — no App Store submission, no waiting for review, no forcing users to update."
 
 ---
@@ -263,24 +270,24 @@ Switch to Wallet. Watch the total balance update.
 
 ### Deployment independence
 
-| Scenario | Without MF | With MF |
-|---|---|---|
+| Scenario                       | Without MF                                | With MF                                  |
+| ------------------------------ | ----------------------------------------- | ---------------------------------------- |
 | Trading bug fix ships to users | Next App Store release (~1–7 days review) | CDN deploy, available on next app launch |
-| Wallet team adds a new feature | Full app release, all teams coordinate | Wallet deploys independently |
-| Rollback a bad trading release | Re-submit previous version to store | Swap CDN manifest to previous bundle |
+| Wallet team adds a new feature | Full app release, all teams coordinate    | Wallet deploys independently             |
+| Rollback a bad trading release | Re-submit previous version to store       | Swap CDN manifest to previous bundle     |
 
 ### Bundle sizes
 
 _Run `pnpm build` for each package and fill in actuals:_
 
-| Bundle | Size (gzip) |
-|---|---|
-| host (shell only, no mini apps) | _TBD_ |
-| trading | _TBD_ |
-| wallet | _TBD_ |
-| auth | _TBD_ |
-| **Total download for new user** | _TBD_ |
-| **If user never opens Wallet** | host + trading + auth only |
+| Bundle                          | Size (gzip)                |
+| ------------------------------- | -------------------------- |
+| host (shell only, no mini apps) | _TBD_                      |
+| trading                         | _TBD_                      |
+| wallet                          | _TBD_                      |
+| auth                            | _TBD_                      |
+| **Total download for new user** | _TBD_                      |
+| **If user never opens Wallet**  | host + trading + auth only |
 
 A user who only uses the trading feature never downloads the wallet bundle. At scale, across millions of installs, this is meaningful bandwidth and storage savings.
 
@@ -288,18 +295,19 @@ A user who only uses the trading feature never downloads the wallet bundle. At s
 
 _Run per-package builds in CI and fill in actuals:_
 
-| Build scope | Time |
-|---|---|
-| Full monorepo build | _TBD_ |
+| Build scope                                  | Time  |
+| -------------------------------------------- | ----- |
+| Full monorepo build                          | _TBD_ |
 | Trading only (`pnpm --filter trading build`) | _TBD_ |
-| Wallet only (`pnpm --filter wallet build`) | _TBD_ |
-| Auth only (`pnpm --filter auth build`) | _TBD_ |
+| Wallet only (`pnpm --filter wallet build`)   | _TBD_ |
+| Auth only (`pnpm --filter auth build`)       | _TBD_ |
 
 Teams building their mini app independently skip the host build entirely. If the full build takes N minutes, a team working only on Trading runs only the Trading build.
 
 ### Team independence
 
 Each mini app has its own:
+
 - Dev server (separate port, separate terminal)
 - Bundle pipeline
 - Release cadence
@@ -327,15 +335,15 @@ Yes, there is a CDN to manage and bundle versioning to think about. The trade-of
 
 ## Stack Reference
 
-| | |
-|---|---|
-| React Native | 0.84 |
-| React | 19 |
-| Re.Pack | 5.2 (Rspack-based) |
-| Module Federation | V2 |
-| Animations | react-native-reanimated 4 + react-native-worklets |
-| Charts | victory-native 41 (Skia-based) |
-| Lists | @legendapp/list 2 |
-| Bottom sheet | @gorhom/bottom-sheet 5 |
-| Navigation | @react-navigation/native 7 + react-native-bottom-tabs |
-| React Compiler | babel-plugin-react-compiler 1.0 |
+|                   |                                                                  |
+| ----------------- | ---------------------------------------------------------------- |
+| React Native      | 0.86.2                                                           |
+| React             | 19.2.8                                                           |
+| Re.Pack           | 5.2.5 (Rspack-based)                                             |
+| Module Federation | V2 (2.8.1)                                                       |
+| Animations        | react-native-reanimated 4.5.3 + react-native-worklets 0.11.3     |
+| Charts            | victory-native 41.26.0 (Skia-based)                              |
+| Lists             | @legendapp/list 3.3.3                                            |
+| Bottom sheet      | @gorhom/bottom-sheet 5.2.14                                      |
+| Navigation        | @react-navigation/native 7.3.14 + react-native-bottom-tabs 1.4.0 |
+| React Compiler    | babel-plugin-react-compiler 1.x                                  |

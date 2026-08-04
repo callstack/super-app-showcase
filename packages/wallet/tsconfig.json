@@ -4,7 +4,9 @@
     "module": "es2020",
     "types": ["react-native"],
     "paths": {
-      "react-native-reanimated": ["../host/node_modules/react-native-reanimated"]
+      "react-native-reanimated": [
+        "../host/node_modules/react-native-reanimated"
+      ]
     }
   },
   "include": ["**/*.ts", "**/*.tsx"],

@@ -36,7 +36,7 @@ pnpm start
 Or start dev server for Auth Module only:
 
 ```
-pnpm start:auth
+pnpm --filter auth start
 ```
 
 ### Generate bundle files
@@ -44,5 +44,5 @@ pnpm start:auth
 Generate iOS or Android bundle files (ios | android):
 
 ```
-pnpm build:auth:<platform>
+pnpm --filter auth bundle:<platform>
 ```

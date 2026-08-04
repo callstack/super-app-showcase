@@ -29,7 +29,10 @@ export default Repack.defineRspackConfig(({mode}) => {
     // (wrapped in try/catch) — flash-list isn't installed and the component
     // falls back to a regular list when it's absent.
     ignoreWarnings: [
-      {module: /react-native-worklets[\\/]src[\\/]bundleMode[\\/]metroOverrides/},
+      {
+        module:
+          /react-native-worklets[\\/]src[\\/]bundleMode[\\/]metroOverrides/,
+      },
       {module: /react-native-reanimated[\\/]src[\\/]jestUtils/},
       {module: /@gorhom[\\/]bottom-sheet[\\/].*BottomSheetFlashList/},
     ],

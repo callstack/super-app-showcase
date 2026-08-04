@@ -1,13 +1,21 @@
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
-import {LegendList} from '@legendapp/list';
-import {ASSETS, colors, ConnectionBanner, type Asset} from 'super-app-showcase-sdk';
+import {LegendList} from '@legendapp/list/react-native';
+import {
+  ASSETS,
+  colors,
+  ConnectionBanner,
+  type Asset,
+} from 'super-app-showcase-sdk';
 import {useNavigation} from '@react-navigation/native';
 import type {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import AssetRow from '../components/AssetRow';
 import type {TradingStackParamList} from '../navigation/MainNavigator';
 
-type NavigationProp = NativeStackNavigationProp<TradingStackParamList, 'AssetList'>;
+type NavigationProp = NativeStackNavigationProp<
+  TradingStackParamList,
+  'AssetList'
+>;
 
 const AssetListScreen = () => {
   const navigation = useNavigation<NavigationProp>();

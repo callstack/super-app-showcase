@@ -20,7 +20,10 @@ const SignInScreen = () => {
 
       <View style={styles.footer}>
         <Pressable
-          style={({pressed}) => [styles.button, pressed && styles.buttonPressed]}
+          style={({pressed}) => [
+            styles.button,
+            pressed && styles.buttonPressed,
+          ]}
           onPress={signIn}>
           <Text variant="labelLarge" style={styles.buttonText}>
             Sign In as Demo User

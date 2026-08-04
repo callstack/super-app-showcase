@@ -33,7 +33,10 @@ const AccountScreen = () => {
 
       <View style={[styles.footer, {paddingBottom: tabBarHeight + 8}]}>
         <Pressable
-          style={({pressed}) => [styles.button, pressed && styles.buttonPressed]}
+          style={({pressed}) => [
+            styles.button,
+            pressed && styles.buttonPressed,
+          ]}
           onPress={signOut}>
           <Text style={styles.buttonText}>Sign Out</Text>
         </Pressable>

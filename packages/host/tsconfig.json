@@ -4,8 +4,7 @@
     "lib": ["es2017"],
     "jsx": "react-native",
     "module": "es2020",
-    "moduleResolution": "node",
-    "baseUrl": ".",
+    "moduleResolution": "bundler",
     "paths": {
       "react-native-reanimated": ["./node_modules/react-native-reanimated"]
     },

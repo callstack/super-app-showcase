@@ -9,9 +9,14 @@
     "skipLibCheck": true,
     "noEmit": true,
     "resolveJsonModule": true,
-    "typeRoots": ["../../node_modules/.pnpm/node_modules/@types", "../../node_modules/@types"],
+    "typeRoots": [
+      "../../node_modules/.pnpm/node_modules/@types",
+      "../../node_modules/@types"
+    ],
     "paths": {
-      "react-native-reanimated": ["../host/node_modules/react-native-reanimated"]
+      "react-native-reanimated": [
+        "../host/node_modules/react-native-reanimated"
+      ]
     }
   },
   "include": ["src/**/*.ts", "src/**/*.tsx"],

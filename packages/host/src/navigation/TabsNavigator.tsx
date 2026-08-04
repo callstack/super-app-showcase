@@ -2,14 +2,17 @@ import React from 'react';
 import {Platform} from 'react-native';
 import {createNativeBottomTabNavigator} from '@bottom-tabs/react-navigation';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import {MaterialDesignIcons as Icon} from '@react-native-vector-icons/material-design-icons/static';
+import type {AppleIcon} from 'react-native-bottom-tabs';
 import Placeholder from '../components/Placeholder';
 import ErrorBoundary from '../components/ErrorBoundary';
 import {colors} from '../theme';
 
 // `sfSymbol` only renders on iOS, so Android needs a rasterized ImageSource instead.
+type MaterialDesignIconName = React.ComponentProps<typeof Icon>['name'];
+
 const tabIcon =
-  (sfSymbol: string, materialIconName: string) =>
+  (sfSymbol: AppleIcon['sfSymbol'], materialIconName: MaterialDesignIconName) =>
   ({focused}: {focused: boolean}) =>
     Platform.OS === 'ios'
       ? {sfSymbol}
@@ -34,7 +37,8 @@ const AccountScreenRemote = React.lazy(() =>
 
 const TradingScreen = () => (
   <ErrorBoundary name="Trading">
-    <React.Suspense fallback={<Placeholder label="Trading" icon="chart-line" />}>
+    <React.Suspense
+      fallback={<Placeholder label="Trading" icon="chart-line" />}>
       <TradingApp />
     </React.Suspense>
   </ErrorBoundary>

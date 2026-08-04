@@ -9,6 +9,7 @@
   "types": "./src/index.ts",
   "exports": {
     ".": {
+      "types": "./src/index.ts",
       "react-native": "./src/index.ts",
       "require": "./index.js",
       "default": "./index.js"
@@ -23,16 +24,16 @@
     "preset.js"
   ],
   "devDependencies": {
-    "@swc/helpers": "^0.5.20",
-    "@types/react": "^19.2.0",
-    "react": "19.2.3",
-    "react-native": "*",
-    "typescript": "^5.8.3"
+    "@swc/helpers": "catalog:",
+    "@types/react": "catalog:",
+    "react": "catalog:",
+    "react-native": "catalog:",
+    "typescript": "catalog:"
   },
   "peerDependencies": {
-    "react": "*",
-    "react-native": "*",
-    "react-native-reanimated": "*"
+    "react": "catalog:peer",
+    "react-native": "catalog:peer",
+    "react-native-reanimated": "catalog:peer"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",

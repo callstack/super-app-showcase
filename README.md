@@ -79,18 +79,18 @@ flowchart LR
 
 ## Stack
 
-|                   |                                                       |
-| ----------------- | ----------------------------------------------------- |
-| React Native      | 0.84                                                  |
-| React             | 19                                                    |
-| Re.Pack           | 5.2 (Rspack-based)                                    |
-| Module Federation | V2                                                    |
-| Animations        | react-native-reanimated 4 + react-native-worklets     |
-| Charts            | victory-native 41 (Skia-based)                        |
-| Lists             | @legendapp/list 2                                     |
-| Bottom sheet      | @gorhom/bottom-sheet 5                                |
-| Navigation        | @react-navigation/native 7 + react-native-bottom-tabs |
-| React Compiler    | babel-plugin-react-compiler 1.0                       |
+|                   |                                                                  |
+| ----------------- | ---------------------------------------------------------------- |
+| React Native      | 0.86.2                                                           |
+| React             | 19.2.8                                                           |
+| Re.Pack           | 5.2.5 (Rspack-based)                                             |
+| Module Federation | V2 (2.8.1)                                                       |
+| Animations        | react-native-reanimated 4.5.3 + react-native-worklets 0.11.3     |
+| Charts            | victory-native 41.26.0 (Skia-based)                              |
+| Lists             | @legendapp/list 3.3.3                                            |
+| Bottom sheet      | @gorhom/bottom-sheet 5.2.14                                      |
+| Navigation        | @react-navigation/native 7.3.14 + react-native-bottom-tabs 1.4.0 |
+| React Compiler    | babel-plugin-react-compiler 1.x                                  |
 
 ## Structure
 
@@ -104,11 +104,11 @@ flowchart LR
 
 ## Requirements
 
-- Node.js 22+
-- pnpm 9.15.3
+- Node.js 24.18+
+- pnpm 11.20.0
 
 ```bash
-npm install -g pnpm@9.15.3
+npm install -g pnpm@11.20.0
 ```
 
 On macOS, Homebrew Ruby is required for pod install:
@@ -156,6 +156,7 @@ pnpm run:host:android
 pnpm test        # run all tests
 pnpm lint        # ESLint across all packages
 pnpm typecheck   # TypeScript across all packages
+pnpm format:check # Prettier formatting across the repository
 ```
 
 ## Demo guide

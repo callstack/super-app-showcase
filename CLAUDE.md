@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Package Manager
 
-This project uses **pnpm@9.15.3**. Node.js 22+ is required. Ensure both are on PATH before running any commands:
+This project uses **pnpm@11.20.0**. Node.js 24.18+ is required. Ensure both are on PATH before running any commands:
 
 ```bash
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"  # required for pod commands on macOS
@@ -30,6 +30,7 @@ pnpm pods
 pnpm lint
 pnpm test
 pnpm typecheck
+pnpm format:check
 
 # Run for a single package
 pnpm --filter host test

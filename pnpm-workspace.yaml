@@ -80,3 +80,7 @@ overrides:
 allowBuilds:
   '@shopify/react-native-skia': true
   unrs-resolver: true
+
+minimumReleaseAgeExclude:
+  - '@callstack/repack-dev-server@5.3.0'
+  - '@callstack/repack@5.3.0'

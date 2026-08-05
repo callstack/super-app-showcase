@@ -21,7 +21,7 @@ PODS:
     - ReactCommon/turbomodule/core
     - ReactNativeDependencies
     - Yoga
-  - callstack-repack (5.2.5):
+  - callstack-repack (5.3.0-canary-20260726211922):
     - hermes-engine
     - JWTDecode (~> 3.0.0)
     - RCTRequired
@@ -2584,7 +2584,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AsyncStorage: dba9d05b9aa34413760ea5a74f63a7e7f9fddf73
-  callstack-repack: 8971dac54a16d5028a8660f9d39d364379e1c378
+  callstack-repack: 03c474bf87e03c5a74887517c0c016f32d18ec9d
   FBLazyVector: 3c3be9a019176b5699455f7f66c5444b78a411c6
   hermes-engine: c00c1d410fa5c60113e25ba482a45c2b86faf573
   JWTDecode: 2eed97c2fa46ccaf3049a787004eedf0be474a87

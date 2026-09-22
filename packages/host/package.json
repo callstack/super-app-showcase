@@ -21,7 +21,7 @@
     "@gorhom/bottom-sheet": "catalog:",
     "@legendapp/list": "catalog:",
     "@module-federation/enhanced": "catalog:",
-    "@module-federation/error-codes": "2.8.1",
+    "@module-federation/error-codes": "2.9.0",
     "@react-native-async-storage/async-storage": "catalog:",
     "@react-navigation/native": "catalog:",
     "@react-navigation/native-stack": "catalog:",
@@ -46,13 +46,13 @@
     "@babel/preset-env": "catalog:",
     "@babel/runtime": "catalog:",
     "@callstack/repack": "catalog:",
-    "@callstack/repack-plugin-reanimated": "5.3.0-canary-20260726211922",
+    "@callstack/repack-plugin-reanimated": "5.4.0-canary-20260831210904",
     "@react-native-community/cli": "catalog:",
     "@react-native-community/cli-platform-android": "20.2.0",
     "@react-native-community/cli-platform-ios": "20.2.0",
     "@react-native/babel-preset": "catalog:",
     "@react-native/eslint-config": "catalog:",
-    "@react-native/jest-preset": "0.86.2",
+    "@react-native/jest-preset": "0.87.1",
     "@react-native/typescript-config": "catalog:",
     "@rnx-kit/align-deps": "catalog:",
     "@rspack/core": "catalog:",
@@ -77,7 +77,7 @@
         "../sdk/preset"
       ],
       "requirements": [
-        "react-native@0.86.2"
+        "react-native@0.87.1"
       ],
       "capabilities": [
         "super-app"

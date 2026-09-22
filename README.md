@@ -81,15 +81,15 @@ flowchart LR
 
 |                   |                                                                  |
 | ----------------- | ---------------------------------------------------------------- |
-| React Native      | 0.86.2                                                           |
+| React Native      | 0.87.1                                                           |
 | React             | 19.2.8                                                           |
-| Re.Pack           | 5.2.5 (Rspack-based)                                             |
-| Module Federation | V2 (2.8.1)                                                       |
-| Animations        | react-native-reanimated 4.5.3 + react-native-worklets 0.11.3     |
-| Charts            | victory-native 41.26.0 (Skia-based)                              |
-| Lists             | @legendapp/list 3.3.3                                            |
+| Re.Pack           | 5.4.0-canary (Rspack-based)                                      |
+| Module Federation | V2 (2.9.0)                                                       |
+| Animations        | react-native-reanimated 4.6.0 + react-native-worklets 0.12.1     |
+| Charts            | victory-native 42.0.1 (Skia-based)                               |
+| Lists             | @legendapp/list 3.3.9                                            |
 | Bottom sheet      | @gorhom/bottom-sheet 5.2.14                                      |
-| Navigation        | @react-navigation/native 7.3.14 + react-native-bottom-tabs 1.4.0 |
+| Navigation        | @react-navigation/native 7.3.18 + react-native-bottom-tabs 1.4.0 |
 | React Compiler    | babel-plugin-react-compiler 1.x                                  |
 
 ## Structure

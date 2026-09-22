@@ -335,15 +335,15 @@ Yes, there is a CDN to manage and bundle versioning to think about. The trade-of
 
 ## Stack Reference
 
-|                   |                                                                  |
-| ----------------- | ---------------------------------------------------------------- |
-| React Native      | 0.87.1                                                           |
-| React             | 19.2.8                                                           |
-| Re.Pack           | 5.4.0-canary (Rspack-based)                                      |
-| Module Federation | V2 (2.9.0)                                                       |
-| Animations        | react-native-reanimated 4.6.0 + react-native-worklets 0.12.1     |
-| Charts            | victory-native 42.0.1 (Skia-based)                               |
-| Lists             | @legendapp/list 3.3.9                                            |
-| Bottom sheet      | @gorhom/bottom-sheet 5.2.14                                      |
-| Navigation        | @react-navigation/native 7.3.18 + react-native-bottom-tabs 1.4.0 |
-| React Compiler    | babel-plugin-react-compiler 1.x                                  |
+|                   |                                                                 |
+| ----------------- | --------------------------------------------------------------- |
+| React Native      | 0.87.1                                                          |
+| React             | 19.2.8                                                          |
+| Re.Pack           | 5.4.0-canary (Rspack-based)                                     |
+| Module Federation | V2 (2.9.1)                                                      |
+| Animations        | react-native-reanimated 4.7.0 + react-native-worklets 0.13.0    |
+| Charts            | victory-native 42.0.1 (Skia-based)                              |
+| Lists             | @legendapp/list 3.4.0                                           |
+| Bottom sheet      | @gorhom/bottom-sheet 5.2.14                                     |
+| Navigation        | @react-navigation/native 7.4.1 + react-native-bottom-tabs 1.4.0 |
+| React Compiler    | babel-plugin-react-compiler 1.x                                 |

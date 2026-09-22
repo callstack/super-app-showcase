@@ -40,6 +40,7 @@ const WalletScreen = () => {
         keyExtractor={item => item.symbol}
         renderItem={renderHolding}
         estimatedItemSize={84}
+        recycleItems={false}
         ListHeaderComponent={
           <View style={styles.header}>
             <TotalBalance />

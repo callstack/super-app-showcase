@@ -27,7 +27,7 @@
     "mprocs": "^0.9.6"
   },
   "devDependencies": {
-    "@prettier/plugin-oxc": "^0.2.2",
+    "@prettier/plugin-oxc": "^0.2.3",
     "prettier": "catalog:"
   }
 }

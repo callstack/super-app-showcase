@@ -58,6 +58,10 @@ catalogs:
     victory-native: ^42.0.1
 
 patchedDependencies:
+  # Backports RN 0.87 include fixes merged upstream in
+  # https://github.com/callstack/react-native-bottom-tabs/pull/571 and /pull/575.
+  # Remove once a release after 1.4.0 is published.
+  react-native-bottom-tabs@1.4.0: patches/react-native-bottom-tabs@1.4.0.patch
   react-native-paper@5.15.3: patches/react-native-paper@5.15.3.patch
 
 packageExtensions:

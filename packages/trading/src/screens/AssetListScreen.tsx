@@ -35,6 +35,7 @@ const AssetListScreen = () => {
         keyExtractor={item => item.symbol}
         renderItem={({item}) => <AssetRow asset={item} onPress={handlePress} />}
         estimatedItemSize={69}
+        recycleItems={false}
         style={styles.list}
       />
     </View>

@@ -16,22 +16,22 @@
   },
   "@callstack/repack": {
     "name": "@callstack/repack",
-    "version": "5.2.5",
+    "version": "5.4.0-canary-20260913172854",
     "devOnly": true
   },
   "@react-native/babel-preset": {
     "name": "@react-native/babel-preset",
-    "version": "0.86.2",
+    "version": "0.87.1",
     "devOnly": true
   },
   "@react-native/eslint-config": {
     "name": "@react-native/eslint-config",
-    "version": "0.86.2",
+    "version": "0.87.1",
     "devOnly": true
   },
   "@react-native/typescript-config": {
     "name": "@react-native/typescript-config",
-    "version": "0.86.2",
+    "version": "0.87.1",
     "devOnly": true
   },
   "@react-native-community/cli": {
@@ -41,7 +41,7 @@
   },
   "@rspack/core": {
     "name": "@rspack/core",
-    "version": "2.1.7",
+    "version": "2.2.6",
     "devOnly": true
   },
   "@swc/helpers": {
@@ -66,12 +66,12 @@
   },
   "@typescript-eslint/eslint-plugin": {
     "name": "@typescript-eslint/eslint-plugin",
-    "version": "^8.65.0",
+    "version": "^8.70.1",
     "devOnly": true
   },
   "@typescript-eslint/parser": {
     "name": "@typescript-eslint/parser",
-    "version": "^8.65.0",
+    "version": "^8.70.1",
     "devOnly": true
   },
   "eslint": {
@@ -86,7 +86,7 @@
   },
   "prettier": {
     "name": "prettier",
-    "version": "^3.9.6",
+    "version": "^3.9.8",
     "devOnly": true
   },
   "react-test-renderer": {

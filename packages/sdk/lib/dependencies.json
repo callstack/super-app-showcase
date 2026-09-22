@@ -5,7 +5,7 @@
   },
   "react-native": {
     "name": "react-native",
-    "version": "0.86.2"
+    "version": "0.87.1"
   },
   "@bottom-tabs/react-navigation": {
     "name": "@bottom-tabs/react-navigation",
@@ -17,11 +17,11 @@
   },
   "@react-navigation/native": {
     "name": "@react-navigation/native",
-    "version": "7.3.14"
+    "version": "7.4.1"
   },
   "@react-navigation/native-stack": {
     "name": "@react-navigation/native-stack",
-    "version": "7.18.6"
+    "version": "7.19.2"
   },
   "react-native-bottom-tabs": {
     "name": "react-native-bottom-tabs",
@@ -33,15 +33,15 @@
   },
   "react-native-safe-area-context": {
     "name": "react-native-safe-area-context",
-    "version": "5.8.0"
+    "version": "5.10.0"
   },
   "react-native-screens": {
     "name": "react-native-screens",
-    "version": "4.26.2"
+    "version": "4.28.0"
   },
   "@react-native-vector-icons/material-design-icons": {
     "name": "@react-native-vector-icons/material-design-icons",
-    "version": "13.1.2"
+    "version": "13.1.4"
   },
   "super-app-showcase-sdk": {
     "name": "super-app-showcase-sdk",
@@ -49,43 +49,35 @@
   },
   "@module-federation/enhanced": {
     "name": "@module-federation/enhanced",
-    "version": "2.8.1",
+    "version": "2.9.1",
     "shared": false
   },
   "react-native-edge-to-edge": {
     "name": "react-native-edge-to-edge",
-    "version": "1.8.1"
+    "version": "1.8.2"
   },
   "react-native-reanimated": {
     "name": "react-native-reanimated",
-    "version": "4.5.3"
+    "version": "4.7.0"
   },
   "react-native-worklets": {
     "name": "react-native-worklets",
-    "version": "0.11.3"
+    "version": "0.13.0"
   },
   "react-native-gesture-handler": {
     "name": "react-native-gesture-handler",
-    "version": "3.1.0"
+    "version": "3.3.0"
   },
   "@shopify/react-native-skia": {
     "name": "@shopify/react-native-skia",
-    "version": "2.10.1"
+    "version": "2.12.0"
   },
   "victory-native": {
     "name": "victory-native",
-    "version": "41.26.0"
+    "version": "42.0.1"
   },
   "@gorhom/bottom-sheet": {
     "name": "@gorhom/bottom-sheet",
     "version": "5.2.14"
-  },
-  "react-native-bottom-tabs": {
-    "name": "react-native-bottom-tabs",
-    "version": "1.4.0"
-  },
-  "@bottom-tabs/react-navigation": {
-    "name": "@bottom-tabs/react-navigation",
-    "version": "1.4.0"
   }
 }

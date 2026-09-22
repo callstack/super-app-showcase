@@ -1,0 +1,23 @@
+diff --git a/ios/RCTTabViewComponentView.mm b/ios/RCTTabViewComponentView.mm
+index 09ab604b92006f095ec637d3cbe7907b3eb9f39e..af3438f05b950cfd01252518cf2d75a3136744a0 100644
+--- a/ios/RCTTabViewComponentView.mm
++++ b/ios/RCTTabViewComponentView.mm
+@@ -17,8 +17,18 @@
+ #import <React/RCTImageLoader.h>
+ #import <React/RCTImageSource.h>
+ #import <React/RCTBridge+Private.h>
++#if SWIFT_PACKAGE
++#import <react/renderer/imagemanager/RCTImagePrimitivesConversions.h>
++#elif __has_include(<React/RCTImagePrimitivesConversions.h>)
++#import <React/RCTImagePrimitivesConversions.h>
++#else
+ #import "RCTImagePrimitivesConversions.h"
++#endif
++#if __has_include(<React/RCTConversions.h>)
++#import <React/RCTConversions.h>
++#else
+ #import "RCTConversions.h"
++#endif
+ #import <react/utils/ManagedObjectWrapper.h>
+ 
+ #if TARGET_OS_OSX

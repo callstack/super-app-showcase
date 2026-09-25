@@ -1,13 +1,20 @@
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import * as Repack from '@callstack/repack';
-import rspack from '@rspack/core';
+import webpack from 'webpack';
 import {getSharedDependencies} from 'super-app-showcase-sdk';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-export default Repack.defineRspackConfig(({mode, platform}) => {
+/**
+ * Webpack configuration enhanced with Re.Pack defaults for React Native.
+ *
+ * Learn about Rspack configuration: https://rspack.dev/config/
+ * Learn about Re.Pack configuration: https://re-pack.dev/docs/guides/configuration
+ */
+
+export default Repack.defineWebpackConfig(({mode}) => {
   return {
     mode,
     context: __dirname,
@@ -29,16 +36,14 @@ export default Repack.defineRspackConfig(({mode, platform}) => {
       {module: /react-native-reanimated[\\/]src[\\/]jestUtils/},
       {module: /@gorhom[\\/]bottom-sheet[\\/].*BottomSheetFlashList/},
     ],
-    entry: './index.js',
+    entry: {},
     resolve: {
       ...Repack.getResolveOptions({enablePackageExports: true}),
-      modules: [
-        path.resolve(__dirname, '../host/node_modules'),
-        'node_modules',
-      ],
+      // Same as host: the Expo font probe in vector-icons is web-only.
+      alias: {'expo-font': false},
     },
     output: {
-      uniqueName: 'sas-wallet',
+      uniqueName: 'sas-auth',
     },
     module: {
       rules: [
@@ -46,7 +51,6 @@ export default Repack.defineRspackConfig(({mode, platform}) => {
           test: /\.[cm]?[jt]sx?$/,
           use: {
             loader: '@callstack/repack/babel-swc-loader',
-            parallel: true,
             options: {},
           },
           type: 'javascript/auto',
@@ -57,18 +61,22 @@ export default Repack.defineRspackConfig(({mode, platform}) => {
     plugins: [
       new Repack.RepackPlugin(),
       new Repack.plugins.ModuleFederationPluginV2({
-        name: 'wallet',
-        filename: 'wallet.container.js.bundle',
+        name: 'auth',
+        filename: 'auth.container.js.bundle',
         dts: false,
         exposes: {
-          './App': './src/navigation/MainNavigator',
-        },
-        remotes: {
-          auth: `auth@http://localhost:9003/${platform}/mf-manifest.json`,
+          './AccountScreen': './src/screens/AccountScreen',
+          './SignInScreen': './src/screens/SignInScreen',
+          './AuthProvider': './src/providers/AuthProvider',
         },
         shared: getSharedDependencies({eager: false}),
       }),
-      new rspack.IgnorePlugin({
+      new Repack.plugins.CodeSigningPlugin({
+        enabled: mode === 'production',
+        privateKeyPath: path.join('..', '..', 'code-signing.pem'),
+      }),
+      // silence missing @react-native-masked-view optionally required by @react-navigation/elements
+      new webpack.IgnorePlugin({
         resourceRegExp: /^@react-native-masked-view/,
       }),
     ],

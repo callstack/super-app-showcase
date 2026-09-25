@@ -1,13 +1,13 @@
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import * as Repack from '@callstack/repack';
-import rspack from '@rspack/core';
+import webpack from 'webpack';
 import {getSharedDependencies} from 'super-app-showcase-sdk';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-export default Repack.defineRspackConfig(({mode, platform}) => {
+export default Repack.defineWebpackConfig(({mode, platform}) => {
   return {
     mode,
     context: __dirname,
@@ -39,7 +39,6 @@ export default Repack.defineRspackConfig(({mode, platform}) => {
           test: /\.[cm]?[jt]sx?$/,
           use: {
             loader: '@callstack/repack/babel-swc-loader',
-            parallel: true,
             options: {},
           },
           type: 'javascript/auto',
@@ -61,7 +60,7 @@ export default Repack.defineRspackConfig(({mode, platform}) => {
         },
         shared: getSharedDependencies({eager: false}),
       }),
-      new rspack.IgnorePlugin({
+      new webpack.IgnorePlugin({
         resourceRegExp: /^@react-native-masked-view/,
       }),
     ],

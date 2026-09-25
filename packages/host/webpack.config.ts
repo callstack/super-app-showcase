@@ -2,7 +2,7 @@ import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import * as Repack from '@callstack/repack';
 import {ReanimatedPlugin} from '@callstack/repack-plugin-reanimated';
-import rspack from '@rspack/core';
+import webpack from 'webpack';
 import {getSharedDependencies} from 'super-app-showcase-sdk';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -15,7 +15,7 @@ const __dirname = path.dirname(__filename);
  * Learn about Re.Pack configuration: https://re-pack.dev/docs/guides/configuration
  */
 
-export default Repack.defineRspackConfig(({mode, platform}) => {
+export default Repack.defineWebpackConfig(({mode, platform}) => {
   return {
     mode,
     context: __dirname,
@@ -68,7 +68,6 @@ export default Repack.defineRspackConfig(({mode, platform}) => {
           test: /\.[cm]?[jt]sx?$/,
           use: {
             loader: '@callstack/repack/babel-swc-loader',
-            parallel: true,
             options: {},
           },
           type: 'javascript/auto',
@@ -96,7 +95,7 @@ export default Repack.defineRspackConfig(({mode, platform}) => {
         shared: getSharedDependencies({eager: true}),
       }),
       // silence missing @react-native-masked-view optionally required by @react-navigation/elements
-      new rspack.IgnorePlugin({
+      new webpack.IgnorePlugin({
         resourceRegExp: /^@react-native-masked-view/,
       }),
     ],

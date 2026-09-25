@@ -132,6 +132,9 @@ catalogs:
     victory-native:
       specifier: 42.0.1
       version: 42.0.1
+    webpack:
+      specifier: ^5.109.2
+      version: 5.109.2
   peer:
     '@gorhom/bottom-sheet':
       specifier: ^5.2.14
@@ -311,6 +314,9 @@ importers:
       typescript:
         specifier: 'catalog:'
         version: 6.0.3
+      webpack:
+        specifier: 'catalog:'
+        version: 5.109.2
 
   packages/host:
     dependencies:
@@ -465,6 +471,9 @@ importers:
       typescript:
         specifier: 'catalog:'
         version: 6.0.3
+      webpack:
+        specifier: 'catalog:'
+        version: 5.109.2
 
   packages/sdk:
     dependencies:
@@ -572,6 +581,9 @@ importers:
       typescript:
         specifier: 'catalog:'
         version: 6.0.3
+      webpack:
+        specifier: 'catalog:'
+        version: 5.109.2
 
   packages/wallet:
     dependencies:
@@ -648,6 +660,9 @@ importers:
       typescript:
         specifier: 'catalog:'
         version: 6.0.3
+      webpack:
+        specifier: 'catalog:'
+        version: 5.109.2
 
 packages:
 

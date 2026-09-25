@@ -68,7 +68,8 @@
     "prettier": "catalog:",
     "react-test-renderer": "catalog:",
     "super-app-showcase-sdk": "catalog:",
-    "typescript": "catalog:"
+    "typescript": "catalog:",
+    "webpack": "catalog:"
   },
   "rnx-kit": {
     "kitType": "app",

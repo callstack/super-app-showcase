@@ -39,6 +39,7 @@
     "@typescript-eslint/parser": "catalog:",
     "eslint": "catalog:",
     "super-app-showcase-sdk": "catalog:",
-    "typescript": "catalog:"
+    "typescript": "catalog:",
+    "webpack": "catalog:"
   }
 }

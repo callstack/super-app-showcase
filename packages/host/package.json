@@ -46,7 +46,7 @@
     "@babel/preset-env": "catalog:",
     "@babel/runtime": "catalog:",
     "@callstack/repack": "catalog:",
-    "@callstack/repack-plugin-reanimated": "5.4.0-canary-20260913172854",
+    "@callstack/repack-plugin-reanimated": "5.4.0-canary-20260926141655",
     "@react-native-community/cli": "catalog:",
     "@react-native-community/cli-platform-android": "20.2.0",
     "@react-native-community/cli-platform-ios": "20.2.0",

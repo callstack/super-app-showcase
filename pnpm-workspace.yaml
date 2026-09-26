@@ -6,7 +6,7 @@ catalog:
   '@babel/preset-env': ^7.29.7
   '@babel/runtime': ^7.29.7
   '@bottom-tabs/react-navigation': 1.4.0
-  '@callstack/repack': 5.4.0-canary-20260913172854
+  '@callstack/repack': 5.4.0-canary-20260926141655
   '@gorhom/bottom-sheet': 5.2.14
   '@legendapp/list': 3.4.0
   '@module-federation/enhanced': 2.9.1
@@ -85,3 +85,8 @@ overrides:
 allowBuilds:
   '@shopify/react-native-skia': true
   unrs-resolver: true
+
+minimumReleaseAgeExclude:
+  - '@callstack/repack-dev-server@5.4.0-canary-20260926141655'
+  - '@callstack/repack-plugin-reanimated@5.4.0-canary-20260926141655'
+  - '@callstack/repack@5.4.0-canary-20260926141655'

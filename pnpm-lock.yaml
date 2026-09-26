@@ -423,6 +423,9 @@ importers:
       '@react-native/jest-preset':
         specifier: 0.87.1
         version: 0.87.1(@babel/core@7.29.7(supports-color@8.1.1))(react@19.2.8)(supports-color@8.1.1)
+      '@react-native/js-polyfills':
+        specifier: 0.87.1
+        version: 0.87.1
       '@react-native/typescript-config':
         specifier: 'catalog:'
         version: 0.87.1
@@ -456,6 +459,9 @@ importers:
       eslint:
         specifier: 'catalog:'
         version: 9.39.5(jiti@2.4.2)(supports-color@8.1.1)
+      hermes-compiler:
+        specifier: 250829098.0.17
+        version: 250829098.0.17
       jest:
         specifier: 'catalog:'
         version: 29.7.0(@types/node@20.8.4)(supports-color@8.1.1)

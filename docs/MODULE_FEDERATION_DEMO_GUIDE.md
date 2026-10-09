@@ -339,7 +339,7 @@ Yes, there is a CDN to manage and bundle versioning to think about. The trade-of
 | ----------------- | --------------------------------------------------------------- |
 | React Native      | 0.87.1                                                          |
 | React             | 19.2.8                                                          |
-| Re.Pack           | 5.4.0-canary (Rspack-based)                                     |
+| Re.Pack           | 5.4.1 (Rspack-based)                                            |
 | Module Federation | V2 (2.9.1)                                                      |
 | Animations        | react-native-reanimated 4.7.0 + react-native-worklets 0.13.0    |
 | Charts            | victory-native 42.0.1 (Skia-based)                              |

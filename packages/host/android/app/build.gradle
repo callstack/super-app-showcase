@@ -53,7 +53,7 @@ react {
     // hermesCommand = "$rootDir/my-custom-hermesc/bin/hermesc"
     //   hermes-compiler is not linked into the app's node_modules with pnpm,
     //   so resolve it from react-native's dependency graph.
-    hermesCommand = "$hermesCompilerPath/hermesc/%OS-BIN%/hermesc"
+    hermesCommand = "$hermesCompilerPath/hermesc/%OS-BIN%/hermesc${org.gradle.internal.os.OperatingSystem.current().isWindows() ? '.exe' : ''}"
     //
     //   The list of flags to pass to the Hermes compiler. By default is "-O", "-output-source-map"
     // hermesFlags = ["-O", "-output-source-map"]

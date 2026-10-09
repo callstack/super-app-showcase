@@ -3,11 +3,13 @@ packages:
 
 catalog:
   '@babel/core': ^7.29.7
+  # TODO: remove once Re.Pack declares it as a dependency. Its babel-swc-loader
+  # injects this plugin by name, which otherwise only resolves via pnpm's NODE_PATH.
   '@babel/plugin-syntax-typescript': ^7.28.6
   '@babel/preset-env': ^7.29.7
   '@babel/runtime': ^7.29.7
   '@bottom-tabs/react-navigation': 1.4.0
-  '@callstack/repack': 5.4.1
+  '@callstack/repack': 5.4.2
   '@gorhom/bottom-sheet': 5.2.14
   '@legendapp/list': 3.4.0
   '@module-federation/enhanced': 2.9.1
@@ -88,6 +90,6 @@ allowBuilds:
   unrs-resolver: true
 
 minimumReleaseAgeExclude:
-  - '@callstack/repack-dev-server@5.4.1'
-  - '@callstack/repack-plugin-reanimated@5.4.1'
-  - '@callstack/repack@5.4.1'
+  - '@callstack/repack-dev-server@5.4.2'
+  - '@callstack/repack-plugin-reanimated@5.4.2'
+  - '@callstack/repack@5.4.2'

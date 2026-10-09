@@ -22,8 +22,8 @@ catalogs:
       specifier: 1.4.0
       version: 1.4.0
     '@callstack/repack':
-      specifier: 5.4.1
-      version: 5.4.1
+      specifier: 5.4.2
+      version: 5.4.2
     '@gorhom/bottom-sheet':
       specifier: 5.2.14
       version: 5.2.14
@@ -265,7 +265,7 @@ importers:
         version: 7.29.7
       '@callstack/repack':
         specifier: 'catalog:'
-        version: 5.4.1(@babel/core@7.29.7(supports-color@8.1.1))(@module-federation/enhanced@2.9.1(@rspack/core@2.2.6(@module-federation/runtime-tools@2.9.1)(@swc/helpers@0.5.23))(typescript@6.0.3)(webpack@5.109.2))(@rspack/core@2.2.6(@module-federation/runtime-tools@2.9.1)(@swc/helpers@0.5.23))(react-native@0.87.1(@babel/core@7.29.7(supports-color@8.1.1))(@react-native-community/cli@20.2.0(supports-color@8.1.1)(typescript@6.0.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.7(supports-color@8.1.1))(supports-color@8.1.1))(@types/react@19.2.18)(react@19.2.8)(supports-color@8.1.1))(supports-color@8.1.1)(webpack@5.109.2)
+        version: 5.4.2(@babel/core@7.29.7(supports-color@8.1.1))(@module-federation/enhanced@2.9.1(@rspack/core@2.2.6(@module-federation/runtime-tools@2.9.1)(@swc/helpers@0.5.23))(typescript@6.0.3)(webpack@5.109.2))(@rspack/core@2.2.6(@module-federation/runtime-tools@2.9.1)(@swc/helpers@0.5.23))(react-native@0.87.1(@babel/core@7.29.7(supports-color@8.1.1))(@react-native-community/cli@20.2.0(supports-color@8.1.1)(typescript@6.0.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.7(supports-color@8.1.1))(supports-color@8.1.1))(@types/react@19.2.18)(react@19.2.8)(supports-color@8.1.1))(supports-color@8.1.1)(webpack@5.109.2)
       '@react-native-community/cli':
         specifier: 'catalog:'
         version: 20.2.0(supports-color@8.1.1)(typescript@6.0.3)
@@ -410,10 +410,10 @@ importers:
         version: 7.29.7
       '@callstack/repack':
         specifier: 'catalog:'
-        version: 5.4.1(@babel/core@7.29.7(supports-color@8.1.1))(@module-federation/enhanced@2.9.1(@rspack/core@2.2.6(@module-federation/runtime-tools@2.9.1)(@swc/helpers@0.5.23))(typescript@6.0.3)(webpack@5.109.2))(@rspack/core@2.2.6(@module-federation/runtime-tools@2.9.1)(@swc/helpers@0.5.23))(react-native@0.87.1(@babel/core@7.29.7(supports-color@8.1.1))(@react-native-community/cli@20.2.0(supports-color@8.1.1)(typescript@6.0.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.7(supports-color@8.1.1))(supports-color@8.1.1))(@types/react@19.2.18)(react@19.2.8)(supports-color@8.1.1))(supports-color@8.1.1)(webpack@5.109.2)
+        version: 5.4.2(@babel/core@7.29.7(supports-color@8.1.1))(@module-federation/enhanced@2.9.1(@rspack/core@2.2.6(@module-federation/runtime-tools@2.9.1)(@swc/helpers@0.5.23))(typescript@6.0.3)(webpack@5.109.2))(@rspack/core@2.2.6(@module-federation/runtime-tools@2.9.1)(@swc/helpers@0.5.23))(react-native@0.87.1(@babel/core@7.29.7(supports-color@8.1.1))(@react-native-community/cli@20.2.0(supports-color@8.1.1)(typescript@6.0.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.7(supports-color@8.1.1))(supports-color@8.1.1))(@types/react@19.2.18)(react@19.2.8)(supports-color@8.1.1))(supports-color@8.1.1)(webpack@5.109.2)
       '@callstack/repack-plugin-reanimated':
-        specifier: 5.4.1
-        version: 5.4.1(@babel/core@7.29.7(supports-color@8.1.1))(@callstack/repack@5.4.1(@babel/core@7.29.7(supports-color@8.1.1))(@module-federation/enhanced@2.9.1(@rspack/core@2.2.6(@module-federation/runtime-tools@2.9.1)(@swc/helpers@0.5.23))(typescript@6.0.3)(webpack@5.109.2))(@rspack/core@2.2.6(@module-federation/runtime-tools@2.9.1)(@swc/helpers@0.5.23))(react-native@0.87.1(@babel/core@7.29.7(supports-color@8.1.1))(@react-native-community/cli@20.2.0(supports-color@8.1.1)(typescript@6.0.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.7(supports-color@8.1.1))(supports-color@8.1.1))(@types/react@19.2.18)(react@19.2.8)(supports-color@8.1.1))(supports-color@8.1.1)(webpack@5.109.2))
+        specifier: 5.4.2
+        version: 5.4.2(@babel/core@7.29.7(supports-color@8.1.1))(@callstack/repack@5.4.2(@babel/core@7.29.7(supports-color@8.1.1))(@module-federation/enhanced@2.9.1(@rspack/core@2.2.6(@module-federation/runtime-tools@2.9.1)(@swc/helpers@0.5.23))(typescript@6.0.3)(webpack@5.109.2))(@rspack/core@2.2.6(@module-federation/runtime-tools@2.9.1)(@swc/helpers@0.5.23))(react-native@0.87.1(@babel/core@7.29.7(supports-color@8.1.1))(@react-native-community/cli@20.2.0(supports-color@8.1.1)(typescript@6.0.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.7(supports-color@8.1.1))(supports-color@8.1.1))(@types/react@19.2.18)(react@19.2.8)(supports-color@8.1.1))(supports-color@8.1.1)(webpack@5.109.2))
       '@react-native-community/cli':
         specifier: 'catalog:'
         version: 20.2.0(supports-color@8.1.1)(typescript@6.0.3)
@@ -559,7 +559,7 @@ importers:
         version: 7.28.6(@babel/core@7.29.7(supports-color@8.1.1))
       '@callstack/repack':
         specifier: 'catalog:'
-        version: 5.4.1(@babel/core@7.29.7(supports-color@8.1.1))(@module-federation/enhanced@2.9.1(@rspack/core@2.2.6(@module-federation/runtime-tools@2.9.1)(@swc/helpers@0.5.23))(typescript@6.0.3)(webpack@5.109.2))(@rspack/core@2.2.6(@module-federation/runtime-tools@2.9.1)(@swc/helpers@0.5.23))(react-native@0.87.1(@babel/core@7.29.7(supports-color@8.1.1))(@react-native-community/cli@20.2.0(supports-color@8.1.1)(typescript@6.0.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.7(supports-color@8.1.1))(supports-color@8.1.1))(@types/react@19.2.18)(react@19.2.8)(supports-color@8.1.1))(supports-color@8.1.1)(webpack@5.109.2)
+        version: 5.4.2(@babel/core@7.29.7(supports-color@8.1.1))(@module-federation/enhanced@2.9.1(@rspack/core@2.2.6(@module-federation/runtime-tools@2.9.1)(@swc/helpers@0.5.23))(typescript@6.0.3)(webpack@5.109.2))(@rspack/core@2.2.6(@module-federation/runtime-tools@2.9.1)(@swc/helpers@0.5.23))(react-native@0.87.1(@babel/core@7.29.7(supports-color@8.1.1))(@react-native-community/cli@20.2.0(supports-color@8.1.1)(typescript@6.0.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.7(supports-color@8.1.1))(supports-color@8.1.1))(@types/react@19.2.18)(react@19.2.8)(supports-color@8.1.1))(supports-color@8.1.1)(webpack@5.109.2)
       '@react-native/babel-preset':
         specifier: 'catalog:'
         version: 0.87.1(@babel/core@7.29.7(supports-color@8.1.1))(supports-color@8.1.1)
@@ -641,7 +641,7 @@ importers:
         version: 7.28.6(@babel/core@7.29.7(supports-color@8.1.1))
       '@callstack/repack':
         specifier: 'catalog:'
-        version: 5.4.1(@babel/core@7.29.7(supports-color@8.1.1))(@module-federation/enhanced@2.9.1(@rspack/core@2.2.6(@module-federation/runtime-tools@2.9.1)(@swc/helpers@0.5.23))(typescript@6.0.3)(webpack@5.109.2))(@rspack/core@2.2.6(@module-federation/runtime-tools@2.9.1)(@swc/helpers@0.5.23))(react-native@0.87.1(@babel/core@7.29.7(supports-color@8.1.1))(@react-native-community/cli@20.2.0(supports-color@8.1.1)(typescript@6.0.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.7(supports-color@8.1.1))(supports-color@8.1.1))(@types/react@19.2.18)(react@19.2.8)(supports-color@8.1.1))(supports-color@8.1.1)(webpack@5.109.2)
+        version: 5.4.2(@babel/core@7.29.7(supports-color@8.1.1))(@module-federation/enhanced@2.9.1(@rspack/core@2.2.6(@module-federation/runtime-tools@2.9.1)(@swc/helpers@0.5.23))(typescript@6.0.3)(webpack@5.109.2))(@rspack/core@2.2.6(@module-federation/runtime-tools@2.9.1)(@swc/helpers@0.5.23))(react-native@0.87.1(@babel/core@7.29.7(supports-color@8.1.1))(@react-native-community/cli@20.2.0(supports-color@8.1.1)(typescript@6.0.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.7(supports-color@8.1.1))(supports-color@8.1.1))(@types/react@19.2.18)(react@19.2.8)(supports-color@8.1.1))(supports-color@8.1.1)(webpack@5.109.2)
       '@react-native/babel-preset':
         specifier: 'catalog:'
         version: 0.87.1(@babel/core@7.29.7(supports-color@8.1.1))(supports-color@8.1.1)
@@ -1372,19 +1372,19 @@ packages:
     peerDependencies:
       react: '>=16.3.0'
 
-  '@callstack/repack-dev-server@5.4.1':
-    resolution: {integrity: sha512-aRXPBx1ZRWuO9m3JVI5RWXO9GqxTLRX1Z3Ca+T724CQqqj/VK7q91+uEc7ReqiqHKrCMYwTY2CM8lNpZDKggUQ==}
+  '@callstack/repack-dev-server@5.4.2':
+    resolution: {integrity: sha512-DZng00oUGIXstxsKdP2x7uoGJ2obTuxZcgcVexgri3gXKy/yK6m0goPBQl30FjWccrY4pTsVfxwIOTos6/dXPw==}
     engines: {node: '>=18'}
 
-  '@callstack/repack-plugin-reanimated@5.4.1':
-    resolution: {integrity: sha512-qwiiLlqb1xWf3K2Qv3yVO/ujnkaTOkGSg2gPq4+x8IcFqZRftiW3qlZYTRN913OXqB7e3ZajOepwDUUMWmZJCg==}
+  '@callstack/repack-plugin-reanimated@5.4.2':
+    resolution: {integrity: sha512-hpkwvU7as1iVkgfyXItaPiwFmZyMSJNSFxoX7zfmhn9frI7ZYYOEjPYmQ1rARQnd/lllsuplRKTUeJHFOYhxxA==}
     engines: {node: '>=18'}
     peerDependencies:
       '@babel/core': ^7.20
-      '@callstack/repack': ^5.4.1
+      '@callstack/repack': ^5.4.2
 
-  '@callstack/repack@5.4.1':
-    resolution: {integrity: sha512-vlpXdlVLiu9mi2ca3TMBv1MydnTGX789EHTDQ7RMBZO43DHx6RDrWh5snzbWclhy3+HmvdUkKA4eyYduRoDWUg==}
+  '@callstack/repack@5.4.2':
+    resolution: {integrity: sha512-rR2nFVPQbnIlD0h22NICc2zQGw2hhrNm0SGqjyXwWESktj+QPysZ+Mivpowzd52zH1LfwGdr769OcqwoIRsu4g==}
     engines: {node: '>=18'}
     peerDependencies:
       '@module-federation/enhanced': '>=0.6.10'
@@ -7507,7 +7507,7 @@ snapshots:
       hoist-non-react-statics: 3.3.2
       react: 19.2.8
 
-  '@callstack/repack-dev-server@5.4.1(supports-color@8.1.1)':
+  '@callstack/repack-dev-server@5.4.2(supports-color@8.1.1)':
     dependencies:
       '@babel/code-frame': 7.29.7
       '@fastify/middie': 9.3.3
@@ -7526,15 +7526,15 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@callstack/repack-plugin-reanimated@5.4.1(@babel/core@7.29.7(supports-color@8.1.1))(@callstack/repack@5.4.1(@babel/core@7.29.7(supports-color@8.1.1))(@module-federation/enhanced@2.9.1(@rspack/core@2.2.6(@module-federation/runtime-tools@2.9.1)(@swc/helpers@0.5.23))(typescript@6.0.3)(webpack@5.109.2))(@rspack/core@2.2.6(@module-federation/runtime-tools@2.9.1)(@swc/helpers@0.5.23))(react-native@0.87.1(@babel/core@7.29.7(supports-color@8.1.1))(@react-native-community/cli@20.2.0(supports-color@8.1.1)(typescript@6.0.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.7(supports-color@8.1.1))(supports-color@8.1.1))(@types/react@19.2.18)(react@19.2.8)(supports-color@8.1.1))(supports-color@8.1.1)(webpack@5.109.2))':
+  '@callstack/repack-plugin-reanimated@5.4.2(@babel/core@7.29.7(supports-color@8.1.1))(@callstack/repack@5.4.2(@babel/core@7.29.7(supports-color@8.1.1))(@module-federation/enhanced@2.9.1(@rspack/core@2.2.6(@module-federation/runtime-tools@2.9.1)(@swc/helpers@0.5.23))(typescript@6.0.3)(webpack@5.109.2))(@rspack/core@2.2.6(@module-federation/runtime-tools@2.9.1)(@swc/helpers@0.5.23))(react-native@0.87.1(@babel/core@7.29.7(supports-color@8.1.1))(@react-native-community/cli@20.2.0(supports-color@8.1.1)(typescript@6.0.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.7(supports-color@8.1.1))(supports-color@8.1.1))(@types/react@19.2.18)(react@19.2.8)(supports-color@8.1.1))(supports-color@8.1.1)(webpack@5.109.2))':
     dependencies:
       '@babel/core': 7.29.7(supports-color@8.1.1)
-      '@callstack/repack': 5.4.1(@babel/core@7.29.7(supports-color@8.1.1))(@module-federation/enhanced@2.9.1(@rspack/core@2.2.6(@module-federation/runtime-tools@2.9.1)(@swc/helpers@0.5.23))(typescript@6.0.3)(webpack@5.109.2))(@rspack/core@2.2.6(@module-federation/runtime-tools@2.9.1)(@swc/helpers@0.5.23))(react-native@0.87.1(@babel/core@7.29.7(supports-color@8.1.1))(@react-native-community/cli@20.2.0(supports-color@8.1.1)(typescript@6.0.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.7(supports-color@8.1.1))(supports-color@8.1.1))(@types/react@19.2.18)(react@19.2.8)(supports-color@8.1.1))(supports-color@8.1.1)(webpack@5.109.2)
+      '@callstack/repack': 5.4.2(@babel/core@7.29.7(supports-color@8.1.1))(@module-federation/enhanced@2.9.1(@rspack/core@2.2.6(@module-federation/runtime-tools@2.9.1)(@swc/helpers@0.5.23))(typescript@6.0.3)(webpack@5.109.2))(@rspack/core@2.2.6(@module-federation/runtime-tools@2.9.1)(@swc/helpers@0.5.23))(react-native@0.87.1(@babel/core@7.29.7(supports-color@8.1.1))(@react-native-community/cli@20.2.0(supports-color@8.1.1)(typescript@6.0.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.7(supports-color@8.1.1))(supports-color@8.1.1))(@types/react@19.2.18)(react@19.2.8)(supports-color@8.1.1))(supports-color@8.1.1)(webpack@5.109.2)
       semver: 7.8.5
 
-  '@callstack/repack@5.4.1(@babel/core@7.29.7(supports-color@8.1.1))(@module-federation/enhanced@2.9.1(@rspack/core@2.2.6(@module-federation/runtime-tools@2.9.1)(@swc/helpers@0.5.23))(typescript@6.0.3)(webpack@5.109.2))(@rspack/core@2.2.6(@module-federation/runtime-tools@2.9.1)(@swc/helpers@0.5.23))(react-native@0.87.1(@babel/core@7.29.7(supports-color@8.1.1))(@react-native-community/cli@20.2.0(supports-color@8.1.1)(typescript@6.0.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.7(supports-color@8.1.1))(supports-color@8.1.1))(@types/react@19.2.18)(react@19.2.8)(supports-color@8.1.1))(supports-color@8.1.1)(webpack@5.109.2)':
+  '@callstack/repack@5.4.2(@babel/core@7.29.7(supports-color@8.1.1))(@module-federation/enhanced@2.9.1(@rspack/core@2.2.6(@module-federation/runtime-tools@2.9.1)(@swc/helpers@0.5.23))(typescript@6.0.3)(webpack@5.109.2))(@rspack/core@2.2.6(@module-federation/runtime-tools@2.9.1)(@swc/helpers@0.5.23))(react-native@0.87.1(@babel/core@7.29.7(supports-color@8.1.1))(@react-native-community/cli@20.2.0(supports-color@8.1.1)(typescript@6.0.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.7(supports-color@8.1.1))(supports-color@8.1.1))(@types/react@19.2.18)(react@19.2.8)(supports-color@8.1.1))(supports-color@8.1.1)(webpack@5.109.2)':
     dependencies:
-      '@callstack/repack-dev-server': 5.4.1(supports-color@8.1.1)
+      '@callstack/repack-dev-server': 5.4.2(supports-color@8.1.1)
       '@discoveryjs/json-ext': 0.5.7
       '@rspack/plugin-react-refresh': 1.0.0(react-refresh@0.14.0)
       babel-loader: 9.2.1(@babel/core@7.29.7(supports-color@8.1.1))(webpack@5.109.2)

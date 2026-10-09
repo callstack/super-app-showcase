@@ -16,7 +16,7 @@
   },
   "@callstack/repack": {
     "name": "@callstack/repack",
-    "version": "5.4.0-canary-20260913172854",
+    "version": "5.4.2",
     "devOnly": true
   },
   "@react-native/babel-preset": {
@@ -26,6 +26,11 @@
   },
   "@react-native/eslint-config": {
     "name": "@react-native/eslint-config",
+    "version": "0.87.1",
+    "devOnly": true
+  },
+  "@react-native/js-polyfills": {
+    "name": "@react-native/js-polyfills",
     "version": "0.87.1",
     "devOnly": true
   },

@@ -54,6 +54,11 @@ wsPsZn01/gGJmqS+2v/0428SHra0r1JOXhgOrJDn/SpWkfhcYPti61gq9qKmjylq
 cY5Xs2ruzayYogugDiaALCPvJpQFCj83AIbWft26fl7VCphxPKaFpeDHseVi6tMi
 1+opwSqunAaqo5rsLlHIw0MCAwEAAQ==
 -----END PUBLIC KEY-----</string>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+	</dict>
 	<key>UIAppFonts</key>
 	<array>
 		<string>MaterialDesignIcons.ttf</string>

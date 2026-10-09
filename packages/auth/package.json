@@ -37,11 +37,13 @@
   },
   "devDependencies": {
     "@babel/core": "catalog:",
+    "@babel/plugin-syntax-typescript": "catalog:",
     "@babel/preset-env": "catalog:",
     "@babel/runtime": "catalog:",
     "@callstack/repack": "catalog:",
     "@react-native-community/cli": "catalog:",
     "@react-native/babel-preset": "catalog:",
+    "@react-native/js-polyfills": "catalog:",
     "@react-native/eslint-config": "catalog:",
     "@react-native/typescript-config": "catalog:",
     "@rnx-kit/align-deps": "catalog:",

@@ -23,7 +23,7 @@ PODS:
     - Yoga
   - boost (1.84.0):
     - ReactNativeDependencies
-  - callstack-repack (5.4.0-canary-20260913172854):
+  - callstack-repack (5.4.2):
     - hermes-engine
     - JWTDecode (~> 3.0.0)
     - RCTRequired
@@ -2400,7 +2400,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AsyncStorage: d46e0a56f22c0cc1228bb0126149e20ef0179dbb
   boost: 2a9d6e1d9873337543f08d9dbc007b288f4e113b
-  callstack-repack: c646d778dd96ef368fe038d43d2def16dbed8433
+  callstack-repack: 4d29d5efb98fdbaf98ef3aaecdc6357109195585
   DoubleConversion: e85e4faac763226bfd1cc4c6a98d8355149b27a5
   fast_float: 908e5ee35999f3d91af4b962ac951acac591866c
   FBLazyVector: 1f950f55bf9d0f1130874f80ff0932945b97e2a8
@@ -2501,6 +2501,6 @@ SPEC CHECKSUMS:
   SwiftyRSA: 8c6dd1ea7db1b8dc4fb517a202f88bb1354bc2c6
   Yoga: 58b502c52b14ad3c4468805d461fc37d275c2a42
 
-PODFILE CHECKSUM: 57649a0176502afe3243eedb7d7d166d4177e6f9
+PODFILE CHECKSUM: fcee8f58b9c1bf9ffafa848d64efa9ea80e53f08
 
 COCOAPODS: 1.17.0

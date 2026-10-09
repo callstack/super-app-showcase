@@ -21,15 +21,46 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     reactNativeDelegate = delegate
     reactNativeFactory = factory
 
-    window = UIWindow(frame: UIScreen.main.bounds)
+    return true
+  }
 
+  func application(
+    _ application: UIApplication,
+    configurationForConnecting connectingSceneSession: UISceneSession,
+    options: UIScene.ConnectionOptions
+  ) -> UISceneConfiguration {
+    let configuration = UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
+    configuration.delegateClass = SceneDelegate.self
+    return configuration
+  }
+}
+
+// Apps built with the iOS 27 SDK must adopt the UIScene lifecycle, so the
+// window and React Native root view are created here instead of in AppDelegate.
+class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+  var window: UIWindow?
+
+  func scene(
+    _ scene: UIScene,
+    willConnectTo session: UISceneSession,
+    options connectionOptions: UIScene.ConnectionOptions
+  ) {
+    guard let windowScene = scene as? UIWindowScene,
+          let appDelegate = UIApplication.shared.delegate as? AppDelegate,
+          let factory = appDelegate.reactNativeFactory
+    else { return }
+
+    let window = UIWindow(windowScene: windowScene)
+    self.window = window
+    appDelegate.window = window
+
+    // Launch options are not available with UIScene. If deep linking is added,
+    // handle connectionOptions.urlContexts here and scene(_:openURLContexts:).
     factory.startReactNative(
       withModuleName: "host",
       in: window,
-      launchOptions: launchOptions
+      launchOptions: nil
     )
-
-    return true
   }
 }
 

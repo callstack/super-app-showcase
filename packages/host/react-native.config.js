@@ -1,5 +1,5 @@
 module.exports = {
-  commands: require('@callstack/repack/commands/rspack'),
+  commands: require('@callstack/repack/commands'),
   project: {
     ios: {
       automaticPodsInstallation: true,

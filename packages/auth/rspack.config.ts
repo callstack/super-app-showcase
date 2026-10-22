@@ -37,7 +37,13 @@ export default Repack.defineRspackConfig(({mode}) => {
       {module: /@gorhom[\\/]bottom-sheet[\\/].*BottomSheetFlashList/},
     ],
     entry: {},
-    resolve: {...Repack.getResolveOptions({enablePackageExports: true})},
+    resolve: {
+      ...Repack.getResolveOptions({enablePackageExports: true}),
+      // Vector Icons' runtime optionally probes expo-font on web only, and the
+      // require is wrapped in a try/catch. Same guard as the host config: the
+      // app always bundles the native font, so the probe is dead code.
+      alias: {'expo-font': false},
+    },
     output: {
       uniqueName: 'sas-auth',
     },

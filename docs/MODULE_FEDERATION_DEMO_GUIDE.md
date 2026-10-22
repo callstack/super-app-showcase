@@ -337,13 +337,13 @@ Yes, there is a CDN to manage and bundle versioning to think about. The trade-of
 
 |                   |                                                                 |
 | ----------------- | --------------------------------------------------------------- |
-| React Native      | 0.87.1                                                          |
-| React             | 19.2.8                                                          |
-| Re.Pack           | 5.4.2 (Rspack-based)                                            |
-| Module Federation | V2 (2.9.1)                                                      |
-| Animations        | react-native-reanimated 4.7.0 + react-native-worklets 0.13.0    |
-| Charts            | victory-native 42.0.1 (Skia-based)                              |
-| Lists             | @legendapp/list 3.4.0                                           |
+| React Native      | 0.88.0                                                          |
+| React             | 19.3.1                                                          |
+| Re.Pack           | 5.4.3-canary-20261022091009 (Rspack-based)                      |
+| Module Federation | V2 (2.9.2)                                                      |
+| Animations        | react-native-reanimated 4.7.1 + react-native-worklets 0.13.0    |
+| Charts            | victory-native 43.0.1 (react-native-skia 2.15.1)                |
+| Lists             | @legendapp/list 3.6.0                                           |
 | Bottom sheet      | @gorhom/bottom-sheet 5.2.14                                     |
-| Navigation        | @react-navigation/native 7.4.1 + react-native-bottom-tabs 1.4.0 |
+| Navigation        | @react-navigation/native 7.5.1 + react-native-bottom-tabs 1.5.0 |
 | React Compiler    | babel-plugin-react-compiler 1.x                                 |

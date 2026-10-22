@@ -11,32 +11,37 @@
   },
   "@babel/runtime": {
     "name": "@babel/runtime",
-    "version": "^7.29.7",
+    "version": "^7.29.10",
     "devOnly": true
   },
   "@callstack/repack": {
     "name": "@callstack/repack",
-    "version": "5.4.2",
+    "version": "5.4.3-canary-20261022091009",
     "devOnly": true
   },
   "@react-native/babel-preset": {
     "name": "@react-native/babel-preset",
-    "version": "0.87.1",
+    "version": "0.88.0",
     "devOnly": true
   },
   "@react-native/eslint-config": {
     "name": "@react-native/eslint-config",
-    "version": "0.87.1",
+    "version": "0.88.0",
     "devOnly": true
   },
   "@react-native/js-polyfills": {
     "name": "@react-native/js-polyfills",
-    "version": "0.87.1",
+    "version": "0.88.0",
+    "devOnly": true
+  },
+  "@react-native/metro-config": {
+    "name": "@react-native/metro-config",
+    "version": "0.88.0",
     "devOnly": true
   },
   "@react-native/typescript-config": {
     "name": "@react-native/typescript-config",
-    "version": "0.87.1",
+    "version": "0.88.0",
     "devOnly": true
   },
   "@react-native-community/cli": {
@@ -46,7 +51,7 @@
   },
   "@rspack/core": {
     "name": "@rspack/core",
-    "version": "2.2.6",
+    "version": "2.2.9",
     "devOnly": true
   },
   "@swc/helpers": {
@@ -61,22 +66,22 @@
   },
   "@types/react": {
     "name": "@types/react",
-    "version": "^19.2.18",
+    "version": "^19.3.0",
     "devOnly": true
   },
   "@types/react-test-renderer": {
     "name": "@types/react-test-renderer",
-    "version": "^19.1.0",
+    "version": "^19.3.0",
     "devOnly": true
   },
   "@typescript-eslint/eslint-plugin": {
     "name": "@typescript-eslint/eslint-plugin",
-    "version": "^8.70.1",
+    "version": "^8.72.0",
     "devOnly": true
   },
   "@typescript-eslint/parser": {
     "name": "@typescript-eslint/parser",
-    "version": "^8.70.1",
+    "version": "^8.72.0",
     "devOnly": true
   },
   "eslint": {
@@ -91,12 +96,12 @@
   },
   "prettier": {
     "name": "prettier",
-    "version": "^3.9.8",
+    "version": "^3.9.10",
     "devOnly": true
   },
   "react-test-renderer": {
     "name": "react-test-renderer",
-    "version": "^19.2.8",
+    "version": "^19.3.1",
     "devOnly": true
   },
   "typescript": {

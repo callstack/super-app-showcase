@@ -22,28 +22,27 @@
     "@react-navigation/native-stack": "catalog:",
     "@react-native-vector-icons/material-design-icons": "catalog:",
     "@react-native-vector-icons/get-image": "catalog:",
-    "@shopify/react-native-skia": "catalog:",
     "react": "catalog:",
     "react-native": "catalog:",
     "react-native-bottom-tabs": "catalog:",
-    "react-native-edge-to-edge": "catalog:",
     "react-native-gesture-handler": "catalog:",
     "react-native-paper": "catalog:",
     "react-native-reanimated": "catalog:",
     "react-native-safe-area-context": "catalog:",
     "react-native-screens": "catalog:",
+    "react-native-skia": "catalog:",
     "react-native-worklets": "catalog:",
     "victory-native": "catalog:"
   },
   "devDependencies": {
     "@babel/core": "catalog:",
-    "@babel/plugin-syntax-typescript": "catalog:",
     "@babel/preset-env": "catalog:",
     "@babel/runtime": "catalog:",
     "@callstack/repack": "catalog:",
     "@react-native-community/cli": "catalog:",
     "@react-native/babel-preset": "catalog:",
     "@react-native/js-polyfills": "catalog:",
+    "@react-native/metro-config": "catalog:",
     "@react-native/eslint-config": "catalog:",
     "@react-native/typescript-config": "catalog:",
     "@rnx-kit/align-deps": "catalog:",
@@ -68,7 +67,7 @@
         "../sdk/preset"
       ],
       "requirements": [
-        "react-native@0.87.1"
+        "react-native@0.88.0"
       ],
       "capabilities": [
         "super-app"

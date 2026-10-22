@@ -20,18 +20,18 @@
   },
   "peerDependencies": {
     "@gorhom/bottom-sheet": "catalog:peer",
-    "@shopify/react-native-skia": "catalog:peer",
     "react-native-gesture-handler": "catalog:peer",
     "react-native-reanimated": "catalog:peer",
+    "react-native-skia": "catalog:peer",
     "react-native-worklets": "catalog:peer",
     "victory-native": "catalog:peer"
   },
   "devDependencies": {
     "@babel/core": "catalog:",
-    "@babel/plugin-syntax-typescript": "catalog:",
     "@callstack/repack": "catalog:",
     "@react-native/babel-preset": "catalog:",
     "@react-native/js-polyfills": "catalog:",
+    "@react-native/metro-config": "catalog:",
     "@react-native/eslint-config": "catalog:",
     "@react-native/typescript-config": "catalog:",
     "@rspack/core": "catalog:",

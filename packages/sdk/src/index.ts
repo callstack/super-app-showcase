@@ -8,7 +8,7 @@ export {useHistoricalPrices} from './hooks/useHistoricalPrices';
 export {useFlashAnimation} from './hooks/useFlashAnimation';
 export {ASSETS, ASSET_MAP, KRAKEN_PAIR_TO_SYMBOL} from './constants';
 export type {Asset, AssetSymbol, PriceUpdate, PriceMap} from './types';
-export {formatPrice, formatValue} from './utils/formatPrice';
+export {formatPrice, formatValue, formatAxisPrice} from './utils/formatPrice';
 export {getAssetIconUri} from './utils/assetIcon';
 export {colors} from './theme';
 export {default as ConnectionBanner} from './components/ConnectionBanner';

@@ -67,7 +67,7 @@
         "../sdk/preset"
       ],
       "requirements": [
-        "react-native@0.88.0"
+        "react-native@0.88.1"
       ],
       "capabilities": [
         "super-app"

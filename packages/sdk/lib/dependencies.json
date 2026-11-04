@@ -5,7 +5,7 @@
   },
   "react-native": {
     "name": "react-native",
-    "version": "0.88.0"
+    "version": "0.88.1"
   },
   "@bottom-tabs/react-navigation": {
     "name": "@bottom-tabs/react-navigation",
@@ -29,15 +29,15 @@
   },
   "react-native-paper": {
     "name": "react-native-paper",
-    "version": "5.15.3"
+    "version": "5.15.4"
   },
   "react-native-safe-area-context": {
     "name": "react-native-safe-area-context",
-    "version": "5.10.1"
+    "version": "5.11.1"
   },
   "react-native-screens": {
     "name": "react-native-screens",
-    "version": "4.30.0"
+    "version": "4.30.1"
   },
   "@react-native-vector-icons/material-design-icons": {
     "name": "@react-native-vector-icons/material-design-icons",
@@ -49,7 +49,7 @@
   },
   "@module-federation/enhanced": {
     "name": "@module-federation/enhanced",
-    "version": "2.9.2",
+    "version": "2.9.3",
     "shared": false
   },
   "react-native-reanimated": {
@@ -58,7 +58,7 @@
   },
   "react-native-worklets": {
     "name": "react-native-worklets",
-    "version": "0.13.0"
+    "version": "0.13.1"
   },
   "react-native-gesture-handler": {
     "name": "react-native-gesture-handler",
@@ -66,7 +66,7 @@
   },
   "react-native-skia": {
     "name": "react-native-skia",
-    "version": "2.15.1"
+    "version": "2.15.2"
   },
   "victory-native": {
     "name": "victory-native",

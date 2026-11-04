@@ -21,7 +21,7 @@
     "@gorhom/bottom-sheet": "catalog:",
     "@legendapp/list": "catalog:",
     "@module-federation/enhanced": "catalog:",
-    "@module-federation/error-codes": "2.9.2",
+    "@module-federation/error-codes": "2.9.3",
     "@react-native-async-storage/async-storage": "catalog:",
     "@react-navigation/native": "catalog:",
     "@react-navigation/native-stack": "catalog:",
@@ -29,7 +29,7 @@
     "@react-native-vector-icons/get-image": "catalog:",
     "react": "catalog:",
     "react-native": "catalog:",
-    "react-native-bootsplash": "7.3.4",
+    "react-native-bootsplash": "7.3.5",
     "react-native-bottom-tabs": "catalog:",
     "react-native-gesture-handler": "catalog:",
     "react-native-paper": "catalog:",
@@ -45,7 +45,7 @@
     "@babel/preset-env": "catalog:",
     "@babel/runtime": "catalog:",
     "@callstack/repack": "catalog:",
-    "@callstack/repack-plugin-reanimated": "5.4.3-canary-20261022172059",
+    "@callstack/repack-plugin-reanimated": "5.4.3-canary-20261104085523",
     "@react-native-community/cli": "catalog:",
     "@react-native-community/cli-platform-android": "20.2.0",
     "@react-native-community/cli-platform-ios": "20.2.0",
@@ -53,7 +53,7 @@
     "@react-native/js-polyfills": "catalog:",
     "@react-native/metro-config": "catalog:",
     "@react-native/eslint-config": "catalog:",
-    "@react-native/jest-preset": "0.88.0",
+    "@react-native/jest-preset": "0.88.1",
     "@react-native/typescript-config": "catalog:",
     "@rnx-kit/align-deps": "catalog:",
     "@rspack/core": "catalog:",
@@ -78,7 +78,7 @@
         "../sdk/preset"
       ],
       "requirements": [
-        "react-native@0.88.0"
+        "react-native@0.88.1"
       ],
       "capabilities": [
         "super-app"

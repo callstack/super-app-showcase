@@ -21,6 +21,7 @@ import {
   useAssetPrice,
   useHistoricalPrices,
   formatPrice,
+  formatAxisPrice,
   colors,
 } from 'super-app-showcase-sdk';
 import type {TradingStackParamList} from '../navigation/MainNavigator';
@@ -173,16 +174,7 @@ const AssetDetailsScreen = ({route, navigation}: Props) => {
                   tickCount: 4,
                   labelColor: colors.secondary,
                   axisSide: 'right',
-                  formatYLabel: value => {
-                    const n = Number(value);
-                    if (n >= 1000) {
-                      return `$${(n / 1000).toFixed(1)}k`;
-                    }
-                    if (n >= 1) {
-                      return `$${n.toFixed(0)}`;
-                    }
-                    return `$${n.toFixed(3)}`;
-                  },
+                  formatYLabel: value => formatAxisPrice(Number(value)),
                 },
               ]}>
               {({points}) => (

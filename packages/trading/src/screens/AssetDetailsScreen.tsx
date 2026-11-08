@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 import {useBottomTabBarHeight} from 'react-native-bottom-tabs';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
-import {matchFont} from '@shopify/react-native-skia';
+import {matchFont} from 'react-native-skia';
 import {CartesianChart, Line} from 'victory-native';
 import {
   useDerivedValue,
@@ -26,26 +26,6 @@ import {
 import type {TradingStackParamList} from '../navigation/MainNavigator';
 import TradeBottomSheet from '../components/TradeBottomSheet';
 import type {BottomSheetRef} from '../components/TradeBottomSheet';
-
-// victory-native@41 still builds its line path via skia's deprecated
-// SkPath.addPath(), which logs a deprecation warning on every chart render.
-// The call site is inside victory-native (not our code), so silence just this
-// one message until the lib migrates to Skia.PathBuilder. See:
-// https://shopify.github.io/react-native-skia/docs/shapes/path-migration
-type PatchableConsole = typeof console & {__skiaAddPathWarnPatched?: boolean};
-if (__DEV__ && !(console as PatchableConsole).__skiaAddPathWarnPatched) {
-  const originalWarn = console.warn.bind(console);
-  console.warn = (...args: Parameters<typeof console.warn>) => {
-    if (
-      typeof args[0] === 'string' &&
-      args[0].includes('SkPath.addPath() is deprecated')
-    ) {
-      return;
-    }
-    originalWarn(...args);
-  };
-  (console as PatchableConsole).__skiaAddPathWarnPatched = true;
-}
 
 type Props = NativeStackScreenProps<TradingStackParamList, 'AssetDetails'>;
 
@@ -147,7 +127,14 @@ const AssetDetailsScreen = ({route, navigation}: Props) => {
 
   const chartFont = React.useMemo(() => {
     try {
-      return matchFont({fontSize: 11});
+      // Skia's default `matchFont()` family is "System", which its Android
+      // font manager does not expose: it resolves a typeface with no glyphs,
+      // so victory-native measures zero-width labels and renders no axis text.
+      // "sans-serif" is the Android system family RN itself maps to.
+      return matchFont({
+        fontFamily: Platform.select({android: 'sans-serif', default: 'System'}),
+        fontSize: 11,
+      });
     } catch {
       return null;
     }
